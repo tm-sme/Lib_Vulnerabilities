@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="0" Content_Hash="0">
+  <Metadata>
+    <Id>00000000-0000-0000-0000-0000006cee50</Id>
+    <Library_Id>26bd1a04-beed-4a66-917d-b6ab0a7d634c</Library_Id>
+    <Title>SQL Injection</Title>
+    <Category>Database Security</Category>
+    <Phase>Implementation</Phase>
+    <Technology>ASP.NET 4.0</Technology>
+    <Type>Landing Page</Type>
+    <DirectLink>SQL Injection</DirectLink>
+  </Metadata>
+  <Content Sanitized="false" DataType="WikiText">
+    <Data><![CDATA[==Description==
+
+SQL injection is a type of vulnerabilities in database access code that allows attackers to execute unauthorized queries on the database.  
+SQL injection typically occurs when an application uses input to construct dynamic SQL statements to access the database. SQL injection may also occur if stored procedures use dynamic queries that include untrusted input.
+
+==Countermeasures==
+
+The following TeamMentor articles describe effective counter-measures against SQL injection vulnerabilities:
+
+* [[9f0fc6bb-7dd0-4e1a-bbeb-d73ab3c25ebf|Validate All Input Passed to Database]]
+* [[e59923e7-c2fb-4a75-8db7-a9a91e869f74|Validate Input for Length, Range, Format, And Type]]
+* [[92e7b9b6-b0fb-4ec0-b529-0c6156430198|Use Parameterized APIs for Database Access]]
+* [[93af668f-1c1a-422b-9cdf-1378f6acd96f|Use Least Privileged Accounts for Database Access]]
+
+==Checklists==
+
+The following checklist items can help make sure that effective counter-measures against SQL injection vulnerabilities have been implemented:
+
+* [[e164ec5f-d683-445f-925c-9e09d2b5bbc3|All Database Input Is Validated]]
+* [[0e71dd64-87d1-4cf5-9569-ea320f209977|Input Is Validated for Length, Range, Format, And Type]]
+* [[cf040b19-4e85-4276-b718-65bc5c290f8f|Parameterized APIs Are Used for Database Access]]
+* [[6eabf9c8-7607-48d4-bc41-3faf56eb20f0|Least-privileged Accounts Are Used for Database Access]]
+
+==Additional Resources==
+
+*For more information about SQL injection attacks, please see http://en.wikipedia.org/wiki/SQL_injection]]></Data>
+  </Content>
+</TeamMentor_Article>

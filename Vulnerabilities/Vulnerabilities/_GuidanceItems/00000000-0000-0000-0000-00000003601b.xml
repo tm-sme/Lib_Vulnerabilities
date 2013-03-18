@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="0" Content_Hash="0">
+  <Metadata>
+    <Id>00000000-0000-0000-0000-00000003601b</Id>
+    <Library_Id>c4b9cb6a-4561-4451-9b6c-4e59d73584f6</Library_Id>
+    <Title>Information Exposure Through an Error Message</Title>
+    <Category>Error Handling</Category>
+    <Phase>Implementation</Phase>
+    <Technology>Java</Technology>
+    <Type>Landing Page</Type>
+    <DirectLink>Information Exposure Through an Error Message</DirectLink>
+    <Author />
+    <Priority />
+    <Status />
+  </Metadata>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Information exposure through an error message occurs when an error message discloses sensitive information that may help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and in some cases it is required for an attack to succeed. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. To prevent error message information disclosure, handle all errors, use simple error messages, and log detailed error information. To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged.
+
+==Impact==
+
+Error message information disclosure provided information to the attacker that enables him to carry out additional attacks. The two most common and dangerous scenarios are disclosing SQL queries after database errors and whether a username is valid during authentication. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. Another common error message disclosure scenario is when authentication errors indicate whether a username is valid or not. Knowing the username greatly simplifies password guessing attacks. In general, error messages should not disclose sensitive information to the end user.
+
+==Countermeasures==
+
+Handle all errors:
+
+* [[3e815c74-4d57-4c1b-8446-750b319ea046|Use a Global Exception Handler for Unhandled Exceptions]]
+
+Use simple error messages:
+
+* [[00000000-0000-0000-0000-0000005c37eb|Use Simple Error Messages]]
+
+Log detailed error information:
+
+* [[0109ec06-1830-472d-95ed-7ec64404c961|Log Important Event Details]]
+
+
+==Checklists==
+
+All errors are handled:
+
+* [[c88e1b49-357d-4202-aafc-86ce0de485bd|A Global Exception Handler Is Used for Unhandled Exceptions]]
+
+Simple error messages are used:
+
+* [[00000000-0000-0000-0000-00000064dbd7|Simple Error Messages Are Used]]
+
+Detailed error information is logged:
+
+* [[1be8f39e-609a-4d66-b4c9-ad839783a164|Important Event Details Are Logged]]]]></Data>
+  </Content>
+</TeamMentor_Article>
