@@ -13,7 +13,11 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[This is some content]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[This is some content
+
+* now
+* in 
+* wikitext]]></Data>
   </Content>
 </TeamMentor_Article>
