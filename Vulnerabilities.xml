@@ -2,10 +2,6 @@
 <guidanceExplorer>
   <library name="be5273b1-d682-4361-99d9-6204f2d47eb7" caption="Vulnerabilities">
     <items />
-    <libraryStructure>
-      <view id="b9593c06-561e-4d8e-a379-daa62339d3c6" caption="New view" creationDate="0001-01-01T00:00:00">
-        <items />
-      </view>
-    </libraryStructure>
+    <libraryStructure />
   </library>
 </guidanceExplorer>
