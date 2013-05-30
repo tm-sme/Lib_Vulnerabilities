@@ -3,15 +3,17 @@
   <Metadata>
     <Id>683d33a8-7979-4307-8cf0-3a82457f9f47</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
-    <Category />
-    <Technology />
-    <Type />
+    <Title>Cross-Site Scripting</Title>
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Cross-Site Scripting</DirectLink>
     <Author />
     <Priority />
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[<br>]]></Data>
   </Content>
 </TeamMentor_Article>
