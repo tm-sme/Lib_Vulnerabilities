@@ -3,10 +3,12 @@
   <Metadata>
     <Id>2afe59f4-b498-48f8-ab28-6d449a267371</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
-    <Category />
-    <Technology />
-    <Type />
+    <Title>Cross-Site Scripting</Title>
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Cross-Site Scripting</DirectLink>
     <Author />
     <Priority />
     <Status />
