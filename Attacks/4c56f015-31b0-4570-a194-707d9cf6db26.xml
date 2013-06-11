@@ -3,7 +3,7 @@
   <Metadata>
     <Id>4c56f015-31b0-4570-a194-707d9cf6db26</Id>
     <Id_History>e49c6b3a-880f-46db-a07d-80dc2177a36a,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Business Rule Attack</Title>
     <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
@@ -28,51 +28,60 @@
   <h1>Impact</h1>
   <ul>
     <li>
-      <strong>Elevation of privilege:</strong> In the strictest sense, most of the issues from a business rule will be elevation of privilege issues, allowing the attacker to do things which are normally prohibited. <li><strong>Information disclosure:</strong> As part and parcel of the elevation of privilege issues come information discosure issues. <li><strong>Denial of service:</strong> It is often the case in more complicated applications that subverting the business rules of an application can make it either effctively non-functional, resulting in deadlock of one kind or another.</li></li></li>
+      <strong>Elevation of privilege:</strong> In the strictest sense, most of the issues from a business rule will be elevation of privilege issues, allowing the attacker to do things which are normally prohibited. </li>
+    <li>
+      <strong>Information disclosure:</strong> As part and parcel of the elevation of privilege issues come information discosure issues. </li>
+    <li>
+      <strong>Denial of service:</strong> It is often the case in more complicated applications that subverting the business rules of an application can make it either effctively non-functional, resulting in deadlock of one kind or another.</li>
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>Internal inconsistencies in the business rules of the system. <li>Failure to enforce business rules uniformly at all points in the system.</li></li>
+    <li>Internal inconsistencies in the business rules of the system. </li>
+    <li>Failure to enforce business rules uniformly at all points in the system.</li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Document the business rules of the system in a single place. <li>Generate a threat model of the application and carefully analyze the business rules as specified. <li>Centralize business rule code for easier auditing. <li>Audit the application code to ensure that all pathways through the system enforce the business rules as specified and that no extra functionality exists in the system beyond that specified in the rules of the system.</li></li></li></li>
+    <li>Document the business rules of the system in a single place. </li>
+    <li>Generate a threat model of the application and carefully analyze the business rules as specified. </li>
+    <li>Centralize business rule code for easier auditing. </li>
+    <li>Audit the application code to ensure that all pathways through the system enforce the business rules as specified and that no extra functionality exists in the system beyond that specified in the rules of the system.</li>
   </ul>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on Business Logic, see the WikiePedia Business Logic entry <a href="http://en.wikipedia.org/wiki/Business_logic">http://en.wikipedia.org/wiki/Business_logic</a><li>For more information on Threat Modeling, see MSDN's "Secure Development Center: Application Threat Modeling": http://msdn2.microsoft.com/en-us/security/aa570413.aspx</li></li>
+    <li>For more information on Business Logic, see: <a href="http://en.wikipedia.org/wiki/Business_logic">http://en.wikipedia.org/wiki/Business_logic</a></li>
+    <li>For more information on Threat Modeling, see: <a href="http://msdn2.microsoft.com/en-us/security/aa570413.aspx">http://msdn2.microsoft.com/en-us/security/aa570413.aspx</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
     <li>
       <a href="/article/92fed6bc-b075-486f-9a25-d77fddd6cf13">Attack: Denial of Service Attack</a>
-      <li>
-        <a href="/article/6a219806-df28-4c00-bc2d-c2ce4c721b7e">Attack: Trust Relationship Attack</a>
-        <li>
-          <a href="/article/d22c8d99-a690-4a68-bccf-5cb2894af160">Attack: Repudiation Attack</a>
-          <li>
-            <a href="/article/079d6e64-8efb-4350-ae79-81cd0dd584a7">Attack: Creation of False Transaction Attack</a>
-            <li>
-              <a href="/article/23b765dd-4de0-4374-8312-b6e0a1966c9f">Attack: Social Engineering Attack</a>
-              <li>
-                <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-                <li>
-                  <a href="/article/9df0b518-f832-4a7c-9857-0517638c47db">Guideline: Do Not Make Security Decisions Based on Client-Accessible Parameters </a>
-                  <li>
-                    <a href="/article/17034ef0-8935-4fb2-bbae-d79982e710c7">Guideline: Perform Role-Based Security Checks </a>
-                    <li>
-                      <a href="/article/fc7f567f-bbfc-434c-aaa5-23d79b458605">Guideline: Separate Account Administration from the Main Application Interface </a>
-                      <li>
-                        <a href="/article/a5b7e377-103e-4805-a567-6092cbbaeba7">Guideline: Partition Application Between Public and Private Domains </a>
-                      </li>
-                    </li>
-                  </li>
-                </li>
-              </li>
-            </li>
-          </li>
-        </li>
-      </li>
+    </li>
+    <li>
+      <a href="/article/6a219806-df28-4c00-bc2d-c2ce4c721b7e">Attack: Trust Relationship Attack</a>
+    </li>
+    <li>
+      <a href="/article/d22c8d99-a690-4a68-bccf-5cb2894af160">Attack: Repudiation Attack</a>
+    </li>
+    <li>
+      <a href="/article/079d6e64-8efb-4350-ae79-81cd0dd584a7">Attack: Creation of False Transaction Attack</a>
+    </li>
+    <li>
+      <a href="/article/23b765dd-4de0-4374-8312-b6e0a1966c9f">Attack: Social Engineering Attack</a>
+    </li>
+    <li>
+      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
+    </li>
+    <li>
+      <a href="/article/9df0b518-f832-4a7c-9857-0517638c47db">Guideline: Do Not Make Security Decisions Based on Client-Accessible Parameters </a>
+    </li>
+    <li>
+      <a href="/article/17034ef0-8935-4fb2-bbae-d79982e710c7">Guideline: Perform Role-Based Security Checks </a>
+    </li>
+    <li>
+      <a href="/article/fc7f567f-bbfc-434c-aaa5-23d79b458605">Guideline: Separate Account Administration from the Main Application Interface </a>
+    </li>
+    <li>
+      <a href="/article/a5b7e377-103e-4805-a567-6092cbbaeba7">Guideline: Partition Application Between Public and Private Domains </a>
     </li>
   </ul>]]></Data>
   </Content>
