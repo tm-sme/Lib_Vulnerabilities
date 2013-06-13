@@ -25,7 +25,7 @@ SQL injection allows the attacker to access any data in the database. The attack
 
 ==Countermeasures==
 
-Use all of the following guidelines to implement countermeasures against SQL injection.
+ Implement all of the following countermeasures to protect your application against SQL injection.
 
 Validate all input:
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
@@ -38,7 +38,7 @@ Use parameterized APIs for database access:
 
 ==Checklists==
 
-Use all of the following checklist items to make sure that sufficient countermeasures against SQL injection have been implemented.
+Use each of the following checklist items to make sure that sufficient countermeasures against SQL injection have been implemented.
 
 All input is validated:
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
@@ -51,6 +51,6 @@ Parameterized APIs are used for database access:
 
 ==Additional Resources==
 
-* For more information about SQL injection attacks, please see http://en.wikipedia.org/wiki/SQL_injection]]></Data>
+* For more information about SQL injection attacks, please see https://www.owasp.org/index.php/SQL_Injection]]></Data>
   </Content>
 </TeamMentor_Article>
