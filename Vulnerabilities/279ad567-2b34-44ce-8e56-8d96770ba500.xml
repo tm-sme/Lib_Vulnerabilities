@@ -25,7 +25,9 @@ Open redirects allow an attacker to send users to a malicious site via a legitim
 
 ==Countermeasures==
 
-Choose the appropriate countermeasures to prevent open redirects. The options are to avoid using redirects, to calculate destinations of redirects without user input, or to use mapping values when redirecting on user input. If redirects are used, the destinations of the redirects should be validated.
+Choose the appropriate countermeasures to prevent open redirects. The options are to avoid using redirects, to calculate destinations of redirects without user input, or to use mapping values when redirecting on user input. If redirects are used, the destinations of the redirects should be validated. 
+
+The choice depends on how much user input is required to decide where to redirect to. The less user input is required, the safer the application will be. If redirection takes place regardless of user input, then destinations can be calculated without user input. If there is a clearly defined list of valid redirection targets, mapping values should be used. If valid targets cannot be reduced to a list of safe destinations, then an open redirect vulnerability is virtually guaranteed and then it's better not to redirect at all.
 
 * [[9dd99e67-7f4b-4c3b-b355-253edd7b29a3|Don't Use Redirects Or Forwards If Possible]]
 
