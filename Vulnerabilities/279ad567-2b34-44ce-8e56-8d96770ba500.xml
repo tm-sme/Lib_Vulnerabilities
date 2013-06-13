@@ -33,7 +33,7 @@ If it's possible to remove redirection or redirection targets cannot be clearly 
 If redirection takes place regardless of user input:
 * [[6daf44c7-fe2c-45f6-8854-7aa1e3a1030f|Calculate Destinations of Redirects And Forwards Without User Input]]
 
-If there is a clearly defined list of valid redirection targets:
+If it is possible to clearly define valid redirection targets:
 * [[d718d5f2-247e-4299-a6ca-bfeaaac67eea|Use Mapping Values When Redirecting on User Input]]
 * [[f86bc5a9-e545-461b-9ba5-c6659841250e|Validate Destinations of Redirects And Forwards]]
 
