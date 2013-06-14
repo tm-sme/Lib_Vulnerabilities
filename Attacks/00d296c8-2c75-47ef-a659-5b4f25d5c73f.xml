@@ -72,11 +72,10 @@
   <h1>Additional Resources</h1>
   <ul>
     <li>
-      <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a>
-    </li>
-    <li>
-      <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a>
-    </li>
+      For more information on Canonicalization, see: <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a></li>
+    <li>For more information on <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">Canonicalization, locale, and Unicode, see: http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a></li>
+  </ul>
+  <ul>
     <li>
       <a href="http://www.faqs.org/rfcs/rfc3492.html">http://www.faqs.org/rfcs/rfc3492.html</a>
     </li>
