@@ -3,7 +3,7 @@
   <Metadata>
     <Id>16fbf122-43cf-4201-9b33-cf2c728de202</Id>
     <Id_History>29e3d723-354f-4d82-ac7b-b004dc759c2f,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Chosen Plaintext Attack</Title>
     <Category>Cryptography</Category>
     <Phase>Design</Phase>
@@ -31,50 +31,60 @@
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>Custom implementation of algorithm. <li>Use of weak keys (e.g., a short key length). <li>Exposing cipher text unnecesarily. <li>Allowing an attacker to submit arbitrary data for encryption.</li></li></li></li>
+    <li>Custom implementation of algorithm. </li>
+    <li>Use of weak keys (e.g., a short key length). </li>
+    <li>Exposing cipher text unnecesarily. </li>
+    <li>Allowing an attacker to submit arbitrary data for encryption.</li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Use well-known implementations of well-known cryptographic algorithms. <li>Use cryptographically generated random keys. <li>Use large keys (128-bit symmetric or 1024-bit asymmetric keys). <li>Utilize platform supplied features to store secret keys. <li>Follow principle of least privilege to provide limited access to the secret key. <li>Maintain key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot). <li>If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text and use a chaining mode to prevent the replacement of individual blocks of the cyphertext. <li>If using a cryptographic hash algorithm, salt the hash value with a unique random bit stream.</li></li></li></li></li></li></li></li>
+    <li>Use well-known implementations of well-known cryptographic algorithms. </li>
+    <li>Use cryptographically generated random keys. </li>
+    <li>Use large keys (128-bit symmetric or 1024-bit asymmetric keys). </li>
+    <li>Utilize platform supplied features to store secret keys. </li>
+    <li>Follow principle of least privilege to provide limited access to the secret key. </li>
+    <li>Maintain key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot). </li>
+    <li>If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text and use a chaining mode to prevent the replacement of individual blocks of the cyphertext. </li>
+    <li>If using a cryptographic hash algorithm, salt the hash value with a unique random bit stream.</li>
   </ul>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on this attack, please see <a href="http://en.wikipedia.org/wiki/Chosen_plaintext_attack">http://en.wikipedia.org/wiki/Chosen_plaintext_attack</a></li>
+    <li>For more information on chosen plaintext attacks, see: <a href="http://en.wikipedia.org/wiki/Chosen_plaintext_attack">http://en.wikipedia.org/wiki/Chosen_plaintext_attack</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
     <li>
       <a href="/article/340f0d7d-6226-4948-9934-84a07b3064bf">Attack: Chosen Ciphertext Attack</a>
-      <li>
-        <a href="/article/350d9e10-d3d2-4e15-af89-f6ea84c01320">Attack: Key Bruteforce Attack</a>
-        <li>
-          <a href="/article/4e938b66-254d-42ce-b714-a5de348b37e7">Attack: Traffic Analysis Attack</a>
-          <li>
-            <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-            <li>
-              <a href="/article/72891dcd-2330-4615-a22a-855a02394277">Attack: Statistical Analysis Attack</a>
-              <li>
-                <a href="/article/ed64300c-6963-4f9d-b3db-6e65acc8c481">Attack: Timing Analysis Attack</a>
-                <li>
-                  <a href="/article/88ae773e-d30d-4d76-89ef-41b40f0eb0aa">Attack: Sniff Memory for Secrets Attack</a>
-                  <li>
-                    <a href="/article/51b6776e-c771-4d63-b77d-b16ba295a62f">Guideline: Encrypt Sensitive Data in the Database </a>
-                    <li>
-                      <a href="/article/de3e4477-e2b0-40a5-91f6-b3dab65667fb">Guideline: Store Passwords Securely </a>
-                      <li>
-                        <a href="/article/b070122f-f1d1-47da-a378-57f845d5db61">Guideline: Encrypt Communication Links </a>
-                        <li>
-                          <a href="/article/cd4ccbbb-be9c-4ff4-8b20-d116819b634b">Guideline: Use a Secure Key Storage Location </a>
-                        </li>
-                      </li>
-                    </li>
-                  </li>
-                </li>
-              </li>
-            </li>
-          </li>
-        </li>
-      </li>
+    </li>
+    <li>
+      <a href="/article/350d9e10-d3d2-4e15-af89-f6ea84c01320">Attack: Key Bruteforce Attack</a>
+    </li>
+    <li>
+      <a href="/article/4e938b66-254d-42ce-b714-a5de348b37e7">Attack: Traffic Analysis Attack</a>
+    </li>
+    <li>
+      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
+    </li>
+    <li>
+      <a href="/article/72891dcd-2330-4615-a22a-855a02394277">Attack: Statistical Analysis Attack</a>
+    </li>
+    <li>
+      <a href="/article/ed64300c-6963-4f9d-b3db-6e65acc8c481">Attack: Timing Analysis Attack</a>
+    </li>
+    <li>
+      <a href="/article/88ae773e-d30d-4d76-89ef-41b40f0eb0aa">Attack: Sniff Memory for Secrets Attack</a>
+    </li>
+    <li>
+      <a href="/article/51b6776e-c771-4d63-b77d-b16ba295a62f">Guideline: Encrypt Sensitive Data in the Database </a>
+    </li>
+    <li>
+      <a href="/article/de3e4477-e2b0-40a5-91f6-b3dab65667fb">Guideline: Store Passwords Securely </a>
+    </li>
+    <li>
+      <a href="/article/b070122f-f1d1-47da-a378-57f845d5db61">Guideline: Encrypt Communication Links </a>
+    </li>
+    <li>
+      <a href="/article/cd4ccbbb-be9c-4ff4-8b20-d116819b634b">Guideline: Use a Secure Key Storage Location </a>
     </li>
   </ul>]]></Data>
   </Content>
