@@ -3,7 +3,7 @@
   <Metadata>
     <Id>1408d3c3-7fc1-4ff0-910e-cdf0e191b669</Id>
     <Id_History>c392a633-2f74-4557-94ba-9fd6eeeefb95,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Client-side Validation Attack</Title>
     <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
@@ -29,7 +29,7 @@
     <li>Server side code injection such as SQL Injection, XML Injection and LDAP injection. </li>
     <li>Execution of malicious code due to input causing a buffer overflow or similar condition. </li>
     <li>Information disclosure such as created by path manipulation or canonicalization. </li>
-    <li>Denial of service caused by unconstrained or poorly formated input.</li>
+    <li>Denial of service caused by unconstrained or poorly formatted input.</li>
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
@@ -49,15 +49,9 @@
   <p>The classic example of a client-side validation attack occurs with an common E-Commerce Web Site. Consider a standard checkout form that allows the shopper to enter the desired quantity of a particular item. The page that displays this form contains Javascript that validates the value entered is positive. The server side code that processes the request sent by this page does not also validate this field, assuming that the Javascript validation is sufficient. This incorrect assumption allows an attacker to generate a custom HTTP request with a negative value for the quantity field. Under some circumstances, such a request could result in crediting the attacker's bank account.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>
-      <a href="http://www.owasp.org/index.php/Have_Your_Cake_and_Eat_It_Too">http://www.owasp.org/index.php/Have_Your_Cake_and_Eat_It_Too</a>
-    </li>
-    <li>
-      <a href="http://hudzilla.org/phpwiki/index.php?title=Validating_user_input">http://hudzilla.org/phpwiki/index.php?title=Validating_user_input</a>
-    </li>
-    <li>
-      <a href="http://php.robm.me.uk/">http://php.robm.me.uk/</a>
-    </li>
+    <li>For more information on OWASP's Have Your Cake and Eat It Too, see: <a href="https://www.owasp.org/index.php/Have_Your_Cake_and_Eat_It_Too">https://www.owasp.org/index.php/Have_Your_Cake_and_Eat_It_Too</a></li>
+    <li>For more information on Validating Input for PHP, see:<a href="http://www.tuxradar.com/practicalphp/7/7/0"> http://www.tuxradar.com/practicalphp/7/7/0</a><br /></li>
+    <li>For more information on PHP security, see: <a href="http://php.robm.me.uk/">http://php.robm.me.uk/</a><br /></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
