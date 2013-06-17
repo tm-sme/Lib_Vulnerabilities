@@ -17,7 +17,7 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
+  <Content Sanitized="true" DataType="html">
     <Data><![CDATA[<br />
   <br />
   <h1>Applies To</h1>
@@ -82,16 +82,7 @@
       </a>For more on Programming Issues, see: <a href="http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf">http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf</a></li>
     <li>
       
-    For more on <a name="AEN2">Secure Programming for Linux and Unix, see: http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html<a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html"></a></a><a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html"></a></li>
-  </ul>
-  <ul>
-    <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">
-    </a>
-    <li>
-      <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">
-      </a>
-      <a href="http://support.microsoft.com/kb/887459">http://support.microsoft.com/kb/887459</a>
-    </li>
+    For more on Secure Programming for Linux and Unix, see: <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html</a><li><a href="http://support.microsoft.com/kb/887459">http://support.microsoft.com/kb/887459</a></li></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
