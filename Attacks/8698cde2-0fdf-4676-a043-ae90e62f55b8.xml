@@ -59,9 +59,9 @@
   <p>However, if the user enters the name "echo exec('whoami'); echo" then the application will return the name of the system user running the php/html application. Any system command or external program in the path could be run in this fashion.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on the Javascript Eval function, see the Wikipedia Eval article at <a href="http://en.wikipedia.org/wiki/Eval">http://en.wikipedia.org/wiki/Eval</a>. </li>
-    <li>For more information on script blocks in XSL, see <a href=" http://msdn2.microsoft.com/en-us/library/wxaw5z5e.aspx">Script Blocks Using msxsl:script </a>on MSDN. </li>
-    <li>For more information on XSL transformations, see <a href="http://en.wikipedia.org/wiki/XSL_Transformations">XSL Transformations</a> on wikipedia. </li>
+    <li>For more information on the Javascript Eval function, see: <a href="http://en.wikipedia.org/wiki/Eval">http://en.wikipedia.org/wiki/Eval</a>. </li>
+    <li>For more information on script blocks in XSL, see: <a href=" http://msdn2.microsoft.com/en-us/library/wxaw5z5e.aspx">Script Blocks Using msxsl:script</a></li>
+    <li>For more information on XSL transformations, see: <a href="http://en.wikipedia.org/wiki/XSL_Transformations">XSL Transformations</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
