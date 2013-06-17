@@ -3,7 +3,7 @@
   <Metadata>
     <Id>8ea9bdd9-de4f-46d7-9fd2-b5be2a50a6eb</Id>
     <Id_History>6ae71499-095c-49bd-bed0-4e08303a4324,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Cross Site Request Forgery Attack</Title>
     <Category>Application State</Category>
     <Phase>Implementation</Phase>
@@ -33,7 +33,10 @@
   <p>Executing single requests that can change the state of the application, such as add users, change account balances or passwords, etc.</p>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Add a session identifier or nonce value to each session and/or viewstate to track each request. <li>Use "double submit" cookies (for Ajax requests only). <li>Minimize single request GET commands. <li>Never allow a single request to change the state of the web application.</li></li></li></li>
+    <li>Add a session identifier or nonce value to each session and/or viewstate to track each request. </li>
+    <li>Use "double submit" cookies (for Ajax requests only). </li>
+    <li>Minimize single request GET commands. </li>
+    <li>Never allow a single request to change the state of the web application.</li>
   </ul>
   <h1>Example</h1>
   <p>If the application allows a user to change the state of the application in a single request this attack is possible. In this example the web application allows a logged in administrator to create a new user sending a single GET request.</p>
@@ -44,49 +47,45 @@
   <p>When the victim's e-mail client attempts to download the image located at the above source the request is made without the knowledge of the victim. </p>
   <p>The application should require a two step authorization mechanism for any change to server state. In this example the server should send the client a nonce value to verify the admin would indeed like to add this user. The admin would have to verify the action on a separate page and return the nonce value. Only after the server receives the action and verifies the nonce should the user be created. </p>
   <h1>Additional Resources</h1>
-  <p>To learn more about CSRF attacks, see:</p>
   <ul>
+    <li>For more information on Cross Site Request Forgery, see: <a href="http://www.owasp.org/index.php/Cross-Site_Request_Forgery">http://www.owasp.org/index.php/Cross-Site_Request_Forgery</a></li>
     <li>
-      <a href="http://www.owasp.org/index.php/Cross-Site_Request_Forgery">http://www.owasp.org/index.php/Cross-Site_Request_Forgery</a>
-      <li>
-        <a href="http://www.cgisecurity.com/articles/csrf-faq.shtml">http://www.cgisecurity.com/articles/csrf-faq.shtml</a>
-        <li>
-          <a href="http://www.owasp.org/index.php/Testing_for_CSRF">http://www.owasp.org/index.php/Testing_for_CSRF</a>
-        </li>
-      </li>
-    </li>
+      For more information on the Cross Site Request Forgery FAQ, see: <a href="http://www.cgisecurity.com/csrf-faq.html">http://www.cgisecurity.com/csrf-faq.html</a><br /></li>
+    <li>
+        
+        For more information on Testing for Cross Site Request Forgery, see: <a href="http://www.owasp.org/index.php/Testing_for_CSRF">http://www.owasp.org/index.php/Testing_for_CSRF</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
     <li>
       <a href="/article/c8ae222b-ed2e-4621-a46b-3671f82f5a03">Attack: Phishing Attack</a>
-      <li>
-        <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">Attack: Cross Site Scripting Attack</a>
-        <li>
-          <a href="/article/eae9b65b-9032-44b2-bf87-b7bad67a38d8">Attack: Reflection Attack</a>
-          <li>
-            <a href="/article/32c35abe-a470-4a9c-8bb6-54c1461d3295">Attack: URL Redirection Attack</a>
-            <li>
-              <a href="/article/14def5f6-6ddf-450f-9a7e-36a8550b22f5">Attack: AJAX Injection Attack</a>
-              <li>
-                <a href="/article/862e51f1-a026-40f9-826b-7a65fa5dc563">Attack: HTTP Session Hijacking Attack</a>
-                <li>
-                  <a href="/article/a048eed9-ad5a-4dac-a8d3-68f42da69dbd">Attack: Man in the Middle Attack</a>
-                  <li>
-                    <a href="/article/a96eaddb-5fb2-458e-b5ca-fde05a9a3a06">Guideline: Do Not Place Sensitive Data in Parameters </a>
-                    <li>
-                      <a href="/article/8e0aea9c-322b-4b3f-9c61-a670c1fcd3e3">Guideline: Use Page.ViewStateUserKey to Counter Cross Site Request Forgery Attacks </a>
-                      <li>
-                        <a href="/article/254ddab5-ecd2-4e05-a2b0-861e970bc0d9">Guideline: Protect Session Cookies </a>
-                      </li>
-                    </li>
-                  </li>
-                </li>
-              </li>
-            </li>
-          </li>
-        </li>
-      </li>
+    </li>
+    <li>
+      <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">Attack: Cross Site Scripting Attack</a>
+    </li>
+    <li>
+      <a href="/article/eae9b65b-9032-44b2-bf87-b7bad67a38d8">Attack: Reflection Attack</a>
+    </li>
+    <li>
+      <a href="/article/32c35abe-a470-4a9c-8bb6-54c1461d3295">Attack: URL Redirection Attack</a>
+    </li>
+    <li>
+      <a href="/article/14def5f6-6ddf-450f-9a7e-36a8550b22f5">Attack: AJAX Injection Attack</a>
+    </li>
+    <li>
+      <a href="/article/862e51f1-a026-40f9-826b-7a65fa5dc563">Attack: HTTP Session Hijacking Attack</a>
+    </li>
+    <li>
+      <a href="/article/a048eed9-ad5a-4dac-a8d3-68f42da69dbd">Attack: Man in the Middle Attack</a>
+    </li>
+    <li>
+      <a href="/article/a96eaddb-5fb2-458e-b5ca-fde05a9a3a06">Guideline: Do Not Place Sensitive Data in Parameters </a>
+    </li>
+    <li>
+      <a href="/article/8e0aea9c-322b-4b3f-9c61-a670c1fcd3e3">Guideline: Use Page.ViewStateUserKey to Counter Cross Site Request Forgery Attacks </a>
+    </li>
+    <li>
+      <a href="/article/254ddab5-ecd2-4e05-a2b0-861e970bc0d9">Guideline: Protect Session Cookies </a>
     </li>
   </ul>]]></Data>
   </Content>
