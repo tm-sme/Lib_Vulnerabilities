@@ -71,24 +71,25 @@
   <p>This is clearly not what was intended and provides a clear example of why canonicalization is a security risk.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>
-      For more information on Canonicalization, see: <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a></li>
-    <li>For more information on <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">Canonicalization, locale, and Unicode, see: http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a></li>
   </ul>
   <ul>
     <li>
-      <a href="http://www.faqs.org/rfcs/rfc3492.html">http://www.faqs.org/rfcs/rfc3492.html</a>
-    </li>
+      For more information on Canonicalization, see: <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a></li>
+    <li>For more information on Canonicalization, locale, and Unicode, see: <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a></li>
+    <li>For more on RFC 3492 - Punycode, see: <a href="http://www.faqs.org/rfcs/rfc3492.html">http://www.faqs.org/rfcs/rfc3492.html</a></li>
     <li>
-      <a href="http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf">http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf</a>
-    </li>
+      <a href="http://www.faqs.org/rfcs/rfc3492.html">
+      </a>For more on Programming Issues, see: <a href="http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf">http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf</a></li>
     <li>
-      <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html</a>
-    </li>
+      
+    For more on <a name="AEN2">Secure Programming for Linux and Unix, see: http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html<a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html"></a></a><a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html"></a></li>
+  </ul>
+  <ul>
+    <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">
+    </a>
     <li>
-      <a href="http://en.wikipedia.org/wiki/File_format">http://en.wikipedia.org/wiki/File_format</a>
-    </li>
-    <li>
+      <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">
+      </a>
       <a href="http://support.microsoft.com/kb/887459">http://support.microsoft.com/kb/887459</a>
     </li>
   </ul>
