@@ -3,7 +3,7 @@
   <Metadata>
     <Id>26104b86-2fba-4331-aadb-c02d9921be42</Id>
     <Id_History>b541ba53-6354-47be-9d89-8209b9807d93,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Forceful Browsing Attack</Title>
     <Category>Deployment Considerations</Category>
     <Phase>Deployment</Phase>
@@ -30,40 +30,41 @@
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>Poor authorization control <li>Missing authentication on pages </li></li>
+    <li>Poor authorization control </li>
+    <li>Missing authentication on pages </li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Every object needs to have an authorization control that authorizes access based on the identity of the authenticated principle requesting access. <li>Access to all sensitive pages should require a valid authentication ticket. <li>Pages which are intended to be part of a workflow should enforce that workflow.</li></li></li>
+    <li>Every object needs to have an authorization control that authorizes access based on the identity of the authenticated principle requesting access. </li>
+    <li>Access to all sensitive pages should require a valid authentication ticket. </li>
+    <li>Pages which are intended to be part of a workflow should enforce that workflow.</li>
   </ul>
   <h1>Additional Resources</h1>
   <ul>
-    <li>
-      <a href="http://www.imperva.com/application_defense_center/glossary/forceful_browsing.html">A description of the Forceful Browsing Attack</a>
-    </li>
+    <li>For more information on Forceful Browsing, see: <a href="http://www.imperva.com/resources/glossary/forceful_browsing.html">http://www.imperva.com/resources/glossary/forceful_browsing.html</a><br /></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
     <li>
       <a href="/article/f5b0a5fe-c9b3-4a3b-a204-9bc7c7394162">Attack: Alternate Data Streams Attack</a>
-      <li>
-        <a href="/article/f9f0a869-98fe-4ac5-9de3-3eaf33306c4b">Attack: Canonicalization Attack</a>
-        <li>
-          <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-          <li>
-            <a href="/article/35bde9da-b8f2-4f8d-9a3f-48a3ededed4b">Guideline: Consider Using JAAS for Authorization </a>
-            <li>
-              <a href="/article/bdff2308-96e1-4787-9162-a115d1366f76">Guideline: Block Protected Files From Being Retrieved </a>
-              <li>
-                <a href="/article/a5b7e377-103e-4805-a567-6092cbbaeba7">Guideline: Partition Application Between Public and Private Domains </a>
-                <li>
-                  <a href="/article/17034ef0-8935-4fb2-bbae-d79982e710c7">Guideline: Perform Role-Based Security Checks </a>
-                </li>
-              </li>
-            </li>
-          </li>
-        </li>
-      </li>
+    </li>
+    <li>
+      <a href="/article/f9f0a869-98fe-4ac5-9de3-3eaf33306c4b">Attack: Canonicalization Attack</a>
+    </li>
+    <li>
+      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
+    </li>
+    <li>
+      <a href="/article/35bde9da-b8f2-4f8d-9a3f-48a3ededed4b">Guideline: Consider Using JAAS for Authorization </a>
+    </li>
+    <li>
+      <a href="/article/bdff2308-96e1-4787-9162-a115d1366f76">Guideline: Block Protected Files From Being Retrieved </a>
+    </li>
+    <li>
+      <a href="/article/a5b7e377-103e-4805-a567-6092cbbaeba7">Guideline: Partition Application Between Public and Private Domains </a>
+    </li>
+    <li>
+      <a href="/article/17034ef0-8935-4fb2-bbae-d79982e710c7">Guideline: Perform Role-Based Security Checks </a>
     </li>
   </ul>]]></Data>
   </Content>
