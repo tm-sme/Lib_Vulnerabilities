@@ -54,11 +54,15 @@ Use the checklist items that correspond to the guidelines you have chosen to mak
 ==Web-Based Training==
 [[|AWA 101 Fundamentals of Application Security]]
 
-This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk. For more information on Open Redirect issues, see screens 65-68 in this course.
+This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk. 
+
+For more information on Open Redirect issues, see screens 65-68 in AWA 101 Fundamentals of Application Security.
 
 [[|COD 315 Creating Secure PHP Code]]
 
-PHP: Hypertext Preprocessor is a popular, powerful, and flexible language that developers use to build web applications. PHP includes frameworks, solutions, and functions that help developers create and manage secure web sessions, enable proper handling of errors in code, and provide safeguards against malicious attacks. However, novice programmers often ignore these solutions and functions and use different methods to develop programs. This introduces vulnerabilities in the programs, which attackers can exploit to access and modify critical user data stored in system files, databases, and web servers. This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. For more information on Open Redirect issues, see screen 58 in this course.
+PHP: Hypertext Preprocessor is a popular, powerful, and flexible language that developers use to build web applications. PHP includes frameworks, solutions, and functions that help developers create and manage secure web sessions, enable proper handling of errors in code, and provide safeguards against malicious attacks. However, novice programmers often ignore these solutions and functions and use different methods to develop programs. This introduces vulnerabilities in the programs, which attackers can exploit to access and modify critical user data stored in system files, databases, and web servers. This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. 
+
+For more information on Open Redirect issues, see screen 58 in COD 315 Creating Secure PHP Code.
 
 
 ==Additional Resources==
