@@ -3,7 +3,7 @@
   <Metadata>
     <Id>189a3684-3289-4097-8906-5361f7ef3aab</Id>
     <Id_History>a9181d84-bd94-4b51-a521-6246efed735f,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Double Encoding Attack</Title>
     <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
@@ -17,7 +17,7 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
+  <Content Sanitized="true" DataType="html">
     <Data><![CDATA[<br />
   <br />
   <h1>Applies To</h1>
@@ -50,14 +50,14 @@
       <tr>
         <td>' (single quote)</td>
         <td>SQL</td>
-        <td>&amp;#37;27</td>
-        <td>&amp;#37;2527</td>
+        <td>&#37;27</td>
+        <td>&#37;2527</td>
       </tr>
       <tr>
         <td>..\</td>
         <td>Directory Traversal</td>
-        <td>&amp;#37;2E&amp;#37;2E&amp;#37;2F</td>
-        <td>..&amp;#37;252F .. &amp;#37;&amp;#37;35c ..&amp;#37;&amp;#37;35&amp;#37;63 ..&amp;#37;25&amp;#37;35&amp;#37;63 ..etc </td>
+        <td>&#37;2E&#37;2E&#37;2F</td>
+        <td>..&#37;252F .. &#37;&#37;35c ..&#37;&#37;35&#37;63 ..&#37;25&#37;35&#37;63 ..etc </td>
       </tr>
       <tr>
         <td>alert("XSS")</td>
@@ -66,16 +66,18 @@
         <td>\u005C\u0075\u0030\u0030\u0036\u0031\u005C\u0075\u0030\u0030\u0036\u0043\u005C\u0075\u0030\u0030\u0036\u0035\u005C\u0075\u0030\u0030\u0037\u0032\u005C\u0075\u0030\u0030\u0037\u0034\u005C\u0075\u0030\u0030\u0032\u0038\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0035\u0038\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0032\u0039\u000A</td>
       </tr>
       <tr>
-        <td>&lt;script&gt;gotcha&amp;#33;&lt;/script&gt;</td>
+        <td><script>gotcha&#33;</script></td>
         <td>HTML</td>
-        <td>&lt;script&lt;gotcha&amp;#33;&lt;/script&lt;</td>
-        <td>&lt;script&gt;gotcha&amp;#33;&lt;/script&gt;</td>
+        <td><script<gotcha&#33;</script<</td>
+        <td><script>gotcha&#33;</script></td>
       </tr>
     </tbody>
   </table>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on web based encoding, see <a href="http://www.webreference.com/javascript/reference/core/ident.html">Writing Secure Code</a><li>For more information on URL encoding related attacks, see <a href="http://people.w3.org/rishida/scripts/uniview/conversion.php ">URL Encoded Attacks</a></li></li>
+    <li>For more information on Core JavaScript Guide: 2 Values, Variables, and Literals
+, see <a href="http://www.webreference.com/javascript/reference/core/ident.html">http://www.webreference.com/javascript/reference/core/ident.html</a>
+<li>For more information on URL encoding related attacks, see <a href="http://people.w3.org/rishida/scripts/uniview/conversion.php">http://people.w3.org/rishida/scripts/uniview/conversion.php</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
