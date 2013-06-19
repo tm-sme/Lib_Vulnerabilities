@@ -3,7 +3,7 @@
   <Metadata>
     <Id>5457e9b9-bb3b-4fdd-bcbb-26d7dbe6776c</Id>
     <Id_History>5838dafd-cd19-4697-85c3-26d1ed4458e1,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Race Condition Attack</Title>
     <Category>Application State</Category>
     <Phase>Design</Phase>
@@ -29,27 +29,42 @@
   <h1>Impact</h1>
   <ul>
     <li>
-      <strong>Denial of Service </strong>: If an attacker can make a resource unavailable after the application checks for the resource and before the application uses it the application may crash or hang while it waits for the resource to become available. <li><strong>Escalation of privilege</strong>: An attacker may be able to redirect a user from a resource she has access to, to a resource she does not have access to by replacing the resource with a symbolic link.</li></li>
+      <strong>Denial of Service </strong>: If an attacker can make a resource unavailable after the application checks for the resource and before the application uses it the application may crash or hang while it waits for the resource to become available. </li>
+    <li>
+      <strong>Escalation of privilege</strong>: An attacker may be able to redirect a user from a resource she has access to, to a resource she does not have access to by replacing the resource with a symbolic link.</li>
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>Waiting longer than necessary to use a resource after checking <li>Not using transactions <li>Improper key or semaphore use</li></li></li>
+    <li>Waiting longer than necessary to use a resource after checking </li>
+    <li>Not using transactions </li>
+    <li>Improper key or semaphore use</li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
     <li>
-      <strong>Ensure proper privilege</strong>: Make sure your application uses proper privileges when dealing with resources <li><strong>Ensure exclusive rights</strong>: Make sure your application or thread properly locks the resource before it uses it. <li><strong>Use resource immediately after checking</strong>: Minimize the amount of time between check and use by placing use code immediately after checking code. Use atomic versions of resource manipulation if possible. Ensure that the resource is checked every time the resource is used. <li><strong>Use transactions when possible</strong>: Transactions allow you to ensure the transaction is completed before committing; if a resource changes or becomes unavailable before the transaction is complete you can roll back the changes, preparing the resource for another transaction <li><strong>Test key or semaphore use thoroughly </strong>: Locking resources is difficult to do, ensure it is properly tested before release.</li></li></li></li></li>
+      <strong>Ensure proper privilege</strong>: Make sure your application uses proper privileges when dealing with resources </li>
+    <li>
+      <strong>Ensure exclusive rights</strong>: Make sure your application or thread properly locks the resource before it uses it. </li>
+    <li>
+      <strong>Use resource immediately after checking</strong>: Minimize the amount of time between check and use by placing use code immediately after checking code. Use atomic versions of resource manipulation if possible. Ensure that the resource is checked every time the resource is used. </li>
+    <li>
+      <strong>Use transactions when possible</strong>: Transactions allow you to ensure the transaction is completed before committing; if a resource changes or becomes unavailable before the transaction is complete you can roll back the changes, preparing the resource for another transaction </li>
+    <li>
+      <strong>Test key or semaphore use thoroughly </strong>: Locking resources is difficult to do, ensure it is properly tested before release.</li>
   </ul>
   <h1>Example</h1>
   <p>A popular terminal editor for Linux was vulnerable to a race condition issue that allowed a user to arbitrarily write to any location on the file system. </p>
   <p>The attack followed these steps:</p>
   <ol>
-    <li>Switch on the logging feature of the terminal editor, set it to log to a file you have permissions to write to, such as the home directory <li>Begin using the terminal editor so that the log file is created <li>Delete the log file that the terminal editor has created and replace it with a symbolic link to a file that you do not have write permissions to</li></li></li>
+    <li>Switch on the logging feature of the terminal editor, set it to log to a file you have permissions to write to, such as the home directory </li>
+    <li>Begin using the terminal editor so that the log file is created </li>
+    <li>Delete the log file that the terminal editor has created and replace it with a symbolic link to a file that you do not have write permissions to</li>
   </ol>
   <p>Because the terminal editor was running as root it had full privilege to write anywhere on the system. Since a symbolic link cannot be differentiated from another file, the terminal editor appended all logs to the file pointed at by the symbolic link.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>Prevent Race Conditions <a href="http://www-128.ibm.com/developerworks/linux/library/l-sprace.html">http://www-128.ibm.com/developerworks/linux/library/l-sprace.html</a><li>Information on Race Conditions <a href="http://en.wikipedia.org/wiki/Race_condition">http://en.wikipedia.org/wiki/Race_condition</a></li></li>
+    <li>For more information on Preventing Race Conditions, see: <a href="http://www-128.ibm.com/developerworks/linux/library/l-sprace.html">http://www-128.ibm.com/developerworks/linux/library/l-sprace.html</a></li>
+    <li>For more information on Race Conditions, see: <a href="http://en.wikipedia.org/wiki/Race_condition">http://en.wikipedia.org/wiki/Race_condition</a></li>
   </ul>]]></Data>
   </Content>
 </TeamMentor_Article>
