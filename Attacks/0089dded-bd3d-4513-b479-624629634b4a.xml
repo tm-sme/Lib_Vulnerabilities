@@ -3,7 +3,7 @@
   <Metadata>
     <Id>0089dded-bd3d-4513-b479-624629634b4a</Id>
     <Id_History>0e42f173-1bae-4c59-b1a5-b265642c95da,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Reflection Injection Attack</Title>
     <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
@@ -26,34 +26,40 @@
   <p>Reflection is a programming technique provided by an API that let's you treat class definitions themselves as objects. It gives the programmer a way to view and modify class members such as constructors, methods, interfaces, and fields at runtime. This is often used for the of development tools such as class browsers or GUI designers. However, if untrusted user input is used to manipulate objects at runtime, injection is possible. Attackers may be able to view or modify which classes are used or even run arbitrary code. </p>
   <h1>Impact</h1>
   <ul>
-    <li>Execution of arbitrary code <li>Bypass of security controls</li></li>
+    <li>Execution of arbitrary code </li>
+    <li>Bypass of security controls</li>
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>Failure to validate input <li>Validation of a library based solely on the name <li>Loading libraries based on external input</li></li></li>
+    <li>Failure to validate input </li>
+    <li>Validation of a library based solely on the name </li>
+    <li>Loading libraries based on external input</li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Constrain input: Use vigorous whitelist style input checking of any input received from the user. <li>Signed Certificates: Use strongly signed assemblies only, only load a class if it passes this check.</li></li>
+    <li>Constrain input: Use vigorous whitelist style input checking of any input received from the user. </li>
+    <li>Signed Certificates: Use strongly signed assemblies only, only load a class if it passes this check.</li>
   </ul>
   <h1>Example</h1>
   <p>A common example of this attack occurs when an attacker can inject code to provide the name of a less secure class that implements the same interface as what was meant to be instantiated. The Java code below creates and uses an HTTP connection based on a user supplied string that defines the type. </p>
-  <pre>import java.lang.reflect.&amp;#42;;<br />import java.net.&amp;#42;;<br />class ExampleReflection<br /> &amp;#123;<br />   public static void main(String&amp;#91;&amp;#93; args)<br /> &amp;#123;<br />&amp;#9;String mycon = "HttpsUrlConnection";<br />         // HttpsUrlConnection is a string provided by the user in some manner<br />      &amp;#9;URLConnection c = (URLConnection)createConnection(mycon);<br />        c.connect();<br />   &amp;#125;<br />   static Object createConnection(String name)<br /> &amp;#123;<br />      &amp;#9;Object object = null;<br />     &amp;#9;try &amp;#123;<br />        &amp;#9;Class classdef = Class.forName(name);<br />          &amp;#9;object = classdef.newInstance();<br />&amp;#9;&amp;#125;<br /> catch (InstantiationException e)<br /> &amp;#123;<br />          &amp;#9;System.out.println(e);<br />      &amp;#9;&amp;#125;<br /> catch<br /> (IllegalAccessException e)<br /> &amp;#123;<br />          &amp;#9;System.out.println(e);<br />      &amp;#9;&amp;#125;<br /> catch (ClassNotFoundException e)<br /> &amp;#123;<br />          &amp;#9;System.out.println(e);<br />    &amp;#9;&amp;#125;<br />      return object;   <br />&amp;#125;<br />&amp;#125;</pre>
+  <pre>import java.lang.reflect.*;<br />import java.net.*;<br />class ExampleReflection<br /> {<br />   public static void main(String[] args)<br /> {<br />	String mycon = "HttpsUrlConnection";<br />         // HttpsUrlConnection is a string provided by the user in some manner<br />      	URLConnection c = (URLConnection)createConnection(mycon);<br />        c.connect();<br />   }<br />   static Object createConnection(String name)<br /> {<br />      	Object object = null;<br />     	try {<br />        	Class classdef = Class.forName(name);<br />          	object = classdef.newInstance();<br />	}<br /> catch (InstantiationException e)<br /> {<br />          	System.out.println(e);<br />      	}<br /> catch<br /> (IllegalAccessException e)<br /> {<br />          	System.out.println(e);<br />      	}<br /> catch (ClassNotFoundException e)<br /> {<br />          	System.out.println(e);<br />    	}<br />      return object;   <br />}<br />}</pre>
   <p>Now suppose an attacker could inject "HttpUrlConnection" into the string mycon instead of "HttpsUrlConnection". Then instead of an SSL secured connection, an insecure connection will be created leaving the data in transit unprotected. The application does not know any different because both HttpUrlConnection and HttpsUrlConnection implement UrlConnection.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on Reflection Injection, see the <a href="http://www.owasp.org/index.php/Reflection_injection">OWASP Reflection Injection</a> article. <li>For more information on Java Reflection, see the <a href="http://java.sun.com/docs/books/tutorial/reflect/index.html">Java Reflection Documentation</a>. <li>For more information on .NET Reflection, see <a href="http://msdn.microsoft.com/msdnmag/issues/07/06/CLRInsideOut/default.aspx">Reflections on Reflection</a>.</li></li></li>
+    <li>For more information on Reflection Injection, see: <a href="https://www.owasp.org/index.php/Reflection_injection">https://www.owasp.org/index.php/Reflection_injection</a><br /></li>
+    <li>For more information on Trail: The Reflection API for Java, see the <a href="http://java.sun.com/docs/books/tutorial/reflect/index.html">http://docs.oracle.com/javase/tutorial/reflect/index.html</a></li>
+    <li>For more information on Reflections on Reflection, see: <a href="http://msdn.microsoft.com/en-us/magazine/cc163408.aspx">http://msdn.microsoft.com/en-us/magazine/cc163408.aspx</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
     <li>
       <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Attack: Command Injection Attack</a>
-      <li>
-        <a href="/article/c392a633-2f74-4557-94ba-9fd6eeeefb95">Attack: Client-side Validation Attack</a>
-        <li>
-          <a href="/article/110cc11a-5a28-4fc2-a269-4210069b8865">Attack: Server-Side Code Injection Attack</a>
-        </li>
-      </li>
+    </li>
+    <li>
+      <a href="/article/c392a633-2f74-4557-94ba-9fd6eeeefb95">Attack: Client-side Validation Attack</a>
+    </li>
+    <li>
+      <a href="/article/110cc11a-5a28-4fc2-a269-4210069b8865">Attack: Server-Side Code Injection Attack</a>
     </li>
   </ul>]]></Data>
   </Content>
