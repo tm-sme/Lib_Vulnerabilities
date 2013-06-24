@@ -19,7 +19,6 @@
   </Metadata>
   <Content Sanitized="true" DataType="Html">
     <Data><![CDATA[<br />
-  <br />
   <h1>Applies to</h1>
   <p>Any network application.</p>
   <h1>Description</h1>
@@ -36,7 +35,7 @@
   <h1>Vulnerabilities</h1>
   <ul>
     <li>Accepting ARP responses even without requesting them. </li>
-    <li>Using dynamic ARP tables without using monitoring tools such as <a href="http://www.securityfocus.com/tools/142">ARPWatch</a> or an IDS.</li>
+    <li>Using dynamic ARP tables without using monitoring tools such as ARPWatch or an IDS.</li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
@@ -46,17 +45,19 @@
     <li>
       <p>For larger networks, it is not sustainable to use static IP-Addresses and ARP tables. Follow these tips to prevent ARP Spoofing on larger networks:</p>
       <ul>
-        <li>Use tools that monitor ARP tables and notify the system administrator of any changes. An example of such a tool is <a href="http://www.securityfocus.com/tools/142">ARPWatch</a>. </li>
-        <li>&gt;Be careful of whom you allow connections on the internal network. Allowing outsiders to anonymously connect to your network increases the risk of an attack. </li>
-        <li>Use 802.1x (IIRC) to authenticate all network users. To learn more about this please see <a href="http://www.microsoft.com/technet/community/columns/cableguy/cg0402.mspx">IEEE 802.1X Authentication for Wireless and Wired Connections</a>. </li>
+        <li>Use tools that monitor ARP tables and notify the system administrator of any changes. An example of such a tool is ARPWatch. </li>
+        <li>Be careful of whom you allow connections on the internal network. Allowing outsiders to anonymously connect to your network increases the risk of an attack. </li>
+        <li>Use 802.1x (IIRC) to authenticate all network users.<br /></li>
         <li>Implement an Intrusion Detection System (IDS)</li>
       </ul>
     </li>
   </ul>
   <h1>Additional Resources</h1>
   <ul>
+    <li>For more information on ARPWatch, see: <a href="http://www.securityfocus.com/tools/142">http://www.securityfocus.com/tools/142</a><br /></li>
     <li>For more information on ARP spoofing, see: <a href="http://en.wikipedia.org/wiki/ARP_spoofing">http://en.wikipedia.org/wiki/ARP_spoofing</a></li>
-    <li>For more details on ARP Poisoning attacks, see: <a href="http://www.watchguard.com/infocenter/editorial/135324.asp">http://www.watchguard.com/infocenter/editorial/135324.asp</a></li>
+    <li>For more information on IEEE 802.1X Authentication for Wireless Connections, see: <a href="http://technet.microsoft.com/library/bb878016">http://technet.microsoft.com/library/bb878016</a><br /></li>
+    <li>For more information on ARP Poisoning attacks, see: <a href="http://www.watchguard.com/infocenter/editorial/135324.asp">http://www.watchguard.com/infocenter/editorial/135324.asp</a></li>
   </ul>
   <ul>
   </ul>
