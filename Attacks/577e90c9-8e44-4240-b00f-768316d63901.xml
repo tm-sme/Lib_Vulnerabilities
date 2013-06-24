@@ -30,7 +30,7 @@
   <h1>Vulnerabilities</h1>
   <ul>
     <li>Weak implementation or configuration of the lockout policy. A weak policy could have any of the following characteristics: <ul><li>Invalid login attempt limit too low. </li><li>Low or no timeout between login attempts. </li><li>No incremental timeout between unsuccessful login attempts.</li></ul></li>
-    <li>Valid username disclosure <ul><li>This could be a result of an Information Disclosure Vulnerability where an attacker can tell the distinction between a non-existent username and a bad password. See <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Information Disclosure Attack</a> for more information.</li></ul></li>
+    <li>Valid username disclosure <ul><li>This could be a result of an Information Disclosure Vulnerability where an attacker can tell the distinction between a non-existent username and a bad password.</li></ul></li>
   </ul>
   <h1>Countermeasures</h1>
   <ul>
@@ -41,7 +41,7 @@
       <p>Configure the lockout policy to increase the timeout after each failed login attempt. For example: require the user to wait two seconds after the first failed login attempt, four seconds after the second, eight seconds after the third, etc. This will slow a script’s usefulness quickly, without hard locking the account and preventing a legitimate user from authenticating.</p>
     </li>
     <li>
-      <p />Use <a href="http://en.wikipedia.org/wiki/Captcha">CAPTCHA</a> values after a failed login attempt. If a user fails to login, require them to authenticate themselves as not being a script by asking for a captcha response.<p /></li>
+      <p />Use CAPTCHA values after a failed login attempt. If a user fails to login, require them to authenticate themselves as not being a script by asking for a captcha response.<p /></li>
     <li>
       <p>Do not give away information which could lead to a distinction between a non-existent username and a bad password. To prevent this from happening, always display the same generic error message such as "Login information does not match or if you have tried to unsuccessfully login more than X times, then your account has been locked" during the following events:</p>
       <ul>
