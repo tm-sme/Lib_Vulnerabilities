@@ -3,7 +3,7 @@
   <Metadata>
     <Id>e4a899ec-9301-4751-ae07-69a265336d8b</Id>
     <Id_History>14def5f6-6ddf-450f-9a7e-36a8550b22f5,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>AJAX Injection Attack</Title>
     <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
@@ -25,8 +25,7 @@
   <p>AJAX (Asynchronous Javascript and XML) technology allows web pages to dynamically update specific content behind the scenes without the need to refresh the whole page. The ability to continually update the content of an AJAX page is done by calling an XmlHttpRequest
  (XHR) object with JavaScript to send HTTP requests to web servers. These requests typically send data in the form of XML or JSON (JavaScript Object Notation).
 </p>
-  <p>AJAX injection is a type of <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">
-Cross Site Scripting Attack</a> (XSS) that leverages the XML or JSON format of the input to the client browser. JSON is particularly popular because it is easy to parse JSON objects by simply passing them to the eval() function. Unfortunately, the use of eval()
+  <p>AJAX injection is a type of Cross Site Scripting (XSS) that leverages the XML or JSON format of the input to the client browser. JSON is particularly popular because it is easy to parse JSON objects by simply passing them to the eval() function. Unfortunately, the use of eval()
  makes the application equivalently easy to exploit. Cleverly format strings containing malicious JavaScript may be stored as content on servers with weak validation or sent directly to the client browser using a spoofing or man in the middle attack. This JavaScript
  is then parsed and execute by the client's browser without their knowledge. Ultimately, this attack may be used to steal session cookies, send email on behalf of the victim, or any other impact available to the XSS attack.</p>
   <h1>Impact</h1>
@@ -57,7 +56,7 @@ Cross Site Scripting Attack</a> (XSS) that leverages the XML or JSON format of t
  JSON object:</p>
   <pre>{<br />   "numberOnline": "3",<br />   "nameAndStatus": [<br />   "Alice, Online",<br />   "Bob, Online",<br />   "Mallory, Away" ]<br />}</pre>
   <p>The following code shows the client JavaScript code which is called periodically to request the above object and update the DOM.</p>
-  <pre>var contactStatusList;<br />var http_request = new XMLHttpRequest();<br />http_request.open("GET", url, true);<br />http_request.onreadystatechange = function ()<br /> {<br />    if (http_request.readyState == 4)<br /> {<br />        if (http_request.status == 200)<br /> {<br />            contactStatusList = eval("(" &amp;#43; http_request.responseText &amp;#43; ")");<br />        }        http_request = null;    }};http_request.send(null);</pre>
+  <pre>var contactStatusList;<br />var http_request = new XMLHttpRequest();<br />http_request.open("GET", url, true);<br />http_request.onreadystatechange = function ()<br /> {<br />    if (http_request.readyState == 4)<br /> {<br />        if (http_request.status == 200)<br /> {<br />            contactStatusList = eval("(" + http_request.responseText + ")");<br />        }        http_request = null;    }};http_request.send(null);</pre>
   <p>Now suppose that Mallory's status is set to a custom value. This may have been changed by Mallory herself or by a third party attacker. Either way, because the server providing the data to the mail client has poor validation, this status value is changed
  to include cleverly formatted malicious JavaScript. Suppose that instead of "Away" the value is changed to the following:</p>
   <pre>Away"});alert("Gotcha!");//</pre>
@@ -66,12 +65,14 @@ Cross Site Scripting Attack</a> (XSS) that leverages the XML or JSON format of t
  example, an alert message window will be displayed. In general, however, JavaScript could be downloaded and executed without the user's knowledge.</p>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on AJAX including common vulnerabilities that are associated with the technology, see "Ajax Security Basics":
-<a href="http://www.securityfocus.com/infocus/1868">http://www.securityfocus.com/infocus/1868</a></li>
   </ul>
   <ul>
+    <li>For more information on AJAX including common vulnerabilities that are associated with the technology, see "Ajax Security Basics":
+<a href="http://www.securityfocus.com/infocus/1868">http://www.securityfocus.com/infocus/1868</a></li>
     <li>For information on AJAX attacks and JavaScript Hijacking, see "JavaScript Hijacking":
 <a href="http://www.net-security.org/dl/articles/JavaScript_Hijacking.pdf">http://www.net-security.org/dl/articles/JavaScript_Hijacking.pdf</a></li>
+  </ul>
+  <ul>
   </ul>
   <h1>Related Items</h1>
   <ul>
