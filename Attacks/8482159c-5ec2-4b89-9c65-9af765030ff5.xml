@@ -18,14 +18,13 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any application that restricts access to certain types of information, including configuration and deployment details.</p>
   <h1>Description</h1>
   <p>An Information Disclosure attack results in an application revealing sensitive information to the attacker. Examples of sensitive information include system specific data such as overly descriptive error messages, source code, software distribution and version numbers, database information, passwords, machine names and file paths to other sensitive areas.</p>
   <p>For web applications there are several methods that can be used by an attacker to get more information from the application, such as directory indexing, path traversal, reading source code or error messages and comments left behind by developers, etc. </p>
-  <p>If the attacker can gain access to the binaries of the application (in the case of an installed client application), or through forceful browsing or other attacks (for a server application), the information disclosure attack surface becomes much larger. In this case the attacker can employ debuggers, decompilers, hex editors and other tools to search for secrets left in the application. </p>
+  <p>If the attacker can gain access to the binaries of the application (in the case of an installed client application), or through forceful browsing or other attacks (for a server application), the information disclosure attack surface becomes much larger. In this case the attacker can employ debuggers, de-compilers, hex editors and other tools to search for secrets left in the application. </p>
   <p>SQL injection, whether in a web application or installed client application, can also be considered a type of information disclosure attack because it can be used to access sensitive information that is stored in a database, as can other similar query-based attacks.</p>
   <h1>Impact</h1>
   <ul>
