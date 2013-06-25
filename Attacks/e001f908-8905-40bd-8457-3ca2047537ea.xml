@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any network application that must keep state through the use of session identifiers.</p>
   <h1>Description</h1>
   <p>In the session prediction attack the malicious user will attempt to discern the method used to create new session IDs for past, current or future sessions. If a session ID can be guessed the attacker can piggyback on the credentials of an authenticated user and masquerade as that user.</p>
