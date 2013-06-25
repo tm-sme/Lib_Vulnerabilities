@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>.NET applications, Java applications, and applications written in any other language which supports reflection.</p>
   <h1>Description</h1>
   <p>Reflection is a programming technique provided by an API that let's you treat class definitions themselves as objects. It gives the programmer a way to view and modify class members such as constructors, methods, interfaces, and fields at runtime. This is often used for the of development tools such as class browsers or GUI designers. However, if untrusted user input is used to manipulate objects at runtime, injection is possible. Attackers may be able to view or modify which classes are used or even run arbitrary code. </p>
