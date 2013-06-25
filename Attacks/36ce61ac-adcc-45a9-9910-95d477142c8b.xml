@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All web applications.</p>
   <h1>Description</h1>
   <p>A Cross Site Scripting (XSS) attack can cause arbitrary code to run in a user's browser while the browser is connected to a trusted Web site. The attack targets your application's users and not the application itself, but it uses your application as the vehicle for the attack. Because the script code is downloaded by the browser from a trusted site, the browser has no way of knowing that the code is not legitimate. Internet Explorer security zones provide no defense. As the attacker's code has access to the cookies associated with the trusted site and are stored on the user's local computer, a user's authentication cookies are typically the target of attack. </p>
