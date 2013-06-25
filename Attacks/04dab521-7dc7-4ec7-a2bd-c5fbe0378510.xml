@@ -18,12 +18,11 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications and platforms that use and support security based on code identity such as the Code Access Security mechanism available in the Microsoft .NET Framework and similar mechanisms in Java.</p>
   <h1>Description</h1>
-  <p>The traditional way of building applications so that they run with the current user privileges has helped increase the impact of some attacks. Attacks such as <a href="/article/ff3f8f9f-5689-4827-93b8-e8e053661b58">API Hijacking Attack</a> and other attacks that result in escalation of privilege have stemed from the fact that the called module usually assumes the authority of its caller.</p>
+  <p>The traditional way of building applications so that they run with the current user privileges has helped increase the impact of some attacks. Attacks such as API Hijacking Attack and other attacks that result in escalation of privilege come about because the called module usually assumes the authority of its caller.</p>
   <p>Java and the .NET Framework provide Code Access Security mechanisms that allow enforcement of security based on <strong>code identity</strong> instead of on the user executing the code. These mechanisms allow developers to write and package code in a fashion that controls the security aspect of their invocation and execution. Using this, a developer can state the minimum security requirements that a calling module must meet before it can execute the protected module. One of the main advantages that this mechanism offers is the fact that mobile code (code downloaded from the internet) will not be able to execute protected modules that already exist on the local machine.</p>
   <p>In a luring attack, the attacker 'lures' an application component with higher privileges than the attacker's code to do something on its behalf. This happens when a snippet of code with restricted security privileges calls a component with higher privileges into executing restricted operations. Such behavior is usually the result of lack of or insufficient permission checks on the caller of the privileged component. Luring Attacks can also be a result of a privileged library calling malicious code from an untrusted library. </p>
   <h1>Impact</h1>
@@ -34,7 +33,7 @@
   <ul>
     <li>
       <p>
-        <strong>Calling unmanaged modules from protected managed modules.</strong> This can result in escalation of privilege as the calling module may not be able to verify the authenticity of the unmanaged module.</p>
+        <strong>Calling un-managed modules from protected managed modules.</strong> This can result in escalation of privilege as the calling module may not be able to verify the authenticity of the unmanaged module.</p>
     </li>
     <li>
       <p>
