@@ -39,7 +39,7 @@
     <li>
       <strong>Network vulnerabilities:</strong> A man in the middle attack is usually carried out by means of one of the following:</li>
     <ul>
-      <li>ARP Spoofing Attacl<br /></li>
+      <li>ARP Spoofing Attack<br /></li>
       <li>DNS hijacking or DNS Cache Poisoning<br /></li>
       <li>DHCP message subversion/take-over </li>
       <li>Wireless Packet Injection Attack</li>
