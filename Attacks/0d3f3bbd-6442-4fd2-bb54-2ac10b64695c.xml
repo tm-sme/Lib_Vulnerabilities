@@ -18,8 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <h1>Applies to</h1>
+    <Data><![CDATA[<h1>Applies to
+  </h1>
   <p>Any network application.</p>
   <h1>Description</h1>
   <p>In an ARP spoofing or poisoning attack the attacker is able to inject fake or spoofed ARP messages to the ethernet LAN. The spoofed ARP messages contain false MAC address to IP address mappings, which can confuse other hosts on the network as well as network devices like switches or routers. Results of such an attack include the affected device routing all of its traffic through the attacking host, or all devices on the network sending traffic intended for another host to the attacking machine.</p>
