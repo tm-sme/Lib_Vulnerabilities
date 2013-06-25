@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any application.</p>
   <h1>Description</h1>
   <p>An attacker may be able to stop an application from responding or to cause it to use unintended resources through a race condition. By getting between the time a developer checks for the availability of a resource and when it is used the attacker may be able to change something about that resource to cause the application to behave unexpectedly. All external resources that do not automatically handle multiple users, processes or threads could be vulnerable to this type of attack. The term originates from two or more signals or processes racing to change or influence the output before the others.</p>
