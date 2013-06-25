@@ -18,12 +18,11 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications.</p>
   <h1>Description</h1>
-  <p>An API Injection Attack involves intercepting the method calls made by an application to an external library. This attack can be used to screen or modify parameter values or execute malicious code with elevated privileges. The interception of methods usually involves tricking the application into loading a trojan external library. This can be accomplished by replacing the external library with a malicious counterpart on the file system or tricking the application into loading a malicious library from an alternate location on the file system.</p>
+  <p>An API Injection Attack involves intercepting the method calls made by an application to an external library. This attack can be used to screen or modify parameter values or execute malicious code with elevated privileges. The interception of methods usually involves tricking the application into loading a Trojan external library. This can be accomplished by replacing the external library with a malicious counterpart on the file system or tricking the application into loading a malicious library from an alternate location on the file system.</p>
   <h1>Impact</h1>
   <ul>
     <li>Disclosure of sensitive information by screening parameter values. </li>
