@@ -17,9 +17,8 @@
     <Status />
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Web Applications that use an AJAX implementation</p>
   <h1>Description</h1>
   <p>AJAX (Asynchronous Javascript and XML) technology allows web pages to dynamically update specific content behind the scenes without the need to refresh the whole page. The ability to continually update the content of an AJAX page is done by calling an XmlHttpRequest
