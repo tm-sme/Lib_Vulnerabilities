@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any application that uses credentials.</p>
   <h1>Description</h1>
   <p>A dictionary attack is a technique for defeating weak authentication credentials using a pre-compiled list of common usernames and passwords. It relies on the fact that users tend to use weak passwords that can be easily remembered. Although similar to Brute-Force Attack, this technique performs faster as it exhausts only the common possibilities. The input set in a Dictionary Attack is limited only to words that could be derived from a dictionary; therefore the name of the attack.</p>
