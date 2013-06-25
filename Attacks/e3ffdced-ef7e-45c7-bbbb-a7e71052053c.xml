@@ -17,7 +17,7 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
+  <Content Sanitized="true" DataType="html">
     <Data><![CDATA[<h1>Applies To
   </h1>
   <p>Any application that uses credentials.</p>
@@ -63,7 +63,7 @@
   </ul>
   <h1>Additional Resources</h1>
   <ul>
-    <li>For more information on Brute Force Attacks, see:<a href="http://en.wikipedia.org/wiki/Brute_force_attack"><a>http://en.wikipedia.org/wiki/Brute_force_attack</a></a></li>
+    <li>For more information on Brute Force Attacks, see: <a href="http://en.wikipedia.org/wiki/Brute_force_attack">http://en.wikipedia.org/wiki/Brute_force_attack</a></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
