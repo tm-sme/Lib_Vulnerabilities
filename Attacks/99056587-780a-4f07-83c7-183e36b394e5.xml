@@ -18,13 +18,12 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any web application.</p>
   <h1>Description</h1>
   <p>HTTP Response Splitting occurs when an attacker is able to inject arbitrary data into the headers of an HTTP response. In the presence of this vulnerability, the attacker can essentially force an HTTP response that contains HTML of the attacker's choosing. This is accomplished by simply terminating the header section of the response with the 0x0d 0x0a byte sequence and continuing with the malicious HTML. The resulting byte stream appears to the browser as two separate HTTP respsonses. The first contains the malicious HTML and is interpreted by the browser as being the legitimate response. The second contains the actual HTML that would have been returned by the server and is typically ignored.</p>
-  <p>By allowing the attacker essentially complete control over an HTTP response that is rendered in the context of your domain, you open the door for a <a href="/article/c8ae222b-ed2e-4621-a46b-3671f82f5a03">Phishing Attack</a> or a <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">Cross Site Scripting Attack</a>.</p>
+  <p>By allowing the attacker essentially complete control over an HTTP response that is rendered in the context of your domain, you open the door for a Phishing Attack or a Cross Site Scripting Attack.</p>
   <h1>Impact</h1>
   <ul>
     <li>
@@ -36,7 +35,7 @@
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
-    <li>HTTP Response headers populated with untrusted and unencoded input. The most common scenarios where this occurs are: <ul><li>HTTP Redirects (see example) </li><li>HTTP Cookie values supplied by the user. For instance, if your application allows the user to supply a name and then sets a cookie value using that name. It is important to note that cookies are set with the Set-Cookie HTTP Response header.</li></ul></li>
+    <li>HTTP Response headers populated with untrusted and un-encoded input. The most common scenarios where this occurs are: <ul><li>HTTP Redirects (see example) </li><li>HTTP Cookie values supplied by the user. For instance, if your application allows the user to supply a name and then sets a cookie value using that name. It is important to note that cookies are set with the Set-Cookie HTTP Response header.</li></ul></li>
   </ul>
   <h1>Countermeasures</h1>
   <p>Perform context sensitive scrubbing and encoding of untrusted input before it is used in an HTTP response header.</p>
