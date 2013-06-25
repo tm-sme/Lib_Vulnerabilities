@@ -18,13 +18,12 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any web application.</p>
   <h1>Description</h1>
-  <p>In an HTTP Replay attack, the attacker first performs <a href="/article/cf06603e-440e-4118-85d5-ad360817fabc">Network Eavesdropping Attack</a> on the communication between a client and a server. The captured packets can then be sent by the attacker to the host in an attempt to impersonate the user that caused the original request. The attacker may have to modify certain characteristics of the replayed messages in order to trick the server into believing that the message originated from the original user.</p>
-  <p>The <a href="/article/862e51f1-a026-40f9-826b-7a65fa5dc563">HTTP Session Hijacking Attack</a> is a specific type of a HTTP Replay Attack where the attacker attempts to impersonate the client by replaying the client session identifier.</p>
+  <p>In an HTTP Replay attack, the attacker first performs a network eavesdropping attack on the communication between a client and a server. The captured packets can then be sent by the attacker to the host in an attempt to impersonate the user that caused the original request. The attacker may have to modify certain characteristics of the replayed messages in order to trick the server into believing that the message originated from the original user.</p>
+  <p>The HTTP Session Hijacking Attack is a specific type of a HTTP Replay Attack where the attacker attempts to impersonate the client by replaying the client session identifier.</p>
   <h1>Impact</h1>
   <ul>
     <li>Authentication Spoofing </li>
@@ -40,13 +39,14 @@
   </ul>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Use sessions securely. Please see <a href="/article/862e51f1-a026-40f9-826b-7a65fa5dc563">HTTP Session Hijacking Attack</a> for more information. </li>
+    <li>Use sessions securely. <br /></li>
     <li>Utilize SSL or IPSec with encryption to establish a secure communication channel. </li>
-    <li>Consider Timestamping. To learn more about this please see the <a href="http://en.wikipedia.org/wiki/Timestamp">Wikiepedia Timestamp</a> article.</li>
+    <li>Consider Timestamps.<br /></li>
   </ul>
   <h1>Additional Resources</h1>
   <ul>
-    <li>To learn more about Theft On The Web: Prevent Session Hijacking, see: <a href="http://www.microsoft.com/technet/technetmag/issues/2005/01/SessionHijacking/">http://technet.microsoft.com/en-us/magazine/2005.01.sessionhijacking.aspx</a></li>
+    <li>For more information on Theft On The Web: Prevent Session Hijacking, see: <a href="http://www.microsoft.com/technet/technetmag/issues/2005/01/SessionHijacking/">http://technet.microsoft.com/en-us/magazine/2005.01.sessionhijacking.aspx</a></li>
+    <li>For more information on Timestamps, see: <a href="http://en.wikipedia.org/wiki/Timestamp">http://en.wikipedia.org/wiki/Timestamp</a><br /></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
