@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any network application.</p>
   <h1>Description</h1>
   <p>Due to the large number of requests that must be handled by domain name servers, they must be able to cache entries for a specified amount of time, set by the owner of the domain and sometimes overridden by the administrator of the server, usually in a range of somewhere between eight hours and two weeks. Once the time to live threshold has been reached the DNS server will recurse back to the root DNS servers the next time a request for that host or that domain is made.</p>
