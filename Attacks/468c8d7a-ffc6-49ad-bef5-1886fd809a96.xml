@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications and all networking devices.</p>
   <h1>Description</h1>
   <p>Attackers attempt to create a denial of service situation by causing the application or device to cease responding to valid requests from users. The attacker can do this either by sending malicious input to the application or by utilizing application features to exploit a design flaw, which leads to a denial of service to legitimate users.</p>
