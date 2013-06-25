@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Vulnerable web servers and proxies.</p>
   <h1>Description</h1>
   <p>HTTP Request Smuggling is a technique to take advantage of discrepancies in parsing when one or more HTTP devices are between the user and the web server. An attacker may be able to 'smuggle' malicious requests through a packet inspector, firewall or web proxy server. This technique may leave the web server vulnerable to various attacks such as web cache poisoning or allow the attacker to request protected files on the web server.</p>
@@ -46,7 +45,7 @@
   </ul>
   <h1>Example</h1>
   <p>This example describes the classic Request Smuggling attack in which an attacker can poison one page with the contents of another. In this example, the attacker combines one POST request and two GET requests into a single malformed HTTP request. The HTTP request has two Content-Length headers with conflicting values. Some servers, such as IIS and Apache simply reject such a request, but others attempt to ‘fix’ the error. Fortunately for the attacker, certain web servers and web proxies choose to pay attention to different sections of the malformed request. In this case let "somewhere.com" be the DNS name of the web server behind the proxy, and suppose that “/poison.html” is a static and cacheable HTML page on the web server. </p>
-  <pre>1 POST http://somewhere.com/example.html HTTP/1.1\r\n2 Host: somewhere.com\r\n3 Connection: Keep-Alive\r\n4 Content-Type: application/x-www-form-urlencoded\r\n5 Content-Length: 0\r\n6 Content-Length: 53\r\n7 \r\n8 GET /poison.html HTTP/1.1\r\n9 Host: somewhere.com\r\n10 Bla: 11 GET http://somewhere.com/index.html HTTP/1.1\r\n12 Host: somewhere.com\r\n13 Connection: Keep-Alive\r\n14 \r\n</pre>
+  <pre>1 POST http://somewhere.com/example.html HTTP/1.1\r\n2 Host: somewhere.com\r\n3 Connection: Keep-Alive\r\n4 <br />Content-Type: application/x-www-form-urlencoded\r\n5 Content-Length: 0\r\n6 Content-Length: 53\r\n7 \r\n8 GET /poison.html HTTP/1.1\r\n9 <br />Host: somewhere.com\r\n10 Bla: 11 GET http://somewhere.com/index.html HTTP/1.1\r\n12 Host: somewhere.com\r\n13 Connection: Keep-Alive\r\n14 \r\n</pre>
   <p>Note that line 10 is the only line that does not end in CRLF ("\r\n") and instead there is a space ("Bla: "). This request is sent to a web server via a proxy server. </p>
   <p>First this message is parsed by the proxy. When the proxy server parses the message it finds the POST request (lines 1-7) followed by the two conflicting Content-Length's (lines 5 and 6). The proxy ignores the first header and believes the body is 53 bytes long (which is exactly the number of bytes used by lines 8-10 including CRLFs). The proxy then sees lines 11-14 and interprets them as a second request. </p>
   <p>Secondly the message is parsed by the web server. Although the web server receives the same message, when it sees the first Content-Length in line 5 it thinks that the body of the POST request is 0 bytes in length. Therefore it finds the second request in line 8 and interprets line 11 as the value of "Bla: " in line 10 because of the missing CRLF. </p>
