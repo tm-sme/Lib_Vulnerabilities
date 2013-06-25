@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications.</p>
   <h1>Description</h1>
   <p>A business rule defines the constraints on how the application interacts at a high level. Business rules define the procedures that must be followed, the relationships that must be maintained between assets, and the set of rules around who's allowed to take which actions. All systems have business rules, be they very simple ones, like those around a read-only web site, or complex ones, like those embedded in a complex ERP system. The business rules of a system rarely exist in any specifically concrete form, and are normally spread throughout the application in a very ad-hoc manner, making them hard to audit and maintain.</p>
