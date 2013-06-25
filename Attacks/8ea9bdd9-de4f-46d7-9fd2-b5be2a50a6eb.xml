@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All web applications.</p>
   <h1>Description</h1>
   <p>A Cross Site Request Forgery attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request may be able to change the state of the web application and is possible because the request is sent in the context of the logged in victim. For many sites each request automatically sends the victim's credentials such as the session cookie or authentication credentials. Due to this fact there is no way to distinguish the false request from a legitimate request.</p>
@@ -33,8 +32,8 @@
   <p>Executing single requests that can change the state of the application, such as add users, change account balances or passwords, etc.</p>
   <h1>Countermeasures</h1>
   <ul>
-    <li>Add a session identifier or nonce value to each session and/or viewstate to track each request. </li>
-    <li>Use "double submit" cookies (for Ajax requests only). </li>
+    <li>Add a session identifier or nonce value to each session and/or view-state to track each request. </li>
+    <li>Use "double submit" cookies (for AJAX requests only). </li>
     <li>Minimize single request GET commands. </li>
     <li>Never allow a single request to change the state of the web application.</li>
   </ul>
