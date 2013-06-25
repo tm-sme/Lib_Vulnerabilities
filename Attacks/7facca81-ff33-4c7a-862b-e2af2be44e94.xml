@@ -18,15 +18,14 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications which use user input to construct the file name or path before accessing a file resource.</p>
   <h1>Description</h1>
   <p>If user input is used to construct a filename or path it is possible for that input to be format so that an unintended or protected file is read, modified, or executed instead. This is commonly accomplished by exploiting canonicalization issues or alternate data streams. Command injection may also be possible and would allow the attacker to execute arbitrary commands. The impact of such vulnerabilities is compounded if the application is running with elevated privileges.</p>
   <h1>Impact</h1>
   <ul>
-    <li>Command execution via command injection: See <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Command Injection Attack</a></li>
+    <li>Command execution via command injection<br /></li>
     <li>Reading data from or writing to protected files. Some examples: <ul><li>Making the application load\overwrite another user's configuration or data file. </li><li>Reading from or writing to protected application or system log files.</li></ul></li>
   </ul>
   <h1>Vulnerabilities</h1>
