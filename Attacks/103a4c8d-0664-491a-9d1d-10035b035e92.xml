@@ -18,8 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Client/Server applications using cryptographic mutual authentication schemes (described below) where the server uses the same protocol as the clients. </p>
   <h1>Description</h1>
   <p>Reflection attacks use the fact that both sides of a protocol work the same way to authenticate to the server using its own credentials, without ever seeing those credentials. The server and a normal client share a secret, which allows them to authenticate each other. To perform this authentication without simply sending the secret, they each pick a value and request that the other party hash that value with the secret. A malicious user can attempt to take advantage of the symmetry in the protocol to circumvent the system, causing the server to authenticate against itself. The attack works like this:</p>
