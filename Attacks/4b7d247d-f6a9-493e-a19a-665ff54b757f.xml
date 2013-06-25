@@ -18,12 +18,11 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All software applications.</p>
   <h1>Description</h1>
-  <p>Many applications assume that malicious software will never be executed on the local machine. However, in today's world of ubiquitous spyware, viruses, and trojans, relying on this assumption can lead to the loss of sensitive information like credentials. If an attacker can somehow trick a user into installing malicious software, it may be possible to recover sensitive information from the file system or other local machine resources. An attacker may look through temporary files, registry keys, swap files, config files, etc. to discover sensitive data such as username/password pairs, database connection strings, or other data that should be protected.</p>
+  <p>Many applications assume that malicious software will never be executed on the local machine. However, in today's world of ubiquitous spyware, viruses, and Trojans, relying on this assumption can lead to the loss of sensitive information like credentials. If an attacker can somehow trick a user into installing malicious software, it may be possible to recover sensitive information from the file system or other local machine resources. An attacker may look through temporary files, registry keys, swap files, config files, etc. to discover sensitive data such as username/password pairs, database connection strings, or other data that should be protected.</p>
   <h1>Impact</h1>
   <ul>
     <li>Information Disclosure</li>
