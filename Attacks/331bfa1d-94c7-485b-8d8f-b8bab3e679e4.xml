@@ -3,7 +3,7 @@
   <Metadata>
     <Id>331bfa1d-94c7-485b-8d8f-b8bab3e679e4</Id>
     <Id_History>72891dcd-2330-4615-a22a-855a02394277,</Id_History>
-    <Library_Id>92718d53-36b2-47bc-b6f5-e60994385f46</Library_Id>
+    <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Statistical Analysis Attack</Title>
     <Category>Sensitive Data</Category>
     <Phase>Implementation</Phase>
@@ -18,17 +18,18 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1 class="section">Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications encrypting sensitive data.</p>
   <h1 class="section">Description</h1>
   <p>Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets. </p>
   <h1 class="section">Impact</h1>
   <ul>
     <li>Discovery of encryption keys (WEP Key Attack) 
-<li>Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
-<li>Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.</li></li></li>
+</li>
+    <li>Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
+</li>
+    <li>Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.</li>
   </ul>
   <h1 class="section">Vulnerabilities</h1>
   <ul>
@@ -37,10 +38,11 @@
   <h1 class="section">Countermeasures</h1>
   <ul>
     <li>Always be sure you know what is and what is not being encrypted 
-<li>Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
-<li>Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks</li></li></li>
+</li>
+    <li>Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
+</li>
+    <li>Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks</li>
   </ul>
-  <h1 class="section">Additional Resources</h1>
   <h1 class="section">Related Items</h1>
   <ul>
     <li>
