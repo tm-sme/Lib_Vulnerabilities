@@ -18,22 +18,21 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All web applications that process user supplied input on the server.</p>
   <h1>Description</h1>
-  <p>An attacker conducts a Server-Side code injection attack by submitting malicious input which gets executed on the server. This malicious input could be submitted via numerous means, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner which forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Information Disclosure Attack</a>.</p>
+  <p>An attacker conducts a Server-Side code injection attack by submitting malicious input which gets executed on the server. This malicious input could be submitted via numerous means, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner which forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an Information Disclosure Attack.</p>
   <p>Depending on the type of back-end applications, the type of attacks vary. Some common Server-side code injection attacks are:</p>
   <ul>
     <li>
-      <a href="/article/8062c64d-ca73-428b-b35a-e7e5952b9da5">SQL Injection Attack</a>
+      SQL Injection Attack
     </li>
     <li>
-      <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Command Injection Attack</a>
+      Command Injection Attack
     </li>
     <li>
-      <b>Buffer Overflow Attack</b>
+      Buffer Overflow Attack
     </li>
   </ul>
   <h1>Impact</h1>
@@ -50,10 +49,10 @@
     <li>
       <strong>Input Validation</strong>: User supplied input should be validated for type, size, form and content before it is processed by the server. </li>
     <li>
-      <strong>Seperation of Control and Data Flow</strong>: User input should be segregated from any context where control information is present, and the seperation should be maintained.</li>
+      <strong>Separation of Control and Data Flow</strong>: User input should be segregated from any context where control information is present, and the seperation should be maintained.</li>
   </ul>
   <h1>Example</h1>
-  <p>Please refer to the examples presented in the specific attack types which are mentioned in the Description section.</p>
+  <p>Please refer to the examples presented in the specific attack types mentioned in the Description section.</p>
   <p />
   <h1>Related Items</h1>
   <ul>
