@@ -18,12 +18,11 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Multi-user applications which allow users to perform actions on shared resources.</p>
   <h1>Description</h1>
-  <p>The issue of repudiation is concerned with a user denying that he or she performed an action or initiated a transaction. You need defense mechanisms in place to ensure that all user activity can be tracked and recorded. These mechanisms are a key to defending against the insider threat problem. For more information on the insider threat, please read the <a href="http://www.cert.org/archive/pdf/insidercross051105.pdf">Insider Threat Study</a> conducted by <a href="http://www.cert.org">CERT</a>.</p>
+  <p>The issue of repudiation is concerned with a user denying that he or she performed an action or initiated a transaction. You need defense mechanisms in place to ensure that all user activity can be tracked and recorded. These mechanisms are a key to defending against the insider threat problem. <br /></p>
   <h1>Impact</h1>
   <ul>
     <li>Actions, possibly malicious, by an authorized user that can not be traced back to a particular user </li>
@@ -43,7 +42,7 @@
     <li>Determine what actions in the system require protection against repudiation. Consider creating a threat model to help with this process. </li>
     <li>Disable anonymous access and authenticate every principle. </li>
     <li>Consider using a more granular authorization model in order to produce precise logs at all tiers. </li>
-    <li>Log actions to identify the user's identity, the action performed, the time, and the component or interface involved (who, what where, when) while not capturing any sensitive data in logs (e.g., SSN, CC's, passwords, etc.). </li>
+    <li>Log actions to identify the user's identity, the action performed, the time, and the component or interface involved (who, what where, when) while not capturing any sensitive data in logs (e.g., SSNs, CC's, passwords, etc.). </li>
     <li>Enable logging to an object with append-only permissions from the application. </li>
     <li>Ensure that logs can be easily correlated across the application if multiple layers or logs are involved, and consider performing the correlation automatically for larger applications. </li>
     <li>Ensure that logs are kept at all relevant levels in the application for sensitive operations. </li>
