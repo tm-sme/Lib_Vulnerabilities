@@ -31,7 +31,6 @@
     <li>Terminate due to an error - if a crash occurs, the service will not be able to serve other legitimate requests</li>
   </ol>
   <p>It is also possible for a denial of service situation to occur with perfectly legitimate input. If a non-malicious user accidentally inputs large amounts of legitimate data, this may cause the application to stop responding to other legitimate requests. Another case where legitimate input may lead to a Denial of Service is when a malicious user repeatedly sends large volumes of acceptable input in order to compromise the availability of the service.</p>
-  <p>An example of an attack where application features are used to exploit a design flaw is the <a href="/article/e0ebf8be-838c-4762-8c44-0d90adf63aef">Account Lockout Attack</a>.</p>
   <p>Another type of the Denial of Service Attack is the DDoS or Distributed Denial of Service attack. In this attack the malicious user takes control over many machines and attempts to consume all the resources of a service using large amounts of legitimate requests. This attack is extremely difficult to protect against because the attacker is successively simulating a heavy load in such a way that the system cannot distinguish legitimate requests from maliciously generated requests .</p>
   <h1>Impact</h1>
   <p>The direct impact of a Denial of Service attack is that the application or service becomes unavailable to other users, leading to a potential loss of business. The impact of a Denial of Service attack is frequently underestimated. It is true that these attacks cannot be used to steal data or impersonate more privileged users, making them ineffective at providing the attacker with a direct economic gain. Many people therefore assume that Denial of Service attacks are merely a nuisance; however, nothing could be further from the truth. Historically, Denial of Service attacks have been very effective at extorting millions of dollars from applications that depend heavily on a web presence.</p>
@@ -45,9 +44,9 @@
         <li>
           <b>Buffer Overflow Attack</b> can lead to application termination or code execution </li>
         <li>
-          <a href="/article/8062c64d-ca73-428b-b35a-e7e5952b9da5">SQL Injection Attack</a> can corrupt the database in such a way that renders the service useless </li>
+          SQL Injection attack can corrupt the database in such a way that renders the service useless </li>
         <li>
-          <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Command Injection Attack</a> could cause the application to loop indefinitely or enter a state of deadlock </li>
+          Command Injection Attack could cause the application to loop indefinitely or enter a state of deadlock </li>
         <li>Integer Underflow Attack can cause the application to consume excessive amount of memory on a system</li>
       </ul>
     </li>
