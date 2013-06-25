@@ -18,16 +18,15 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications that use any type of encryption.</p>
   <h1>Description</h1>
   <p>In cryptography, keys are used to control the operation of a cipher so that only the correct key can convert the encrypted text to plaintext. Since most ciphers are based on publicly known algorithms, these keys are literally the keys to the castle. In a key brute force attack every possible key is attempted until the correct key is found. Ciphertext is deciphered under different keys until recognizable plaintext is discovered. Longer keys require more work to break using this type of an attack and a long enough key will require more work than is feasible. Thus, the length of the encryption key is important in resisting this type of attack.</p>
   <p>The resources required for a brute force attack scale exponentially as the key size is increased. Therefore, doubling the key size does not double the required number of operations, but rather squares the number of required operations. Some algorithms do not support large key lengths and should be avoided.</p>
   <p>Another factor which may aid an attacker in reducing the amount of time it takes to brute-force a key is the key generation algorithm. If the algorithm is weak or uses guessable seeds, an exhaustive search will be possible on a smaller set of keys (for example: keys generated from words in a dictionary).</p>
-  <p>Yet another factor which has previously helped attackers break encryption keys has to do with key information leakage. Faulty protocol implementations have lead to parts of the key being 'leaked' to a 3rd party who is observing the encrypted traffic. One such example is the <a href="http://www.securityfocus.com/infocus/1814">breaking of the WEP algorithm</a>. If any part of the key is leaked, it will help the attacker brute-force the correct key much more quickly.</p>
-  <p>Key Bruteforce Attacks are also used against keys meant for non-cryptographic purposes—for example, software product activation keys or session IDs used in web application authentication (see <a href="/article/862e51f1-a026-40f9-826b-7a65fa5dc563">HTTP Session Hijacking Attack</a>). The causes of the problem here are similar—insufficient key length or weak key generation.</p>
+  <p>Yet another factor which has previously helped attackers break encryption keys has to do with key information leakage. Faulty protocol implementations have lead to parts of the key being 'leaked' to a 3rd party who is observing the encrypted traffic. One such example is the breaking of the WEP algorithm.&amp;nbsp; If any part of the key is leaked, it will help the attacker brute-force the correct key much more quickly.</p>
+  <p>Key Bruteforce Attacks are also used against keys meant for non-cryptographic purposes—for example, software product activation keys or session IDs used in web application authentication. The causes of the problem here are similar—insufficient key length or weak key generation.</p>
   <h1>Impact</h1>
   <ul>
     <li>
@@ -59,7 +58,8 @@
     <li>For more information on Brute Force Attacks, see: <a href="http://en.wikipedia.org/wiki/Brute_force_attack">http://en.wikipedia.org/wiki/Brute_force_attack</a><br /></li>
     <li>
       <a href="http://en.wikipedia.org/wiki/Brute_force_attack">
-      </a>For more information on Key Size, see: <a href="http://en.wikipedia.org/wiki/Cryptographic_key_length">http://en.wikipedia.org/wiki/Cryptographic_key_length</a><br /></li>
+      </a>For more information on Key Size, see: <a href="http://en.wikipedia.org/wiki/Cryptographic_key_length">http://en.wikipedia.org/wiki/Cryptographic_key_length</a></li>
+    <li>For more information on Wireless Attacks and Penetration Testing, see: <a href="http://www.symantec.com/connect/articles/wireless-attacks-and-penetration-testing-part-1-3">http://www.symantec.com/connect/articles/wireless-attacks-and-penetration-testing-part-1-3</a><br /></li>
   </ul>
   <h1>Related Items</h1>
   <ul>
