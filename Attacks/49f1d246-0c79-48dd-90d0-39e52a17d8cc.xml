@@ -17,7 +17,7 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
+  <Content Sanitized="true" DataType="html">
     <Data><![CDATA[<h1>Applies To</h1>
   <ul>
     <li>Any web application that requires a user to login to use a service.</li>
@@ -66,23 +66,21 @@
       <strong>Different languages or encodings</strong>: http://www.abcbànk.com </li>
     <li>
       <strong>Obscure URL features</strong>: Some browsers allow the user to provide credentials in the address bar. This is done by preceding the real address with the credentials and the @ (at) symbol, such as: http://www.abcbank.com@attacker.com. <p>In this example the user would be directed to attacker.com with the credentials of www.abcbank.com which can easily be disregarded by the attacker's website.</p></li>
-    <li>
-      <h1>Additional Resources</h1>
-      <ul>
-        <li>For more information on Phishing, see: <a href="http://en.wikipedia.org/wiki/Phishing">http://en.wikipedia.org/wiki/Phishing</a></li>
-        <li>For more information on All About Phishing, see: <a href="http://www.webopedia.com/DidYouKnow/Internet/2005/phishing.asp">http://www.webopedia.com/DidYouKnow/Internet/2005/phishing.asp</a></li>
-        <li>For more information on URL redirection, see: <a href="http://en.wikipedia.org/wiki/URL_redirection">http://en.wikipedia.org/wiki/URL_redirection</a></li>
-      </ul>
-      <h1>Related Items</h1>
-      <ul>
-        <li>
-          <a href="/article/32c35abe-a470-4a9c-8bb6-54c1461d3295">Attack: URL Redirection Attack</a>
-        </li>
-        <li>
-          <a href="/article/e49c6b3a-880f-46db-a07d-80dc2177a36a">Attack: Business Rule Attack</a>
-        </li>
-      </ul>
-    </li>
+    <h1>Additional Resources</h1>
+    <ul>
+      <li>For more information on Phishing, see: <a href="http://en.wikipedia.org/wiki/Phishing">http://en.wikipedia.org/wiki/Phishing</a></li>
+      <li>For more information on All About Phishing, see: <a href="http://www.webopedia.com/DidYouKnow/Internet/2005/phishing.asp">http://www.webopedia.com/DidYouKnow/Internet/2005/phishing.asp</a></li>
+      <li>For more information on URL redirection, see: <a href="http://en.wikipedia.org/wiki/URL_redirection">http://en.wikipedia.org/wiki/URL_redirection</a></li>
+    </ul>
+    <h1>Related Items</h1>
+    <ul>
+      <li>
+        <a href="/article/32c35abe-a470-4a9c-8bb6-54c1461d3295">Attack: URL Redirection Attack</a>
+      </li>
+      <li>
+        <a href="/article/e49c6b3a-880f-46db-a07d-80dc2177a36a">Attack: Business Rule Attack</a>
+      </li>
+    </ul>
   </ul>]]></Data>
   </Content>
 </TeamMentor_Article>
