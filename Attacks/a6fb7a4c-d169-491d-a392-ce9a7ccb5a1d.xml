@@ -18,12 +18,12 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications written in any languages which provides string methods that accept a format specifier.</p>
   <h1>Description</h1>
-  <p>Format string attacks are a class of vulnerabilities that can be used to crash a program or to execute harmful code. If unfiltered user input is used as the format string parameter in C functions that perform formatting, such as printf(), an attacker can use the %s, %x, and other format tokens to print data either from the stack or sometimes from other memory locations. Arbitrary data can be written anywhere in memory using the %n format token, used to specify that the number of bytes formatted should be written to the supplied pointer argument. More stack manipulation is required, but this argument can be inserted as part of a format string attack. [<a href="http://en.wikipedia.org/wiki/Format_string_attacks">http://en.wikipedia.org/wiki/Format_string_attacks</a>] </p>
+  <p>Format string attacks are a class of vulnerabilities that can be used to crash a program or to execute harmful code. If unfiltered user input is used as the format string parameter in C functions that perform formatting, such as printf(), an attacker can use the %s, %x, and other format tokens to print data either from the stack or sometimes from other memory locations. Arbitrary data can be written anywhere in memory using the %n format token, used to specify that the number of bytes formatted should be written to the supplied pointer argument. More stack manipulation is required, but this argument can be inserted as part of a format string attack. 
+  </p>
   <h1>Impact</h1>
   <ul>
     <li>Elevation of Privilege </li>
@@ -46,6 +46,7 @@
   <pre>printf ("%s", varUserSuppliedData);</pre>
   <h1>Additional Resources</h1>
   <ul>
+    <li>For more information on uncontrolled format string attacks, see: <a href="http://en.wikipedia.org/wiki/Format_string_attacks">http://en.wikipedia.org/wiki/Format_string_attacks</a><br /></li>
     <li>For more information on finding format string vulnerabilities, see: <a href="https://www.owasp.org/index.php/Format_String_Testing_AoC">https://www.owasp.org/index.php/Format_String_Testing_AoC</a><a href="http://www.owasp.org/index.php/Format_String_Testing_AoC"><br /></a></li>
     <li>For examples of Format String Vulnerabilities in non-C languages, see: <a href="http://www.drdobbs.com/security/programming-language-format-string-vulne/197002914">http://www.drdobbs.com/security/programming-language-format-string-vulne/197002914</a></li>
   </ul>
