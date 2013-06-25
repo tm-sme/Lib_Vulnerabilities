@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications that use encryption.</p>
   <h1>Description</h1>
   <p>A chosen plaintext attack (CPA) is a form of cryptanalysis where it is assumed that the attacker has access to a device that provides her the capability to choose arbitrary plaintext to be encrypted and obtain the corresponding ciphertext.</p>
