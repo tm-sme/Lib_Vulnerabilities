@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any network application that transmits credentials over a computer network.</p>
   <h1>Description</h1>
   <p>Due to the open nature of computer network LANs, it is possible to view traffic transmitted on a network even if it is not directed at your machine. This is known as 'sniffing' and is easily enabled by freely available Network sniffing software such as Cain and Wireshark. This software sets the attacker's network card to 'promiscuous mode' so it listens to all traffic on the network. This attack is made even easier by the fact that no special hardware is needed and simple step by step guides are freely available on many security websites. Simple regular expressions can be used to filter out any uninteresting traffic to return only usernames and passwords.</p>
