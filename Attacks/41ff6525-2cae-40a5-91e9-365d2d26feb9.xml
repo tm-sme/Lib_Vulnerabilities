@@ -17,7 +17,7 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
+  <Content Sanitized="true" DataType="html">
     <Data><![CDATA[<h1>Applies To
   </h1>
   <p>Any two applications which communicate over any networked channel, such as the internet.</p>
@@ -38,16 +38,14 @@
   <ul>
     <li>
       <strong>Network vulnerabilities:</strong> A man in the middle attack is usually carried out by means of one of the following:</li>
-    <li>
-      <ul>
-        <li>ARP Spoofing Attacl<br /></li>
-        <li>DNS hijacking or DNS Cache Poisoning<br /></li>
-        <li>DHCP message subversion/take-over </li>
-        <li>Wireless Packet Injection Attack</li>
-        <li>Gateway takeover using various packet redirects </li>
-        <li>Subversion of a gateway, router, or proxy between the victim and the server.</li>
-      </ul>
-    </li>
+    <ul>
+      <li>ARP Spoofing Attacl<br /></li>
+      <li>DNS hijacking or DNS Cache Poisoning<br /></li>
+      <li>DHCP message subversion/take-over </li>
+      <li>Wireless Packet Injection Attack</li>
+      <li>Gateway takeover using various packet redirects </li>
+      <li>Subversion of a gateway, router, or proxy between the victim and the server.</li>
+    </ul>
   </ul>
   <p>In addition to these network vulnerabilities, MiTM attacks become much easier to conduct if unencrypted or weakly encrypted communication channels are being used.</p>
   <h1>Countermeasures</h1>
