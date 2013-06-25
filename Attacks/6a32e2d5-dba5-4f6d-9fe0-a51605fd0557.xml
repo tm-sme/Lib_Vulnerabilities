@@ -18,15 +18,14 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Any network application</p>
   <h1>Description</h1>
-  <p>An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials. This scenario is described in the article <a href="/article/74e70134-b639-4cdc-b3e7-fe2952256d98">Network Credential Sniffing Attack</a>.</p>
+  <p>An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials. <br /></p>
   <h1>Impact</h1>
   <ul>
-    <li>Loss of confientiality of potentially sensitive data.</li>
+    <li>Loss of confidentiality of potentially sensitive data.</li>
   </ul>
   <h1>Vulnerabilities</h1>
   <ul>
@@ -52,7 +51,7 @@
       </p>
       <ul>
         <li>
-          <strong>Use encryption inside a plaintext protocol:</strong> Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, etc., must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guaranteee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.</li>
+          <strong>Use encryption inside a plaintext protocol:</strong> Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, etc., must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.</li>
       </ul>
     </li>
   </ul>
