@@ -18,12 +18,11 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications written in any language that does not perform automatic bounds checking.</p>
   <h1>Description</h1>
-  <p>An integer overflow occurs when an integer is incremented over the maximum value that the data type can hold. The resulting value depends on the compiler in use. ISO C99 defines the result of an integer overflow to be the assigned value modulo one more than the maximum integer size. This is also known as wrapping around zero.</p>
+  <p>An integer overflow occurs when an integer is incremented over the maximum value that the data type can hold. The resulting value depends on the compiler in use. ISO-C99 defines the result of an integer overflow to be the assigned value modulo one more than the maximum integer size. This is also known as wrapping around zero.</p>
   <p>Unlike buffer overflows, when an integer overflow occurs no memory other than that used by the integer is affected. However, it is easy for a programmer to assume that increasing the value of an integer will result in a larger integer. When the opposite happens unexpectedly, the program logic is altered. It is important to note that unless a check is added, the program has no way of knowing that the integer overflow happened and hence will continue with the assumption that the integer has the correct value. This is particularly a problem when a program is deciding how much memory to allocate for another variable. Common side effects are heap corruption causing the program to crash or a buffer overflow allowing arbitrary code execution.</p>
   <h1>Impact</h1>
   <ul>
