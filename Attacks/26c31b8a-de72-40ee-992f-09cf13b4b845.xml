@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications written in any object oriented language such as C++, Java, Python, Perl, or C#.</p>
   <h1>Description</h1>
   <p>Serialization is the process of saving the state of an object for later reconstruction. This enables applications to take objects from memory and send them to a disk, database, or across a network. De-serialization is the reverse process. Loading untrusted data into memory for direct use puts the application at risk of being placed in an insecure state or crashing. Many languages have built in serialization routines that do the heavy lifting for the programmer. They do not, however, protect the data integrity or prevent attackers from viewing sensitive information. Therefore, no serialized object should be considered safe for de-serialization until rigorous validation and cryptographic countermeasures have been taken to prevent tampering.</p>
