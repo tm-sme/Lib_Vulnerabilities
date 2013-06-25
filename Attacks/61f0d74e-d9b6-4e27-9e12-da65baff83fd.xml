@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>Applications using LDAP.</p>
   <h1>Description</h1>
   <p>LDAP injection is a technique for exploiting applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner, for example the phone directory. </p>
