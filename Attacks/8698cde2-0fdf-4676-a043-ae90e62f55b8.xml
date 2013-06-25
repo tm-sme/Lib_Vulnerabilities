@@ -18,9 +18,8 @@
     <Source>SI</Source>
   </Metadata>
   <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
+    <Data><![CDATA[<h1>Applies To
+  </h1>
   <p>All applications.</p>
   <h1>Description</h1>
   <p>Command injection problems are a subset of injection problems in which the process is tricked into either executing code or calling external processes of the attacker's choice through the injection of control information into the data stream.</p>
