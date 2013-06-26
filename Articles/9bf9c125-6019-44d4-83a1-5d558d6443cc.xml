@@ -29,7 +29,7 @@ This attack is especially powerful if the attacker can guess a large number of u
 
 =Vulnerabilities
 
-    *Weak implementation or configuration of the lockout policy. A weak policy could have any of the following characteristics:
+*Weak implementation or configuration of the lockout policy. A weak policy could have any of the following characteristics:
         **Invalid login attempt limit too low.
         **Low or no timeout between login attempts.
         **No incremental timeout between unsuccessful login attempts.
