@@ -11,7 +11,14 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+All applications which perform authentication or use a third-party authentication module.
+
+=Description
+A lockout policy is used during authentication to prevent attackers from attempting a large number of passwords on a given account. However, this security mechanism can be used by an attacker to cause a denial of service condition. If the attacker can exhaust the invalid login attempt limit for a given account, that account may be locked out against the owner's wishes.
+
+This attack is especially powerful if the attacker can guess a large number of usernames or account numbers for a scripted attack on many users.]]></Data>
   </Content>
 </TeamMentor_Article>
