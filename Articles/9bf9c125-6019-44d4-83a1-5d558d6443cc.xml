@@ -13,7 +13,7 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="wikitext">
+  <Content Sanitized="false" DataType="html">
     <Data><![CDATA[=Applies To
 
 All applications which perform authentication or use a third-party authentication module.
@@ -33,21 +33,18 @@ This attack is especially powerful if the attacker can guess a large number of u
         **Invalid login attempt limit too low.
         **Low or no timeout between login attempts.
         **No incremental timeout between unsuccessful login attempts.
-    *Valid username disclosure
-        *This could be a result of an Information Disclosure Vulnerability where an attacker can tell the distinction between a non-existent username and a bad password.
+*Valid username disclosure
+*This could be a result of an Information Disclosure Vulnerability where an attacker can tell the distinction between a non-existent username and a bad password.
 
 =Countermeasures
 
     *Configure the lockout policy to set the invalid login attempt limit to an acceptable limit, based on the security requirements of the application.
-
     *Configure the lockout policy to increase the timeout after each failed login attempt. For example: require the user to wait two seconds after the first failed login attempt, four seconds after the second, eight seconds after the third, etc. This will slow a script’s usefulness quickly, without hard locking the account and preventing a legitimate user from authenticating.
-
     *Use CAPTCHA values after a failed login attempt. If a user fails to login, require them to authenticate themselves as not being a script by asking for a captcha response.
-
     *Do not give away information which could lead to a distinction between a non-existent username and a bad password. To prevent this from happening, always display the same generic error message such as "Login information does not match or if you have tried to unsuccessfully login more than X times, then your account has been locked" during the following events:
-        **Invalid Username
+       **Invalid Username
        **Invalid Password for valid username
-        **Valid username, valid password but account locked out
+       **Valid username, valid password but account locked out
 
 It's important that any login timeouts be on a per-account basis. Often, attempts are made to lock out source IPs if a single IP has too many login failures to prevent an attacker from attacking a large number of accounts in parallel. However, this does not take into account the case where a large number of users are legitimately coming from a single source IP. This case is common today with the current proliferation of NAT devices. Instead, taking steps to increase the required effort of the attacker is a better strategy. For example, require the client to hash the password a large number of times before submitting it. The hashed version is stored (safely encrypted) on the server, so the server requires no extra time to verify its correctness. However, the hashing process on the client is computationally expensive enough that an attacker will be unable to brute force multiple accounts on a single machine. Monitoring is also effective here; if an account stays in a locked state for too long and multiple failed login attempts recur to keep it that way, it should be brought to the attention of support personnel who can make a judgement call as to the appropriateness of more aggressive filtering, possibly after contacting the user.
 =Additional Resources
