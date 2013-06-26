@@ -56,8 +56,8 @@ It's important that any login timeouts be on a per-account basis. Often, attempt
 
 =Related Items
 
-[[*Attack: Information Disclosure Attack]]
-[[*Attack: Denial of Service Attack]]
+*[[Attack: Information Disclosure Attack]]\\
+*[[Attack: Denial of Service Attack]]\\
 *Attack: Phishing Attack
 *Attack: Man in the Middle Attack
 *Guideline: Automatically Lock Inactive User Accounts
