@@ -52,18 +52,18 @@ This attack is especially powerful if the attacker can guess a large number of u
 It's important that any login timeouts be on a per-account basis. Often, attempts are made to lock out source IPs if a single IP has too many login failures to prevent an attacker from attacking a large number of accounts in parallel. However, this does not take into account the case where a large number of users are legitimately coming from a single source IP. This case is common today with the current proliferation of NAT devices. Instead, taking steps to increase the required effort of the attacker is a better strategy. For example, require the client to hash the password a large number of times before submitting it. The hashed version is stored (safely encrypted) on the server, so the server requires no extra time to verify its correctness. However, the hashing process on the client is computationally expensive enough that an attacker will be unable to brute force multiple accounts on a single machine. Monitoring is also effective here; if an account stays in a locked state for too long and multiple failed login attempts recur to keep it that way, it should be brought to the attention of support personnel who can make a judgement call as to the appropriateness of more aggressive filtering, possibly after contacting the user.
 =Additional Resources
 
-    For more information about CAPTCHA, see http://en.wikipedia.org/wiki/Captcha
+    *For more information about CAPTCHA, see http://en.wikipedia.org/wiki/Captcha
 
-Related Items
+=Related Items
 
-    Attack: Information Disclosure Attack
-    Attack: Denial of Service Attack
-    Attack: Phishing Attack
-    Attack: Man in the Middle Attack
-    Guideline: Automatically Lock Inactive User Accounts
-    Guideline: Lock Accounts After Consecutive Failed Login Attempts
-    Guideline: Monitor the Use of Privileged Accounts
-    Guideline: Force Re-Authentication When Executing Critical Functionality
+*Attack: Information Disclosure Attack
+*Attack: Denial of Service Attack
+*Attack: Phishing Attack
+*Attack: Man in the Middle Attack
+*Guideline: Automatically Lock Inactive User Accounts
+*Guideline: Lock Accounts After Consecutive Failed Login Attempts
+*Guideline: Monitor the Use of Privileged Accounts
+*Guideline: Force Re-Authentication When Executing Critical Functionality
 ]]></Data>
   </Content>
 </TeamMentor_Article>
