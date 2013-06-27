@@ -17,118 +17,59 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[ <h1>Applies To</h1>
-  <p>All web applications.</p>
-  <h1>Description</h1>
-  <p>By doubly encoding input, an attacker may be able to bypass security checks that are only decoded once. The singly decoded input will pass security checks and allow the malicious input to be passed to backend servers where it will be fully decoded and interpreted as input.</p>
-  <h1>Impact</h1>
-  <ul>
-    <li>
-      <strong>Remote Code Execution</strong>: This attack is often used in conjunction with XSS or SQL injection to bypass security checks. <li><strong>Directory Traversal</strong>: by encoding '../' and variants, security checks may be bypassed and later interpreted by the server or file system allowing the attacker to access protected files.</li></li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Failure to validate user input for encoded input. <li>Trusting data or failing to completely decode and check retrieved data from a shared data store.</li></li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>Constrain input: Use vigorous white-list style checking on any user input. <li>Fully decode: Ensure all input is fully decoded using methods at the backend server before operating on received data.</li></li>
-  </ul>
-  <h1>Example</h1>
-  <p />
-  <table>
-    <tbody>
-      <tr>
-        <td>Malicious String</td>
-        <td>Technology</td>
-        <td>Single Encoded Version</td>
-        <td>Double Encoded Version</td>
-      </tr>
-      <tr>
-        <td>' (single quote)</td>
-        <td>SQL</td>
-        <td>%27</td>
-        <td>%2527</td>
-      </tr>
-      <tr>
-        <td>..\</td>
-        <td>Directory Traversal</td>
-        <td>%2E%2E%2F</td>
-        <td>..%252F .. %%35c ..%%35%63 ..%25%35%63 ..etc </td>
-      </tr>
-      <tr>
-        <td>alert("XSS")</td>
-        <td>Javascript</td>
-        <td>\u0061\u006C\u0065\u0072\u0074\u0028\u0022\u0058\u0053\u0053\u0022\u0029</td>
-        <td>\u005C\u0075\u0030\u0030\u0036\u0031\u005C\u0075\u0030\u0030\u0036\u0043\u005C\u0075\u0030\u0030\u0036\u0035\u005C\u0075\u0030\u0030\u0037\u0032\u005C\u0075\u0030\u0030\u0037\u0034\u005C\u0075\u0030\u0030\u0032\u0038\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0035\u0038\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0032\u0039\u000A</td>
-      </tr>
-      <tr>
-        <td><script>gotcha!</script></td>
-        <td>HTML</td>
-        <td><script<gotcha!</script<</td>
-        <td><script>gotcha!</script></td>
-      </tr>
-    </tbody>
-  </table>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information on Core JavaScript Guide: 2 Values, Variables, and Literals, see <a href="http://www.webreference.com/javascript/reference/core/ident.html">http://www.webreference.com/javascript/reference/core/ident.html</a>
-<li>For more information on URL encoding related attacks, see <a href="http://people.w3.org/rishida/scripts/uniview/conversion.php">http://people.w3.org/rishida/scripts/uniview/conversion.php</a></li></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/f9f0a869-98fe-4ac5-9de3-3eaf33306c4b">Attack: Canonicalization Attack</a>
-      <li>
-        <a href="/article/14def5f6-6ddf-450f-9a7e-36a8550b22f5">Attack: AJAX Injection Attack</a>
-        <li>
-          <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Attack: Command Injection Attack</a>
-          <li>
-            <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">Attack: Cross Site Scripting Attack</a>
-            <li>
-              <a href="/article/df8e9450-e2ed-4ed8-b8de-a518a90d1789">Attack: File Name and Path Manipulation Attack</a>
-              <li>
-                <a href="/article/b541ba53-6354-47be-9d89-8209b9807d93">Attack: Forceful Browsing Attack</a>
-                <li>
-                  <a href="/article/4eb11739-a13f-4dbb-9f28-68ebf96110d0">Attack: LDAP Injection Attack</a>
-                  <li>
-                    <a href="/article/110cc11a-5a28-4fc2-a269-4210069b8865">Attack: Server-Side Code Injection Attack</a>
-                    <li>
-                      <a href="/article/8062c64d-ca73-428b-b35a-e7e5952b9da5">Attack: SQL Injection Attack</a>
-                      <li>
-                        <a href="/article/571ecf1a-d80c-475b-a0db-aff07069c997">Attack: XML Injection Attack</a>
-                        <li>
-                          <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-                          <li>
-                            <a href="/article/946a5edb-e8f8-4365-8675-b8a5032c201b">Guideline: Validate All Data Passed Between Native and Java Code </a>
-                            <li>
-                              <a href="/article/88f49e05-f101-4764-b8e3-b31cd7507071">Guideline: Do Not Rely on Request Validation </a>
-                              <li>
-                                <a href="/article/40eea61e-c8bd-494a-b75d-c18c2074c752">Guideline: Validate Input from All Sources </a>
-                                <li>
-                                  <a href="/article/f29fac90-c626-41d6-9184-acd6007696cf">Guideline: Validate Input for Length, Range, Format, and Type </a>
-                                  <li>
-                                    <a href="/article/6e981095-84bd-4158-a212-8f9937bcb336">Guideline: Do Not Rely on Client-Side Validation </a>
-                                    <li>
-                                      <a href="/article/ce899ba6-8ae2-4494-8706-ce863fae58e7">Guideline: Filter All User-Supplied Filename and Path Input </a>
-                                    </li>
-                                  </li>
-                                </li>
-                              </li>
-                            </li>
-                          </li>
-                        </li>
-                      </li>
-                    </li>
-                  </li>
-                </li>
-              </li>
-            </li>
-          </li>
-        </li>
-      </li>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[ Applies To
+
+All web applications.
+Description
+
+By doubly encoding input, an attacker may be able to bypass security checks that are only decoded once. The singly decoded input will pass security checks and allow the malicious input to be passed to backend servers where it will be fully decoded and interpreted as input.
+Impact
+
+    Remote Code Execution: This attack is often used in conjunction with XSS or SQL injection to bypass security checks.
+    Directory Traversal: by encoding '../' and variants, security checks may be bypassed and later interpreted by the server or file system allowing the attacker to access protected files.
+
+Vulnerabilities
+
+    Failure to validate user input for encoded input.
+    Trusting data or failing to completely decode and check retrieved data from a shared data store.
+
+Countermeasures
+
+    Constrain input: Use vigorous white-list style checking on any user input.
+    Fully decode: Ensure all input is fully decoded using methods at the backend server before operating on received data.
+
+Example
+
+Malicious String 	Technology 	Single Encoded Version 	Double Encoded Version
+' (single quote) 	SQL 	%27 	%2527
+..\ 	Directory Traversal 	%2E%2E%2F 	..%252F .. %%35c ..%%35%63 ..%25%35%63 ..etc
+alert("XSS") 	Javascript 	\u0061\u006C\u0065\u0072\u0074\u0028\u0022\u0058\u0053\u0053\u0022\u0029 	\u005C\u0075\u0030\u0030\u0036\u0031\u005C\u0075\u0030\u0030\u0036\u0043\u005C\u0075\u0030\u0030\u0036\u0035\u005C\u0075\u0030\u0030\u0037\u0032\u005C\u0075\u0030\u0030\u0037\u0034\u005C\u0075\u0030\u0030\u0032\u0038\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0035\u0038\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0032\u0039\u000A
+<script>gotcha!</script> 	HTML 	<script 	<script>gotcha!</script>
+Additional Resources
+
+    For more information on Core JavaScript Guide: 2 Values, Variables, and Literals, see http://www.webreference.com/javascript/reference/core/ident.html
+    For more information on URL encoding related attacks, see http://people.w3.org/rishida/scripts/uniview/conversion.php
+
+Related Items
+
+    Attack: Canonicalization Attack
+    Attack: AJAX Injection Attack
+    Attack: Command Injection Attack
+    Attack: Cross Site Scripting Attack
+    Attack: File Name and Path Manipulation Attack
+    Attack: Forceful Browsing Attack
+    Attack: LDAP Injection Attack
+    Attack: Server-Side Code Injection Attack
+    Attack: SQL Injection Attack
+    Attack: XML Injection Attack
+    Attack: Information Disclosure Attack
+    Guideline: Validate All Data Passed Between Native and Java Code
+    Guideline: Do Not Rely on Request Validation
+    Guideline: Validate Input from All Sources
+    Guideline: Validate Input for Length, Range, Format, and Type
+    Guideline: Do Not Rely on Client-Side Validation
+    Guideline: Filter All User-Supplied Filename and Path Input
+]]></Data>
   </Content>
 </TeamMentor_Article>
