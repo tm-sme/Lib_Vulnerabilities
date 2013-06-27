@@ -73,9 +73,12 @@ http_request.onreadystatechange = function ()
 
 *Now suppose that Mallory's status is set to a custom value. This may have been changed by Mallory herself or by a third party attacker. Either way, because the server providing the data to the mail client has poor validation, this status value is changed to include cleverly formatted malicious JavaScript. Suppose that instead of "Away" the value is changed to the following:
 
-{{{Away"});alert("Gotcha!");//}}}
+{{{
+Away"});alert("Gotcha!");//
+}}}
 
 *The first thing to notice is that the JSON object, which represents a the contact status list, is valid JavaScript. Because of this the eval() can be used to evaluate it. The above code completes the status object, inserts additional JavaScript, and comments out the rest of the line. When the code is passed as to the eval() function the additional JavaScript is run. Note that "alert("Gotcha!")" can be replaced with any malicious JavaScript and it will be run in the client's browser. Because the above code is an example, an alert message window will be displayed. In general, however, JavaScript could be downloaded and executed without the user's knowledge.
+
 =Additional Resources
 
     *For more information on AJAX including common vulnerabilities that are associated with the technology, see "Ajax Security Basics": http://www.securityfocus.com/infocus/1868
