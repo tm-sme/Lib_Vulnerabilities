@@ -17,111 +17,81 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Any application that builds a file name, or path string, host name, url, or other resource identifier based on user input.</p>
-  <h1>Description</h1>
-  <p>Different forms of input that resolve to the same standard name (the canonical name), is referred to as canonicalization. Code is particularly susceptible to canonicalization issues if it makes security decisions based on the name of a resource that is passed to the program as input. Files, paths, host names, and URLs are resource types that are vulnerable to canonicalization because in each case there are many different ways to represent the same name. </p>
-  <h1>Impact</h1>
-  <ul>
-    <li>Unauthorized access </li>
-    <li>Information disclosure </li>
-    <li>Elevation of privilege</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Making security decisions based on the non-canonical form of resources strings supplied by untrusted input. Common examples of such resource strings include URLs, file names, and file paths.</li>
-  </ul>
-  <a name="Countermeasures">
-  </a>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>
-      <p>Choose a standard 'canonical' representation for all strings that are used to make security decisions.</p>
-    </li>
-    <li>
-      <p>Convert all such strings to their canonical form before making security decisions. For example:</p>
-      <ul>
-        <li>Convert URL encoded strings into their unicode equivalent </li>
-        <li>Convert relative paths to absolute paths for files and URL strings.</li>
-      </ul>
-    </li>
-    <li>
-      <p>If available, use common libraries for canonicalization. Only write your own canonicalization routines if absolutely necessary.</p>
-    </li>
-    <li>
-      <p>Avoid input file names where possible and instead use absolute file paths that cannot be changed by the end user.</p>
-    </li>
-    <li>
-      <p>Reject incorrectly encoded characters and do not accept alternate representations of standard characters.</p>
-    </li>
-    <li>
-      <p>Check all resource via whitelist, not blacklist.</p>
-    </li>
-  </ul>
-  <h1>Examples</h1>
-  <p>
-    <strong>Directory traversal</strong>:</p>
-  <p>Suppose a server has a rule to only execute files stored in the C:\inetpub\wwwroot\cgi-bin directory. When a path is supplied to the server, if it does not begin with C:\inetpub\wwwroot\cgi-bin, then it will not be run. Now consider the following path:</p>
-  <pre>C:\inetpub\wwwroot\cgi-bin\..\..\..\Windows\System32\cmd.exe</pre>
-  <p>This is sufficient to pass the validating rule, but when it is run by the shell, it resolves to the following canonical representation:</p>
-  <pre>C:\Windows\System32\cmd.exe</pre>
-  <p>This is clearly not what was intended and provides a clear example of why canonicalization is a security risk.</p>
-  <h1>Additional Resources</h1>
-  <ul>
-  </ul>
-  <ul>
-    <li>
-      For more information on Canonicalization, see: <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a></li>
-    <li>For more information on Canonicalization, locale, and Unicode, see: <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a></li>
-    <li>For more on RFC 3492 - Punycode, see: <a href="http://www.faqs.org/rfcs/rfc3492.html">http://www.faqs.org/rfcs/rfc3492.html</a></li>
-    <li>
-      <a href="http://www.faqs.org/rfcs/rfc3492.html">
-      </a>For more on Programming Issues, see: <a href="http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf">http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf</a></li>
-    <li>
-      
-    For more on Secure Programming for Linux and Unix, see: <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html</a></li>
-    <li>For more on How to test for canonicalization issues with ASP.NET, see: <a href="http://support.microsoft.com/kb/887459">http://support.microsoft.com/kb/887459</a></li>
-  </ul>
-  <h1>Related Items<br /></h1>
-  <ul>
-    <li>
-      <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Attack: Command Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/f5b0a5fe-c9b3-4a3b-a204-9bc7c7394162">Attack: Alternate Data Streams Attack</a>
-    </li>
-    <li>
-      <a href="/article/df8e9450-e2ed-4ed8-b8de-a518a90d1789">Attack: File Name and Path Manipulation Attack</a>
-    </li>
-    <li>
-      <a href="/article/b541ba53-6354-47be-9d89-8209b9807d93">Attack: Forceful Browsing Attack</a>
-    </li>
-    <li>
-      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-    </li>
-    <li>
-      <a href="/article/c8ae222b-ed2e-4621-a46b-3671f82f5a03">Attack: Phishing Attack</a>
-    </li>
-    <li>
-      <a href="/article/ce899ba6-8ae2-4494-8706-ce863fae58e7">Guideline: Filter All User-Supplied Filename and Path Input </a>
-    </li>
-    <li>
-      <a href="/article/946a5edb-e8f8-4365-8675-b8a5032c201b">Guideline: Validate All Data Passed Between Native and Java Code </a>
-    </li>
-    <li>
-      <a href="/article/40eea61e-c8bd-494a-b75d-c18c2074c752">Guideline: Validate Input from All Sources </a>
-    </li>
-    <li>
-      <a href="/article/f29fac90-c626-41d6-9184-acd6007696cf">Guideline: Validate Input for Length, Range, Format, and Type </a>
-    </li>
-    <li>
-      <a href="/article/6e981095-84bd-4158-a212-8f9937bcb336">Guideline: Do Not Rely on Client-Side Validation </a>
-    </li>
-    <li>
-      <a href="/article/88f49e05-f101-4764-b8e3-b31cd7507071">Guideline: Do Not Rely on Request Validation </a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Any application that builds a file name, or path string, host name, url, or other resource identifier based on user input.
+Description
+
+Different forms of input that resolve to the same standard name (the canonical name), is referred to as canonicalization. Code is particularly susceptible to canonicalization issues if it makes security decisions based on the name of a resource that is passed to the program as input. Files, paths, host names, and URLs are resource types that are vulnerable to canonicalization because in each case there are many different ways to represent the same name.
+=Impact
+
+    *Unauthorized access
+    *Information disclosure
+    *Elevation of privilege
+
+=Vulnerabilities
+
+    *Making security decisions based on the non-canonical form of resources strings supplied by untrusted input. Common examples of such resource strings include URLs, file names, and file paths.
+
+=Countermeasures
+
+    *Choose a standard 'canonical' representation for all strings that are used to make security decisions.
+
+    *Convert all such strings to their canonical form before making security decisions. For example:
+        **Convert URL encoded strings into their unicode equivalent
+        **Convert relative paths to absolute paths for files and URL strings.
+
+    *If available, use common libraries for canonicalization. Only write your own canonicalization routines if absolutely necessary.
+
+    *Avoid input file names where possible and instead use absolute file paths that cannot be changed by the end user.
+
+    *Reject incorrectly encoded characters and do not accept alternate representations of standard characters.
+
+    *Check all resource via whitelist, not blacklist.
+
+=Examples
+
+Directory traversal:
+
+Suppose a server has a rule to only execute files stored in the C:\inetpub\wwwroot\cgi-bin directory. When a path is supplied to the server, if it does not begin with C:\inetpub\wwwroot\cgi-bin, then it will not be run. Now consider the following path:
+
+{{{
+C:\inetpub\wwwroot\cgi-bin\..\..\..\Windows\System32\cmd.exe
+}}}
+
+This is sufficient to pass the validating rule, but when it is run by the shell, it resolves to the following canonical representation:
+
+{{{
+C:\Windows\System32\cmd.exe
+}}}
+
+This is clearly not what was intended and provides a clear example of why canonicalization is a security risk.
+
+=Additional Resources
+
+    *For more information on Canonicalization, see: http://en.wikipedia.org/wiki/Canonicalization
+    *For more information on Canonicalization, locale, and Unicode, see: http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode
+    *For more on RFC 3492 - Punycode, see: http://www.faqs.org/rfcs/rfc3492.html
+    *For more on Programming Issues, see: http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&_DT.pdf
+    *For more on Secure Programming for Linux and Unix, see: http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html
+    *For more on How to test for canonicalization issues with ASP.NET, see: http://support.microsoft.com/kb/887459
+
+=Related Items
+
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[393a1495-ab5a-430a-81fa-50eebaed0d9a|Attack: Alternate Data Streams Attack]]
+    *[[7facca81-ff33-4c7a-862b-e2af2be44e94|Attack: File Name and Path Manipulation Attack]]
+    *[[26104b86-2fba-4331-aadb-c02d9921be42|Attack: Forceful Browsing Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[49f1d246-0c79-48dd-90d0-39e52a17d8cc|Attack: Phishing Attack]]
+    *Guideline: Filter All User-Supplied Filename and Path Input
+    *Guideline: Validate All Data Passed Between Native and Java Code
+    *Guideline: Validate Input from All Sources
+    *Guideline: Validate Input for Length, Range, Format, and Type
+    *Guideline: Do Not Rely on Client-Side Validation
+    *Guideline: Do Not Rely on Request Validation
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
