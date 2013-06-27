@@ -21,11 +21,12 @@
     <Data><![CDATA[=Applies To
 
 All applications and all networking devices.
+
 =Description
 
 Attackers attempt to create a denial of service situation by causing the application or device to cease responding to valid requests from users. The attacker can do this either by sending malicious input to the application or by utilizing application features to exploit a design flaw, which leads to a denial of service to legitimate users.
 
-Malicious input causes the application to either:
+Malicious input causes the application to:
 
     *Process a single set of data indefinitely or enter a state of deadlock, thereby making the service too busy or unable to respond to other legitimate requests
     *Consume large amounts of resources - low resources on a system may cause it to attend to a very low number of or no other legitimate requests
@@ -34,39 +35,33 @@ Malicious input causes the application to either:
 It is also possible for a denial of service situation to occur with perfectly legitimate input. If a non-malicious user accidentally inputs large amounts of legitimate data, this may cause the application to stop responding to other legitimate requests. Another case where legitimate input may lead to a Denial of Service is when a malicious user repeatedly sends large volumes of acceptable input in order to compromise the availability of the service.
 
 Another type of the Denial of Service Attack is the DDoS or Distributed Denial of Service attack. In this attack the malicious user takes control over many machines and attempts to consume all the resources of a service using large amounts of legitimate requests. This attack is extremely difficult to protect against because the attacker is successively simulating a heavy load in such a way that the system cannot distinguish legitimate requests from maliciously generated requests .
+
 =Impact
 
 The direct impact of a Denial of Service attack is that the application or service becomes unavailable to other users, leading to a potential loss of business. The impact of a Denial of Service attack is frequently underestimated. It is true that these attacks cannot be used to steal data or impersonate more privileged users, making them ineffective at providing the attacker with a direct economic gain. Many people therefore assume that Denial of Service attacks are merely a nuisance; however, nothing could be further from the truth. Historically, Denial of Service attacks have been very effective at extorting millions of dollars from applications that depend heavily on a web presence.
+
 =Vulnerabilities
 
 Depending on the nature of your application or device, there could be numerous causes which may lead to a DoS problem. Some of the most common vulnerabilities that might lead to a DoS are:
 
-* Lack of or inadequate input validation. Lack of appropriate input validation may allow an attacker to submit data to your application that could lead to a Denial of Service. Examples of attacks which could lead to a DoS situation due to lack of input validation are:
+    *Lack of or inadequate input validation. Lack of appropriate input validation may allow an attacker to submit data to your application that could lead to a Denial of Service. Examples of attacks which could lead to a DoS situation due to lack of input validation are:
+        **Buffer Overflow Attack can lead to application termination or code execution\\
+        **SQL Injection attack can corrupt the database in such a way that renders the service useless\\
+        **Command Injection Attack could cause the application to loop indefinitely or enter a state of deadlock\\
+        **Integer Underflow Attack can cause the application to consume excessive amount of memory on a system\\
 
-    **Buffer Overflow Attack can lead to application termination or code execution
+*Inappropriate use of shared resources. Allowing low privileged users (such as anonymous or guest users) or processes to share limited resources used by other users (authenticated or member users) or processes with a higher level of privilege can lead to resource contention, which in turn may result in denying the service to the privileged users or processes. Some examples of limited resources are:
+        **Storage: If unauthenticated users can somehow cause the application to store some form of data on the server storage, they may be able to rob other authorized users of this resource. If the host server runs out of disk space, operating system instability, degraded performance, and even system crashes can result. If the process either exhausts the available memory of the system or available process memory, host or process instability, at least, is likely. If the system doesn't crash, no new requests will be handled until memory is made available.\\
+       **Processor Time: Many denial of service attacks simply find a route through the system which consumes an inordinate amount of CPU time and take that route multiple times. On networking devices, this happens when higher level packet filtration is being used which forces the device to route packets via the CPU, instead of doing so in hardware accelerators. Applications that accept data with a complicated format or that interpret the data they've been sent are particularly vulnerable to these kind of attacks; it is often possible to cause an application of this type to spend a very large amount of time on a small amount of data. Even input validation can be a concern here - complicated regexes often have very bad pessimal cases for matching input which can take orders of magnitude longer than the average.\\
+        **TCP Ports: The number of concurrent connections that a network port can serve is limited. Given this, the availability of a service can be compromised by an attacker who repeatedly makes very large number of connections to the port simultaneously. Without even authenticating, the anonymous connection on the port will be active for a given amount of time (whatever the timeout value of the port is set to). This will allow the attacker to keep connecting to the port continuously and robbing other legitimate users of the service.\\
+        **Connection Pools and other Resources: There are a number of higher level resources which are typically constrained in most systems, connection pools to a database server being a primary example. Other examples include i-nodes in a file system, named pipes, and similar system-constrained resources.\\
 
-    **SQL Injection attack can corrupt the database in such a way that renders the service useless
-
-    **Command Injection Attack could cause the application to loop indefinitely or enter a state of deadlock
-
-    **Integer Underflow Attack can cause the application to consume excessive amount of memory on a system
-
-* Inappropriate use of shared resources. Allowing low privileged users (such as anonymous or guest users) or processes to share limited resources used by other users (authenticated or member users) or processes with a higher level of privilege can lead to resource contention, which in turn may result in denying the service to the privileged users or processes. Some examples of limited resources are:
-
-** Storage: If unauthenticated users can somehow cause the application to store some form of data on the server storage, they may be able to rob other authorized users of this resource. If the host server runs out of disk space, operating system instability, degraded performance, and even system crashes can result. If the process either exhausts the available memory of the system or available process memory, host or process instability, at least, is likely. If the system doesn't crash, no new requests will be handled until memory is made available.
-
-** Processor Time: Many denial of service attacks simply find a route through the system which consumes an inordinate amount of CPU time and take that route multiple times. On networking devices, this happens when higher level packet filtration is being used which forces the device to route packets via the CPU, instead of doing so in hardware accelerators. Applications that accept data with a complicated format or that interpret the data they've been sent are particularly vulnerable to these kind of attacks; it is often possible to cause an application of this type to spend a very large amount of time on a small amount of data. Even input validation can be a concern here - complicated regexes often have very bad pessimal cases for matching input which can take orders of magnitude longer than the average.
-
-**TCP Ports: The number of concurrent connections that a network port can serve is limited. Given this, the availability of a service can be compromised by an attacker who repeatedly makes very large number of connections to the port simultaneously. Without even authenticating, the anonymous connection on the port will be active for a given amount of time (whatever the timeout value of the port is set to). This will allow the attacker to keep connecting to the port continuously and robbing other legitimate users of the service.
-
-** Connection Pools and other Resources: There are a number of higher level resources which are typically constrained in most systems, connection pools to a database server being a primary example. Other examples include i-nodes in a file system, named pipes, and similar system-constrained resources.
-
-* Not failing securely. Services should be configured to expect and handle failures. The aim of an enterprise is to reduce downtime due to attacks. *Having a design strategy that allows your service to be automatically restarted in the event of a crash will significantly reduce downtime.
+    *Not failing securely. Services should be configured to expect and handle failures. The aim of an enterprise is to reduce downtime due to attacks. Having a design strategy that allows your service to be automatically restarted in the event of a crash will significantly reduce downtime.
 
 =Countermeasures
 
     *Proper validation of input type, length and format will help bolster your application against attacks which lead to Denial of Service. Please refer to the guidelines for input validation mentioned in the Related Items section below.
-    *Shared resources should be monitored to ensure that the level of resource for a particular request directly relates to the privilege level of the user making that request. Anonymous users should be able to consume little or no shared resources while highly-privileged users should have no restriction. *Depending on the nature of the application, explicitly logging resource utilization inside the application may be useful.
+    *Shared resources should be monitored to ensure that the level of resource for a particular request directly relates to the privilege level of the user making that request. Anonymous users should be able to consume little or no shared resources while highly-privileged users should have no restriction. Depending on the nature of the application, explicitly logging resource utilization inside the application may be useful.
 
 =Example
 
@@ -79,7 +74,7 @@ Another example is if the application allows a user to submit script or other in
     *For more information on Denial of Service attacks from Carnegie-Mellon, see: http://www.cert.org/tech_tips/denial_of_service.html
 
 =Related Items
-
+  
     *[[Attack: ARP Spoofing Attack]]
     *[[Attack: Wireless Packet Injection Attack]]
     *[[Attack: DNS Cache Poisoning]]
