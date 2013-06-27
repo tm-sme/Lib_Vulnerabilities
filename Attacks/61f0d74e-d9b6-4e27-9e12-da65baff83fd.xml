@@ -20,7 +20,7 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Applications using LDAP.
+Applications using LDAP
 =Description
 
 LDAP injection is a technique for exploiting applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner, for example the phone directory.
