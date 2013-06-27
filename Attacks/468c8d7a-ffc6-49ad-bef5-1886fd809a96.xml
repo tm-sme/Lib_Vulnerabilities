@@ -43,13 +43,13 @@ Depending on the nature of your application or device, there could be numerous c
 
 * Lack of or inadequate input validation. Lack of appropriate input validation may allow an attacker to submit data to your application that could lead to a Denial of Service. Examples of attacks which could lead to a DoS situation due to lack of input validation are:
 
-    ** Buffer Overflow Attack can lead to application termination or code execution
+    **Buffer Overflow Attack can lead to application termination or code execution
 
-    ** SQL Injection attack can corrupt the database in such a way that renders the service useless
+    **SQL Injection attack can corrupt the database in such a way that renders the service useless
 
-    ** Command Injection Attack could cause the application to loop indefinitely or enter a state of deadlock
+    **Command Injection Attack could cause the application to loop indefinitely or enter a state of deadlock
 
-    ** Integer Underflow Attack can cause the application to consume excessive amount of memory on a system
+    **Integer Underflow Attack can cause the application to consume excessive amount of memory on a system
 
 * Inappropriate use of shared resources. Allowing low privileged users (such as anonymous or guest users) or processes to share limited resources used by other users (authenticated or member users) or processes with a higher level of privilege can lead to resource contention, which in turn may result in denying the service to the privileged users or processes. Some examples of limited resources are:
 
