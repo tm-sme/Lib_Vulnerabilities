@@ -33,16 +33,15 @@ The HTTP Session Hijacking Attack is a specific type of a HTTP Replay Attack whe
 
 =Vulnerabilities
 
-*If the server does not employ any secure means to verify the origin of received messages, then the server will be vulnerable to these attacks. Even if the server employs methods to verify the identity of the client sending the messages, but the verification is based on information in the messages that can be spoofed by an attacker, the server will be vulnerable to this attack. Some of the main causes are:
+* If the server does not employ any secure means to verify the origin of received messages, then the server will be vulnerable to these attacks. Even if the server employs methods to verify the identity of the client sending the messages, but the verification is based on information in the messages that can be spoofed by an attacker, the server will be vulnerable to this attack. Some of the main causes are:
 
-*Unprotected Sessions. An attacker may be able to impersonate the session of another user because of any of the following reasons:
+* Unprotected Sessions. An attacker may be able to impersonate the session of another user because of any of the following reasons:
 
 ** Reuse of session IDs
 
 ** Long or infinite session timeouts
 
 ** Poor or predictable session identifiers 
-
 
 *Insecure communication channel. If the channel of communication is secured using encryption, then the attacker will find it extremely difficult to conduct this attack.
 
