@@ -47,7 +47,7 @@ Additionally, to implement alternate data streams, the operating system must pro
 
     * **Creating alternate Data streams:** To put the contents of ‘datastream.txt’ into the alternate stream ‘demo’ of the file ‘test.txt’ use the following syntax:
 
-         {{{type datastream.txt > test.txt:demo}}\\
+         {{{type datastream.txt > test.txt:demo}}}
 
 
     * **Accessing alternate data streams:** Accessing the data stream directly will cause an error on most systems, so you have to pipe the contents to another command such as the command ‘more’:
