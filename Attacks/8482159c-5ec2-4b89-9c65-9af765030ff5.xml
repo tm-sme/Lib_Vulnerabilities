@@ -56,7 +56,7 @@ SQL injection, whether in a web application or installed client application, can
 
 =Example
 
-Directory indexing: The HTTP request 'GET /<null byte>.jsp HTTP/1.0' allows an attacker to view the directory and file listing due to improper handling of null bytes
+Directory indexing: The HTTP request{{{ 'GET /<null byte>.jsp HTTP/1.0'}}} allows an attacker to view the directory and file listing due to improper handling of null bytes
 
 Directory traversal: The URL {{{http://www.example.com/../restricted-file.cgi}}} allows an attacker to access the file 'restricted-file.cgi' which lies outside the web document root directory
 
