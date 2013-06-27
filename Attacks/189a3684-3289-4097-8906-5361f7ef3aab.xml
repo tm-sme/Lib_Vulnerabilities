@@ -36,8 +36,8 @@ By doubly encoding input, an attacker may be able to bypass security checks that
 
 =Countermeasures
 
-    Constrain input: Use vigorous white-list style checking on any user input.
-    Fully decode: Ensure all input is fully decoded using methods at the backend server before operating on received data.
+    *Constrain input: Use vigorous white-list style checking on any user input.
+    *Fully decode: Ensure all input is fully decoded using methods at the backend server before operating on received data.
 
 =Example
 
@@ -54,23 +54,23 @@ By doubly encoding input, an attacker may be able to bypass security checks that
 
 =Related Items
 
-    Attack: Canonicalization Attack
-    Attack: AJAX Injection Attack
-    Attack: Command Injection Attack
-    Attack: Cross Site Scripting Attack
-    Attack: File Name and Path Manipulation Attack
-    Attack: Forceful Browsing Attack
-    Attack: LDAP Injection Attack
-    Attack: Server-Side Code Injection Attack
-    Attack: SQL Injection Attack
-    Attack: XML Injection Attack
-    Attack: Information Disclosure Attack
-    Guideline: Validate All Data Passed Between Native and Java Code
-    Guideline: Do Not Rely on Request Validation
-    Guideline: Validate Input from All Sources
-    Guideline: Validate Input for Length, Range, Format, and Type
-    Guideline: Do Not Rely on Client-Side Validation
-    Guideline: Filter All User-Supplied Filename and Path Input
+    *[[Attack: Canonicalization Attack]]
+    *[[Attack: AJAX Injection Attack]]
+    *[[Attack: Command Injection Attack]]
+    *[[Attack: Cross Site Scripting Attack]]
+    *[[Attack: File Name and Path Manipulation Attack]]
+    *[[Attack: Forceful Browsing Attack]]
+    *[[Attack: LDAP Injection Attack]]
+    *[[Attack: Server-Side Code Injection Attack]]
+    *[[Attack: SQL Injection Attack]]
+    *[[Attack: XML Injection Attack]]
+    *[[Attack: Information Disclosure Attack]]
+    *Guideline: Validate All Data Passed Between Native and Java Code
+    *Guideline: Do Not Rely on Request Validation
+    *Guideline: Validate Input from All Sources
+    *Guideline: Validate Input for Length, Range, Format, and Type
+    *Guideline: Do Not Rely on Client-Side Validation
+    *Guideline: Filter All User-Supplied Filename and Path Input
 ]]></Data>
   </Content>
 </TeamMentor_Article>
