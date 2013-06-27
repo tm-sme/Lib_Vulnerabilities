@@ -45,22 +45,21 @@ Additionally, to implement alternate data streams, the operating system must pro
 
 =Example
 
-    *Creating alternate Data streams: To put the contents of ‘datastream.txt’ into the alternate stream ‘demo’ of the file ‘test.txt’ use the following syntax:
-{{{
-         type datastream.txt > test.txt:demo
-}}}
+    * **Creating alternate Data streams:** To put the contents of ‘datastream.txt’ into the alternate stream ‘demo’ of the file ‘test.txt’ use the following syntax:
+
+         {{{type datastream.txt > test.txt:demo}}\\
+
 
     * **Accessing alternate data streams:** Accessing the data stream directly will cause an error on most systems, so you have to pipe the contents to another command such as the command ‘more’:
-{{{
-        more < test.txt:demo
-}}}
+
+       {{{more < test.txt:demo}}}
+
     * **Accessing the default data stream:** An attacker can bypass simple security checks by requesting the default data stream by its full name:
-{{{
-    more < test.txt::$DATA
-}}}
+
+       {{{more < test.txt::$DATA}}}
 
 
-    * **Exploiting the ASP alternate data stream show code vulnerability:** Now fixed, this issue worked as follows. For normal access the user requests a file as: http://www.example.com/default.asp. To access the source code of that ASP site the attacker could request the same file in the following way: http://www.example.com/default.asp::$DATA. The ASP engine doesn't not recognize the file as an ASP file that needs to be interpreted and serves the contents of the file.
+    * **Exploiting the ASP alternate data stream show code vulnerability:** Now fixed, this issue worked as follows. For normal access the user requests a file as: {{{http://www.example.com/default.asp}}}. To access the source code of that ASP site the attacker could request the same file in the following way: {{{http://www.example.com/default.asp::$DATA}}}. The ASP engine doesn't not recognize the file as an ASP file that needs to be interpreted and serves the contents of the file.
 
 =Additional Resources
 
