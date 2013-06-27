@@ -17,81 +17,62 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Applications which interact with the a file system with alternate data stream support, including Windows NTFS file systems, Macintosh HFS file systems, Novell Storage Services (NSS), NetWare file systems (NWFS), Solaris UFS, Sun ZFS, and Veritas file system (VxFS).</p>
-  <h1>Description</h1>
-  <p>In certain file systems it is possible to ‘hide’ data through the use of multiple data streams in a single file. When a file is accessed normally through the file system the stream name is left off and the default DATA stream is used. Every file on the file system has at least one stream. Alternate streams may be used for metadata or for nefarious reasons such as information hiding. Because most UIs do not provide a way of accessing alternate data streams they remain hidden from all but advanced users. However, creating and accessing multiple data streams is not difficult through the command line or programmatically.</p>
-  <p>Additionally, to implement alternate data streams, the operating system must provide some way of representing the stream in the filename. With NTFS, this representation is to append ::$StreamName to the end of the filename. This causes problems because often security decisions are based on the filename. Since many programmers are unaware of this functionality, the implemented authorization checks do not take into account the possibility of alternate stream names.</p>
-  <h1>Impact</h1>
-  <ul>
-    <li>
-      <strong>Information disclosure: </strong>By providing a valid alternate name (index.asp::$DATA) for a file (asp, php, etc.) an attacker may be able to bypass authorization checks that fail to consider the possibility of stream names. A perfect example of this occurred in the IIS web server. If an attacker requested index.asp::$DATA, the server responded with the plain text of the server side script instead of running it through the interpreter. </li>
-    <li>
-      <strong>Hidden malware: </strong>Alternate data streams provide an easy place to hide and execute root kits, viruses and other malware from system administrators.</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Failure to validate user input </li>
-    <li>Failure to consider the possibility of alternate stream names appearing in file names.</li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>
-      <strong>Do not allow user-specified filenames unless a specific need exists</strong>: Use GUIDs for filenames and store the suggested filename in a database. </li>
-    <li>
-      <strong>Constrain input</strong>: Use vigorous white-list style checking on any input received from the user. </li>
-    <li>
-      <strong>Resolve all filenames through the file system</strong>: Leveraging the file system can ensure proper decision making. </li>
-    <li>
-      <strong>Use a white-list to validate filenames</strong>: Use regular expressions to ensure proper file validation.</li>
-  </ul>
-  <h1>Example</h1>
-  <ul>
-    <li>
-      <p>
-        <strong>Creating alternate Data streams</strong>: To put the contents of ‘datastream.txt’ into the alternate stream ‘demo’ of the file ‘test.txt’ use the following syntax:</p>
-      <pre>type datastream.txt &gt; test.txt:demo</pre>
-    </li>
-    <li>
-      <p>
-        <strong>Accessing alternate data streams</strong>: Accessing the data stream directly will cause an error on most systems, so you have to pipe the contents to another command such as the command ‘more’:</p>
-      <pre>more &lt; test.txt:demo</pre>
-    </li>
-    <li>
-      <p>
-        <strong>Accessing the default data stream</strong>: An attacker can bypass simple security checks by requesting the default data stream by its full name:</p>
-      <pre>more &lt; test.txt::$DATA</pre>
-    </li>
-    <li>
-      <p>
-        <strong>Exploiting the ASP alternate data stream show code vulnerability</strong>: Now fixed, this issue worked as follows. For normal access the user requests a file as: http://www.example.com/default.asp. To access the source code of that ASP site the attacker could request the same file in the following way: http://www.example.com/default.asp::$DATA. The ASP engine doesn't not recognize the file as an ASP file that needs to be interpreted and serves the contents of the file.</p>
-    </li>
-  </ul>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information on Windows NTFS Alternate Data Streams, see: <a href="http://www.symantec.com/connect/articles/windows-ntfs-alternate-data-streams">http://www.symantec.com/connect/articles/windows-ntfs-alternate-data-streams</a></li>
-    <li>For more information on creating and accessing Alternate Data Streams, see: <a href="https://www.ethicalhacker.net/columns/wilson/video-alternate-data-streams-ads-hiding-in-plain-site">https://www.ethicalhacker.net/columns/wilson/video-alternate-data-streams-ads-hiding-in-plain-site</a></li>
-    <li>For advanced usages for Alternate Data Streams, see<a href="http://www.irongeek.com/i.php?page=security/altds">: http://www.irongeek.com/i.php?page=security/altds</a></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/f9f0a869-98fe-4ac5-9de3-3eaf33306c4b">Attack: Canonicalization Attack</a>
-    </li>
-    <li>
-      <a href="/article/b541ba53-6354-47be-9d89-8209b9807d93">Attack: Forceful Browsing Attack</a>
-    </li>
-    <li>
-      <a href="/article/df8e9450-e2ed-4ed8-b8de-a518a90d1789">Attack: File Name and Path Manipulation Attack</a>
-    </li>
-    <li>
-      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-    </li>
-    <li>
-      <a href="/article/ce899ba6-8ae2-4494-8706-ce863fae58e7">Guideline: Filter All User-Supplied Filename and Path Input </a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Applications which interact with the a file system with alternate data stream support, including Windows NTFS file systems, Macintosh HFS file systems, Novell Storage Services (NSS), NetWare file systems (NWFS), Solaris UFS, Sun ZFS, and Veritas file system (VxFS).
+Description
+
+In certain file systems it is possible to ‘hide’ data through the use of multiple data streams in a single file. When a file is accessed normally through the file system the stream name is left off and the default DATA stream is used. Every file on the file system has at least one stream. Alternate streams may be used for metadata or for nefarious reasons such as information hiding. Because most UIs do not provide a way of accessing alternate data streams they remain hidden from all but advanced users. However, creating and accessing multiple data streams is not difficult through the command line or programmatically.
+
+Additionally, to implement alternate data streams, the operating system must provide some way of representing the stream in the filename. With NTFS, this representation is to append ::$StreamName to the end of the filename. This causes problems because often security decisions are based on the filename. Since many programmers are unaware of this functionality, the implemented authorization checks do not take into account the possibility of alternate stream names.
+=Impact
+
+    *Information disclosure: By providing a valid alternate name (index.asp::$DATA) for a file (asp, php, etc.) an attacker may be able to bypass authorization checks that fail to consider the possibility of stream names. A perfect example of this occurred in the IIS web server. If an attacker requested index.asp::$DATA, the server responded with the plain text of the server side script instead of running it through the interpreter.
+    *Hidden malware: Alternate data streams provide an easy place to hide and execute root kits, viruses and other malware from system administrators.
+
+=Vulnerabilities
+
+    *Failure to validate user input
+    *Failure to consider the possibility of alternate stream names appearing in file names.
+
+=Countermeasures
+
+    *Do not allow user-specified filenames unless a specific need exists: Use GUIDs for filenames and store the suggested filename in a database.
+    *Constrain input: Use vigorous white-list style checking on any input received from the user.
+    *Resolve all filenames through the file system: Leveraging the file system can ensure proper decision making.
+    *Use a white-list to validate filenames: Use regular expressions to ensure proper file validation.
+
+=Example
+
+    *Creating alternate Data streams: To put the contents of ‘datastream.txt’ into the alternate stream ‘demo’ of the file ‘test.txt’ use the following syntax:
+{{{
+    type datastream.txt > test.txt:demo
+}}}
+
+    * **Accessing alternate data streams:** Accessing the data stream directly will cause an error on most systems, so you have to pipe the contents to another command such as the command ‘more’:
+{{{
+    more < test.txt:demo
+}}}
+    * **Accessing the default data stream:** An attacker can bypass simple security checks by requesting the default data stream by its full name:
+
+    more < test.txt::$DATA
+
+    * **Exploiting the ASP alternate data stream show code vulnerability:** Now fixed, this issue worked as follows. For normal access the user requests a file as: http://www.example.com/default.asp. To access the source code of that ASP site the attacker could request the same file in the following way: http://www.example.com/default.asp::$DATA. The ASP engine doesn't not recognize the file as an ASP file that needs to be interpreted and serves the contents of the file.
+
+=Additional Resources
+
+    *For more information on Windows NTFS Alternate Data Streams, see: http://www.symantec.com/connect/articles/windows-ntfs-alternate-data-streams
+    *For more information on creating and accessing Alternate Data Streams, see: https://www.ethicalhacker.net/columns/wilson/video-alternate-data-streams-ads-hiding-in-plain-site
+    *For advanced usages for Alternate Data Streams, see: http://www.irongeek.com/i.php?page=security/altds
+
+=Related Items
+
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
+    *[[26104b86-2fba-4331-aadb-c02d9921be42|Attack: Forceful Browsing Attack]]
+    *[[7facca81-ff33-4c7a-862b-e2af2be44e94|Attack: File Name and Path Manipulation Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *Guideline: Filter All User-Supplied Filename and Path Input
+]]></Data>
   </Content>
 </TeamMentor_Article>
