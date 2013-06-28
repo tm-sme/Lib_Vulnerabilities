@@ -45,11 +45,11 @@ A Man in the Middle (MiTM) Attack occurs when an attacker intercepts messages se
 =Countermeasures
 
 *Since the network weaknesses described above cannot be controlled for all potential users, it is recommended that cryptographic suites be used. Below are some examples at different layers:
-
-    **At the network layer: IPSec
-    **At the application layer: SSLv3, TLS, PGP
+**At the network layer: IPSec
+**At the application layer: SSLv3, TLS, PGP
 
 *Use of these suites requires careful consideration of the key length and key store. Correct ways of doing so are provided in the Related Items section of this article.
+
 =Example
 
 A few examples are described below to demonstrate the various types of problems that can be caused using MiTM attacks:
