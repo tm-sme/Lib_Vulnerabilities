@@ -47,15 +47,10 @@ Attackers can reverse weak passwords by generating large tables of hashed values
 A rainbow table could contain all the popular passwords from a dictionary, all the possible passwords from a subset of characters or all hashes for a certain password length. The rainbow table also has to be generated for each hashing algorithm (SHA, MD5, MD4, etc.) A sample of a rainbow table may look something like the following:
 
 |{{{Plaintext}}} |{{{SHA1 Hash}}}                          |
-
 |{{{Test}}} |{{{640AB2BAE07BEDC4C163F679A746F7AB7FB5D1FA}}}|
-
 |{{{Demo}}} |{{{E52C854D5631EEC7468BA4727B4C77EB745F2965}}}|
-
 |{{{Password}}} |{{{8BE3C943B1609FFFBFC51AAD666D0A04ADF83C9D}}}|
-
 |{{{password}}} |{{{5BAA61E4C9B93F3F0682250B6CF8331B7EE68FD8}}}|
-
 |{{{Admin}}} |{{{4E7AFEBCFBAE000B22C7C85E5560F89A2A0280B4}}}|
 
 =Additional Resources
