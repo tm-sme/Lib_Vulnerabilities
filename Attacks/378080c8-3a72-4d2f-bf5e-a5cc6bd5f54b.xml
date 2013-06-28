@@ -43,6 +43,7 @@ Due to the open nature of wireless networks, an attacker physically located with
 =Additional Resources
 
 *The state of the art in wireless packet injection is evolving rapidly, and a multitude of tools exist, providing different capabilities on different networks. If you need to do network-level hardening (i.e., you control the wireless network), contact your hardware provider for more details on secure configurations for your network.
+
 =Related Items
 
     *[[Attack: Man in the Middle Attack]]
