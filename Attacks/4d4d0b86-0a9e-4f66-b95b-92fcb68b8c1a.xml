@@ -49,11 +49,11 @@ Example
 
 *An attacker can gain important information by monitoring the frequency and timing of network packets. For example, a timing attack on the SSH protocol used timing information to deduce information about passwords. For interactive sessions, SSH transmits a message after each key stroke. The timings between messages can be studied using hidden Markov models, and can be used to recover the password fifty times faster than a brute force attack.
 
-{{{*}}}//Example from: Dawn Xiaodong Song, David Wagner and Xuqing Tian, Timing Analysis of Keystrokes and Timing Attacks on SSH, 10th USENIX Security Symposium, 2001.
+//Example from: Dawn Xiaodong Song, David Wagner and Xuqing Tian, Timing Analysis of Keystrokes and Timing Attacks on SSH, 10th USENIX Security Symposium, 2001.
 
 =Additional Resources
 
-    8For more information onTor, see: http://tor.eff.org
+    *For more information onTor, see: http://tor.eff.org
 
 =Related Items
 
