@@ -60,12 +60,12 @@ Now that the attacker has a challenge that she can send back to the server to fo
 |Client Sends in connection 2:\\{{{AUTH: domain=test@testdomain.comFunction: initiate/authenticatechallenge=6F1ED002AB5595859014EBF0951522D9}}}|
 
 The server sends the following response back in the second connection:
-|Server Sends in connection 2:\\AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
+|Server Sends in connection 2:\\{{{AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
 
 Note: in this example the response hash is an MD5 hash of a valid username, password, domain and the challenge. The attacker doesn’t need to know any more information than the challenge since the server is providing its credentials in hashed form.
 
 From this point, the attacker responds to the first connection that was opened with the response that the server provided in the second connection and the authorization for the first connection is complete.
-|Client Sends in connection 1:\\AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
+|Client Sends in connection 1:\\{{{AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
 
 =Additional Resources
 
