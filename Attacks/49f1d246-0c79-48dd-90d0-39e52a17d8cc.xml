@@ -52,11 +52,11 @@ Most often, the attacker will send a mass e-mail to many users requesting them t
 
 Attacker's may use variations on the legitimate website address, such as:
 
-    Subdomains: {{{http://www.abcbank.com.attack.com/}}}\\
-    Similar domains: {{{http://www.abcbank-security.com/}}}\\
-    Off by one URLs: {{{http://www.abcbonk.com/}}}\\
-    Different languages or encodings: {{{http://www.abcbànk.com}}}\\
-    Obscure URL features: Some browsers allow the user to provide credentials in the address bar. This is done by preceding the real address with the credentials and the @ (at) symbol, such as: {{{http://www.abcbank.com@attacker.com.}}}\\
+    *Subdomains: {{{http://www.abcbank.com.attack.com/}}}\\
+    *Similar domains: {{{http://www.abcbank-security.com/}}}\\
+    *Off by one URLs: {{{http://www.abcbonk.com/}}}\\
+    *Different languages or encodings: {{{http://www.abcbànk.com}}}\\
+    *Obscure URL features: Some browsers allow the user to provide credentials in the address bar. This is done by preceding the real address with the credentials and the @ (at) symbol, such as: {{{http://www.abcbank.com@attacker.com.}}}\\
 
     In this example the user would be directed to attacker.com with the credentials of {{{www.abcbank.com}}} which can easily be disregarded by the attacker's website.
 
