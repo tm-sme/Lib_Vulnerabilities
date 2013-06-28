@@ -17,56 +17,46 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Multi-user applications which allow users to perform actions on shared resources.</p>
-  <h1>Description</h1>
-  <p>The issue of repudiation is concerned with a user denying that he or she performed an action or initiated a transaction. You need defense mechanisms in place to ensure that all user activity can be tracked and recorded. These mechanisms are a key to defending against the insider threat problem. <br /></p>
-  <h1>Impact</h1>
-  <ul>
-    <li>Actions, possibly malicious, by an authorized user that can not be traced back to a particular user </li>
-    <li>Increased insider threat</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Anonymous access enabled </li>
-    <li>Application using a role-based authorization model </li>
-    <li>Ineffective or lacking logging controls </li>
-    <li>Unprotected logs</li>
-  </ul>
-  <a name="Countermeasures">
-  </a>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>Determine what actions in the system require protection against repudiation. Consider creating a threat model to help with this process. </li>
-    <li>Disable anonymous access and authenticate every principle. </li>
-    <li>Consider using a more granular authorization model in order to produce precise logs at all tiers. </li>
-    <li>Log actions to identify the user's identity, the action performed, the time, and the component or interface involved (who, what where, when) while not capturing any sensitive data in logs (e.g., SSNs, CC's, passwords, etc.). </li>
-    <li>Enable logging to an object with append-only permissions from the application. </li>
-    <li>Ensure that logs can be easily correlated across the application if multiple layers or logs are involved, and consider performing the correlation automatically for larger applications. </li>
-    <li>Ensure that logs are kept at all relevant levels in the application for sensitive operations. </li>
-    <li>Establish a policy to review logs for anomalies.</li>
-  </ul>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information on Insider Threat Study: Computer System Sabotage in Critical Infrastructure Sectors, see: <a href="http://www.cert.org/archive/pdf/insidercross051105.pdf">http://www.cert.org/archive/pdf/insidercross051105.pdf<br /></a></li>
-    <a href="http://www.cert.org/archive/pdf/insidercross051105.pdf">
-    </a>
-  </ul>
-  <a href="http://www.cert.org/archive/pdf/insidercross051105.pdf">
-  </a>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/a053c4e4-2aad-41b9-b60b-e0fdeffd39f4">Guideline: Log Important Security Operations </a>
-    </li>
-    <li>
-      <a href="/article/0256b587-e8b1-46e0-8b87-f62b9f816c45">Guideline: Protect Log Files </a>
-    </li>
-    <li>
-      <a href="/article/e46483a2-7f7e-4753-aaeb-e330ed9aef02">Guideline: Do Not Log Sensitive Information </a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Multi-user applications which allow users to perform actions on shared resources.
+=Description
+
+The issue of repudiation is concerned with a user denying that he or she performed an action or initiated a transaction. You need defense mechanisms in place to ensure that all user activity can be tracked and recorded. These mechanisms are a key to defending against the insider threat problem.
+=Impact
+
+    *Actions, possibly malicious, by an authorized user that can not be traced back to a particular user
+    *Increased insider threat
+
+=Vulnerabilities
+
+    *Anonymous access enabled
+    *Application using a role-based authorization model
+    *Ineffective or lacking logging controls
+    *Unprotected logs
+
+=Countermeasures
+
+    *Determine what actions in the system require protection against repudiation. Consider creating a threat model to help with this process.
+    *Disable anonymous access and authenticate every principle.
+    *Consider using a more granular authorization model in order to produce precise logs at all tiers.
+    *Log actions to identify the user's identity, the action performed, the time, and the component or interface involved (who, what where, when) while not capturing any sensitive data in logs (e.g., SSNs, CC's, passwords, etc.).
+    *Enable logging to an object with append-only permissions from the application.
+    *Ensure that logs can be easily correlated across the application if multiple layers or logs are involved, and consider performing the correlation automatically for larger applications.
+    *Ensure that logs are kept at all relevant levels in the application for sensitive operations.
+    *Establish a policy to review logs for anomalies.
+
+=Additional Resources
+
+    *For more information on Insider Threat Study: Computer System Sabotage in Critical Infrastructure Sectors, see: http://www.cert.org/archive/pdf/insidercross051105.pdf
+
+=Related Items
+
+    *Guideline: Log Important Security Operations
+    *Guideline: Protect Log Files
+    *Guideline: Do Not Log Sensitive Information
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
