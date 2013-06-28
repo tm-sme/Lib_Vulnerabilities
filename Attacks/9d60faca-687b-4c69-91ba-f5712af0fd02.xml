@@ -17,93 +17,57 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>All web applications that process user supplied input on the server.</p>
-  <h1>Description</h1>
-  <p>An attacker conducts a Server-Side code injection attack by submitting malicious input which gets executed on the server. This malicious input could be submitted via numerous means, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner which forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an Information Disclosure Attack.</p>
-  <p>Depending on the type of back-end applications, the type of attacks vary. Some common Server-side code injection attacks are:</p>
-  <ul>
-    <li>
-      SQL Injection Attack
-    </li>
-    <li>
-      Command Injection Attack
-    </li>
-    <li>
-      Buffer Overflow Attack
-    </li>
-  </ul>
-  <h1>Impact</h1>
-  <ul>
-    <li>Execution of malicious code on the server which may threaten the confidentiality, integrity and availability of services and data.</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Weak or no validation of user supplied input. </li>
-    <li>Running with elevated privileges - Although this does not result in code execution, it does make the impact of an attack much worse. </li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>
-      <strong>Input Validation</strong>: User supplied input should be validated for type, size, form and content before it is processed by the server. </li>
-    <li>
-      <strong>Separation of Control and Data Flow</strong>: User input should be segregated from any context where control information is present, and the seperation should be maintained.</li>
-  </ul>
-  <h1>Example</h1>
-  <p>Please refer to the examples presented in the specific attack types mentioned in the Description section.</p>
-  <p />
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/8062c64d-ca73-428b-b35a-e7e5952b9da5">Attack: SQL Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/4b11c55a-9205-4ed6-9add-14e6addfc5b3">Attack: Command Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/61f8ac64-c4e1-4c31-9521-f20a1a64b6fd">Attack: Cross Site Scripting Attack</a>
-    </li>
-    <li>
-      <a href="/article/571ecf1a-d80c-475b-a0db-aff07069c997">Attack: XML Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/9e18ec6e-1100-4423-b5cf-60b2e117ca25">Attack: Xpath-XQuery Attack</a>
-    </li>
-    <li>
-      <a href="/article/4eb11739-a13f-4dbb-9f28-68ebf96110d0">Attack: LDAP Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/14def5f6-6ddf-450f-9a7e-36a8550b22f5">Attack: AJAX Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/31c077f9-48ce-47af-9b61-4a74747d0975">Attack: Format String Attack</a>
-    </li>
-    <li>
-      <a href="/article/946a5edb-e8f8-4365-8675-b8a5032c201b">Guideline: Validate All Data Passed Between Native and Java Code </a>
-    </li>
-    <li>
-      <a href="/article/43e09871-01a1-4b24-af9f-31e275b91b2f">Guideline: Protect Libraries Loaded Through JNI </a>
-    </li>
-    <li>
-      <a href="/article/70b53138-faf7-410a-a966-16f3088fca63">Guideline: Minimize the Number of Times Language Boundaries are Crossed </a>
-    </li>
-    <li>
-      <a href="/article/351b69c8-b40b-4c13-899e-a8399b85a0ea">Guideline: Do Not Utilize Functionality Through JNI if Java Already Supports It </a>
-    </li>
-    <li>
-      <a href="/article/4be4ed09-ed2f-4f05-9e63-e20708807542">Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries </a>
-    </li>
-    <li>
-      <a href="/article/5865cd19-5ead-401d-abd7-7e54cd2c1fc1">Guideline: Use Stored Procedures </a>
-    </li>
-    <li>
-      <a href="/article/40eea61e-c8bd-494a-b75d-c18c2074c752">Guideline: Validate Input from All Sources </a>
-    </li>
-    <li>
-      <a href="/article/b431b7df-36d8-461b-a437-675a20e9548b">Guideline: Validate All Input Passed to Database </a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+All web applications that process user supplied input on the server.
+=Description
+
+An attacker conducts a Server-Side code injection attack by submitting malicious input which gets executed on the server. This malicious input could be submitted via numerous means, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner which forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an Information Disclosure Attack.
+
+Depending on the type of back-end applications, the type of attacks vary. Some common Server-side code injection attacks are:
+
+    *SQL Injection Attack
+    *Command Injection Attack
+    *Buffer Overflow Attack
+
+=Impact
+
+    *Execution of malicious code on the server which may threaten the confidentiality, integrity and availability of services and data.
+
+=Vulnerabilities
+
+    *Weak or no validation of user supplied input.
+    *Running with elevated privileges - Although this does not result in code execution, it does make the impact of an attack much worse.
+
+=Countermeasures
+
+    *Input Validation: User supplied input should be validated for type, size, form and content before it is processed by the server.
+    *Separation of Control and Data Flow: User input should be segregated from any context where control information is present, and the seperation should be maintained.
+
+=Example
+
+Please refer to the examples presented in the specific attack types mentioned in the Description section.
+
+Related Items
+
+    *[[Attack: SQL Injection Attack]]
+    *[[Attack: Command Injection Attack]]
+    *[[Attack: Cross Site Scripting Attack]]
+    *[[Attack: XML Injection Attack]]
+    *[[Attack: Xpath-XQuery Attack]]
+    *[[Attack: LDAP Injection Attack]]
+    *[[Attack: AJAX Injection Attack]]
+    *[[Attack: Format String Attack]]
+    *Guideline: Validate All Data Passed Between Native and Java Code
+    *Guideline: Protect Libraries Loaded Through JNI
+    *Guideline: Minimize the Number of Times Language Boundaries are Crossed
+    *Guideline: Do Not Utilize Functionality Through JNI if Java Already Supports It
+    *Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries
+    *Guideline: Use Stored Procedures
+    *Guideline: Validate Input from All Sources
+    *Guideline: Validate All Input Passed to Database
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
