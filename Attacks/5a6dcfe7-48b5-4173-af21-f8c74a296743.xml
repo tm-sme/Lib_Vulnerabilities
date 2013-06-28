@@ -46,8 +46,8 @@ A keystore is a secure location on disk or in memory that can be used to store c
 
 =Additional Resources
 
-    For more information on Java 2 KeyStore Class, see: http://java.sun.com/j2se/1.4.2/docs/api/java/security/KeyStore.html
-    For more information on Windows Data Protection, see: http://msdn2.microsoft.com/en-us/library/ms995355.aspx
+    *For more information on Java 2 KeyStore Class, see: http://java.sun.com/j2se/1.4.2/docs/api/java/security/KeyStore.html
+    *For more information on Windows Data Protection, see: http://msdn2.microsoft.com/en-us/library/ms995355.aspx
 
 =Related Items
 
