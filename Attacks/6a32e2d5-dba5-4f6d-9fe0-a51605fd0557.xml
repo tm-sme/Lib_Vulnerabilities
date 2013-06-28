@@ -17,55 +17,39 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Any network application</p>
-  <h1>Description</h1>
-  <p>An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials. <br /></p>
-  <h1>Impact</h1>
-  <ul>
-    <li>Loss of confidentiality of potentially sensitive data.</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>
-      <strong>Insecure Communication Channel:</strong> No guarantees of confidentiality or integrity.</li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>
-      <p>
-        <strong>Establish a secure communication channel:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Utilize SSL/TLS for application layer encryption:</strong> This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols (SSL 3.0/TLS 1.0) only. Weak ciphers should never be used. </li>
-        <li>
-          <strong>Utilize IPSec for IP layer encryption:</strong> This will help secure all data flowing between two networked machines, but has a higher administrative overhead; it is not suitable for exchanging information with arbitrary Internet hosts.</li>
-      </ul>
-    </li>
-    <li>
-      <p>
-        <strong>Encrypt only the sensitive data:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Use encryption inside a plaintext protocol:</strong> Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, etc., must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.</li>
-      </ul>
-    </li>
-  </ul>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information on SSL/TLS Encryption, see: <a href="http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx">http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx</a><br /></li>
-    <li>For more information on Packet Analyzers, see: <a href="http://en.wikipedia.org/wiki/Packet_sniffer">http://en.wikipedia.org/wiki/Packet_sniffer</a></li>
-    <li>For more information on Wireshark, see: <a href="http://www.wireshark.org/">http://www.wireshark.org/</a></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/74e70134-b639-4cdc-b3e7-fe2952256d98">Attack: Network Credential Sniffing Attack</a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Any network application
+=Description
+
+An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials.
+=Impact
+
+    *Loss of confidentiality of potentially sensitive data.
+
+=Vulnerabilities
+
+    *Insecure Communication Channel: No guarantees of confidentiality or integrity.
+
+=Countermeasures
+
+*Establish a secure communication channel:
+**Utilize SSL/TLS for application layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols (SSL 3.0/TLS 1.0) only. Weak ciphers should never be used.
+**Utilize IPSec for IP layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead; it is not suitable for exchanging information with arbitrary Internet hosts.
+*Encrypt only the sensitive data:
+**Use encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, etc., must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.
+
+=Additional Resources
+
+    *For more information on SSL/TLS Encryption, see: http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx
+    *For more information on Packet Analyzers, see: http://en.wikipedia.org/wiki/Packet_sniffer
+    *For more information on Wireshark, see: http://www.wireshark.org/
+
+=Related Items
+
+    *[[Attack: Network Credential Sniffing Attack]]
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
