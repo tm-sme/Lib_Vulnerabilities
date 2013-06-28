@@ -17,61 +17,41 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Applications encrypting sensitive data.</p>
-  <h1 class="section">Description</h1>
-  <p>Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets. </p>
-  <h1 class="section">Impact</h1>
-  <ul>
-    <li>Discovery of encryption keys (WEP Key Attack) 
-</li>
-    <li>Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
-</li>
-    <li>Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.</li>
-  </ul>
-  <h1 class="section">Vulnerabilities</h1>
-  <ul>
-    <li>False sense of security when using encryption libraries</li>
-  </ul>
-  <h1 class="section">Countermeasures</h1>
-  <ul>
-    <li>Always be sure you know what is and what is not being encrypted 
-</li>
-    <li>Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
-</li>
-    <li>Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks</li>
-  </ul>
-  <h1 class="section">Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/340f0d7d-6226-4948-9934-84a07b3064bf">Attack: Chosen Ciphertext Attack</a>
-    </li>
-    <li>
-      <a href="/article/29e3d723-354f-4d82-ac7b-b004dc759c2f">Attack: Chosen Plaintext Attack</a>
-    </li>
-    <li>
-      <a href="/article/d72d0706-99df-4a65-a19d-6a83ec868a7b">Attack: Credentials Brute Force Attack</a>
-    </li>
-    <li>
-      <a href="/article/e8b05112-2416-436a-9679-07d9e5626bca">Attack: Credentials Dictionary Attack</a>
-    </li>
-    <li>
-      <a href="/article/350d9e10-d3d2-4e15-af89-f6ea84c01320">Attack: Key Bruteforce Attack</a>
-    </li>
-    <li>
-      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-    </li>
-    <li>
-      <a href="/article/ac219c42-ec7a-4a01-be18-d0a76bd66018">Attack: Session Prediction Attack</a>
-    </li>
-    <li>
-      <a href="/article/4e938b66-254d-42ce-b714-a5de348b37e7">Attack: Traffic Analysis Attack</a>
-    </li>
-    <li>
-      <a href="/article/b0ac82e3-fe0d-4581-85bd-48ff3fd9fb19">Attack: Weak Password Attack</a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Applications encrypting sensitive data.
+=Description
+
+Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets.
+=Impact
+
+    *Discovery of encryption keys (WEP Key Attack)
+    *Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more
+    *Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.
+
+=Vulnerabilities
+
+    *False sense of security when using encryption libraries
+
+=Countermeasures
+
+    *Always be sure you know what is and what is not being encrypted
+    *Understand what bits of information can be discovered by analyzing packets or information being sent on the network
+    *Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks
+
+=Related Items
+
+    *[[Attack: Chosen Ciphertext Attack]]
+    *[[Attack: Chosen Plaintext Attack]]
+    *[[Attack: Credentials Brute Force Attack]]
+    *[[Attack: Credentials Dictionary Attack]]
+    *[[Attack: Key Bruteforce Attack]]
+    *[[Attack: Information Disclosure Attack]]
+    *[[Attack: Session Prediction Attack]]
+    *[[Attack: Traffic Analysis Attack]]
+    *[[Attack: Weak Password Attack]]
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
