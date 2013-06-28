@@ -60,8 +60,8 @@ Secondly the message is parsed by the web server. Although the web server receiv
 In summary we have the following:
 
 | |First request| 	Second request|
-|Proxy 	|POST, lines 1-10| 	|GET, lines 11-14|
-|Web Server 	|POST, lines 1-7| 	|GET, lines 8-14|
+|Proxy 	|POST, lines 1-10 	|GET, lines 11-14
+|Web Server 	|POST, lines 1-7	|GET, lines 8-14
 
 At this point the web server responds to the {{{GET}}} in line 8 by sending the content of {{{/poison.html}}} to the proxy. The proxy, expecting a response to the GET request in line 11, mistakenly matches the reply from the webserver with contents from {{{/poison.html}}} to the page {{{/index.html}}}. Therefore, the contents of {{{/poison.html}}} are cached under the name {{{/index.html}}} on the proxy. Now any user who requests {{{http://somewhere.com/index.html}}} through the proxy will receive the contents of {{{http://somewhere.com/poison.html}}} instead.
 
