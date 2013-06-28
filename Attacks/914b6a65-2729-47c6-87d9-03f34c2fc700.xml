@@ -59,8 +59,7 @@ Secondly the message is parsed by the web server. Although the web server receiv
 
 In summary we have the following:
 
-
-	||First request| 	Second request|
+| |First request| 	Second request|
 |Proxy 	|POST, lines 1-10| 	|GET, lines 11-14|
 |Web Server 	|POST, lines 1-7| 	|GET, lines 8-14|
 
