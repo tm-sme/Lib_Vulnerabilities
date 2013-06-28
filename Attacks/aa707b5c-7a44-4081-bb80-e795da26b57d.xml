@@ -17,66 +17,53 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<br />
-  <br />
-  <h1>Applies To</h1>
-  <p>Applications that transfer unencrypted sensitive data within a virtual local area network (VLAN).</p>
-  <h1>Description</h1>
-  <p>VLANs allow network administrators to divide their physical networks into sets of smaller logical networks. Like their physical counterparts, each VLAN consists of a single broadcast domain that is isolated from other VLANs. VLANs work by tagging packets with an identification header and then restricting the ports that the tagged packets can be received on to those that are part of the VLAN.</p>
-  <p>VLAN spoofing attacks are conducted to allow an attacking host on a VLAN to gain access to traffic on other VLANs that would normally not be accessible. There are two methods of conducting VLAN spoofing attacks:</p>
-  <ol>
-    <li>Switch spoofing: the network attacker configures a system to impersonate a switch. Using this method a network attacker can make a system appear to be a switch with a <a href="http://en.wikipedia.org/wiki/VLAN">trunk port</a>. If successful, the attacking system then becomes a member of all VLANs. </li>
-    <li>Double tagging: this version of the attack involves tagging the transmitted frames with two identification headers in order to forward the frames to the wrong VLAN. The first switch to encounter the double-tagged frame strips the first tag off the frame and forwards the frame. The result is that the frame is forwarded with the first header to all the switch ports including trunk ports configured with the native VLAN of the network attacker. The second switch then forwards the packet to the destination based on the VLAN identifier in the second identification header.</li>
-  </ol>
-  <h1>Impact</h1>
-  <ul>
-    <li>Disclosure of sensitive information from one VLAN with trusted users to another VLAN with untrusted users </li>
-    <li>Communication between an application within a protected VLAN and an attacker on a separate VLAN</li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Insecure configuration of network resources, which result in floating VLAN IDs (i.e. with no assigned trunk ports) </li>
-    <li>
-      <a href="http://en.wikipedia.org/wiki/Dynamic_Trunking_Protocol">Dynamic Trunking Protocol (DTP)</a> enabled on user ports </li>
-    <li>Reliance on VLANs for security</li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <p>Whenever possible, do not use VLANs when segregating networks for security reasons. VLANs are a great tool for simplifying the administration of networks and for simplifying cable plants, but they are not a secure substitute for physical separation. If you must use VLANs, the following guidelines will help:</p>
-  <ul>
-    <li>Use dedicated VLAN IDs for trunk ports </li>
-    <li>Disable all unused switch ports and place them in an unused VLAN </li>
-    <li>Set all user ports to nontrunking mode by explicitly turning off DTP on these ports</li>
-  </ul>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more on network security: SAFE Layer 2 Security In-depth Version 2 Whitepaper by Cisco http://tools.cisco.com/search/display?url=http%3A%2F%2Fwww.cisco.com%2Fen%2FUS%2Fdocs%2Fsolutions%2FEnterprise%2FSecurity%2FSAFE_RG%2Fchap1.html&amp;pos=1&amp;strqueryid=2&amp;websessionid=NrOK7Wv9LFk2ZkgtV-3fK1u</li>
-    <li>For more on virtual LANs: <a href="http://en.wikipedia.org/wiki/VLAN">VLANs http://en.wikipedia.org/wiki/VLAN<br /></a></li>
-    <li>For more on the Dynamic Trunking Protocol: <a href="http://en.wikipedia.org/wiki/Dynamic_Trunking_Protocol">DTP http://en.wikipedia.org/wiki/Dynamic_Trunking_Protocol<br /></a></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/b2eecff2-6466-4c74-8d4f-e4931be2731f">Attack: Wireless Packet Injection Attack</a>
-    </li>
-    <li>
-      <a href="/article/cf06603e-440e-4118-85d5-ad360817fabc">Attack: Network Eavesdropping Attack</a>
-    </li>
-    <li>
-      <a href="/article/39ffe3fe-b835-44f1-93e3-451685784650">Attack: DNS Cache Poisoning</a>
-    </li>
-    <li>
-      <a href="/article/6a219806-df28-4c00-bc2d-c2ce4c721b7e">Attack: Trust Relationship Attack</a>
-    </li>
-    <li>
-      <a href="/article/a048eed9-ad5a-4dac-a8d3-68f42da69dbd">Attack: Man in the Middle Attack</a>
-    </li>
-    <li>
-      <a href="/article/74e70134-b639-4cdc-b3e7-fe2952256d98">Attack: Network Credential Sniffing Attack</a>
-    </li>
-    <li>
-      <a href="/article/1a5609e3-d9f1-4809-bc50-5ff50f98787f">Attack: ARP Spoofing Attack</a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Applications that transfer unencrypted sensitive data within a virtual local area network (VLAN).
+=Description
+
+VLANs allow network administrators to divide their physical networks into sets of smaller logical networks. Like their physical counterparts, each VLAN consists of a single broadcast domain that is isolated from other VLANs. VLANs work by tagging packets with an identification header and then restricting the ports that the tagged packets can be received on to those that are part of the VLAN.
+
+VLAN spoofing attacks are conducted to allow an attacking host on a VLAN to gain access to traffic on other VLANs that would normally not be accessible. There are two methods of conducting VLAN spoofing attacks:
+
+    *Switch spoofing: the network attacker configures a system to impersonate a switch. Using this method a network attacker can make a system appear to be a switch with a trunk port. If successful, the attacking system then becomes a member of all VLANs.
+    *Double tagging: this version of the attack involves tagging the transmitted frames with two identification headers in order to forward the frames to the wrong VLAN. The first switch to encounter the double-tagged frame strips the first tag off the frame and forwards the frame. The result is that the frame is forwarded with the first header to all the switch ports including trunk ports configured with the native VLAN of the network attacker. The second switch then forwards the packet to the destination based on the VLAN identifier in the second identification header.
+
+=Impact
+
+    *Disclosure of sensitive information from one VLAN with trusted users to another VLAN with untrusted users
+    *Communication between an application within a protected VLAN and an attacker on a separate VLAN
+
+=Vulnerabilities
+
+    *Insecure configuration of network resources, which result in floating VLAN IDs (i.e. with no assigned trunk ports)
+    *Dynamic Trunking Protocol (DTP) enabled on user ports
+    *Reliance on VLANs for security
+
+=Countermeasures
+
+*Whenever possible, do not use VLANs when segregating networks for security reasons. VLANs are a great tool for simplifying the administration of networks and for simplifying cable plants, but they are not a secure substitute for physical separation. If you must use VLANs, the following guidelines will help:
+
+**Use dedicated VLAN IDs for trunk ports
+**Disable all unused switch ports and place them in an unused VLAN
+**Set all user ports to nontrunking mode by explicitly turning off DTP on these ports
+
+=Additional Resources
+
+    *For more information on SAFE Design Zone for Security, see: http://tools.cisco.com/search/display?url=http%3A%2F%2Fwww.cisco.com%2Fen%2FUS%2Fdocs%2Fsolutions%2FEnterprise%2FSecurity%2FSAFE_RG%2Fchap1.html&pos=1&strqueryid=2&websessionid=NrOK7Wv9LFk2ZkgtV-3fK1u
+    *For more information on virtual LANs, see: http://en.wikipedia.org/wiki/VLAN
+    *For more information on the Dynamic Trunking Protocol,see: http://en.wikipedia.org/wiki/Dynamic_Trunking_Protocol
+
+=Related Items
+
+    *[[Attack: Wireless Packet Injection Attack]]
+    *[[Attack: Network Eavesdropping Attack]]
+    *[[Attack: DNS Cache Poisoning]]
+    *[[Attack: Trust Relationship Attack]]
+    *[[Attack: Man in the Middle Attack]]
+    *[[Attack: Network Credential Sniffing Attack]]
+    *[[Attack: ARP Spoofing Attack]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
