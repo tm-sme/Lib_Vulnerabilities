@@ -50,27 +50,22 @@ From an attacker’s perspective this attack may look something like the followi
 
 First the attacker opens a connection to the server.
 
-|Client Sends in connection 1:\\
-REQ: initialize connection|
+|Client Sends in connection 1:\\{{{REQ: initialize connection}}}|
 
 So the server sends a challenge value which must be used to generate the response to be authenticated. The server sends a packet that may look like the following:
 
-|Server Sends in connection 1:\\
-AUTH: domain=test@testdomain.comFunction: initiate/authenticatechallenge=6F1ED002AB5595859014EBF0951522D9|
+|Server Sends in connection 1:\\{{{AUTH: domain=test@testdomain.comFunction: initiate/authenticatechallenge=6F1ED002AB5595859014EBF0951522D9}}}|
 
 Now that the attacker has a challenge that she can send back to the server to force the server to create a valid response. So the attacker opens a second connection and sends the same packet to the server and waits for a response:
-|Client Sends in connection 2:\\
-AUTH: domain=test@testdomain.comFunction: initiate/authenticatechallenge=6F1ED002AB5595859014EBF0951522D9|
+|Client Sends in connection 2:\\{{{AUTH: domain=test@testdomain.comFunction: initiate/authenticatechallenge=6F1ED002AB5595859014EBF0951522D9}}}|
 
 The server sends the following response back in the second connection:
-|Server Sends in connection 2:\\
-AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A|
+|Server Sends in connection 2:\\AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
 
 Note: in this example the response hash is an MD5 hash of a valid username, password, domain and the challenge. The attacker doesn’t need to know any more information than the challenge since the server is providing its credentials in hashed form.
 
 From this point, the attacker responds to the first connection that was opened with the response that the server provided in the second connection and the authorization for the first connection is complete.
-|Client Sends in connection 1:\\
-AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A|
+|Client Sends in connection 1:\\AUTH: username=”demo”Function: authenticateResponse= 23D5C7C0BAB95DE5AFB0E6CDDA275D3A}}}|
 
 =Additional Resources
 
