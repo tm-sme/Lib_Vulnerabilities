@@ -48,7 +48,7 @@ The capabilities of an attacker are constrained by the permissions of the accoun
 
 =Example
 
-While it is easier and more reliable to fix SQL injection by parameterization, it can be fixed without it. Suppose we have a PHP/MySQL application that has two tables: {{{users and products}}}. Each row in the {{USER table}} contains the {{users ID, name, password, credit card number, and address}}. Similarly, the product table has a column for the {{product ID, description, and price}}. The application contains a SQL Query that retrieves the description of a product given its {{ID}}.
+While it is easier and more reliable to fix SQL injection by parameterization, it can be fixed without it. Suppose we have a PHP/MySQL application that has two tables: {{{users and products}}}. Each row in the {{{USER table}}} contains the {{{users ID, name, password, credit card number, and address}}}. Similarly, the product table has a column for the {{{product ID, description, and price}}}. The application contains a SQL Query that retrieves the description of a product given its {{{ID}}}.
 
 {{{
 $query = "SELECT description FROM products WHERE product_id = " + $prod_id + ";";$result = mysql_query($query);
