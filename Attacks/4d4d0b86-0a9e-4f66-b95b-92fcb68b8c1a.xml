@@ -45,6 +45,7 @@ Both conducting traffic analysis attacks and protecting against it require a rel
 =Countermeasures
 
 *Protocol design for protection against traffic analysis is a very complicated process, equivalent to designing cryptographic algorithms, and possibly more difficult. Applications requiring this level of secure communication should use an existing traffic-analysis resistant transport, like Tor, and take care to use it in ways which preserve its security properties.
+
 =Example
 
 *An attacker can gain important information by monitoring the frequency and timing of network packets. For example, a timing attack on the SSH protocol used timing information to deduce information about passwords. For interactive sessions, SSH transmits a message after each key stroke. The timings between messages can be studied using hidden Markov models, and can be used to recover the password fifty times faster than a brute force attack.
