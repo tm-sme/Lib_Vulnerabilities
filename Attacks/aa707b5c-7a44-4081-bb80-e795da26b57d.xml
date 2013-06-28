@@ -44,10 +44,9 @@ VLAN spoofing attacks are conducted to allow an attacking host on a VLAN to gain
 =Countermeasures
 
 *Whenever possible, do not use VLANs when segregating networks for security reasons. VLANs are a great tool for simplifying the administration of networks and for simplifying cable plants, but they are not a secure substitute for physical separation. If you must use VLANs, the following guidelines will help:
-
-**Use dedicated VLAN IDs for trunk ports
-**Disable all unused switch ports and place them in an unused VLAN
-**Set all user ports to nontrunking mode by explicitly turning off DTP on these ports
+**Use dedicated VLAN IDs for trunk ports\\
+**Disable all unused switch ports and place them in an unused VLAN\\
+**Set all user ports to non-trunking mode by explicitly turning off DTP on these ports\\
 
 =Additional Resources
 
