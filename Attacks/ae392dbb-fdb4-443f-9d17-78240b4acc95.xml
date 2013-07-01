@@ -42,15 +42,10 @@ An XML injection vulnerability will allow an attacker to insert malicious data i
 =Countermeasures
 
     *When loading an XML file on the server, validate it against a defined XSD.
-
     *Perform context-sensitive encoding of untrusted input. As with encoding data to be output in HTML, a whitelist approach should be taken. For each context which data is going to be inserted in (element, attribute value, etc.) a set of known-safe characters should be constructed. The data to be added should be checked against the whitelist, and any characters not specifically listed should be encoded. CDATA sections should be used to further ensure that the parser ignores special characters. Ideally, only non-XML values should be accepted from untrusted sources. If an XML blob must be accepted from an untrusted source, it should be manually reassembled from values parsed out and encoded after checking the received blob against an XSD.
-
     *Untrusted input should be validated against an inclusion list before use. For example, use a RegEx pattern, primitive type casting, a domain constraint, or another validator. See the Additional Resources for more information on data validation.
-
     *Trim XML documents to include only the data that is necessary to the application.
-
     *Use XML processing pipelines to make the flow of data clear and threats easier to identify.
-
     *Remove DOCTYPE element from user input before creating XML objects.
 
 =Example
@@ -72,11 +67,12 @@ Gandalf@MiddleEarth.com<uniqueid>0</uniqueid><name>Gandalf</name><email>Gandalf@
 The resulting XML on the server will look like this:
 
 {{{
-<userrecord>   <uniqueid>5</uniqueid>   <name>Gandalf</name>   <email>Gandalf@MiddleEarth.com</email><uniqueid>0</uniqueid>               
+<userrecord>   <uniqueid>5</uniqueid>   <name>Gandalf</name>   
+<email>Gandalf@MiddleEarth.com</email><uniqueid>0</uniqueid>               
 <name>Gandalf</name><email>Gandalf@MiddleEarth.com</email>   
 <address>One Middle Earth Way, ME</address>   <zipcode>10000</zipcode>   
 <phonenumber>123-456-7890</phonenumber></userrecord>
-}}}\\
+}}}
 
 We now have two fields and values for {{{UniqueID, Name and Email}}}. The outcome of parsing such data will depend upon the type of XML parser used:
 
@@ -86,17 +82,19 @@ We now have two fields and values for {{{UniqueID, Name and Email}}}. The outcom
 Also note that this is a simple example. It is possible to insert an entire new record among other issues. To fix the example above we can escape the markup delimiters to prevent the users input from being interpreted, replacing & with &, &lt; with &lt;, and so on as described in the Countermeasures section. This will prevent the users data from being interpreted in this case. In general, though, we don't know exactly what the input might look like, so the best plan is to have a white-list acceptable characters and do type checking as much as possible. Where type checking is not possible, consider using {{{CDATA}}} to enforce that the string be treated strictly as data. For example:
 
 {{{
-$evil_input = "Gandalf@MiddleEarth.com</email>   <uniqueid>0</uniqueid><name>Gandalf</name><email>Gandalf@MiddleEarth.com";$data = "<!--[CDATA[" + $evil_input + "]]-->";
-}}}\\
+$evil_input = "Gandalf@MiddleEarth.com</email>   <uniqueid>0</uniqueid>
+<name>Gandalf</name><email>Gandalf@MiddleEarth.com";$data = "<!--[CDATA[" + $evil_input + "]]-->";
+}}}
 
 After we insert {{{$data}}} into the {{{email}}} field above the result will be the following acceptable XML:
 
 {{{
-<userrecord>   <uniqueid>5</uniqueid>   <name>Gandalf</name>   <email><!--[CDATA[Gandalf@MiddleEarth.com</Email--><uniqueid>0</uniqueid>             
+<userrecord>   <uniqueid>5</uniqueid>   
+<name>Gandalf</name>   <email><!--[CDATA[Gandalf@MiddleEarth.com</Email--><uniqueid>0</uniqueid>             
 <name>Gandalf</name><email>Gandalf@MiddleEarth.com]]&gt;   </email>   
 <address>One Middle Earth Way, ME</address>   <zipcode>10000</zipcode>   
 <phonenumber>123-456-7890</phonenumber></email></userrecord>
-}}}\\
+}}}
 
 {{{CDATA}}} is very useful when used correctly but it has the same generic problem as we had before. An attacker can create a malicious string that uses {{{"]]&gt;"}}} to end the {{{CDATA}}} and insert malicious XML. Therefore, wherever we use {{{CDATA}}} we must also remove or escape {{{]]&gt;}}} from the input string—at a certain point, it's easier to simply give up and encode everything by whitelist.
 
@@ -104,7 +102,7 @@ After we insert {{{$data}}} into the {{{email}}} field above the result will be 
 
     *For more information on http://www.w3.org/XML/Processing/
     *For more information on http://www-128.ibm.com/developerworks/xml/library/x-think37/index.html
-     *For more information onhttp://www.owasp.org/index.php/Data_Validation
+    *For more information onhttp://www.owasp.org/index.php/Data_Validation
     *For more information on http://www-128.ibm.com/developerworks/xml/library/x-tipcfsx.html
      *For more information onhttp://www.w3schools.com/xml/xml_cdata.asp
 
@@ -122,6 +120,6 @@ After we insert {{{$data}}} into the {{{email}}} field above the result will be 
     *Guideline: Validate Input from All Sources
     *Guideline: Validate Input for Length, Range, Format, and Type
     *Guideline: Do Not Rely on Client-Side Validation
-]]></Data>
+</email>]]></Data>
   </Content>
 </TeamMentor_Article>
