@@ -17,74 +17,55 @@
     <Status />
     <Source>SI</Source>
   </Metadata>
-  <Content Sanitized="true" DataType="Html">
-    <Data><![CDATA[<h1>Applies To
-  </h1>
-  <p>Applications that use encryption.</p>
-  <h1>Description</h1>
-  <p>A chosen plaintext attack (CPA) is a form of cryptanalysis where it is assumed that the attacker has access to a device that provides her the capability to choose arbitrary plaintext to be encrypted and obtain the corresponding ciphertext.</p>
-  <p>An attacker with such capabilities will perform the encryption of selected plaintext and then analyze the resulting ciphertext in order to gain some further information that reduces the security of the encryption scheme. In the worst case, a chosen plaintext attack could reveal the scheme's secret key.</p>
-  <h1>Impact</h1>
-  <ul>
-    <li>Disclosure of sensitive data </li>
-  </ul>
-  <h1>Vulnerabilities</h1>
-  <ul>
-    <li>Custom implementation of algorithm. </li>
-    <li>Use of weak keys (e.g., a short key length). </li>
-    <li>Exposing cipher text unnecessarily. </li>
-    <li>Allowing an attacker to submit arbitrary data for encryption.</li>
-  </ul>
-  <h1>Countermeasures</h1>
-  <ul>
-    <li>Use well-known implementations of well-known cryptographic algorithms. </li>
-    <li>Use cryptographically generated random keys. </li>
-    <li>Use large keys (128-bit symmetric or 1024-bit asymmetric keys). </li>
-    <li>Utilize platform supplied features to store secret keys. </li>
-    <li>Follow principle of least privilege to provide limited access to the secret key. </li>
-    <li>Maintain key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot). </li>
-    <li>If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text and use a chaining mode to prevent the replacement of individual blocks of the cyphertext. </li>
-    <li>If using a cryptographic hash algorithm, salt the hash value with a unique random bit stream.</li>
-  </ul>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information on chosen plaintext attacks, see: <a href="http://en.wikipedia.org/wiki/Chosen_plaintext_attack">http://en.wikipedia.org/wiki/Chosen_plaintext_attack</a></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/340f0d7d-6226-4948-9934-84a07b3064bf">Attack: Chosen Ciphertext Attack</a>
-    </li>
-    <li>
-      <a href="/article/350d9e10-d3d2-4e15-af89-f6ea84c01320">Attack: Key Bruteforce Attack</a>
-    </li>
-    <li>
-      <a href="/article/4e938b66-254d-42ce-b714-a5de348b37e7">Attack: Traffic Analysis Attack</a>
-    </li>
-    <li>
-      <a href="/article/7d83d845-cd2b-4067-bb4c-5fbb890b9c9e">Attack: Information Disclosure Attack</a>
-    </li>
-    <li>
-      <a href="/article/72891dcd-2330-4615-a22a-855a02394277">Attack: Statistical Analysis Attack</a>
-    </li>
-    <li>
-      <a href="/article/ed64300c-6963-4f9d-b3db-6e65acc8c481">Attack: Timing Analysis Attack</a>
-    </li>
-    <li>
-      <a href="/article/88ae773e-d30d-4d76-89ef-41b40f0eb0aa">Attack: Sniff Memory for Secrets Attack</a>
-    </li>
-    <li>
-      <a href="/article/51b6776e-c771-4d63-b77d-b16ba295a62f">Guideline: Encrypt Sensitive Data in the Database </a>
-    </li>
-    <li>
-      <a href="/article/de3e4477-e2b0-40a5-91f6-b3dab65667fb">Guideline: Store Passwords Securely </a>
-    </li>
-    <li>
-      <a href="/article/b070122f-f1d1-47da-a378-57f845d5db61">Guideline: Encrypt Communication Links </a>
-    </li>
-    <li>
-      <a href="/article/cd4ccbbb-be9c-4ff4-8b20-d116819b634b">Guideline: Use a Secure Key Storage Location </a>
-    </li>
-  </ul>]]></Data>
+  <Content Sanitized="true" DataType="wikitext">
+    <Data><![CDATA[=Applies To
+
+Applications that use encryption.
+=Description
+
+A chosen plaintext attack (CPA) is a form of cryptanalysis where it is assumed that the attacker has access to a device that provides her the capability to choose arbitrary plaintext to be encrypted and obtain the corresponding ciphertext.
+
+An attacker with such capabilities will perform the encryption of selected plaintext and then analyze the resulting ciphertext in order to gain some further information that reduces the security of the encryption scheme. In the worst case, a chosen plaintext attack could reveal the scheme's secret key.
+=Impact
+
+    *Disclosure of sensitive data
+
+=Vulnerabilities
+
+    *Custom implementation of algorithm.
+    *Use of weak keys (e.g., a short key length).
+    *Exposing cipher text unnecessarily.
+    *Allowing an attacker to submit arbitrary data for encryption.
+
+=Countermeasures
+
+    *Use well-known implementations of well-known cryptographic algorithms.
+    *Use cryptographically generated random keys.
+    *Use large keys (128-bit symmetric or 1024-bit asymmetric keys).
+    *Utilize platform supplied features to store secret keys.
+    *Follow principle of least privilege to provide limited access to the secret key.
+    *Maintain key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot).
+    *If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text and use a chaining mode to prevent the replacement of individual blocks of the ciphertext.
+    *If using a cryptographic hash algorithm, salt the hash value with a unique random bit stream.
+
+=Additional Resources
+
+    *For more information on chosen plaintext attacks, see: http://en.wikipedia.org/wiki/Chosen_plaintext_attack
+
+=Related Items
+
+    *[[2c13c857-5ef0-4fcd-9283-9632374106a3|Attack: Chosen Ciphertext Attack]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[4d4d0b86-0a9e-4f66-b95b-92fcb68b8c1a|Attack: Traffic Analysis Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
+    *[[88892358-450e-4bbc-afd9-ede9393e53a8|Attack: Sniff Memory for Secrets Attack]]
+    *Guideline: Encrypt Sensitive Data in the Database
+    *Guideline: Store Passwords Securely
+    *Guideline: Encrypt Communication Links
+    *Guideline: Use a Secure Key Storage Location
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
