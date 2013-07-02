@@ -40,10 +40,10 @@ An API Injection Attack involves intercepting the method calls made by an applic
 
 =Countermeasures
 
-    * **Use explicit paths:** Do not depend on environment path variables to locate the library for you, be explicit in specifying the full path to the library you intend to load.
-    * **File Permissions:** Use proper directory and file permissions on external libraries so that they can not be modified or replaced by an attacker.
-    * **Binary Verification:** All non-system external libraries should be verified for authenticity before being loaded. This can be accomplished by digitally signing the libraries and verifying the signature before loading the library.
-    * **Encryption:** If none of the above countermeasures can be employed, then the application must encrypt all sensitive information before passing them as parameter values to external libraries. This will not prevent an attacker from executing malicious code, but will prevent the leakage of sensitive information.
+    *Use explicit paths: Do not depend on environment path variables to locate the library for you, be explicit in specifying the full path to the library you intend to load.
+    *File Permissions: Use proper directory and file permissions on external libraries so that they can not be modified or replaced by an attacker.
+    *Binary Verification: All non-system external libraries should be verified for authenticity before being loaded. This can be accomplished by digitally signing the libraries and verifying the signature before loading the library.
+    *Encryption: If none of the above countermeasures can be employed, then the application must encrypt all sensitive information before passing them as parameter values to external libraries. This will not prevent an attacker from executing malicious code, but will prevent the leakage of sensitive information.
 
 =Example
 
