@@ -75,21 +75,21 @@ Examples of too much information in error messages:
 
 =Related Items
 
-    *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: Account Lockout Attack]]
-    *[[Attack: XML Injection Attack]]
-    *[[Attack: Local Machine Credential Sniffing Attack]]
-    *[[Attack: Traffic Analysis Attack]]
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: Exception Information Disclosure Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: Network Eavesdropping Attack]]
-    *[[Attack: Sniff Memory for Secrets Attack]]
-    *[[Attack: Statistical Analysis Attack]]
-    *[[Attack: Timing Analysis Attack]]
-    *[[Attack: Cross Site Scripting Attack]]
-    *[[Attack: Canonicalization Attack]]
+    *[[1508d763-03f1-4b43-bf8e-ad7cf8edebd7|Attack: Xpath-XQuery Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[577e90c9-8e44-4240-b00f-768316d63901|Attack: Account Lockout Attack]]
+    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]
+    *[[4b7d247d-f6a9-493e-a19a-665ff54b757f|Attack: Local Machine Credential Sniffing Attack]]
+    *[[4d4d0b86-0a9e-4f66-b95b-92fcb68b8c1a|Attack: Traffic Analysis Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[2f79f252-08a8-4341-aa2f-4466a023a44e|Attack: Exception Information Disclosure Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[6a32e2d5-dba5-4f6d-9fe0-a51605fd0557|Attack: Network Eavesdropping Attack]]
+    *[[88892358-450e-4bbc-afd9-ede9393e53a8|Attack: Sniff Memory for Secrets Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
+    *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
     *Guideline: Do Not Disclose Valuable Information in Error Messages
     *Guideline: Do Not Disclose Exception Details to the Client
     *Guideline: Do Not Include Debug Data in Output
