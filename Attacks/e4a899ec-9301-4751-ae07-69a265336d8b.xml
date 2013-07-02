@@ -86,17 +86,17 @@ Away"});alert("Gotcha!");//
 
 =Related Items
 
-    Attack: Cross Site Scripting Attack
-    Attack: Command Injection Attack
-    Attack: Double Encoding Attack
-    Attack: HTTP Session Hijacking Attack
-    Attack: XML Injection Attack
-    Guideline: Validate All Data Passed Between Native and Java Code
-    Guideline: Do Not Rely on Request Validation
-    Guideline: Do Not Rely on Client-Side Validation
-    Guideline: Encode All Output Data
-    Guideline: Validate Input for Length, Range, Format, and Type
-    Guideline: Validate Input from All Sources
+    *[[Attack: Cross Site Scripting Attack]]
+    *[[Attack: Command Injection Attack]]
+    *[[Attack: Double Encoding Attack]]
+    *[[Attack: HTTP Session Hijacking Attack]]
+    *[[Attack: XML Injection Attack]]
+    *Guideline: Validate All Data Passed Between Native and Java Code
+    *Guideline: Do Not Rely on Request Validation
+    *Guideline: Do Not Rely on Client-Side Validation
+    *Guideline: Encode All Output Data
+    *Guideline: Validate Input for Length, Range, Format, and Type
+    *Guideline: Validate Input from All Sources
 ]]></Data>
   </Content>
 </TeamMentor_Article>
