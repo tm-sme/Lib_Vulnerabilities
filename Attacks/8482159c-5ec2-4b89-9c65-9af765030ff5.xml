@@ -47,7 +47,7 @@ SQL injection, whether in a web application or installed client application, can
 
 =Countermeasures
 
-    *Use language specific comments: These comments will be automatically removed by the parsing or compiling engine and are not visible client side. Note: be careful with comments that are similar to HTML comments such as ColdFusion comments ( <!--- comment ---> ).
+    *Use language specific comments: These comments will be automatically removed by the parsing or compiling engine and are not visible client side. Note: be careful with comments that are similar to HTML comments such as ColdFusion comments ( {{{<!--- comment --->}}} ).
     *Use proper permissions: Restrict access to files and directories on the server, so users cannot access any file they want using directory/path traversal.
     *Use strong encryption algorithms: whenever sensitive data is stored ensure that it is properly protected using strong encryption
     *Use least privilege: Ensure that your application uses the principle of least privilege if it uses a backend database server.
