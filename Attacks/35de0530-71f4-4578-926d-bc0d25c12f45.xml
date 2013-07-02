@@ -53,10 +53,10 @@ In another type of False Transaction Attack, the attacker may generate a log ent
 
 =Related Items
 
-    *[[Attack: Repudiation Attack]]
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: Business Rule Attack]]
-    *[[Attack: Denial of Service Attack]]
+    *[[7e2fe1a5-ad30-4805-8421-767275dea35e|Attack: Repudiation Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[4c56f015-31b0-4570-a194-707d9cf6db26|Attack: Business Rule Attack]]
+    *[[468c8d7a-ffc6-49ad-bef5-1886fd809a96|Attack: Denial of Service Attack]]
     *Guideline: Log Important Security Operations
     *Guideline: Monitor the Use of Privileged Accounts
     *Guideline: Consider Log Throttling

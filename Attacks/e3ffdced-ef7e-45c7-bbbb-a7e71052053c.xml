@@ -61,14 +61,14 @@ Finally, rainbow tables can be used against systems that improperly protect pass
 
 =Related Items
 
-    *[[Attack: Account Lockout Attack]]
-    *[[Attack: Weak Password Attack]]
-    *[[Attack: Key Bruteforce Attack]]
-    *[[Attack: Session Prediction Attack]]
-    *[[Attack: Chosen Plaintext Attack]]
-    *[[Attack: Statistical Analysis Attack]]
-    *[[Attack: Chosen Ciphertext Attack]]
-    *[[Attack: Credentials Dictionary Attack]]
+    *[[577e90c9-8e44-4240-b00f-768316d63901|Attack: Account Lockout Attack]]
+    *[[47103484-487b-4493-a1dd-cf65a947c714|Attack: Weak Password Attack]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[e001f908-8905-40bd-8457-3ca2047537ea|Attack: Session Prediction Attack]]
+    *[[16fbf122-43cf-4201-9b33-cf2c728de202|Attack: Chosen Plaintext Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[2c13c857-5ef0-4fcd-9283-9632374106a3|Attack: Chosen Ciphertext Attack]]
+    *[[d00e43b2-f820-4668-8174-07045c4874be|Attack: Credentials Dictionary Attack]]
     *Guideline: Use a Secure Key Storage Location
     *Guideline: Enforce Strong Passwords
     *Guideline: Consider Using JAAS for Authentication

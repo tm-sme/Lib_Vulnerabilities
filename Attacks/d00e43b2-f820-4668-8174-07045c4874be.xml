@@ -47,9 +47,9 @@ If the attacker has a large amount of time available and the application is not 
 
 =Related Items
 
-    *[[Attack: Account Lockout Attack]]
-    *[[Attack: Credentials Brute Force Attack]]
-    *[[Attack: Weak Password Attack]]
+    *[[577e90c9-8e44-4240-b00f-768316d63901|Attack: Account Lockout Attack]]
+    *[[e3ffdced-ef7e-45c7-bbbb-a7e71052053c|Attack: Credentials Brute Force Attack]]
+    *[[47103484-487b-4493-a1dd-cf65a947c714|Attack: Weak Password Attack]]
     *Guideline: Enforce Strong Passwords
     *Guideline: Consider Using JAAS for Authentication
     *Guideline: Use Windows Authentication for Web Users if Possible (Windows Authentication)
