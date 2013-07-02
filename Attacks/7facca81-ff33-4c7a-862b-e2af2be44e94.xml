@@ -47,17 +47,17 @@ If user input is used to construct a filename or path it is possible for that in
 
 =Related Items
 
-    *[[Attack: Command Injection Attack]]
-    *[[Attack: Client-side Validation Attack]]
-    *[[Attack: Canonicalization Attack]]
-    *[[Attack: Information Disclosure Attack]]
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
     *Guideline: Validate All Data Passed Between Native and Java Code
     *Guideline: Do Not Rely on Request Validation
-    Guideline: Use a Least-Privileged Account for Running Applications
-    Guideline: Do Not Rely on Client-Side Validation
-    Guideline: Filter All User-Supplied Filename and Path Input
-    Guideline: Validate Input from All Sources
-    Guideline: Validate Input for Length, Range, Format, and Type
+    *Guideline: Use a Least-Privileged Account for Running Applications
+    *Guideline: Do Not Rely on Client-Side Validation
+    *Guideline: Filter All User-Supplied Filename and Path Input
+    *Guideline: Validate Input from All Sources
+    *Guideline: Validate Input for Length, Range, Format, and Type
 
 ]]></Data>
   </Content>
