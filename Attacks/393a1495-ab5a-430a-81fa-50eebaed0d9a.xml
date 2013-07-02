@@ -61,7 +61,7 @@ more < test.txt:demo
 
     * **Accessing the default data stream:** An attacker can bypass simple security checks by requesting the default data stream by its full name:
 
- {{{
+{{{
 more < test.txt::$DATA
 }}}
 
