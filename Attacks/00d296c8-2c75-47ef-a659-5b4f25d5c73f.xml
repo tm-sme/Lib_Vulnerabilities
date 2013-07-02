@@ -21,7 +21,7 @@
     <Data><![CDATA[=Applies To
 
 Any application that builds a file name, or path string, host name, url, or other resource identifier based on user input.
-Description
+=Description
 
 Different forms of input that resolve to the same standard name (the canonical name), is referred to as canonicalization. Code is particularly susceptible to canonicalization issues if it makes security decisions based on the name of a resource that is passed to the program as input. Files, paths, host names, and URLs are resource types that are vulnerable to canonicalization because in each case there are many different ways to represent the same name.
 =Impact
