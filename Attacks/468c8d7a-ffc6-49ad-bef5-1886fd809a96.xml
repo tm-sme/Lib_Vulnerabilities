@@ -75,15 +75,15 @@ Another example is if the application allows a user to submit script or other in
 
 =Related Items
   
-    *[[Attack: ARP Spoofing Attack]]
-    *[[Attack: Wireless Packet Injection Attack]]
-    *[[Attack: DNS Cache Poisoning]]
-    *[[Attack: VLAN Spoofing Attack]]
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: Command Injection Attack]]
-    *[[Attack: Account Lockout Attack]]
-    *[[Attack: Creation of False Transaction Attack]]
-    *[[Attack: Client-side Validation Attack]]
+    *[[0d3f3bbd-6442-4fd2-bb54-2ac10b64695c|Attack: ARP Spoofing Attack]]
+    *[[378080c8-3a72-4d2f-bf5e-a5cc6bd5f54b|Attack: Wireless Packet Injection Attack]]
+    *[[380b7108-0c16-4fbf-a914-6d37acf55421|Attack: DNS Cache Poisoning Attack]]
+    *[[aa707b5c-7a44-4081-bb80-e795da26b57d|Attack: VLAN Spoofing Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[577e90c9-8e44-4240-b00f-768316d63901|Attack: Account Lockout Attack]]
+    *[[35de0530-71f4-4578-926d-bc0d25c12f45|Attack: Creation of False Transaction Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
     *Guideline: Consider Log Throttling
     *Guideline: Validate Input for Length, Range, Format, and Type
     *Guideline: Use a Least-Privileged Account for Running Applications
