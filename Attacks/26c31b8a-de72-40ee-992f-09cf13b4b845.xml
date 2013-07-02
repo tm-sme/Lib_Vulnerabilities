@@ -80,10 +80,10 @@ catch(ClassNotFoundException ex){   ex.printStackTrace();}
 
 =Related Items
 
-    *[[Attack: Command Injection Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: Trust Relationship Attack]]
-    *[[Attack: Client-side Validation Attack]]
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[4d3185fd-1e48-40af-bc07-71206c40806b|Attack: Trust Relationship Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
     *Guideline: Validate All Data Passed Between Native and Java Code
     *Guideline: Do Not Rely on Client-Side Validation
     *Guideline: Validate Input from All Sources

@@ -48,10 +48,10 @@ In this attack the goal is to force the DNS server into updating its cache with 
 
 =Related Items
 
-    *[[Attack: ARP Spoofing Attack]]
-    *[[Attack: Man in the Middle Attack]]
-    *[[Attack: Trust Relationship Attack]]
-    *[[Attack: VLAN Spoofing Attack]]
+    *[[0d3f3bbd-6442-4fd2-bb54-2ac10b64695c|Attack: ARP Spoofing Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
+    *[[4d3185fd-1e48-40af-bc07-71206c40806b|Attack: Trust Relationship Attack]]
+    *[[aa707b5c-7a44-4081-bb80-e795da26b57d|Attack: VLAN Spoofing Attack]]
 
 ]]></Data>
   </Content>
