@@ -55,7 +55,7 @@ The code segment below shows how a small increment can cause an integer overflow
 unsigned int x = 0xFFFFFFFF;unsigned int y = x + 1; // now y == 0x = 0xFFFFFFFF;y = x+2;// now y == 1
 }}}
 
-Adding 2 to the maximum value that the unsigned integer can hold will cause the y to wrap around to 1.
+Adding 2 to the maximum value that the unsigned integer can hold will cause the {{{y}}} to wrap around to 1.
 =Additional Resources
 
     *For more information on Integer Overflows, see: https://www.owasp.org/index.php/Buffer_Overflows#Integer_Overflow
@@ -64,8 +64,8 @@ Adding 2 to the maximum value that the unsigned integer can hold will cause the 
 
 =Related Items
 
-    *[[Attack: Integer Underflow Attack]]
-    *[[Attack: Client-side Validation Attack]]
+    *[[ff04b61b-734c-4298-8c75-777bf5419cbf|Attack: Integer Underflow Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
     *Guideline: Validate All Data Passed Between Native and Java Code
     *Guideline: Validate Input from All Sources
     *Guideline: Do Not Rely on Client-Side Validation
