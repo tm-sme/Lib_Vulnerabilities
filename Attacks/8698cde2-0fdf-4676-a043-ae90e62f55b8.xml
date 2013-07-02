@@ -80,7 +80,7 @@ If the user enters the name "Alice", this code will output the following:
 $user stole my coffee!Alice stole my coffee!
 }}}
 
-However, if the user enters the name "echo exec('whoami'); echo" then the application will return the name of the system user running the php/html application. Any system command or external program in the path could be run in this fashion.
+However, if the user enters the name {{{"echo exec('whoami'); echo"}}} then the application will return the name of the system user running the php/html application. Any system command or external program in the path could be run in this fashion.
 
 =Additional Resources
 
@@ -90,16 +90,16 @@ However, if the user enters the name "echo exec('whoami'); echo" then the applic
 
 =Related Items
 
-    *[[Attack: Canonicalization Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: XML Injection Attack]]
-    *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: Client-side Validation Attack]]
-    *[[Attack: Cross Site Scripting Attack]]
-    *[[Attack: AJAX Injection Attack]]
-    *[[Attack: LDAP Injection Attack]]
-    *[[Attack: Man in the Middle Attack]]
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]
+    *[[1508d763-03f1-4b43-bf8e-ad7cf8edebd7|Attack: Xpath-XQuery Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
+    *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
+    *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
+    *[[61f0d74e-d9b6-4e27-9e12-da65baff83fd|Attack: LDAP Injection Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
     *Guideline: Do Not Rely on Request Validation
     *Guideline: Validate All Data Passed Between Native and Java Code
     *Guideline: Filter All User-Supplied Filename and Path Input
