@@ -21,7 +21,7 @@
     <Data><![CDATA[=Applies To
 
 Applications which interact with the a file system with alternate data stream support, including Windows NTFS file systems, Macintosh HFS file systems, Novell Storage Services (NSS), NetWare file systems (NWFS), Solaris UFS, Sun ZFS, and Veritas file system (VxFS).
-Description
+=Description
 
 In certain file systems it is possible to ‘hide’ data through the use of multiple data streams in a single file. When a file is accessed normally through the file system the stream name is left off and the default DATA stream is used. Every file on the file system has at least one stream. Alternate streams may be used for metadata or for nefarious reasons such as information hiding. Because most UIs do not provide a way of accessing alternate data streams they remain hidden from all but advanced users. However, creating and accessing multiple data streams is not difficult through the command line or programmatically.
 
