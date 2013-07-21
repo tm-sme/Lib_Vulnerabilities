@@ -3,10 +3,12 @@
   <Metadata>
     <Id>4f84a5c0-b513-4054-8f1a-1ff1367de03b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Log Forging</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Log Forging</DirectLink>
     <Author />
     <Priority />
     <Status />
