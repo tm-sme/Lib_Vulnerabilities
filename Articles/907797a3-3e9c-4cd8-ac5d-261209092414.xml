@@ -3,10 +3,12 @@
   <Metadata>
     <Id>907797a3-3e9c-4cd8-ac5d-261209092414</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Missing XML Validation</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Missing XML Validation</DirectLink>
     <Author />
     <Priority />
     <Status />
