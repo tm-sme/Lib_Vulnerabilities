@@ -13,7 +13,19 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+A Parameter Tampering vulnerability occurs when an attacker can modify parameters used by a web application that have security implications. For example, a vulnerable application may allow an attacker to change his user id by changing request parameters. The vulnerability stems from relying on user-accessible parameters to store security sensitive information. Common areas vulnerable to parameter tampering vulnerabilities are data stored in cookies, hidden form fields, and HTTP request parameters. This vulnerability type applies to web applications. To prevent this problem, use platform provided session management, don't store sensitive data in user accessible parameters and use strong session identifiers. To check for this vulnerability, identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges. 
+
+==Impact==
+
+The exact impact of parameter tampering depends on what parameters are available for tampering. This vulnerability usually allows the attacker to change his status from regular user to admin. In that case the attacker is able to take full control of the application and its data. Another common impact is the attacker is able to change his user id to that of another user. In that case the attacker can access and modify the user's data and impersonate that user. Parameter tampering usually allows the attacker to impersonate any user of his choosing. 
+
+==Specific Technologies==
+
+* [[00000000-0000-0000-0000-000000559673|ASP.NET Parameter Tampering]]
+* [[00000000-0000-0000-0000-000000140c0a|Java Parameter Tampering]]
+* [[00000000-0000-0000-0000-0000000966f0|PHP Parameter Tampering]]]]></Data>
   </Content>
 </TeamMentor_Article>
