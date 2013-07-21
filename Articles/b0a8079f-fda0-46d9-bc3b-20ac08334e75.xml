@@ -3,10 +3,12 @@
   <Metadata>
     <Id>b0a8079f-fda0-46d9-bc3b-20ac08334e75</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Path Traversal</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Path Traversal</DirectLink>
     <Author />
     <Priority />
     <Status />
