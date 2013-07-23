@@ -4,7 +4,7 @@
     <Id>57829386-5df5-4f7f-993a-3552ab3a292c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficiently Protected Credentials</Title>
-    <Category />
+    <Category>Authentication</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
