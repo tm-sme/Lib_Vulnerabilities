@@ -4,7 +4,7 @@
     <Id>42ec286a-d64e-421f-af0a-342d93b5a96d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Parameter Tampering</Title>
-    <Category />
+    <Category>Session Management</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
