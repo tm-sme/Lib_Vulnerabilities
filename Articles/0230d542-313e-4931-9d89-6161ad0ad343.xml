@@ -4,7 +4,7 @@
     <Id>0230d542-313e-4931-9d89-6161ad0ad343</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Unchecked Error Condition</Title>
-    <Category />
+    <Category>Error Handling</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
