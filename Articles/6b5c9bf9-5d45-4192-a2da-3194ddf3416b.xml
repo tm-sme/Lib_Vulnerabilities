@@ -4,7 +4,7 @@
     <Id>6b5c9bf9-5d45-4192-a2da-3194ddf3416b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Information Leak Through Cookies</Title>
-    <Category />
+    <Category>Session Management</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
