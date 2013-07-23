@@ -28,8 +28,6 @@ SQL injection allows the attacker to access any data in the database. The attack
 * [[00000000-0000-0000-0000-000000636321|Java SQL Injection]]
 * [[00000000-0000-0000-0000-000000729437|PHP SQL Injection]]
 
-==Additional Resources==
-
-* For more information about SQL injection attacks, please see http://en.wikipedia.org/wiki/SQL_injection]]></Data>
+]]></Data>
   </Content>
 </TeamMentor_Article>
