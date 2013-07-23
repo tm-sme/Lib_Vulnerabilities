@@ -4,7 +4,7 @@
     <Id>aedda6cc-1a70-4f07-8dde-f68bc1e99f5f</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Cross-Site History Manipulation</Title>
-    <Category />
+    <Category>Session Management</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
