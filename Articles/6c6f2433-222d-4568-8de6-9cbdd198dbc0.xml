@@ -4,7 +4,7 @@
     <Id>6c6f2433-222d-4568-8de6-9cbdd198dbc0</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Use of Hard-coded Password</Title>
-    <Category />
+    <Category>Authentication</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
