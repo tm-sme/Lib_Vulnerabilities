@@ -4,7 +4,7 @@
     <Id>4f84a5c0-b513-4054-8f1a-1ff1367de03b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Log Forging</Title>
-    <Category />
+    <Category>Auditing and Logging</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
