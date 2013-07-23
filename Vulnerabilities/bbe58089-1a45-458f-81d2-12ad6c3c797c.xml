@@ -4,12 +4,12 @@
     <Id>bbe58089-1a45-458f-81d2-12ad6c3c797c</Id>
     <Id_History>00000000-0000-0000-0000-000000063602,</Id_History>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>Use of Hardcoded Cryptographic Key</Title>
+    <Title>Use of Hard-coded Cryptographic Key</Title>
     <Category>Encryption</Category>
     <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
-    <DirectLink>Use of Hardcoded Cryptographic Key</DirectLink>
+    <DirectLink>Use of Hard-coded Cryptographic Key</DirectLink>
     <Author />
     <Priority />
     <Status />
