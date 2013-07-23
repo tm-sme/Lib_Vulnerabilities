@@ -4,7 +4,7 @@
     <Id>5ef5eea8-07c2-41de-80f9-7f62aaf0e3c8</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>XPath Injection</Title>
-    <Category />
+    <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
