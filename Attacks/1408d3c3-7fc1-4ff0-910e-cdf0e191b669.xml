@@ -62,12 +62,6 @@ The classic example of a client-side validation attack occurs with an common E-C
     *[[4c56f015-31b0-4570-a194-707d9cf6db26|Attack: Business Rule Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
     *[[468c8d7a-ffc6-49ad-bef5-1886fd809a96|Attack: Denial of Service Attack]]
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Do Not Rely on Request Validation
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Filter All User-Supplied Filename and Path Input
-    *Guideline: Validate Input from All Sources
-    *Guideline: Do Not Rely on Client-Side Validation
 
 ]]></Data>
   </Content>
