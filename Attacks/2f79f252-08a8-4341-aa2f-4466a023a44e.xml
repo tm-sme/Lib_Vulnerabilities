@@ -66,11 +66,6 @@ Even though this error message does not tell the user or the website exactly wha
 
 =Related Items
 
-    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
-    *Guideline: Do Not Disclose Exception Details to the Client
-    *Guideline: Use a Global Exception Handler for Unhandled Exceptions
-    *Guideline: Use Structured Exception Handling
-
-]]></Data>
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
