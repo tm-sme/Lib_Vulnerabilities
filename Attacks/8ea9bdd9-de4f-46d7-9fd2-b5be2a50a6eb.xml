@@ -76,10 +76,6 @@ The application should require a two step authorization mechanism for any change
     *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
     *[[8756794f-3bb1-4e08-9bad-5297c8130a52|Attack: HTTP Session Hijacking Attack]]
     *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
-    *Guideline: Do Not Place Sensitive Data in Parameters
-    *Guideline: Use Page.ViewStateUserKey to Counter Cross Site Request Forgery Attacks
-    *Guideline: Protect Session Cookies
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
