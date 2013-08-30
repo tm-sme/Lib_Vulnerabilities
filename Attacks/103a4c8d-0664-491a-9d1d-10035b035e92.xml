@@ -36,6 +36,7 @@ This sequence allows the attacker to authenticate to the server without ever kno
 =Impact
 
 *An attacker, without proper credentials, will be able to authenticate and communicate with the server.
+
 =Vulnerabilities
 
     *Poor implementation of the challenge-response authentication system that uses the same protocol and same key in both directions.
@@ -74,7 +75,7 @@ From this point, the attacker responds to the first connection that was opened w
 
 =Related Items
 
-    *[[Attack: HTTP Replay Attack]]
+    *[[edea26f5-72e9-40fb-a2d3-00224a9a84cd|Attack: HTTP Replay Attack]]
 
 ]]></Data>
   </Content>
