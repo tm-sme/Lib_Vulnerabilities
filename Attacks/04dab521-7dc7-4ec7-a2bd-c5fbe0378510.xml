@@ -99,11 +99,6 @@ A security exception will be thrown, since the calling module does not have the 
     *[[Attack: Reflection Injection Attack]]
     *[[Attack: Server-Side Code Injection Attack]]
     *[[Attack: Trust Relationship Attack]]
-    *Guideline: Do Not Propagate Exceptions While Impersonating
-    *Guideline: Do Not Use Impersonation Unless Required
-    *Guideline: Do Not Use the LogonUser API
-    *Guideline: Use Least Privileged Accounts for Database Access
-    *Guideline: Use a Least-Privileged Account for Running Applications
 
 ]]></Data>
   </Content>
