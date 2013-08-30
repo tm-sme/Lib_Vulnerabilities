@@ -85,13 +85,6 @@ This is clearly not what was intended and provides a clear example of why canoni
     *[[26104b86-2fba-4331-aadb-c02d9921be42|Attack: Forceful Browsing Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
     *[[49f1d246-0c79-48dd-90d0-39e52a17d8cc|Attack: Phishing Attack]]
-    *Guideline: Filter All User-Supplied Filename and Path Input
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Do Not Rely on Client-Side Validation
-    *Guideline: Do Not Rely on Request Validation
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
