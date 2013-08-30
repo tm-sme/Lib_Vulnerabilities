@@ -60,12 +60,9 @@ A rainbow table could contain all the popular passwords from a dictionary, all t
 
 =Related Items
 
-    *[[Attack: Credentials Brute Force Attack]]
-    *[[Attack: Credentials Dictionary Attack]]
-    *[[Attack: Statistical Analysis Attack]]
-    *Guideline: Enforce Strong Passwords
-    *Guideline: Enforce Strong SQL Passwords
-    *Guideline: Force Password Renewal
+    *[[e3ffdced-ef7e-45c7-bbbb-a7e71052053c|Attack: Credentials Brute Force Attack]]
+    *[[d00e43b2-f820-4668-8174-07045c4874be|Attack: Credentials Dictionary Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
