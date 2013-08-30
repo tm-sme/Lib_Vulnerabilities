@@ -76,11 +76,6 @@ if (newBuffer != NULL){          strncpy (newBuffer, sentence, newLength);      
 
     *[[46278060-865a-4882-b640-52f004064d5d|Attack: Integer Overflow Attack]]
     *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Do Not Rely on Client-Side Validation
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
