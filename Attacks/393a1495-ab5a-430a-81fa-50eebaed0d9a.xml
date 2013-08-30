@@ -80,7 +80,6 @@ more < test.txt::$DATA
     *[[26104b86-2fba-4331-aadb-c02d9921be42|Attack: Forceful Browsing Attack]]
     *[[7facca81-ff33-4c7a-862b-e2af2be44e94|Attack: File Name and Path Manipulation Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
-    *Guideline: Filter All User-Supplied Filename and Path Input
 ]]></Data>
   </Content>
 </TeamMentor_Article>
