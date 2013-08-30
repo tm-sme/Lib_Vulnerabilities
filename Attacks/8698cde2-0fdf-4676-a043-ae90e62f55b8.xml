@@ -43,44 +43,40 @@ Command injection problems are a subset of injection problems in which the proce
 The following code is wrapper around the UNIX command cat which prints the contents of a file to standard out. It is also injectable:
 
 {{{
-#include <stdio.h>#include <unistd.h>int main(int argc, char **argv) {  
-char cat[] = "cat ";  char *command;  size_t commandLength;  commandLength = strlen(cat) + strlen(argv[1]) + 1;  
-command = (char *) malloc(commandLength);  strncpy(command, cat, commandLength);  strncat(command, argv[1], (commandLength - strlen(cat)) ); 
-system(command);  return (0);}
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char **argv) {  
+char cat[] = "cat ";
+char *command;
+size_t commandLength;
+commandLength = strlen(cat) + strlen(argv[1]) + 1;  
+command = (char *) malloc(commandLength);
+strncpy(command, cat, commandLength);
+strncat(command, argv[1], (commandLength - strlen(cat)) ); 
+system(command);  return (0);
+}
 }}}
 
 Used normally, the output is simply the contents of the file requested:
 
 {{{
-$ ./catWrapper Story.txtWhen last we left our heroes...
+$ ./catWrapper Story.txt
+When last we left our heroes...
 }}}
 
 However, if we add a semicolon and another command to the end of this line, the command is executed by catWrapper with no complaint:
 
 {{{
-$ ./catWrapper Story.txt; lsWhen last we left our heroes...Story.txt 
-doubFree.c nullpointer.cunstosig.c www* a.out*format.c strlen.c useFree*catWrapper* misnull.c strlength.c 
-useFree.c commandinjection.c nodefault.c trunc.c writeWhatWhere.c
+$ ./catWrapper Story.txt; ls
+When last we left our heroes...
+Story.txt 
+catWrapper
 }}}
 
 If catWrapper had been set to have a higher privilege level than the standard user or could be executed anonymously, arbitrary commands could be executed with that higher privilege.
 
 Another example of this type of behavior can be seen with XSL, the style sheet language for XML. The primary purpose of XSL is to provide an easy and modular way to transform XML documents into other XML documents such as HTML. In particular, different XSL styles can be attached to the same XML and are sometimes supplied by the user. Microsoft extended the functionality of XSL to allow scripting code to be embedded in the style sheets with the <msxsl:script> tag. If an attacker has the ability to modify or replace the XSL style sheet in use, they can therefore inject any command to the system running the application simply by including it in the style sheet.
-
-In many programming languages there is an eval() function that, as the name suggests, evaluates a string as an expression. Among the members of this list are the commonly used JavaScript, ASP, Python, Perl, Ruby, and PHP. Blurring the distinction between data and code presents a huge security risk; this case is no different. User input is sometimes used in eval() expressions allowing arbitrary code to be executed. Consider an example where eval() is used in a php application to join strings:
-
-{{{
-$name; // ask the user for their name and store it here$str = '$user stole my coffee!';
-$str_after_eval = eval("$str;");echo $str. "\n";echo $str_after_eval. "\n";
-}}}
-
-If the user enters the name "Alice", this code will output the following:
-
-{{{
-$user stole my coffee!Alice stole my coffee!
-}}}
-
-However, if the user enters the name {{{"echo exec('whoami'); echo"}}} then the application will return the name of the system user running the php/html application. Any system command or external program in the path could be run in this fashion.
 
 =Additional Resources
 
@@ -100,12 +96,7 @@ However, if the user enters the name {{{"echo exec('whoami'); echo"}}} then the 
     *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
     *[[61f0d74e-d9b6-4e27-9e12-da65baff83fd|Attack: LDAP Injection Attack]]
     *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
-    *Guideline: Do Not Rely on Request Validation
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Filter All User-Supplied Filename and Path Input
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Do Not Rely on Client-Side Validation
+
 
 ]]></Data>
   </Content>
