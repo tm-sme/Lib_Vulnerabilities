@@ -42,7 +42,7 @@ Timing analysis can also be used to discern information about other network inte
 
     *Using a cryptographic implementation that takes constant time no matter what the input.
     *Introduce a randomization factor in the transmission of sensitive data.
-    *Bundle sensitive information transmissions together./LI>
+    *Bundle sensitive information transmissions together.
 
 =Additional Resources
 
@@ -51,10 +51,10 @@ Timing analysis can also be used to discern information about other network inte
 
 =Related Items
 
-    *[[Attack: Traffic Analysis Attack]]
-    *[[Attack: Statistical Analysis Attack]]
-    *[[Attack: Race Condition Attack]]
-    *[[Attack: Information Disclosure Attack]]
+    *[[4d4d0b86-0a9e-4f66-b95b-92fcb68b8c1a|Attack: Traffic Analysis Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[5457e9b9-bb3b-4fdd-bcbb-26d7dbe6776c|Attack: Race Condition Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
 
 ]]></Data>
   </Content>
