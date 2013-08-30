@@ -58,10 +58,6 @@ For a real-world example, consider a vulnerability of the popular web browser, I
   *[[4b7d247d-f6a9-493e-a19a-665ff54b757f|Attack: Local Machine Credential Sniffing Attack]]
   *[[0089dded-bd3d-4513-b479-624629634b4a|Attack: Reflection Injection Attack]]
   *[[88892358-450e-4bbc-afd9-ede9393e53a8|Attack: Sniff Memory for Secrets Attack]]
-  *Guideline: Validate All Data Passed Between Native and Java Code
-  *Guideline: Protect Libraries Loaded Through JNI
-  *Guideline: Minimize the Number of Times Language Boundaries are Crossed
-  *Guideline: Do Not Utilize Functionality Through JNI if Java Already Supports It
 
 ]]></Data>
   </Content>
