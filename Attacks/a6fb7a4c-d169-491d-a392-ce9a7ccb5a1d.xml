@@ -64,10 +64,6 @@ printf ("%s", varUserSuppliedData);
     *[[189a3684-3289-4097-8906-5361f7ef3aab|Attack: Double Encoding Attack]]
     *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
-    *Guideline: Do Not Rely on Client-Side Validation
-    *Guideline: Validate All Input Passed to Database
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate All Data Passed Between Native and Java Code
 
 ]]></Data>
   </Content>
