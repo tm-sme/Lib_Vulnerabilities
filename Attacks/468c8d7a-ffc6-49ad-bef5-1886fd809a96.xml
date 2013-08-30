@@ -84,10 +84,6 @@ Another example is if the application allows a user to submit script or other in
     *[[577e90c9-8e44-4240-b00f-768316d63901|Attack: Account Lockout Attack]]
     *[[35de0530-71f4-4578-926d-bc0d25c12f45|Attack: Creation of False Transaction Attack]]
     *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
-    *Guideline: Consider Log Throttling
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Use a Least-Privileged Account for Running Applications
-    *Guideline: Use Least Privileged Accounts for Database Access
 
 ]]></Data>
   </Content>
