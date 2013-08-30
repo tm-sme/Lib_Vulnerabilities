@@ -54,20 +54,17 @@ Both conducting traffic analysis attacks and protecting against it require a rel
 
 =Additional Resources
 
-    *For more information onTor, see: http://tor.eff.org
+    *For more information on Tor, see: http://tor.eff.org
 
 =Related Items
 
-    *[[Attack: Timing Analysis Attack]]
-    *[[Attack: Network Eavesdropping Attack]]
-    *[[Attack: Information Disclosure Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: Man in the Middle Attack]]
-    *[[Attack: Statistical Analysis Attack]]
-    *[[Attack: Session Prediction Attack]]
-    *Guideline: Encrypt Communication Links
-    *Guideline: Protect Sensitive Data Over the Network
-
+    *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
+    *[[6a32e2d5-dba5-4f6d-9fe0-a51605fd0557|Attack: Network Eavesdropping Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[e001f908-8905-40bd-8457-3ca2047537ea|Attack: Session Prediction Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
