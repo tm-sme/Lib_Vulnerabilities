@@ -48,10 +48,6 @@ With a forceful browsing attack, the attacker gains access to a restricted page 
     *[[393a1495-ab5a-430a-81fa-50eebaed0d9a|Attack: Alternate Data Streams Attack]]
     *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
-    *Guideline: Consider Using JAAS for Authorization
-    *Guideline: Block Protected Files From Being Retrieved
-    *Guideline: Partition Application Between Public and Private Domains
-    *Guideline: Perform Role-Based Security Checks
 
 ]]></Data>
   </Content>
