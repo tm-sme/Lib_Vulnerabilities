@@ -51,10 +51,9 @@ A keystore is a secure location on disk or in memory that can be used to store c
 
 =Related Items
 
-    *[[Attack: Credentials Brute Force Attack]]
-    *[[Attack: Key Bruteforce Attack]]
-    *[[Attack: Local Machine Credential Sniffing Attack]]
-    *Guideline: Use a Secure Key Storage Location
+    *[[e3ffdced-ef7e-45c7-bbbb-a7e71052053c|Attack: Credentials Brute Force Attack]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[4b7d247d-f6a9-493e-a19a-665ff54b757f|Attack: Local Machine Credential Sniffing Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
