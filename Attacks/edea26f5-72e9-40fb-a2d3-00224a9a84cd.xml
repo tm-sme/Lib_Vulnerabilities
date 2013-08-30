@@ -59,11 +59,6 @@ The HTTP Session Hijacking Attack is a specific type of a HTTP Replay Attack whe
     *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
     *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
     *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
-    *Guideline: Force Re-Authentication When Executing Critical Functionality
-    *Guideline: Encrypt Communication Links
-    *Guideline: Protect Session Cookies
-    *Guideline: Use Page.ViewStateUserKey to Counter Cross Site Request Forgery Attacks
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
