@@ -95,10 +95,10 @@ A security exception will be thrown, since the calling module does not have the 
 
 =Related Items
 
-    *[[Attack: API Hijacking Attack]]
-    *[[Attack: Reflection Injection Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: Trust Relationship Attack]]
+    *[[da5df934-30f1-453b-9d5b-9a9288ef78c1|Attack: API Hijacking Attack]]
+    *[[0089dded-bd3d-4513-b479-624629634b4a|Attack: Reflection Injection Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[4d3185fd-1e48-40af-bc07-71206c40806b|Attack: Trust Relationship Attack]]
 
 ]]></Data>
   </Content>
