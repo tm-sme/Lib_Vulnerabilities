@@ -57,12 +57,10 @@ To ensure the contents of this file is unrecoverable it must be securely deleted
 
 =Related Items
 
-    *[[Attack: Information Disclosure Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: Sniff Memory for Secrets Attack]]
-    *[[Attack: API Hijacking Attack]]
-    *Guideline: Do Not Leave Passwords in Memory
-    *Guideline: Clear Sensitive Data from Memory when No Longer Used
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[88892358-450e-4bbc-afd9-ede9393e53a8|Attack: Sniff Memory for Secrets Attack]]
+    *[[da5df934-30f1-453b-9d5b-9a9288ef78c1|Attack: API Hijacking Attack]]
 
 ]]></Data>
   </Content>
