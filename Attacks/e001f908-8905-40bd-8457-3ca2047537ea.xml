@@ -66,15 +66,11 @@ Once the mechanism is known for predicting session IDs the attacker can then beg
 
 =Related Items
 
-    *[[Attack: Statistical Analysis Attack]]
-    *[[Attack: Key Bruteforce Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: HTTP Session Hijacking Attack]]
-    *[[Attack: HTTP Replay Attack]]
-    *Guideline: Protect ASP.NET Session State
-    *Guideline: Do Not Make Security Decisions Based on Client-Accessible Parameters
-    *Guideline: Protect Session Cookies
-
+    *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[8756794f-3bb1-4e08-9bad-5297c8130a52|Attack: HTTP Session Hijacking Attack]]
+    *[[edea26f5-72e9-40fb-a2d3-00224a9a84cd|Attack: HTTP Replay Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
