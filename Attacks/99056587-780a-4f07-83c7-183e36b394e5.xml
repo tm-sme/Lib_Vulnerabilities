@@ -186,14 +186,12 @@ Content-Type: text/html
 
 =Related Items
 
-    *[[Attack: Request Smuggling Attack]]
-    *[[Attack: Canonicalization Attack]]
-    *[[Attack: Cross Site Scripting Attack]]
-    *[[Attack: Phishing Attack]]
-    *[[Attack: URL Redirection Attack]]
-    *Guideline: Encode All Output Data
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate All Input Passed to Database
+    *[[914b6a65-2729-47c6-87d9-03f34c2fc700|Attack: Request Smuggling Attack]]
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
+    *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
+    *[[49f1d246-0c79-48dd-90d0-39e52a17d8cc|Attack: Phishing Attack]]
+    *[[054ee066-d6c5-48b2-98d6-7043a30fc0a5|Attack: URL Redirection Attack]]
+  
 
 ]]></Data>
   </Content>
