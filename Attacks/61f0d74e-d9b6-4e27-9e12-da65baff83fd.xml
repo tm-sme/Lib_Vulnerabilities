@@ -108,11 +108,11 @@ Examining a few lines of the above code reveals that this would return a list of
 
 =Related Items
 
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: AJAX Injection Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: XML Injection Attack]]
-    *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: Client-side Validation Attack]]]]></Data>
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]
+    *[[1508d763-03f1-4b43-bf8e-ad7cf8edebd7|Attack: Xpath-XQuery Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
