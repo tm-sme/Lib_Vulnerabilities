@@ -62,7 +62,7 @@ Key Bruteforce Attacks are also used against keys meant for non-cryptographic pu
 
     *[[16fbf122-43cf-4201-9b33-cf2c728de202|Attack: Chosen Plaintext Attack]]
     *[[2c13c857-5ef0-4fcd-9283-9632374106a3|Attack: Chosen Ciphertext Attack]]
-    *[47103484-487b-4493-a1dd-cf65a947c714|[Attack: Weak Password Attack]]
+    *[[47103484-487b-4493-a1dd-cf65a947c714|Attack: Weak Password Attack]]
     *[[e3ffdced-ef7e-45c7-bbbb-a7e71052053c|Attack: Credentials Brute Force Attack]]
     *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
     *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
