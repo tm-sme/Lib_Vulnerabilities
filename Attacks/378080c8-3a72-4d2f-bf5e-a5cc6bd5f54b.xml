@@ -46,15 +46,15 @@ Due to the open nature of wireless networks, an attacker physically located with
 
 =Related Items
 
-    *[[Attack: Man in the Middle Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: HTTP Session Hijacking Attack]]
-    *[[Attack: Information Disclosure Attack]]
-    *[[Attack: DNS Cache Poisoning]]
-    *[[Attack: Key Bruteforce Attack]]
-    *[[Attack: VLAN Spoofing Attack]]
-    *[[Attack: ARP Spoofing Attack]]
-    *[[Attack: Network Eavesdropping Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[8756794f-3bb1-4e08-9bad-5297c8130a52|Attack: HTTP Session Hijacking Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[380b7108-0c16-4fbf-a914-6d37acf55421|Attack: DNS Cache Poisoning]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[aa707b5c-7a44-4081-bb80-e795da26b57d|Attack: VLAN Spoofing Attack]]
+    *[[0d3f3bbd-6442-4fd2-bb54-2ac10b64695c|Attack: ARP Spoofing Attack]]
+    *[[6a32e2d5-dba5-4f6d-9fe0-a51605fd0557|Attack: Network Eavesdropping Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
