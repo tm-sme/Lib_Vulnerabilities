@@ -42,15 +42,15 @@ Given large sets of encrypted data an attacker may be able to discover sensitive
 
 =Related Items
 
-    *[[Attack: Chosen Ciphertext Attack]]
-    *[[Attack: Chosen Plaintext Attack]]
-    *[[Attack: Credentials Brute Force Attack]]
-    *[[Attack: Credentials Dictionary Attack]]
-    *[[Attack: Key Bruteforce Attack]]
-    *[[Attack: Information Disclosure Attack]]
-    *[[Attack: Session Prediction Attack]]
-    *[[Attack: Traffic Analysis Attack]]
-    *[[Attack: Weak Password Attack]]
+    *[[2c13c857-5ef0-4fcd-9283-9632374106a3|Attack: Chosen Ciphertext Attack]]
+    *[[16fbf122-43cf-4201-9b33-cf2c728de202|Attack: Chosen Plaintext Attack]]
+    *[[e3ffdced-ef7e-45c7-bbbb-a7e71052053c|Attack: Credentials Brute Force Attack]]
+    *[[d00e43b2-f820-4668-8174-07045c4874be|Attack: Credentials Dictionary Attack]]
+    *[[0e1b09a6-ec13-4eb6-b8e6-0a2d5d92d4b4|Attack: Key Bruteforce Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[e001f908-8905-40bd-8457-3ca2047537ea|Attack: Session Prediction Attack]]
+    *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Traffic Analysis Attack]]
+    *[[47103484-487b-4493-a1dd-cf65a947c714|Attack: Weak Password Attack]]
 
 ]]></Data>
   </Content>
