@@ -60,10 +60,6 @@ It's important that any login timeouts be on a per-account basis. Often, attempt
 *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
 *[[468c8d7a-ffc6-49ad-bef5-1886fd809a96|Attack: Denial of Service Attack]]
 *[[49f1d246-0c79-48dd-90d0-39e52a17d8cc|Attack: Phishing Attack]]
-*[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
-*Guideline: Automatically Lock Inactive User Accounts
-*Guideline: Lock Accounts After Consecutive Failed Login Attempts
-*Guideline: Monitor the Use of Privileged Accounts
-*Guideline: Force Re-Authentication When Executing Critical Functionality]]></Data>
+*[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
