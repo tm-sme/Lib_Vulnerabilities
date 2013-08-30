@@ -51,7 +51,7 @@ Please refer to the examples presented in the specific attack types mentioned in
 
 =Related Items
 
-    *[[Attack: SQL Injection Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
     *[[Attack: Command Injection Attack]]
     *[[Attack: Cross Site Scripting Attack]]
     *[[Attack: XML Injection Attack]]
@@ -59,14 +59,6 @@ Please refer to the examples presented in the specific attack types mentioned in
     *[[Attack: LDAP Injection Attack]]
     *[[Attack: AJAX Injection Attack]]
     *[[Attack: Format String Attack]]
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Protect Libraries Loaded Through JNI
-    *Guideline: Minimize the Number of Times Language Boundaries are Crossed
-    *Guideline: Do Not Utilize Functionality Through JNI if Java Already Supports It
-    *Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries
-    *Guideline: Use Stored Procedures
-    *Guideline: Validate Input from All Sources
-    *Guideline: Validate All Input Passed to Database
 
 ]]></Data>
   </Content>
