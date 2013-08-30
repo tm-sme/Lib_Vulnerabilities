@@ -89,25 +89,6 @@ Examples of too much information in error messages:
     *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
     *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
     *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
-    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
-    *Guideline: Do Not Disclose Valuable Information in Error Messages
-    *Guideline: Do Not Disclose Exception Details to the Client
-    *Guideline: Do Not Include Debug Data in Output
-    *Guideline: Block Protected Files From Being Retrieved
-    *Guideline: Do Not Place Sensitive Data in Parameters
-    *Guideline: Secure Connection Strings
-    *Guideline: Protect Log Files
-    *Guideline: Protect ASP.NET Session State
-    *Guideline: Encrypt Communication Links
-    *Guideline: Use SSL When Transmitting Credentials
-    *Guideline: Encrypt Sensitive Data in the Database
-    *Guideline: Do Not Store Plaintext Sensitive Data
-    *Guideline: Do Not Store Passwords
-    *Guideline: Protect Sensitive Data Over the Network
-    *Guideline: Protect Sensitive Data Inside Configuration Files
-    *Guideline: Do Not Log Sensitive Information
-    *Guideline: Disable Directory Browsing
-
-]]></Data>
+    *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
