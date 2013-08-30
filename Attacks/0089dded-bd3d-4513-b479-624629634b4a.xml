@@ -91,9 +91,9 @@ Now suppose an attacker could inject {{{"HttpUrlConnection"}}} into the string {
 
 =Related Items
 
-    *[[Attack: Command Injection Attack]]
-    *[[Attack: Client-side Validation Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
 
 ]]></Data>
   </Content>
