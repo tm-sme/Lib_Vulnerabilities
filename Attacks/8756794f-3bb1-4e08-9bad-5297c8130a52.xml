@@ -67,14 +67,6 @@ There are three different ways to get a hold of the session ID for performing th
     *[[e001f908-8905-40bd-8457-3ca2047537ea|Attack: Session Prediction Attack]]
     *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
     *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
-    *Guideline: Protect Session Cookies
-    *Guideline: Use SSL When Transmitting Credentials
-    *Guideline: Protect Session Cookies
-    *Guideline: Use SSL When Transmitting Credentials
-    *Guideline: Use Windows Authentication for Web Users if Possible
-    *Guideline: Consider Using JAAS for Authentication
-    *Guideline: Consider Using Two Factor Authentication
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
