@@ -57,10 +57,6 @@ An attack against the business rules of a system involves an attacker subverting
     *[[35de0530-71f4-4578-926d-bc0d25c12f45|Attack: Creation of False Transaction Attack]]
     *[[96a66ca5-91b1-4c5a-80eb-fd0da97713ae|Attack: Social Engineering Attack]]
     *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
-    *Guideline: Do Not Make Security Decisions Based on Client-Accessible Parameters
-    *Guideline: Perform Role-Based Security Checks
-    *Guideline: Separate Account Administration from the Main Application Interface
-    *Guideline: Partition Application Between Public and Private Domains
 ]]></Data>
   </Content>
 </TeamMentor_Article>
