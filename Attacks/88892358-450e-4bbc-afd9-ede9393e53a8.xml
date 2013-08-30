@@ -47,14 +47,10 @@ It is common knowledge that in most modern operating systems, an application's m
 
 =Related Items
 
-    *[[Attack: Reflection Injection Attack]]
-    *[[Attack: Local Machine Credential Sniffing Attack]]
-    *[[Attack: Luring Attack]]
-    *[[Attack: API Hijacking Attack]]
-    *Guideline: Do Not Leave Passwords in Memory
-    *Guideline: Clear Sensitive Data from Memory when No Longer Used
-    *Guideline: Do Not Cache Sensitive Data
-
+    *[[0089dded-bd3d-4513-b479-624629634b4a|Attack: Reflection Injection Attack]]
+    *[[4b7d247d-f6a9-493e-a19a-665ff54b757f|Attack: Local Machine Credential Sniffing Attack]]
+    *[[04dab521-7dc7-4ec7-a2bd-c5fbe0378510|Attack: Luring Attack]]
+    *[[da5df934-30f1-453b-9d5b-9a9288ef78c1|Attack: API Hijacking Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
