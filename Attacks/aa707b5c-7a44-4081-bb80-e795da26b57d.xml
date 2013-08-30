@@ -56,13 +56,13 @@ VLAN spoofing attacks are conducted to allow an attacking host on a VLAN to gain
 
 =Related Items
 
-    *[[Attack: Wireless Packet Injection Attack]]
-    *[[Attack: Network Eavesdropping Attack]]
-    *[[Attack: DNS Cache Poisoning]]
-    *[[Attack: Trust Relationship Attack]]
-    *[[Attack: Man in the Middle Attack]]
-    *[[Attack: Network Credential Sniffing Attack]]
-    *[[Attack: ARP Spoofing Attack]]
+    *[[378080c8-3a72-4d2f-bf5e-a5cc6bd5f54b|Attack: Wireless Packet Injection Attack]]
+    *[[6a32e2d5-dba5-4f6d-9fe0-a51605fd0557|Attack: Network Eavesdropping Attack]]
+    *[[380b7108-0c16-4fbf-a914-6d37acf55421|Attack: DNS Cache Poisoning]]
+    *[[4d3185fd-1e48-40af-bc07-71206c40806b|Attack: Trust Relationship Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
+    *[[ad7b18e3-a8a0-4e87-b1a8-908e11449481|Attack: Network Credential Sniffing Attack]]
+    *[[0d3f3bbd-6442-4fd2-bb54-2ac10b64695c|Attack: ARP Spoofing Attack]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
