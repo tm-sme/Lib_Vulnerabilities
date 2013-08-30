@@ -113,13 +113,6 @@ Examining a few lines of the above code reveals that this would return a list of
     *[[Attack: Server-Side Code Injection Attack]]
     *[[Attack: XML Injection Attack]]
     *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: Client-side Validation Attack]]
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Validate Input from All Sources
-    *Guideline: Do Not Rely on Client-Side Validation
-    *Guideline: Do Not Rely on Request Validation
-
-]]></Data>
+    *[[Attack: Client-side Validation Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
