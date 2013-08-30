@@ -60,17 +60,13 @@ Key Bruteforce Attacks are also used against keys meant for non-cryptographic pu
 
 =Related Items
 
-    *[[Attack: Chosen Plaintext Attack]]
+    *[[16fbf122-43cf-4201-9b33-cf2c728de202|Attack: Chosen Plaintext Attack]]
     *[[Attack: Chosen Ciphertext Attack]]
     *[[Attack: Weak Password Attack]]
     *[[Attack: Credentials Brute Force Attack]]
     *[[Attack: Timing Analysis Attack]]
     *[[Attack: Statistical Analysis Attack]]
     *[[Attack: Session Prediction Attack]]
-    *Guideline: Use a Secure Key Storage Location
-    *Guideline: Encrypt Communication Links
-    *Guideline: Encrypt Sensitive Data in the Database
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
