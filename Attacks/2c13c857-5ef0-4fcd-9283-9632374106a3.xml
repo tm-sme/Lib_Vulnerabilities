@@ -51,10 +51,6 @@ In this attack the goal is to discover the key of a crypto system by controlling
     *[[00030b2d-5b8e-44c7-a643-afcee6e1157d|Attack: Timing Analysis Attack]]
     *[[331bfa1d-94c7-485b-8d8f-b8bab3e679e4|Attack: Statistical Analysis Attack]]
     *[[88892358-450e-4bbc-afd9-ede9393e53a8|Attack: Sniff Memory for Secrets Attack]]
-    *Guideline: Encrypt Sensitive Data in the Database
-    *Guideline: Use a Secure Key Storage Location
-    *Guideline: Store Passwords Securely
-    *Guideline: Encrypt Communication Links
 ]]></Data>
   </Content>
 </TeamMentor_Article>
