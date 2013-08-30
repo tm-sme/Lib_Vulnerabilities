@@ -47,15 +47,12 @@ An attacker may be able to exploit the trust relationship between two or more sy
 
 =Related Items
 
-    *[[Attack: Business Rule Attack]]
-    *[[Attack: Client-side Validation Attack]]
-    *[[Attack: Luring Attack]]
-    *[[Attack: Man in the Middle Attack]]
-    *[[Attack: Repudiation Attack]]
-    *[[Attack: Traffic Analysis Attack]]
-    *Guideline: Allow Only Trusted Hosts to Connect to Database Server
-    *Guideline: Use SSL When Transmitting Credentials
-    *Guideline: Verify the Application's Authenticity to the User
+    *[[4c56f015-31b0-4570-a194-707d9cf6db26|Attack: Business Rule Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
+    *[[04dab521-7dc7-4ec7-a2bd-c5fbe0378510|Attack: Luring Attack]]
+    *[[41ff6525-2cae-40a5-91e9-365d2d26feb9|Attack: Man in the Middle Attack]]
+    *[[7e2fe1a5-ad30-4805-8421-767275dea35e|Attack: Repudiation Attack]]
+    *[[4d4d0b86-0a9e-4f66-b95b-92fcb68b8c1a|Attack: Traffic Analysis Attack]]
 
 ]]></Data>
   </Content>
