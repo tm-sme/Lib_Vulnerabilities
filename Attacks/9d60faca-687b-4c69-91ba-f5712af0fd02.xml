@@ -52,13 +52,13 @@ Please refer to the examples presented in the specific attack types mentioned in
 =Related Items
 
     *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
-    *[[Attack: Command Injection Attack]]
-    *[[Attack: Cross Site Scripting Attack]]
-    *[[Attack: XML Injection Attack]]
-    *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: LDAP Injection Attack]]
-    *[[Attack: AJAX Injection Attack]]
-    *[[Attack: Format String Attack]]
+    *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
+    *[[36ce61ac-adcc-45a9-9910-95d477142c8b|Attack: Cross Site Scripting Attack]]
+    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]
+    *[[1508d763-03f1-4b43-bf8e-ad7cf8edebd7|Attack: Xpath-XQuery Attack]]
+    *[[61f0d74e-d9b6-4e27-9e12-da65baff83fd|Attack: LDAP Injection Attack]]
+    *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
+    *[[a6fb7a4c-d169-491d-a392-ce9a7ccb5a1d|Attack: Format String Attack]]
 
 ]]></Data>
   </Content>
