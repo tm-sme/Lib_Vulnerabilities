@@ -90,13 +90,6 @@ Away"});alert("Gotcha!");//
     *[[8698cde2-0fdf-4676-a043-ae90e62f55b8|Attack: Command Injection Attack]]
     *[[189a3684-3289-4097-8906-5361f7ef3aab|Attack: Double Encoding Attack]]
     *[[8756794f-3bb1-4e08-9bad-5297c8130a52|Attack: HTTP Session Hijacking Attack]]
-    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]
-    *Guideline: Validate All Data Passed Between Native and Java Code
-    *Guideline: Do Not Rely on Request Validation
-    *Guideline: Do Not Rely on Client-Side Validation
-    *Guideline: Encode All Output Data
-    *Guideline: Validate Input for Length, Range, Format, and Type
-    *Guideline: Validate Input from All Sources
-]]></Data>
+    *[[ae392dbb-fdb4-443f-9d17-78240b4acc95|Attack: XML Injection Attack]]]]></Data>
   </Content>
 </TeamMentor_Article>
