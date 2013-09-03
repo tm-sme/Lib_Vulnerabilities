@@ -58,17 +58,20 @@ The following PHP code connects to an LDAP server on localhost and searches for 
     $info = ldap_get_entries($ds, $sr);
     echo "<p>There are " . $info["count"] . " entries for that search:<p>";
 
-    for ($i=0; $i<$info["count"]; $i++) {
+    for ($i=0; $i<$info["count"]; $i++) 
+{
         echo "common name: " . $info[$i]["cn"][0] . "<br />";
         echo "telephone: " . $info[$i]["telephoneNumber"][0] . "<br />";
         echo "email: " . $info[$i]["mail"][0] . "<br /><hr />";
-    }
+}
 
     ldap_close($ds);
 
 }
- else {
-    echo "<h4>connection error</h4>";}?>
+ else 
+{
+    echo "<h4>connection error</h4>";
+}?>
 }}}
 
 If this code is in {{{index.php at teammentorexample.com}}} then the following URL would return all records where surname is Smith.
