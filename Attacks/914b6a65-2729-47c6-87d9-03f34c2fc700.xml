@@ -46,9 +46,13 @@ HTTP Request Smuggling is a technique to take advantage of discrepancies in pars
 This example describes the classic Request Smuggling attack in which an attacker can poison one page with the contents of another. In this example, the attacker combines one POST request and two GET requests into a single malformed HTTP request. The HTTP request has two Content-Length headers with conflicting values. Some servers, such as IIS and Apache simply reject such a request, but others attempt to ‘fix’ the error. Fortunately for the attacker, certain web servers and web proxies choose to pay attention to different sections of the malformed request. In this case let {{{"somewhere.com"}}} be the DNS name of the web server behind the proxy, and suppose that {{{“/poison.html”}}} is a static and cacheable HTML page on the web server.
 
 {{{
-1 POST http://somewhere.com/example.html HTTP/1.1\r\n2 Host: somewhere.com\r\n3 Connection: Keep-Alive\r\n4 
-Content-Type: application/x-www-form-urlencoded\r\n5 Content-Length: 0\r\n6 Content-Length: 53\r\n7 \r\n8 GET /poison.html HTTP/1.1\r\n9 
-Host: somewhere.com\r\n10 Bla: 11 GET http://somewhere.com/index.html HTTP/1.1\r\n12 Host: somewhere.com\r\n13 Connection: Keep-Alive\r\n14 \r\n
+1 POST http://somewhere.com/example.html 
+HTTP/1.1\r\n2 Host: somewhere.com\r\n3 
+Connection: Keep-Alive\r\n4 
+Content-Type: application/x-www-form-urlencoded\r\n5 
+Content-Length: 0\r\n6 Content-Length: 53\r\n7 \r\n8 GET /poison.html HTTP/1.1\r\n9 
+Host: somewhere.com\r\n10 Bla: 11 GET http://somewhere.com/index.html HTTP/1.1\r\n12 
+Host: somewhere.com\r\n13 Connection: Keep-Alive\r\n14 \r\n
 }}}
 
 Note that line 10 is the only line that does not end in {{{CRLF ("\r\n")}}} and instead there is a space ("Bla: "). This request is sent to a web server via a proxy server.
