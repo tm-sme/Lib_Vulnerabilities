@@ -73,7 +73,8 @@ if (strLength > 0)
        newBuffer = (char*) malloc (newLength);       
 if (newBuffer != NULL)
 {          strncpy (newBuffer, sentence, newLength);
-       }   }   return newBuffer;
+}
+   }   return newBuffer;
 }
 }}}
 
