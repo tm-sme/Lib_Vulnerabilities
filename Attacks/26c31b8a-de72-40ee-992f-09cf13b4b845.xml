@@ -48,27 +48,85 @@ Serialization is the process of saving the state of an object for later reconstr
 The following Java code serializes a simple class to a file. It then de-serializes from the file without performing any validation. This presents a serious risk because anything in the file, including the procedures, could have changed in the interim.
 
 {{{
-import java.io.Serializable;import java.util.Date;public class Record implements Serializable
-{   private String name;   private String record;   private Date date;   public Record(String n, String r)
-{      name = n;      record = r;      date = Date();   }}// setupString filename = "record.obj";FileOutputStream fos = null;ObjectOutputStream 
-out = null;ObjectInputStream oin = null;FileInputStream fis = null;Record record = new Record("Alice", "Is the data that lives here malicious?");// 
-serializetry{   fos = new FileOutputStream(filename);   oos = new ObjectOutputStream(fos);   oos.writeObject(record);   oos.close();}catch(IOException ex)
-{   ex.printStackTrace();}// deserializerecord = null;try{   fis = new FileInputStream(filename);   oin = new ObjectInputStream(fis);   
-record = (Record)oin.readObject();   oin.close();}       catch(IOException ex) {   ex.printStackTrace();}       catch(ClassNotFoundException ex)
-{   ex.printStackTrace();}
+import java.io.Serializable;
+import java.util.Date;
+public class Record implements Serializable
+
+{  private String name;
+   private String record;
+   private Date date;
+   public Record(String n, String r)
+
+{      name = n;
+      record = r;
+      date = Date();
+
+   }}// setupString filename = "record.obj";
+
+FileOutputStream fos = null;
+ObjectOutputStream 
+
+out = null;
+ObjectInputStream oin = null;
+FileInputStream fis = null;
+
+Record record = new Record("Alice", "Is the data that lives here malicious?");// 
+
+serializetry{   fos = new FileOutputStream(filename);
+   oos = new ObjectOutputStream(fos);
+   oos.writeObject(record);
+   oos.close();
+
+}catch(IOException ex)
+
+{   ex.printStackTrace();
+
+}// deserializerecord = null;
+
+try{   fis = new FileInputStream(filename);
+
+   oin = new ObjectInputStream(fis);   
+
+record = (Record)oin.readObject();
+
+   oin.close();
+}       catch(IOException ex) {   ex.printStackTrace();
+}       catch(ClassNotFoundException ex)
+{   ex.printStackTrace();
+}
+
 }}}
 
 The best solution is to write your own custom serialization method that writes the two string and date to a file as plain text and then encrypt the entire thing. However, an acceptable solution is presented below. Use a cryptographic library to sign the object before you serialize so you can verify the sender and that it has not been modified.
 
 {{{
-// setup SignedObject signedobject = null;KeyPairGenerator kpg = KeyPairGenerator("SHA-1/DSA");
-KeyPair kp = kpg.generateKeyPair();PrivateKey privatekey = kp.getPrivate();PublicKey publickey = kp.getPublic();
-Signature signature = Signature.getInstance("SHA-1/DSA");      // sign objectsignedobject = new SignedObject(record, privatekey, signature);
-// serializetry{   fos = new FileOutputStream(filename);   oos = new ObjectOutputStream(fos);   oos.writeObject(signedobject);   
-oos.close();}catch(IOException ex){   ex.printStackTrace();}// deserializerecord = null;signedobject = null;try{   fis = new FileInputStream(filename);   
-oin = new ObjectInputStream(fis);   signedobject = (SignedObject)oin.readObject();   oin.close();   boolean ok = signedobject.verify(publickey, signature);   
-if (ok){record = (Record)signedobject.getObject();}   else{record = null;}}    catch(IOException ex) {   ex.printStackTrace();}    
-catch(ClassNotFoundException ex){   ex.printStackTrace();}
+// setup SignedObject signedobject = null;
+KeyPairGenerator kpg = KeyPairGenerator("SHA-1/DSA");
+KeyPair kp = kpg.generateKeyPair();
+PrivateKey privatekey = kp.getPrivate();
+PublicKey publickey = kp.getPublic();
+Signature signature = Signature.getInstance("SHA-1/DSA");
+// sign objectsignedobject = new SignedObject(record, privatekey, signature);
+// serializetry{   fos = new FileOutputStream(filename);
+   oos = new ObjectOutputStream(fos);
+   oos.writeObject(signedobject);   
+oos.close();
+}catch(IOException ex){   ex.printStackTrace();
+}
+// deserializerecord = null;
+signedobject = null;
+try{   fis = new FileInputStream(filename);   
+oin = new ObjectInputStream(fis);
+   signedobject = (SignedObject)oin.readObject();
+   oin.close();
+   boolean ok = signedobject.verify(publickey, signature); 
+  
+if (ok){record = (Record)signedobject.getObject();
+}   else{record = null;
+}}    catch(IOException ex) {   ex.printStackTrace();
+}    
+catch(ClassNotFoundException ex){   ex.printStackTrace();
+}
 }}}
 
 =Additional Resources
