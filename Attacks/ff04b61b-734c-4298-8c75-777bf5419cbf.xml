@@ -53,7 +53,9 @@ The following code segment shows a simple method, whose job is to strip the the 
 char* stripString(char* sentence){    if (!sentence) return 0;    
 //need one less, since we're stripping last character    unsigned int newLength = strlen(sentence) - 1;    
 char* newBuffer = (char*) malloc (newLength);    
-if (newBuffer != NULL){ strncpy (newBuffer, sentence, newLength);    }    return newBuffer;}
+if (newBuffer != NULL){ strncpy (newBuffer, sentence, newLength);
+    }    return newBuffer;
+}
 }}}
 
 What happens when the string sentence is of zero-length? The strlen() call will return 0. Subtracting 1 from 0 when the data type is an unsigned integer will cause the value to wrap around to 4GB. So, in this code we would then attempt to allocate a 4 gigabyte buffer in the next line.
@@ -61,10 +63,18 @@ What happens when the string sentence is of zero-length? The strlen() call will 
 With a little care the problem can be avoided. Consider the following fixed version of the code:
 
 {{{
-char* stripString(char* sentence){   char* newBuffer = NULL;   
-unsigned int strLength = 0;       if (!sentence) return 0;   strLength = strlen(sentence);   
-if (strLength > 0){       unsigned int newLength = strLength - 1;       newBuffer = (char*) malloc (newLength);       
-if (newBuffer != NULL){          strncpy (newBuffer, sentence, newLength);       }   }   return newBuffer;}
+char* stripString(char* sentence)
+{   char* newBuffer = NULL;   
+unsigned int strLength = 0;
+       if (!sentence) return 0;
+   strLength = strlen(sentence);   
+if (strLength > 0)
+{       unsigned int newLength = strLength - 1;
+       newBuffer = (char*) malloc (newLength);       
+if (newBuffer != NULL)
+{          strncpy (newBuffer, sentence, newLength);
+       }   }   return newBuffer;
+}
 }}}
 
 =Additional Resources
