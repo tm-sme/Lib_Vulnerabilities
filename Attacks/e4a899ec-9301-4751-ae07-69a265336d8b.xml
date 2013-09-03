@@ -60,16 +60,22 @@ AJAX injection is a type of Cross Site Scripting (XSS) that leverages the XML or
 {{{
 var contactStatusList;
 var http_request = new XMLHttpRequest();
+
 http_request.open("GET", url, true);
+
 http_request.onreadystatechange = function () {
   if (http_request.readyState == 4) {
     if (http_request.status == 200) {
       contactStatusList = eval("(" + http_request.responseText + ")");
+
     }
     http_request = null;
+
   }
 };
+
 http_request.send(null);
+
 }}}
 
 *Now suppose that Mallory's status is set to a custom value. This may have been changed by Mallory herself or by a third party attacker. Either way, because the server providing the data to the mail client has poor validation, this status value is changed to include cleverly formatted malicious JavaScript. Suppose that instead of "Away" the value is changed to the following: 
