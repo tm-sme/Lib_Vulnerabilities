@@ -46,7 +46,8 @@ The following code is wrapper around the UNIX command cat which prints the conte
 #include <stdio.h>
 #include <unistd.h>
 
-int main(int argc, char **argv) {  
+int main(int argc, char **argv) 
+{  
 char cat[] = "cat ";
 
 char *command;
@@ -63,6 +64,7 @@ strncat(command, argv[1], (commandLength - strlen(cat)) );
 
 system(command);  return (0);
 }
+
 }}}
 
 Used normally, the output is simply the contents of the file requested:
