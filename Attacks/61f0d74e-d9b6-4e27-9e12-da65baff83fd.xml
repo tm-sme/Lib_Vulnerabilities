@@ -71,7 +71,8 @@ The following PHP code connects to an LDAP server on localhost and searches for 
  else 
 {
     echo "<h4>connection error</h4>";
-}?>
+}
+?>
 }}}
 
 If this code is in {{{index.php at teammentorexample.com}}} then the following URL would return all records where surname is Smith.
