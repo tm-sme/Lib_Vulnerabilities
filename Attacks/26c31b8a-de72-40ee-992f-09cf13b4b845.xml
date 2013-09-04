@@ -52,16 +52,20 @@ import java.io.Serializable;
 import java.util.Date;
 public class Record implements Serializable
 
-{  private String name;
-   private String record;
-   private Date date;
-   public Record(String n, String r)
+{  
+private String name;
+private String record;
+private Date date;
+public Record(String n, String r)
 
-{      name = n;
+{
+      name = n;
       record = r;
       date = Date();
 
-   }}// setupString filename = "record.obj";
+}
+}
+// setupString filename = "record.obj";
 
 FileOutputStream fos = null;
 ObjectOutputStream 
@@ -77,22 +81,31 @@ serializetry{   fos = new FileOutputStream(filename);
    oos.writeObject(record);
    oos.close();
 
-}catch(IOException ex)
+}
+catch(IOException ex)
 
-{   ex.printStackTrace();
+{   
+ex.printStackTrace();
 
-}// deserializerecord = null;
+}
 
-try{   fis = new FileInputStream(filename);
+// deserializerecord = null;
 
-   oin = new ObjectInputStream(fis);   
+try
+{
 
+fis = new FileInputStream(filename);
+oin = new ObjectInputStream(fis);   
 record = (Record)oin.readObject();
-
-   oin.close();
-}       catch(IOException ex) {   ex.printStackTrace();
-}       catch(ClassNotFoundException ex)
-{   ex.printStackTrace();
+oin.close();
+}       
+catch(IOException ex) 
+{   
+ex.printStackTrace();
+}       
+catch(ClassNotFoundException ex)
+{   
+ex.printStackTrace();
 }
 
 }}}
@@ -111,21 +124,31 @@ Signature signature = Signature.getInstance("SHA-1/DSA");
    oos = new ObjectOutputStream(fos);
    oos.writeObject(signedobject);   
 oos.close();
-}catch(IOException ex){   ex.printStackTrace();
+}
+catch(IOException ex){   ex.printStackTrace();
 }
 // deserializerecord = null;
 signedobject = null;
-try{   fis = new FileInputStream(filename);   
+try
+{
+fis = new FileInputStream(filename);   
 oin = new ObjectInputStream(fis);
-   signedobject = (SignedObject)oin.readObject();
-   oin.close();
-   boolean ok = signedobject.verify(publickey, signature); 
+signedobject = (SignedObject)oin.readObject();
+oin.close();
+boolean ok = signedobject.verify(publickey, signature); 
   
 if (ok){record = (Record)signedobject.getObject();
-}   else{record = null;
-}}    catch(IOException ex) {   ex.printStackTrace();
+}   
+else{record = null;
+}
 }    
-catch(ClassNotFoundException ex){   ex.printStackTrace();
+catch(IOException ex) 
+{  
+ ex.printStackTrace();
+}    
+catch(ClassNotFoundException ex)
+{   
+ex.printStackTrace();
 }
 }}}
 
