@@ -52,7 +52,7 @@ Below is the code for Module P which calls an external module to perform some fi
 
 {{{
   public static void doOperationPriv()
-  {
+{
    string dir = @"c:\temp\";
    Console.WriteLine("PrivilegedCode: Allowing read-only access to the directory {0}",dir);
    //allow read-only access to the current directory only
@@ -62,7 +62,7 @@ read.PermitOnly();
    Console.WriteLine("PrivilegedCode: Calling external module for operation on dir {0}",dir);
    Operations.doOperation(dir);
 FileIOPermission.RevertPermitOnly();
-  }
+}
 }}}
 
 Here, the module explicitly states that it has given up its rights to write to the disk for a short while. Now when the following external module is called:
