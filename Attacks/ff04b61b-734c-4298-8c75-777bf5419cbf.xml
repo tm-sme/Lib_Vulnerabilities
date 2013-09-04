@@ -50,11 +50,14 @@ An integer underflow occurs when an integer is decremented under the limit that 
 The following code segment shows a simple method, whose job is to strip the the last character and the null terminator from a string and return the result in a new character array.
 
 {{{
-char* stripString(char* sentence){    if (!sentence) return 0;    
+char* stripString(char* sentence)
+{
+if (!sentence) return 0;    
 //need one less, since we're stripping last character    unsigned int newLength = strlen(sentence) - 1;    
 char* newBuffer = (char*) malloc (newLength);    
 if (newBuffer != NULL){ strncpy (newBuffer, sentence, newLength);
-    }    return newBuffer;
+}    
+return newBuffer;
 }
 }}}
 
@@ -64,17 +67,22 @@ With a little care the problem can be avoided. Consider the following fixed vers
 
 {{{
 char* stripString(char* sentence)
-{   char* newBuffer = NULL;   
+{
+char* newBuffer = NULL;   
 unsigned int strLength = 0;
-       if (!sentence) return 0;
+
+if (!sentence) return 0;
    strLength = strlen(sentence);   
 if (strLength > 0)
-{       unsigned int newLength = strLength - 1;
-       newBuffer = (char*) malloc (newLength);       
+{
+unsigned int newLength = strLength - 1;
+newBuffer = (char*) malloc (newLength);       
 if (newBuffer != NULL)
-{          strncpy (newBuffer, sentence, newLength);
+{          
+strncpy (newBuffer, sentence, newLength);
 }
-   }   return newBuffer;
+}   
+return newBuffer;
 }
 }}}
 
