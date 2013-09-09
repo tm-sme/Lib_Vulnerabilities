@@ -51,7 +51,18 @@ An XML injection vulnerability will allow an attacker to insert malicious data i
 =Example
 
 Let us assume that a valid node in our server side XML looks like this:
+{{{
+<userrecord>
+   
+<uniqueid>5</uniqueid>   
+<name>Gandalf</name>   
+<email>Gandalf@MiddleEarth.com</email>   
+<address>One Middle Earth Way, ME</address>   
+<zipcode>10000</zipcode>   
+<phonenumber>123-456-7890</phonenumber>
 
+</userrecord>
+}}}
 
 =Additional Resources
 
