@@ -64,6 +64,14 @@ Let us assume that a valid node in our server side XML looks like this:
 </userrecord>
 }}}
 
+The {{{UniqueID}}} field here is assigned by the server. Now, if web server accepts input from the user and stores it in the XML file, what is the outcome of the parser when a user enters the following data for the {{{Email}}} field:
+
+{{{
+Gandalf@MiddleEarth.com<uniqueid>0</uniqueid><name>Gandalf</name><email>Gandalf@MiddleEarth.com
+}}}
+
+The resulting XML on the server will look like this:
+
 =Additional Resources
 
     *For more information on http://www.w3.org/XML/Processing/
