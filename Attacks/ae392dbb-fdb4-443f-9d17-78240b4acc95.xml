@@ -71,6 +71,21 @@ Gandalf@MiddleEarth.com<uniqueid>0</uniqueid><name>Gandalf</name><email>Gandalf@
 }}}
 
 The resulting XML on the server will look like this:
+{{{
+<userrecord>
+
+<uniqueid>5</uniqueid>   
+<name>Gandalf</name>   
+<email>Gandalf@MiddleEarth.com</email>
+<uniqueid>0</uniqueid>               
+<name>Gandalf</name>
+<email>Gandalf@MiddleEarth.com</email>   
+<address>One Middle Earth Way, ME</address>  
+<zipcode>10000</zipcode>   
+<phonenumber>123-456-7890</phonenumber>
+
+</userrecord>
+}}}
 
 =Additional Resources
 
