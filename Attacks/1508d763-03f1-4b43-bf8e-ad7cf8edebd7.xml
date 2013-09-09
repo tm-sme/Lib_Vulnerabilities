@@ -49,11 +49,26 @@ An Xpath/XQuery attack exploits vulnerabilities in input validation to run arbit
 Consider the following XML file, being used by an application to log users into the application:
 
 {{{
-<?xml version="1.0" encoding="ISO-8859-1"?> <users>    <user>       <username>admin</username>       
-<password>8af2&</password>       <account>admin</account>    </user>    <user>       
-<username>user1</username>       <password>password</password>       <account>guest</account>    </user>    
-<user>       <username>user2</username>       <password>1234</password>       
-<account>guest</account>    </user> </users>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<users>    
+	<user>       
+		<username>admin</username>       
+		<password>8af2&</password>       
+		<account>admin</account>    
+	</user>    
+
+	<user>       
+		<username>user1</username>       
+		<password>password</password>       
+		<account>guest</account>    
+	</user>    
+
+	<user>       
+		<username>user2</username>       
+		<password>1234</password>       
+		<account>guest</account>    
+	</user> 
+</users>
 }}}
 
 A developer could use the following {{{Xpath}}} command to return all the users with the username:
