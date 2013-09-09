@@ -87,13 +87,19 @@ The resulting XML on the server will look like this:
 </userrecord>
 }}}
 
+We now have two fields and values for {{{UniqueID, Name and Email}}}. The outcome of parsing such data will depend upon the type of XML parser used:
+
+    If a {{{SAX}}} parser is used, it will report the {{{UniqueID}}} for this node to be 0, so an attacker would have essentially overwritten the field value.
+    If a {{{DOM}}} parser is used, it will report an error. However, the {{{DOM}}} parser can be abused by inserting additional nodes in the XML while still matching the schema, which will lead to excessive memory consumption by the parser and could potentially result in a Denial of Service.
+
+Also note that this is a simple example. It is possible to insert an entire new record among other issues. To fix the example above we can escape the markup delimiters to prevent the users input from being interpreted, replacing & with &, < with <, and so on as described in the Countermeasures section. This will prevent the users data from being interpreted in this case. In general, though, we don't know exactly what the input might look like, so the best plan is to have a white-list acceptable characters and do type checking as much as possible. Where type checking is not possible, consider using {{{CDATA}}} to enforce that the string be treated strictly as data. For example:
 =Additional Resources
 
     *For more information on http://www.w3.org/XML/Processing/
     *For more information on http://www-128.ibm.com/developerworks/xml/library/x-think37/index.html
     *For more information onhttp://www.owasp.org/index.php/Data_Validation
     *For more information on http://www-128.ibm.com/developerworks/xml/library/x-tipcfsx.html
-     *For more information onhttp://www.w3schools.com/xml/xml_cdata.asp
+    *For more information onhttp://www.w3schools.com/xml/xml_cdata.asp
 
 =Related Items
 
