@@ -103,6 +103,11 @@ $evil_input = "Gandalf@MiddleEarth.com</email>
 
 After we insert {{{$data}}} into the {{{email}}} field above the result will be the following acceptable XML:
 
+missingcodehere
+
+
+
+
 =Additional Resources
 
     *For more information on http://www.w3.org/XML/Processing/
