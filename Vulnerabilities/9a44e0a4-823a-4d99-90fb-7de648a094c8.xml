@@ -17,11 +17,15 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
-An insufficiently protected credential weakness occurs when the application doesn't store or transmit the authentication credentials securely. An attacker may be able to recover stored passwords after compromising the application, if the passwords are not hashed and salted. An attacker may be able to intercept passwords or hashes as a result of a man-in-the-middle attack, if the passwords or hashes are not encrypted during transmission. All applications that use authentication are affected by this vulnerability type. To prevent this vulnerability type, hash and salt stored passwords and send authentication credentials over encrypted tunnels. To make sure that adequate protection against this vulnerability type is in place, verify that passwords are hashed and salted for storage and that authentication credentials are never sent in plain-text.
+An insufficiently protected credential weakness occurs when the application doesn't store or transmit the authentication credentials securely. If the passwords are not hashed and salted, an attacker may be able to recover stored passwords after compromising the application. If the passwords or hashes are not encrypted during transmission, an attacker may be able to intercept passwords or hashes vis a man-in-the-middle attack. All applications that use authentication are affected by this vulnerability type. 
+
+To prevent this vulnerability type, hash and salt stored passwords and send authentication credentials over encrypted tunnels. 
+
+To check that adequate protection against this vulnerability type is in place, verify that passwords are hashed and salted for storage and that authentication credentials are never sent in plain-text. 
 
 ==Impact==
 
-An insufficiently protected credential vulnerability makes it easier for an attacker to gain access to the authentication credentials. Usually, some other vulnerability has to be present for the attacker to recover the credentials. Once the attacker has the credentials, he can impersonate the user whose credentials have been compromised. Malicious hackers usually target privileged accounts to take over the application. After taking over the application, an attacker may leverage other vulnerabilities to take over the application platform and use it to pivot for other attacks. The attacker may also be interested in user data or impersonating the user and compromising the authentication credentials allows him to do that.
+An insufficiently protected credential vulnerability makes it easier for an attacker to gain access to the authentication credentials. Usually, some other vulnerability has to be present for the attacker to recover the credentials. Once the attacker has the credentials, he can impersonate the user whose credentials have been compromised. Malicious hackers usually target privileged accounts to take over the application. After taking over the application, an attacker may leverage other vulnerabilities to take over the application platform and use it to pivot for other attacks. Compromising the application also gives the attacker access to user data, thus enabling him to impersonate the user. 
 
 ==Countermeasures==
 
