@@ -17,9 +17,11 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
-Log forging occurs when an attacker is able to modify log entries recorded by the application. This usually occurs when the application writes some part of user input to the log files verbatim, which allows an attacker to insert special characters into the log files. Special characters may be processed by the application to change the contents of the files or render them unusable. The threat of log forging is that it may allow an attacker to hide traces of the attacks. In extreme cases, an attacker may forge logs to implicate someone else in the attacks. 
+Log forging occurs when an attacker is able to modify log entries recorded by the application. This usually occurs when the application writes some part of user input to the log files verbatim, which allows an attacker to insert special characters into the log files. Special characters may be processed by the application to change the contents of the files or render them unusable. The threat of log forging is that it may allow an attacker to hide traces of the attacks. In extreme cases, an attacker may forge logs to implicate someone else in the attacks. This vulnerability type affects all applications. 
 
-This vulnerability type affects all applications. To prevent this vulnerability, validate all input and validate user data which is logged. To check for adequate protection, make sure that all input is validated, and especially ensure that all user data that is logged is validated.
+To prevent this vulnerability, validate all input and validate user data which is logged. 
+
+To check for adequate protection, make sure that all input is validated, and especially ensure that all user data that is logged is validated.
 
 ==Impact==
 
