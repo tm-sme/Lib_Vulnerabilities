@@ -38,7 +38,7 @@ A variation of a DoS attack is the distributed denial of service (DDoS) attack, 
 
 =Impact
 
-The direct impact of a DoS attack is that unavailability of the service leads to a potential loss of business. This impact is frequently underestimated. It is true that DoS cannot be used to steal data or to impersonate more privileged users, and therefore many people assume that these attacks are merely a nuisance. However, nothing could be further from the truth. Historically, DoS attacks have been very effective at extorting millions of dollars from organizations that depend heavily on a web presence.
+The direct impact of a DoS attack is that the unavailability of the service leads to a potential loss of business. This impact is frequently underestimated. It is true that DoS cannot be used to steal data or to impersonate more privileged users, and therefore many people assume that these attacks are merely a nuisance. However, nothing could be further from the truth. Historically, DoS attacks have been very effective at extorting millions of dollars from organizations that depend heavily on a web presence.
 
 =Vulnerabilities
 
