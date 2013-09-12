@@ -21,9 +21,10 @@
     <Data><![CDATA[=Applies To
 
 All web applications.
+
 =Description
 
-A cross site request forgery attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request is sent in the context of the logged in victim, and may be able to change the state of the web application. Due to the fact that, for many sites, each request automatically sends the victim's credentials (such as the session cookie or authentication credentials), there is no way to distinguish the attacker's request from a legitimate request.
+A cross site request forgery attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request is sent in the context of the logged in victim, and may be able to change the state of the web application. On many sites, each request automatically sends the victim's credentials (such as the session cookie or authentication credentials). Thus, there is no way to distinguish the attacker's request from a legitimate request.
 
 Cross site request forgery attacks are known by other names including XSRF, session riding, one-click and zero-click attacks. A one-click attack refers to a link that causes a malicious action to be performed when a victim clicks on it. A zero-click attack is automatically executed upon page load. A common way to perform a zero-click attack is to embed the request in the source of an image.
 
@@ -44,23 +45,21 @@ Cross site request forgery attacks are known by other names including XSRF, sess
 
 =Example
 
-If the application allows a user to change the state of the application in a single request this attack is possible. In this example the web application allows a logged in administrator to create a new user sending a single GET request.
-
-This GET request looks like this:
+A CSRF attack is possible if the application allows a user to change the state of the application in a single request. In this example, the web application allows a logged in administrator to create a new user sending a single GET request. The GET request looks like this:
 
 {{{
 GET http://teammentorexample.com/adduser.aspx?username=joe&password=1234&usertype=userHTTP/1.1
 }}}
 
-The attacker discovers that this request will create a new user and creates his own request which he embeds in an e-mail with the following image tag:
+The attacker discovers that this request will create a new user. He creates his own request, which he embeds in an e-mail with the following image tag:
 
 {{{
 <img src="http://teammentorexample.com/adduser.aspx?username=HACKER&password=TEST&usertype=admin" />
 }}}
 
-When the victim's e-mail client attempts to download the image located at the above source the request is made without the knowledge of the victim.
+When the victim's e-mail client attempts to download the image located at the above source, the request is made without the knowledge of the victim.
 
-The application should require a two step authorization mechanism for any change to server state. In this example the server should send the client a nonce value to verify the admin would indeed like to add this user. The admin would have to verify the action on a separate page and return the nonce value. Only after the server receives the action and verifies the nonce should the user be created.
+The application should require a two step authorization mechanism for any change to server state. In this example the server should send the client a nonce value to verify that the admin would indeed like to add this user. The admin would have to verify the action on a separate page and return the nonce value. Only after the server receives the action and verifies the nonce should the user be created.
 
 =Additional Resources
 
