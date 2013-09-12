@@ -28,8 +28,8 @@ Due to the open nature of computer network LANs, it is possible to view traffic 
 
 =Impact
 
-    *Information disclosure
-    *Session hijacking and elevation of privilege
+    *Information disclosure.
+    *Session hijacking and elevation of privilege.
 
 =Vulnerabilities
 
