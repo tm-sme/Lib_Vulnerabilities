@@ -62,7 +62,7 @@ The trailing equals of the session IDs is a telltale sign of Base64 encoding. So
 |MTUzODp1c2VyTmFtZQ==| 	1538:userName|
 |MTU0MDp1c2VyTmFtZQ==| 	1540:userName|
 
-Once the mechanism is known for predicting session IDs, the attacker can begin attacking the server. The attacker would simply guess a number slightly larger or smaller than the current session ID and append it to a list of known usernames in an attempt to generate a valid session identifier. If the attempt is successful, the attacker can log in to the server as another user.
+Once the mechanism is known for predicting session IDs, the attacker can begin attacking the server. The attacker would simply guess a number slightly larger or smaller than the current session ID and append it to a list of known usernames in an attempt to generate a valid session identifier. Once the attempt is successful, the attacker can log in to the server as another user.
 
 =Additional Resources
 
