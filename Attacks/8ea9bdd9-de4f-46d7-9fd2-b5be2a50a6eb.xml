@@ -24,9 +24,9 @@ All web applications.
 
 =Description
 
-A cross site request forgery attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request is sent in the context of the logged in victim, and may be able to change the state of the web application. On many sites, each request automatically sends the victim's credentials (such as the session cookie or authentication credentials). Thus, there is no way to distinguish the attacker's request from a legitimate request.
+A cross site request forgery attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. The request is sent in the context of the logged in victim, and it may be able to change the state of the web application. On many sites, each request automatically sends the victim's credentials (such as the session cookie or authentication credentials). Thus, there is no way to distinguish the attacker's request from a legitimate request.
 
-Cross site request forgery attacks are known by other names including XSRF, session riding, one-click and zero-click attacks. A one-click attack refers to a link that causes a malicious action to be performed when a victim clicks on it. A zero-click attack is automatically executed upon page load. A common way to perform a zero-click attack is to embed the request in the source of an image.
+Cross site request forgery attacks are known by other names, including XSRF, session riding, one-click and zero-click attacks. A one-click attack refers to a link that causes a malicious action to be performed when a victim clicks on it. A zero-click attack is automatically executed upon page load. A common way to perform a zero-click attack is to embed the request in the source of an image.
 
 =Impact
 
