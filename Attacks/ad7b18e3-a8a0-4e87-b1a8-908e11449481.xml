@@ -21,9 +21,11 @@
     <Data><![CDATA[=Applies To
 
 Any network application that transmits credentials over a computer network.
+
 =Description
 
-Due to the open nature of computer network LANs, it is possible to view traffic transmitted on a network even if it is not directed at your machine. This is known as 'sniffing' and is easily enabled by freely available Network sniffing software such as Cain and Wireshark. This software sets the attacker's network card to 'promiscuous mode' so it listens to all traffic on the network. This attack is made even easier by the fact that no special hardware is needed and simple step by step guides are freely available on many security websites. Simple regular expressions can be used to filter out any uninteresting traffic to return only usernames and passwords.
+Due to the open nature of computer network LANs, it is possible to view traffic transmitted on a network even if it is not directed at your machine. This is known as 'sniffing' and is easily enabled by freely available network sniffing software such as Cain and Wireshark. This software sets the attacker's network card to 'promiscuous mode' so that it listens to all traffic on the network. This attack is made even easier by the fact that no special hardware is needed and simple step-by-step guides are freely available on many security websites. Simple regular expressions can be used to filter out any uninteresting traffic to return only usernames and passwords.
+
 =Impact
 
     *Information disclosure
@@ -36,8 +38,8 @@ Due to the open nature of computer network LANs, it is possible to view traffic 
 
 =Countermeasures
 
-    *Utilize SSL or IPSec: Both of these protocols automatically encrypt all information sent over the network in a way that is transparent to the sending or receiving applications. While an attacker will still be able to see the network traffic, the information received will be unintelligible and will therefore prevent credentials from being stolen.
-    *Utilize secure password authentication schemes: Secure authentication schemes such as NTLM or Kerberos protect the password over the wire even without the use of a secure channel.
+*Utilize SSL or IPSec: Both of these protocols automatically encrypt all information sent over the network in a way that is transparent to the sending or receiving applications. While an attacker will still be able to see the network traffic, the information received will be unintelligible and will therefore prevent credentials from being stolen.
+*Utilize secure password authentication schemes: Secure authentication schemes such as NTLM or Kerberos protect the password over the wire even without the use of a secure channel.
 
 =Additional Resources
 
