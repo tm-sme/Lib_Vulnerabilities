@@ -21,12 +21,14 @@
     <Data><![CDATA[=Applies To
 
 All software applications.
+
 =Description
 
-Many applications assume that malicious software will never be executed on the local machine. However, in today's world of ubiquitous spyware, viruses, and Trojans, relying on this assumption can lead to the loss of sensitive information like credentials. If an attacker can somehow trick a user into installing malicious software, it may be possible to recover sensitive information from the file system or other local machine resources. An attacker may look through temporary files, registry keys, swap files, config files, etc. to discover sensitive data such as username/password pairs, database connection strings, or other data that should be protected.
+Many applications assume that malicious software will never be executed on the local machine. However, in today's world of ubiquitous spyware, viruses, and Trojans, relying on this assumption can lead to the loss of sensitive information like credentials. If an attacker can somehow trick a user into installing malicious software, it may be possible to perform a local machine credential sniffing attack, in which the attacker recovers sensitive information from the file system or other local machine resources. An attacker may look through temporary files, registry keys, swap files, config files, and so on, to discover sensitive data such as username/password pairs, database connection strings, or other data that should be protected.
+
 =Impact
 
-    *Information Disclosure
+    *Information disclosure.
 
 =Vulnerabilities
 
@@ -44,11 +46,12 @@ Many applications assume that malicious software will never be executed on the l
 
 =Example
 
-**Sensitive Data in Temporary Files:** An application writes an encryption key to the disk as a temporary file while it's not using it to free up space in memory. When the encryption key is no longer used the developer calls the File.Delete operation which deletes the file from disk.
+**Sensitive Data in Temporary Files:** To free up space in memory, an application writes an encryption key to the disk as a temporary file while it's not in use. When the encryption key is no longer used, the developer calls the File.Delete operation which deletes the file from disk.
 
 In this case it is trivial for an attacker to open an application that allows her to read the contents of the file from disk, even after the delete function had been called.
 
-To ensure the contents of this file is unrecoverable it must be securely deleted by overwriting the bits on disk. The file should always be protected with encryption or with explicitly set permissions to make sure that the file is not discoverable before it is deleted.
+To ensure the contents of this file is unrecoverable, it must be securely deleted by overwriting the bits on disk. The file should always be protected with encryption or with explicitly set permissions to make sure that the file is not discoverable before it is deleted.
+
 =Additional Resources
 
     *For more information on SDelete, see: http://technet.microsoft.com/en-us/sysinternals/bb897443.aspx
