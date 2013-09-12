@@ -21,35 +21,37 @@
     <Data><![CDATA[=Applies To
 
 Any application with logging enabled.
+
 =Description
 
-An attacker may attempt to hide malicious requests behind a cloud of false transactions. If the attacker can fill log files up with legitimate looking requests the attack may go unnoticed. Additionally an attacker may attempt to fill up log space so the logging application can no longer write any new logs to disk. Once the logs have been filled to capacity the attacker is free to conduct attacks, knowing that the malicious requests will not be traceable.
+In a false transaction attack, an attacker may attempt to hide malicious requests behind a cloud of false transactions. If the attacker can fill log files up with legitimate looking requests, the attack may go unnoticed. Additionally an attacker may attempt to fill up log space so the logging application can no longer write any new logs to disk. Once the logs have been filled to capacity the attacker is free to conduct attacks, knowing that the malicious requests will not be traceable.
 
-In another type of False Transaction Attack, the attacker may generate a log entry for a transaction that did not actually happen, then the attacker will return to the victim claiming to have fully executed the transaction. For example the attacker may generate a log or receipt in a company’s database that implies he purchased an item. The attacker then returns to the company claiming to have purchased the item but never received it. The company checks the logs and notices that indeed the attacker does have an entry in the completed orders database. Since the company has no way of knowing the logs have been tampered with, the company may reimburse the attacker or provide them with the product or service for free.
+In another type of false transaction attack, the attacker may generate a log entry for a transaction that did not actually happen. The attacker will then return to the victim claiming to have fully executed the transaction. For example the attacker may generate a log or receipt in a company’s database that implies he purchased an item. The attacker then returns to the company claiming to have purchased the item but never received it. The company checks the logs and notices that indeed the attacker does have an entry in the completed orders database. Since the company has no way of knowing the logs have been tampered with, the company may reimburse the attacker or provide them with the product or service for free.
+
 =Impact
 
-    *Repudiation: If the logs are filled there will be no way to discover what the attacker was able to do.
-    *Denial of Service: If the disk on a production server is filled to capacity other required services may be denied critical resources.
-    *Falsified transaction data: Transaction logs may contain the only record of a transaction, if an attacker can change this information he may be able to falsely claim a transaction took place when in fact it did not.
+*Repudiation: If the logs are filled, there will be no way to discover what the attacker was able to do.
+*Denial of Service: If the disk on a production server is filled to capacity, other required services may be denied critical resources.
+*Falsified transaction data: Transaction logs may contain the only record of a transaction. If an attacker can change this information, he may be able to falsely claim a transaction took place when in fact it did not.
 
 =Vulnerabilities
 
-    *Improperly logging requests
-    *Logging on production servers
-    *Improper permissions on transaction logs
-    *Other vulnerabilities that would lead to an attacker being able to edit or change log data
+*Improperly logging requests.
+*Logging on production servers.
+*Improper permissions on transaction logs.
+*Other vulnerabilities that would lead to an attacker being able to edit or change log data.
 
 =Countermeasures
 
-    *Log requests on a separate server: Make a decision whether it is more important to keep the production server up without logging or to turn off the production server in the case the log server is unresponsive.
-    *Review logs: Create or use a reporting service that will allow you to view possible attacks.
-    *Ensure proper permissions are placed on all log files.
-    *Ensure you are using the principle of least privilege with SQL or other data stores to make sure there is no other way to change log data.
-    *Ensure that the only way to cause the system to create a log entry is by properly creating the transaction being logged, following all the business rules regarding that transaction.
+*Log requests on a separate server. In the case that the log server is unresponsive, decide whether it is more important to keep the production server up without logging, or to turn off the production server.
+*Review logs. Create or use a reporting service that will allow you to view possible attacks.
+*Ensure proper permissions are placed on all log files.
+*Ensure that you are using the principle of least privilege with SQL or other data stores to make sure there is no other way to change log data.
+*Ensure that the only way to cause the system to create a log entry is by properly creating the transaction being logged, following all the business rules regarding that transaction.
 
 =Additional Resources
 
-    *For more information about preventing repudiation, see: http://en.wikipedia.org/wiki/Non-repudiation
+*For more information about preventing repudiation, see: http://en.wikipedia.org/wiki/Non-repudiation
 
 =Related Items
 
