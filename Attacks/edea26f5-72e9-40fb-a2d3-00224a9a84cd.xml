@@ -21,30 +21,32 @@
     <Data><![CDATA[=Applies To
 
 Any web application.
+
 =Description
 
-In an HTTP Replay attack, the attacker first performs a network eavesdropping attack on the communication between a client and a server. The captured packets can then be sent by the attacker to the host in an attempt to impersonate the user that caused the original request. The attacker may have to modify certain characteristics of the replayed messages in order to trick the server into believing that the message originated from the original user.
+In an HTTP replay attack, the attacker first performs a network eavesdropping attack on the communication between a client and a server. The captured packets can then be sent by the attacker to the host in an attempt to impersonate the user that caused the original request. The attacker may have to modify certain characteristics of the replayed messages in order to trick the server into believing that the message originated from the original user.
 
-The HTTP Session Hijacking Attack is a specific type of a HTTP Replay Attack where the attacker attempts to impersonate the client by replaying the client session identifier.
+An HTTP session hijacking attack is a specific type of a HTTP replay attack where the attacker attempts to impersonate the client by replaying the client session identifier.
+
 =Impact
 
-    *Authentication Spoofing
-    *Client Impersonation
+    *Authentication spoofing.
+    *Client impersonation.
 
 =Vulnerabilities
 
-* If the server does not employ any secure means to verify the origin of received messages, then the server will be vulnerable to these attacks. Even if the server employs methods to verify the identity of the client sending the messages, but the verification is based on information in the messages that can be spoofed by an attacker, the server will be vulnerable to this attack. Some of the main causes are:
-** Unprotected Sessions. An attacker may be able to impersonate the session of another user because of any of the following reasons:
-***Reuse of session IDs
+*If the server does not employ any secure means to verify the origin of received messages, then the server will be vulnerable to these attacks. Even if the server employs methods to verify the identity of the client sending the messages, but the verification is based on information in the messages that can be spoofed by an attacker, the server will be vulnerable to this attack. Some of the main causes are:
+**Unprotected sessions: An attacker may be able to impersonate the session of another user because of any of the following reasons:
+***Re-use of session IDs
 ***Long or infinite session timeouts
 ***Poor or predictable session identifiers 
-**Insecure communication channel. If the channel of communication is secured using encryption, then the attacker will find it extremely difficult to conduct this attack.
+**Insecure communication channel: If the channel of communication is secured using encryption, then the attacker will find it extremely difficult to conduct this attack.
 
 =Countermeasures
 
-    *Use sessions securely.
-    *Utilize SSL or IPSec with encryption to establish a secure communication channel.
-    *Consider Timestamps.
+*Use sessions securely.
+*Utilize SSL or IPSec with encryption to establish a secure communication channel.
+*Consider timestamps.
 
 =Additional Resources
 
