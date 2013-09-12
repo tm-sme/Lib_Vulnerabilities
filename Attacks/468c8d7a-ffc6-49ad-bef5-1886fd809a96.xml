@@ -44,30 +44,31 @@ The direct impact of a DoS attack is that the unavailability of the service lead
 
 Depending on the nature of your application or device, there are many causes which may lead to a DoS problem. Some common vulnerabilities are:
 
-*Lack of or inadequate input validation. This may allow an attacker to submit data to your application that could lead to a denial of service. Lack of or inadequate input validation can lead to attacks such as:
+*Lack of or inadequate input validation: This may allow an attacker to submit data to your application that could lead to a denial of service. Lack of or inadequate input validation can lead to attacks such as:
         **Buffer overflow attack: Can lead to application termination or code execution.\\
         **SQL injection attack: Can corrupt the database in such a way that renders the service useless.\\
-        **Command injection attack: Could cause the application to loop indefinitely or enter a state of deadlock.\\
+        **Command injection attack: Can cause the application to loop indefinitely or enter a state of deadlock.\\
         **Integer underflow attack: Can cause the application to consume excessive amount of memory on a system.\\
 
-*Inappropriate use of shared resources. Allowing low privileged users (such as anonymous or guest users) or processes to share limited resources used by other users (authenticated or member users) or processes with a higher level of privilege can lead to resource contention. This may in turn result in denying the service to the privileged users or processes. Some examples of limited resources are:
+*Inappropriate use of shared resources: Allowing low privileged users (such as anonymous or guest users) or processes to share limited resources used by other users (authenticated or member users) or processes with a higher level of privilege can lead to resource contention. This may in turn result in denying the service to the privileged users or processes. Some examples of limited resources are:
         **Storage: If unauthenticated users can cause the application to store some form of data on the server, they may be able to rob other authorized users of this resource. If the host server runs out of disk space, this can result in operating system instability, degraded performance, and even system crashes. If the process either exhausts the available memory of the system or the available process memory, host or process instability, at least, is likely. If the system doesn't crash, no new requests will be handled until memory is made available.\\
        **Processor time: Many DoS attacks simply find a route through the system which consumes an inordinate amount of CPU time and take that route multiple times. On networking devices, this happens when higher level packet filtration is being used, which forces the device to route packets via the CPU instead of doing so in hardware accelerators. Applications that accept data with a complicated format, or that interpret the data they've been sent, are particularly vulnerable to these kind of attacks. It is often possible to cause an application of this type to spend a very large amount of time on a small amount of data. Even input validation can be a concern here; complicated regexes often have very bad pessimal cases for matching input which can take orders of magnitude longer than the average.\\
         **TCP ports: The number of concurrent connections that a network port can serve is limited. Thus, the availability of a service can be compromised by an attacker who repeatedly makes a very large number of simultaneous connections to the port. Without even authenticating, the anonymous connection on the port will be active for a given amount of time (whatever the timeout value of the port is set to). This allows the attacker to repeatedly and continuously connect to the port and rob other legitimate users of the service.\\
         **Connection pools and other resources: A number of higher-level resources are typically constrained in most systems. Connection pools to a database server are a primary example. Other examples include i-nodes in a file system, named pipes, and similar system-constrained resources.\\
 
-*Not failing securely. Services should be configured to expect and handle failures. The aim of an enterprise is to reduce downtime due to attacks. A design strategy that allows your service to be automatically restarted in the event of a crash will significantly reduce downtime.
+*Not failing securely: Services should be configured to expect and handle failures. The aim of an enterprise is to reduce downtime due to attacks. A design strategy that allows your service to be automatically restarted in the event of a crash will significantly reduce downtime.
 
 =Countermeasures
 
-    *Proper validation of input type, length and format will help bolster your application against attacks which lead to Denial of Service. Please refer to the guidelines for input validation mentioned in the Related Items section below.
-    *Shared resources should be monitored to ensure that the level of resource for a particular request directly relates to the privilege level of the user making that request. Anonymous users should be able to consume little or no shared resources while highly-privileged users should have no restriction. Depending on the nature of the application, explicitly logging resource utilization inside the application may be useful.
+*Proper validation of input type, length and format will help bolster your application against DoS attacks. Please refer to the guidelines for input validation mentioned in the Related Items section below.
+*Shared resources should be monitored to ensure that the level of resource for a particular request directly relates to the privilege level of the user making that request. Anonymous users should be able to consume little or no shared resources, while highly-privileged users should have fewer or no restrictions. Depending on the nature of the application, it may be useful to explicit log resource utilization inside the application.
 
 =Example
 
-One example of this type of attack is the SYN flood attack in which an attacker uses an automated program to send a large number of TCP SYN requests to the server to fill the pending connection queue on the server. When the server's connection queue has been filled legitimate connections cannot be made.
+An example of a DoS attack is the SYN flood attack, in which an attacker uses an automated program to send a large number of TCP SYN requests to the server to fill the pending connection queue on the server. When the server's connection queue has been filled, legitimate connections cannot be made.
 
-Another example is if the application allows a user to submit script or other interpreted text. The attacker may be able to submit a script, which causes the application to enter into an infinite loop and consume all the resources on the machine, thereby rendering it incapable of performing legitimate tasks.
+Another example can occur if the application allows a user to submit script or other interpreted text. The attacker may be able to submit a script, which causes the application to enter into an infinite loop and consume all the resources on the machine, thereby rendering it incapable of performing legitimate tasks.
+
 =Additional Resources
 
     *For more information on Denial of Service attacks, see: http://en.wikipedia.org/wiki/Denial-of-service_attack
