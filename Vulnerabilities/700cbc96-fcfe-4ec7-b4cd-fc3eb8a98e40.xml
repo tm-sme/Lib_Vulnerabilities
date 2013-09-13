@@ -23,7 +23,7 @@ Log forging occurs when an attacker is able to modify log entries recorded by th
 
 Log forging allows an attacker to tamper with the logs. Usually, the attacker will try to insert special characters in an attempt to remove a part of the log or make it invisible from within the application. If the attacker can hide a part of the log, it allows him to hide some of the traces of his attack(s). This makes it harder to detect the attack when it is taking place and also makes it harder to investigate the attack afterwards. In a more extreme case that is rarely seen in practice, an attacker may insert data into the logs to implicate someone else in the attacks and send the investigators down the wrong path. These days, attackers usually rely on some form of proxy or tunnel technology to hide themselves, rather than modifying the logs, but this vulnerability type still exists.
 
-==Countermeasures
+=Countermeasures
 
 To prevent this vulnerability, validate all input and validate logged user data.
 
