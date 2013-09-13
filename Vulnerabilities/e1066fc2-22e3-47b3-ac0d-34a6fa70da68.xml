@@ -15,18 +15,18 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-A web application's output is rendered as a web page. If user input is included in the web application output, then it is also rendered as a part of the web page. If user input is included in output without being validated and encoded, a Cross-Site Scripting (XSS) vulnerability results. In that case, an attacker can modify the output web page to include malicious script. This malicious script is then executed by the browser that views the vulnerable page. XSS applies to all web applications. To prevent XSS, validate all input and encode input included in output. To check for this flaw, find all code that includes user input in output and verify that user input is sufficiently validated and properly encoded.
+A web application's output is rendered as a web page. If user input is included in the web application output, then it is also rendered as a part of the web page. If user input is included in output without being validated and encoded, a cross-site scripting (XSS) vulnerability results. In that case, an attacker can modify the output web page to include malicious script, which is then executed by the browser that views the vulnerable page. XSS applies to all web applications. To prevent XSS, validate all input and encode input included in output. To check for this flaw, find all code that includes user input in output, and verify that user input is sufficiently validated and properly encoded.
 
-There are two primary types of XSS, persistent and non-persistent. If the attacker is able to inject his malicious script into the web applications data store, then the script will be persistent and anyone who loads a page with that content will run the script and become a victim of the attack. Non-Persistent XSS uses some reflective aspect of the page to deliver the payload. 
+There are two primary types of XSS: persistent and non-persistent. If the attacker is able to inject his malicious script into the web applications data store, then the script will be persistent and anyone who loads a page with that content will run the script and become a victim of the attack. Non-Persistent XSS uses some reflective aspect of the page to deliver the payload. 
 
+=Impact
 
-==Impact==
+Cross-site scripting vulnerabilities allow an attacker to execute malicious script on the user's web browser. The attacker may use this to perform actions on the user's behalf within the application, such as change the password, submit messages, or perform some other actions available to the authenticated user. The malicious script may spread itself, becoming an XSS worm. An XSS worm may use up a lot of resources and be very costly to clean up. The attacker may write a script that steals session cookies or session identifiers and allows impersonating the user. Impersonating the user through stolen cookies is simpler and more powerful than through a script because it allows the attacker to interact with the application visually. The attacker may also use XSS to inject a JavaScript that captures the user's keystrokes on that web site to steal passwords and other information. XSS usually leads to privilege escalation, which the attacker leverages to take over some user's account. Usually, the attacker will target an administrative account to take full control of the application.
 
-Cross-Site Scripting vulnerabilities allow an attacker to execute malicious script on the user's web browser. The attacker may use this to perform actions on the user's behalf within the application, such as change the password, submit messages, or perform some other actions available to the authenticated user. The malicious script may spread itself becoming a XSS worm. A XSS worm may use up a lot of resources and be very costly to clean up. The attacker may write a script that steals session cookies or session identifiers and allows impersonating the user. Impersonating the user through stolen cookies is simpler and more powerful than through a script because it allows the attacker to interact with the application visually. The attacker may also use XSS to inject a JavaScript that captures the user's keystrokes on that web site to steal passwords and other information. XSS usually leads to privilege escalation and the attacker leverages it to take over some user's account. Usually, the attacker will target an administrative account to take full control of the application.
-
-==Countermeasures==
+=Countermeasures
+To prevent this vulnerability, validate all input, and encode all input that is included in output.
 
 Validate all input:
 * [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
@@ -47,7 +47,9 @@ Encode input included in output:
 * [[9135b59f-8c73-4a4f-83c5-9894d6587cca|Output Encoding Using Struts 2]]
 * [[f7806f64-b1c7-4990-a9e5-f6d814bae7f1|Use ESAPI Encoder]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that all input is validated, and that all input included in output is encoded.
 
 All input is validated:
 * [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Input from All Sources Is Validated]]
@@ -58,8 +60,8 @@ Input included in output is encoded:
 * [[90893370-cbce-4116-b9ff-2e69dab56cfa|All Untrusted Data in HTML Contexts Is Escaped in JSF]]
 * [[02c900ca-0740-412a-b685-56b13408793d|All Untrusted Data in HTML Contexts Is Escaped in JSP]]
 
-==Additional Resources==
+=Additional Resources
 
-* For more information about Cross-Site Scripting, see http://en.wikipedia.org/wiki/Cross-site_scripting]]></Data>
+* For more information about cross-site scripting, see http://en.wikipedia.org/wiki/Cross-site_scripting]]></Data>
   </Content>
 </TeamMentor_Article>
