@@ -15,19 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
 Applications that use authentication need a method for storing passwords. One of the simplest ways to store passwords is to hard-code them into the application. This approach is not secure, because anyone with access to the application code is able to recover these passwords. Once an attacker has recovered the passwords, he can use them to authenticate with the application. 
 
-To prevent this vulnerability, provide a secure admin interface that allows changing passwords, and store passwords securely. 
-
-To check for this vulnerability, examine all code that uses authentication and find where it stores the passwords. 
-
-==Impact==
+=Impact
 
 Once the attacker has obtained the hard-coded password, he can use it to access the application. Usually, administrative passwords are the ones that are hard-coded. In that case, the attacker gains full access to the application. The attacker may be able to leverage this access to take full control of the application server. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this vulnerability, provide a secure admin interface that allows changing passwords, and store passwords securely. 
 
 Provide a secure administrative interface that allows changing passwords:
 * [[00000000-0000-0000-0000-000000066326|Provide a Secure Administrative Interface that Allows Changing Passwords]]
@@ -35,7 +33,9 @@ Provide a secure administrative interface that allows changing passwords:
 Store passwords securely:
 * [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that a secure admin interface that allows changing passwords is provided, and that passwords are stored securely.
 
 A secure administrative interface that allows changing passwords is provided:
 * [[00000000-0000-0000-0000-0000006dd207|A Secure Administrative Interface that Allows Changing Passwords Is Provided]]
@@ -43,7 +43,7 @@ A secure administrative interface that allows changing passwords is provided:
 Passwords are stored securely:
 * [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
 
-==Additional Resources==
+=Additional Resources
 * For more information about the Use of Hard-coded Password vulnerability, see https://www.owasp.org/index.php/Use_of_hard-coded_password]]></Data>
   </Content>
 </TeamMentor_Article>
