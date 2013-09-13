@@ -20,7 +20,7 @@ Some applications allow the user to choose what files to access. Some of these a
 
 =Impact
 
-Using path traversal an attacker is able to access files outside of the scope allowed by the application. The attacker may then access sensitive operating system files, application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered using path traversal to take full control of the application or the application server. 
+Using path traversal, an attacker is able to access files outside of the scope allowed by the application. The attacker may then access sensitive operating system files, and application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage information gathered using path traversal to take full control of the application or the application server. 
 
 =Countermeasures
 To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for any filesystem access.
