@@ -42,7 +42,7 @@ Use reference maps to access objects:
 Disable directory browsing:
 * [[aaf96d58-0037-4ea7-a8c7-0f98db813a2d|Disable Directory Browsing]]
 
-=Checklists
+=Application Check
 
 To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, access control checks are performed for all filesystem access, and directory browsing is disabled.
 
