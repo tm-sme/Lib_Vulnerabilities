@@ -38,7 +38,7 @@ Encode input included in output:
 * [[1e240c0b-5d16-4191-b842-579809433eff|Encode Echoed Input]]
 
 =Application Check
-To check for adequate protection against this vulnerability, ensure that all input is validated, and that the application all input included in output is encoded.
+To check for adequate protection against this vulnerability, ensure that all input is validated, and that all input included in output is encoded.
 
 All input is validated:
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
