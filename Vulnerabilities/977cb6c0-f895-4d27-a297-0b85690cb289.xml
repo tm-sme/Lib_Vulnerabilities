@@ -17,7 +17,7 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description
 
-SSL should be used to protect any sensitive data in transit. Some applications don't use SSL even during authentication or when transmitting sensitive data. An attacker may be able to intercept data that is sent over the network unencrypted. This vulnerability applies to all applications that send sensitive data over the network. 
+SSL should be used to protect any sensitive data in transit. Some applications don't use SSL even during authentication or when transmitting sensitive data, and an attacker may be able to intercept such data that is sent over the network unencrypted. This vulnerability applies to all applications that send sensitive data over the network. 
 
 =Impact
 
