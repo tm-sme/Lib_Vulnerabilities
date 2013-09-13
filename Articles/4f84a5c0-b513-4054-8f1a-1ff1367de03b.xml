@@ -26,7 +26,7 @@ Log forging allows an attacker to tamper with the logs. Usually, the attacker wi
 To prevent this vulnerability, validate all input and validate user data which is logged.
 
 =Application Check
-To check your application for adequate protection, make sure that all input is validated, and especially ensure that all user data that is logged is validated.
+To check for adequate protection against this vulnerability, make sure that all input is validated, and especially ensure that all user data that is logged is validated.
 
 =Specific Technologies
 
