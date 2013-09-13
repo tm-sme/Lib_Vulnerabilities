@@ -12,25 +12,29 @@
     <DirectLink>Command Execution</DirectLink>
   </Metadata>
   <Content Sanitized="false" DataType="WikiText">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Command injection (command execution) is a type of vulnerabilities that allows an attacker to execute arbitrary code or external processes by injecting control information into the data stream.
+Command injection (command execution) is a type of vulnerability that allows an attacker to execute arbitrary code or external processes by injecting control information into the data stream.
 
-==Countermeasures==
+=Countermeasures
 
-The following TeamMentor articles describe effective counter-measures against command injection vulnerabilities:
+To prevent this vulnerability, validate all input.
+
+Validate all input:
 
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
 * [[e59923e7-c2fb-4a75-8db7-a9a91e869f74|Validate Input for Length, Range, Format, And Type]]
 
-==Checklists==
+=Application Check
 
-The following checklist items can help make sure that effective counter-measures against command injection vulnerabilities have been implemented:
+To check for adequate protection against this vulnerability, ensure that all input is validated.
+
+All input is validated:
 
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
 * [[0e71dd64-87d1-4cf5-9569-ea320f209977|Input Is Validated for Length, Range, Format, And Type]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about command injection, please see https://www.owasp.org/index.php/Command_Injection ]]></Data>
   </Content>
