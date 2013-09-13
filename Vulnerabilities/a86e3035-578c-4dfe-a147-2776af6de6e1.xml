@@ -15,16 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Applications use connection strings to specify credentials used to access databases. If the application includes unvalidated user input in connection strings, an attacker may be able to change what databases the application connects to. Connection string injection vulnerabilities apply to applications that connect to databases. To prevent connection string injection vulnerabilities, validate all input, store connection strings securely, and don't use user input in connection strings. To check for connection string injection vulnerabilities, find all connection strings used by the application and verify that unvalidated user input is not included in them. Ideally, user input should not be included in connection strings at all.
+Applications use connection strings to specify credentials used to access databases. If the application includes unvalidated user input in connection strings, an attacker may be able to change what databases the application connects to. Connection string injection vulnerabilities apply to applications that connect to databases. 
 
+=Impact
 
-==Impact==
+By manipulating the connection string, an attacker is able to cause the application to connect to an unintended data source. The attacker may be able to bypass authentication by re-routing the application to use his own database. The attacker may also get data from another database by re-routing the application to use it. The exact impact of a connection string injection vulnerability is difficult to predict because it is heavily dependent on application logic. Overall, the connection string vulnerability is difficult for an attacker to use, but it is still a serious vulnerability.
 
-By manipulating the connection string, an attacker is able to cause the application to connect to an unintended data source. The attacker may be able to bypass authentication by re-routing the application to use his own database. The attacker may also get data from another database by re-routing the application to use it. The exact impact of a connection string injection vulnerability is difficult to predict because it is heavily dependent on application logic. Overall, the connection string vulnerability is difficult to use for an attacker, but it is still a serious vulnerability.
+=Countermeasures
 
-==Countermeasures==
+To prevent connection string injection vulnerabilities, validate all input, store connection strings securely, and don't use user input in connection strings. 
 
 Validate all input:
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
@@ -37,7 +38,9 @@ Store connection strings securely:
 Don't use user input in connection strings:
 * [[00000000-0000-0000-0000-00000061594a|Do Not Use User Input in Connection Strings]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against connection string injection vulnerabilities, find all connection strings used by the application and verify that all input is validated, connection strings are stored securely, and user input is not used in connection strings. 
 
 All input is validated:
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
