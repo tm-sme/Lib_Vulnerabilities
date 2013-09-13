@@ -15,19 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
 Applications that use authentication need a method for storing credentials. Credentials may be stored for authenticating users to the application or for the application to authenticate to external services. One of the simplest ways to store the credentials is to hard-code them into the application. This approach is not secure, because anyone with access to the application code is able to recover these credentials. Once an attacker has recovered the credentials, he can use them to authenticate with the application or to access the external services. 
 
-To prevent this vulnerability, provide a secure admin interface that allows changing credentials and store credentials securely. 
-
-To check for this vulnerability, examine all code that uses authentication and find where it stores credentials. 
-
-==Impact==
+=Impact
 
 If the attacker obtains the database access credentials, he may be able to connect to the database and execute arbitrary queries. The privileges granted to the attacker will be based on the access level of the credentials. Typically, the attacker is then able to retrieve, modify, and delete any data in the database, or modify the database structure. Having this level of control over the database usually allows the attacker to take full control of the application. If the attacker is able to leverage additional vulnerabilities, or if the servers are not configured securely, the attacker may also take full control of the application server and the database server. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this vulnerability, provide a secure admin interface that allows changing credentials and store credentials securely. 
 
 Provide a secure administrative interface that allows changing credentials:
 
@@ -36,7 +34,9 @@ Provide a secure administrative interface that allows changing credentials:
 Store credentials securely:
 * [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that a secure administrative interface allows changing credentials and that credentials are stored securely.
 
 A secure administrative interface allows changing credentials:
 * [[00000000-0000-0000-0000-0000006dd207|A Secure Administrative Interface that Allows Changing Passwords Is Provided]]
