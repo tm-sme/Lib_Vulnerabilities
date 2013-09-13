@@ -39,7 +39,7 @@ Validate logged user data
 
 =Application Check
 
-To check your application for adequate protection against this vulnerability, make sure that all input is validated, and especially ensure that all logged user data is validated.
+To check for adequate protection against this vulnerability, make sure that all input is validated, and especially ensure that all logged user data is validated.
 
 All input is validated:
 * [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Input from All Sources Is Validated]]
