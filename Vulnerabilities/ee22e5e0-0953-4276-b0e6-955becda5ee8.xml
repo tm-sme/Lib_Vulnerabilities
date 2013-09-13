@@ -15,15 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Some applications allow the user to choose what files to access. Some of these applications don't validate the selected file path sufficiently. This vulnerability allows an attacker to access files outside of the locations authorized by the application. Path traversal vulnerabilities typically affect web applications. To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for any filesystem access.
+Some applications allow the user to choose what files to access. Some of these applications don't validate the selected file path sufficiently. This path traversal vulnerability allows an attacker to access files outside of the locations authorized by the application. Path traversal vulnerabilities typically affect web applications. 
 
-==Impact==
+=Impact
 
 Using path traversal an attacker is able to access files outside of the scope allowed by the application. The attacker may then access sensitive operating system files, application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered using path traversal to take full control of the application or the application server.
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for all filesystem access.
 
 Canonicalize all file path and name input:
 * [[00000000-0000-0000-0000-0000008dcc1f|Canonicalize All File Path and Name Input]]
@@ -32,10 +34,12 @@ Validate all input:
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
 * [[e59923e7-c2fb-4a75-8db7-a9a91e869f74|Validate Input for Length, Range, Format, And Type]]
 
-Perform access control checks for any filesystem access:
+Perform access control checks for all filesystem access:
 * [[00000000-0000-0000-0000-000000032b66|Perform Access Control Checks for Any Filesystem Access]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.
 
 All file path and name input is canonicalized:
 * [[00000000-0000-0000-0000-0000008acc7f|All File Path and Name Input Is Canonicalized]]
