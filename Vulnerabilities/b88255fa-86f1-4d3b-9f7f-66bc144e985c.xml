@@ -15,15 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Some applications allow the user to choose what files to access. Some of these applications don't validate the selected file path sufficiently. This vulnerability allows an attacker to access files outside of the locations authorized by the application. Path traversal vulnerabilities typically affect web applications. To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for any filesystem access.
+Some applications allow the user to choose what files to access. Some of these applications don't validate the selected file path sufficiently. This path traversal vulnerability allows an attacker to access files outside of the locations authorized by the application. Path traversal vulnerabilities typically affect web applications.  
 
-==Impact==
+=Impact
 
 Using path traversal an attacker is able to access files outside of the scope allowed by the application. The attacker may then access sensitive operating system files, application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered using path traversal to take full control of the application or the application server.
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this problem, canonicalize all file path and name input, validate all input, perform access control checks for any filesystem access, use reference maps to access objects, and disable directory browsing.
 
 Canonicalize all file path and name input:
 * [[00000000-0000-0000-0000-0000003b5c16|Canonicalize All File Path and Name Input]]
@@ -40,7 +42,9 @@ Use reference maps to access objects:
 Disable directory browsing:
 * [[aaf96d58-0037-4ea7-a8c7-0f98db813a2d|Disable Directory Browsing]]
 
-==Checklists==
+=Checklists
+
+To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, access control checks are performed for all filesystem access, and directory browsing is disabled.
 
 All file path and name input is canonicalized:
 * [[00000000-0000-0000-0000-000000026eca|All File Path and Name Input Is Canonicalized]]
@@ -54,7 +58,7 @@ Access control checks are performed for all filesystem access:
 Directory browsing is disabled:
 * [[6a97132c-6047-4619-bc13-fea1797a9278|Directory Browsing Is Disabled]]
 
-==Additional Resources==
+=Additional Resources
 * For more information about path traversal, please see https://www.owasp.org/index.php/Path_Traversal]]></Data>
   </Content>
 </TeamMentor_Article>
