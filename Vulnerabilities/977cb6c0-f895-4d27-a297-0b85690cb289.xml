@@ -15,15 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-SSL should be used to protect any sensitive data in transit. Some applications don't use SSL even during authentication or when transmitting sensitive data. An attacker may be able to intercept data that is sent over the network unencrypted. This vulnerability applies to all applications that send sensitive data over the network. To prevent this problem, use SSL for all sensitive communications, configure SSL to use strong cipher suites, and use valid certificates. To check for this issue, use the application and verify that SSL is used for any sensitive communications.
+SSL should be used to protect any sensitive data in transit. Some applications don't use SSL even during authentication or when transmitting sensitive data. An attacker may be able to intercept data that is sent over the network unencrypted. This vulnerability applies to all applications that send sensitive data over the network. 
 
-==Impact==
+=Impact
 
 Not using SSL allows attackers to intercept sensitive information using man-in-the-middle attacks. There are many different attack scenarios that are enabled by not using SSL. One common attack vector is exposed by the Firesheep tool. The Firesheep tool monitors open wireless networks for information about user sessions for some social networking web sites. Once that information has been sniffed from the network, the attacker is able to take over the user's session. Taking over the user's session allows the attacker to view the victim user's data and to impersonate him. This attack would not be possible if SSL was used by the target sites.
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this problem, use SSL for all sensitive communications, configure SSL to use strong cipher suites, and use valid certificates. 
 
 Use SSL for all sensitive communications:
 
@@ -37,7 +39,9 @@ Use valid certificates:
 
 * [[8df9fe45-29b6-47c6-81c5-6248930d303c|Use a Valid SSL Certificate]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that SSL is used for all sensitive communications, SSL is configured to use strong cipher suites, and valid certificates are used.
 
 SSL is used for all sensitive communications:
 
