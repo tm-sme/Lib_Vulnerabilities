@@ -38,7 +38,7 @@ To check for adequate protection against this vulnerability, find all code that 
 * [[0e71dd64-87d1-4cf5-9569-ea320f209977|Input Is Validated for Length, Range, Format, And Type]]
 * [[76fb9a2a-2091-4d47-a65d-588eda490c90|Valuable Information Is Not Disclosed in Error Messages]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about XPath injection, please see https://www.owasp.org/index.php/XPATH_Injection]]></Data>
   </Content>
