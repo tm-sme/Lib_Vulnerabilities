@@ -15,17 +15,19 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-A Cross Site Request Forgery (CSRF) attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request may be able to change the state of the web application and is possible because the request is sent in the context of the logged in victim. For many sites each request automatically sends the victim's credentials such as the session cookie or authentication credentials. Due to this fact there is no way to distinguish the false request from a legitimate request. CSRF vulnerabilities affect web applications that allow authenticated users to perform operations that are not available to guest users. To prevent CSRF, include unique tokens in pages that invoke security sensitive operations. To check your application for CSRF, determine whether unique tokens are used in pages that carry out sensitive operations.
+A cross site request forgery (CSRF) attack occurs when an attacker tricks a victim into loading a page that contains a malicious request. This request may be able to change the state of the web application, and is possible because the request is sent in the context of the logged in victim. For many sites, each request automatically sends the victim's credentials, such as the session cookie or authentication credentials. Due to this fact, there is no way to distinguish the false request from a legitimate request. CSRF vulnerabilities affect web applications that allow authenticated users to perform operations that are not available to guest users. 
 
-Cross Site Request Forgery attacks are known by other names including XSRF, Session Riding, One-Click and Zero-Click attacks. A One-Click attack refers to a link that causes a malicious action to be performed when a victim clicks on it. A Zero-Click attack is automatically executed upon page load. A common way to perform a zero-click attack is to embed the request in the source of an image. 
+Cross site request forgery attacks are known by other names including XSRF, session riding, one-click and zero-click attacks. A one-click attack refers to a link that causes a malicious action to be performed when a victim clicks on it. A zero-click attack is automatically executed upon page load. A common way to perform a zero-click attack is to embed the request in the source of an image. 
 
-==Impact==
+=Impact
 
-CSRF allows the attacker to carry out actions on the behalf of an authenticated user by tricking the user into visiting a malicious page or link. The exact impact depends on what functionality is vulnerable to CSRF. The attacker will usually try to add a privileged user account for himself or to inject arbitrary code into the application. If either of those scenarios succeeds, the attacker gains full control of the application.
+CSRF allows the attacker to carry out actions on behalf of an authenticated user by tricking the user into visiting a malicious page or link. The exact impact depends on the functionality that is vulnerable to CSRF. The attacker will usually try to add a privileged user account for himself or to inject arbitrary code into the application. If either of those scenarios succeeds, the attacker gains full control of the application. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent CSRF, include unique tokens in pages that invoke security sensitive operations, and require users to re-authenticate before performing sensitive operations. 
 
 Use unique tokens in sensitive requests:
 * [[61b8ebc8-3ba5-4e75-aea8-94d6d3b3177e|Include Unique Tokens in HTTP Requests]]
@@ -36,18 +38,20 @@ Use unique tokens in sensitive requests:
 * [[63deed1a-6df4-4e04-9f61-898f190e1fe1|Cross-Site Request Forgery (CSRF) Prevention Using Struts 1]]
 * [[a9c2c121-614c-4a3f-9b7c-f2cf57d6aa0b|Cross-Site Request Forgery (CSRF) Prevention Using Struts 2]]
 
-Ask the user for confirmation for sensitive operations:
+Require the user to re-authenticate for sensitive operations:
 * [[84fd606b-e2f2-4c48-9c6e-6b5e780c6163|Force Re-authentication When Executing Critical Functionality]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against CSRF, ensure that unique tokens are used in pages that carry out sensitive operations, and that users are required to re-authenticate before performing sensitive operations.
 
 Unique tokens are used in sensitive requests:
 * [[0463ae25-dc35-45e7-8b24-9b1f8ddb6af0|Unique Tokens Are Included in HTTP Requests]]
 
-Users are asked for confirmation for sensitive operations:
+Users are required to re-authenticate for sensitive operations:
 * [[df093ee3-ad7b-4191-935c-8bb0cad78d98|Re-authentication Is Enforced When Executing Critical Functionality]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about Cross-Site Request Forgery, see http://en.wikipedia.org/wiki/Cross-site_request_forgery]]></Data>
   </Content>
