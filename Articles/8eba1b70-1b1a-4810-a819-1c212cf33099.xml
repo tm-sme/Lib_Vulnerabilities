@@ -28,7 +28,7 @@ To prevent LDAP injection, validate all input. Ideally, parameterized APIs shoul
 
 =Application Check
 
-To check for this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
+To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
 
 =Specific Technologies
 
