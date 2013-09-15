@@ -25,7 +25,7 @@ Open redirects allow an attacker to send users to a malicious site via a legitim
 
 =Countermeasures
 
-To prevent this problem, avoid using redirects altogether, if possible.  If redirects are necessary, avoid redirection based on user input if possible. If user input is necessary for redirects, use reference maps to limit permissible redirect destinations. Always validate destinations of redirects. 
+To prevent this problem, avoid using redirects altogether, if possible.  If redirects are necessary, avoid redirection based on user input if possible. If user input is necessary for redirects, use reference maps to limit permissible redirect destinations, and always validate destinations of redirects. 
 
 The choice depends on how much user input is required to determine where to redirect to. The less user input, the safer the application. If redirection takes place regardless of user input, destinations can be calculated without user input. If there is a clearly defined list of valid redirection targets, use these to build reference maps to limit permissible redirect destinations, and always validate the destinations.  NOTE: If valid targets cannot be reduced to a list of safe destinations, then an open redirect vulnerability is virtually guaranteed and it's better not to redirect at all.  
 
