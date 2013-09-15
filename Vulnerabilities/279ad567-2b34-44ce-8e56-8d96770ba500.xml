@@ -41,14 +41,16 @@ If it is possible to clearly define valid redirection targets:
 
 =Application Check
 
-To check for adequate protection against this vulnerability, review the Checklist Items listed below that correspond to the above Countermeasures strategy that you have chosen.
+To check for adequate protection against this problem, choose the application check that fits the above Countermeasures strategy that you have chosen:  Ensure that redirects are not used.  OR  Ensure that redirection is not based on user input.  OR  If user input is needed, ensure that reference maps are used to limit permissible redirect destinations, and always validate the destinations of redirects.
 
+If it is acceptable to remove redirection or redirection targets cannot be clearly defined:
 * [[af8c3ff3-490d-40fe-bed3-eca342fdba4e|Redirects And Forwards Are Not Used Unless Necessary]]
 
+If redirection takes place regardless of user input:
 * [[a1061c45-7a6e-4257-ab36-f3a693d45ad3|Destinations of Redirects And Forwards Are Calculated Without User Input]]
 
+If it is possible to clearly define valid redirection targets:
 * [[ff0f750a-308b-4c78-8602-3c6d603e406d|Mapping Values Are Used for Redirects And Forwards]]
-
 * [[f87f29d2-388b-4d5f-bab5-bdf7b17eff85|Destinations of Redirects And Forwards Are Validated]]
 
 =Web-Based Training
