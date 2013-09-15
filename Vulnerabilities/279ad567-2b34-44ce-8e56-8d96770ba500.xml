@@ -32,7 +32,7 @@ The choice depends on how much user input is required to determine where to redi
 If it is acceptable to remove redirection or redirection targets cannot be clearly defined:
 * [[9dd99e67-7f4b-4c3b-b355-253edd7b29a3|Don't Use Redirects Or Forwards If Possible]]
 
-If redirection takes place regardless of user input:
+If redirection can be calculated without user input:
 * [[6daf44c7-fe2c-45f6-8854-7aa1e3a1030f|Calculate Destinations of Redirects And Forwards Without User Input]]
 
 If user input is necessary, and it is possible to clearly define valid redirection targets:
@@ -46,7 +46,7 @@ To check for adequate protection against this problem, choose the application ch
 If it is acceptable to remove redirection or redirection targets cannot be clearly defined:
 * [[af8c3ff3-490d-40fe-bed3-eca342fdba4e|Redirects And Forwards Are Not Used Unless Necessary]]
 
-If redirection takes place regardless of user input:
+If redirection can be calculated without user input:
 * [[a1061c45-7a6e-4257-ab36-f3a693d45ad3|Destinations of Redirects And Forwards Are Calculated Without User Input]]
 
 If it is possible to clearly define valid redirection targets:
