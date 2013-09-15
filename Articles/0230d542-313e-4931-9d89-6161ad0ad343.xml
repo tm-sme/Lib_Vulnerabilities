@@ -16,11 +16,19 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
-Unchecked error conditions may allow attacks to go unnoticed. Checking error conditions helps the application determine if someone out of the ordinary is happening and log that information. Log information helps administrators determine when an attack is taking place and provides information about the attack. Unchecked error condition flaws may occur in any type of application. To prevent unchecked error conditions, use global exception handlers and log error information. To make sure that all error conditions are checked, verify that global exception handlers are used and error information is logged. 
+Unchecked error conditions may allow attacks to go unnoticed. Checking error conditions helps the application to determine if something out of the ordinary is happening and to log that information. Log information helps administrators determine when an attack is taking place and provides information about the attack. Unchecked error condition flaws may occur in any type of application. 
 
 ==Impact==
 
 Unchecked error conditions may result in other, more serious vulnerabilities. An unchecked error condition may not actually give any advantage to the attacker. However, if the application contains a lot of code that may produce unchecked errors, that creates a fertile field for the attacker to look for vulnerabilities. 
+
+=Countermeasures
+
+To prevent unchecked error conditions, use structured exception handling, use a global exception handler for unhandled exceptions, and log error information. 
+
+=Application Check
+
+To check for adequate protection against this vulnerability, verify that structured exception handling is used, a global exception handler is used, and error information is logged. 
 
 ==Specific Technologies==
 
