@@ -12,11 +12,11 @@
     <DirectLink>Unvalidated Redirection</DirectLink>
   </Metadata>
   <Content Sanitized="false" DataType="WikiText">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
 Unvalidated redirection vulnerabilities allow attackers to craft URLs that appear to lead to a legitimate site, but actually lead to a malicious site. An attacker may be able to leverage this vulnerability to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website.
 
-==Countermeasures==
+=Countermeasures
 
 The following TeamMentor articles describe effective counter-measures against unvalidated redirection vulnerabilities:
 
@@ -25,7 +25,7 @@ The following TeamMentor articles describe effective counter-measures against un
 * [[2869a8f0-93b8-4689-b531-d59367988a33|Use Mapping Values When Redirecting on User Input]]
 * [[52982908-b692-41bc-afb1-8663e399c51c|Validate Destinations of Redirects And Forwards]]
 
-==Checklists==
+=Checklists
 
 The following checklist items can help make sure that effective counter-measures against unvalidated redirection vulnerabilities have been implemented:
 
@@ -34,7 +34,7 @@ The following checklist items can help make sure that effective counter-measures
 * [[13912b44-0b4e-4792-a649-ee6bc16a3ede|Mapping Values Are Used for Redirects And Forwards]]
 * [[ec9ba67e-9ff1-41b2-a346-1ca4b30a3479|Destinations of Redirects And Forwards Are Validated]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about unvalidated redirection, please see https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards]]></Data>
   </Content>
