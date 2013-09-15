@@ -15,19 +15,19 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Many web applications use URL redirection as a feature to direct a user to another site or page on the same site. Some web sites make it possible to manipulate the destination of the URL redirection. An attacker may be able to abuse this functionality to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website. This vulnerability applies to all applications that use URL redirection. To prevent this problem, validate destinations of redirects, use reference maps to limit possible destinations, and avoid redirection based on user input if possible. To check your code for this problem, identify all URL redirects and check whether data used to determine destinations is sufficiently validated.
+Many web applications use URL redirection to direct a user to another site or page on the same site. Some web sites make it possible to manipulate the destination of the URL redirection. An attacker may be able to abuse this functionality to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website. This vulnerability applies to all applications that use URL redirection. 
 
-==Impact==
+=Impact
 
-Open redirects allow an attacker to send users to a malicious site via a legitimate-looking URL. Many users are tricked by the legitimate-looking URL into thinking that they are browsing a trusted site. The malicious site may have an authentic looking login page tempting unsuspecting users into entering their usernames and passwords into it. When personal information is entered into the malicious login page, it is recorded for the attacker's use. Once the attacker has valid user credentials, he can access or modify users' data in the application. If the attacker is able to take over an administrative account, he may gain full control of the application.
+Open redirects allow an attacker to send users to a malicious site via a legitimate-looking URL. Many users are tricked by the legitimate-looking URL into thinking that they are browsing a trusted site. The malicious site may have an authentic looking login page, which tempts unsuspecting users into entering their usernames and passwords. When personal information is entered into the malicious login page, it is recorded for the attacker's use. Once the attacker has valid user credentials, he can access or modify users' data in the application. If the attacker is able to take over an administrative account, he may gain full control of the application. 
 
-==Countermeasures==
+=Countermeasures
 
-Choose the appropriate countermeasures to prevent open redirects. The options are to avoid using redirects, to calculate destinations of redirects without user input, or to use mapping values when redirecting on user input. If redirects are used, the destinations of the redirects should be validated.
+To prevent this problem, avoid using redirects altogether, if possible.  If redirects are necessary, avoid redirection based on user input if possible. If user input is necessary for redirects, use reference maps to limit permissible redirect destinations. Always validate destinations of redirects. 
 
-The choice depends on how much user input is required to decide where to redirect to. The less user input is required, the safer the application will be. If redirection takes place regardless of user input, then destinations can be calculated without user input. If there is a clearly defined list of valid redirection targets, mapping values should be used. If valid targets cannot be reduced to a list of safe destinations, then an open redirect vulnerability is virtually guaranteed and then it's better not to redirect at all.  
+The choice depends on how much user input is required to determine where to redirect to. The less user input, the safer the application. If redirection takes place regardless of user input, destinations can be calculated without user input. If there is a clearly defined list of valid redirection targets, use these to build reference maps to limit permissible redirect destinations, and always validate the destinations.  NOTE: If valid targets cannot be reduced to a list of safe destinations, then an open redirect vulnerability is virtually guaranteed and it's better not to redirect at all.  
 
 If it is acceptable to remove redirection or redirection targets cannot be clearly defined:
 * [[9dd99e67-7f4b-4c3b-b355-253edd7b29a3|Don't Use Redirects Or Forwards If Possible]]
@@ -39,9 +39,9 @@ If it is possible to clearly define valid redirection targets:
 * [[d718d5f2-247e-4299-a6ca-bfeaaac67eea|Use Mapping Values When Redirecting on User Input]]
 * [[f86bc5a9-e545-461b-9ba5-c6659841250e|Validate Destinations of Redirects And Forwards]]
 
-==Checklists==
+=Application Check
 
-Use the checklist items that correspond to the guidelines you have chosen to make sure that sufficient countermeasures against open redirects have been implemented.
+To check for adequate protection against this vulnerability, review the Checklist Items listed below that correspond to the above Countermeasures strategy that you have chosen.
 
 * [[af8c3ff3-490d-40fe-bed3-eca342fdba4e|Redirects And Forwards Are Not Used Unless Necessary]]
 
@@ -51,7 +51,7 @@ Use the checklist items that correspond to the guidelines you have chosen to mak
 
 * [[f87f29d2-388b-4d5f-bab5-bdf7b17eff85|Destinations of Redirects And Forwards Are Validated]]
 
-==Web-Based Training==
+=Web-Based Training
 [[|AWA 101 Fundamentals of Application Security]]
 
 This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk. 
@@ -64,8 +64,7 @@ PHP: Hypertext Preprocessor is a popular, powerful, and flexible language that d
 
 For more information on Open Redirect issues, see screen 58 in COD 315 Creating Secure PHP Code.
 
-
-==Additional Resources==
+=Additional Resources
 
 * For more information about open redirect vulnerabilities, please see https://www.owasp.org/index.php/Open_redirect]]></Data>
   </Content>
