@@ -45,7 +45,7 @@ In an ARP spoofing or poisoning attack, the attacker is able to inject fake or s
         **Use tools that monitor ARP tables and notify the system administrator of any changes. An example of such a tool is ARPWatch.
         **Be careful of whom you allow connections on the internal network. Allowing outsiders to anonymously connect to your network increases the risk of an attack.
         **Use 802.1x (IIRC) to authenticate all network users.
-        **Implement an Intrusion Detection System (IDS)
+        **Implement an Intrusion Detection System (IDS).
 
 =Additional Resources
 
