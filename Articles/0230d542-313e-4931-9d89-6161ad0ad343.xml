@@ -30,7 +30,7 @@ To prevent unchecked error conditions, use structured exception handling, use a 
 
 To check for adequate protection against this vulnerability, verify that structured exception handling is used, a global exception handler is used, and error information is logged. 
 
-==Specific Technologies==
+=Specific Technologies
 
 * [[00000000-0000-0000-0000-000000373cc0|ASP.NET Unchecked Error Condition]]
 * [[00000000-0000-0000-0000-0000008e7f60|Java Unchecked Error Condition]]]]></Data>
