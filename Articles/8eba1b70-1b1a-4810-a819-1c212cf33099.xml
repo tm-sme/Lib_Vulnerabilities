@@ -14,15 +14,23 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-LDAP Injection is a technique for exploiting applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchal manner. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. To prevent LDAP injection, validate all input. Ideally, parameterized APIs should be used for LDAP queries, but such APIs are usually not available. To check for this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
+LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
 
-==Impact==
+=Impact
 
-LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker may leverage this vulnerability to view personal information of users in the database. The attacker may also leverage this vulnerability to give himself administrative privileges or to take over another account. Once the attacker has administrative privileges, he usually has
+LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker may leverage this vulnerability to view personal information of users in the database. The attacker may also leverage this vulnerability to give himself administrative privileges or to take over another account. Once the attacker has administrative privileges, he usually has full control of the application. 
 
-==Specific Technologies==
+=Countermeasures
+
+To prevent LDAP injection, validate all input. Ideally, parameterized APIs should be used for LDAP queries, but such APIs are usually not available. 
+
+=Application Check
+
+To check for this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
+
+=Specific Technologies
 
 * [[00000000-0000-0000-0000-0000005635d7|ASP.NET LDAP Injection]]
 * [[00000000-0000-0000-0000-000000018af4|Java LDAP Injection]]]]></Data>
