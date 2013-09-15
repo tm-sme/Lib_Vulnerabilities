@@ -21,14 +21,16 @@
     <Data><![CDATA[=Applies To
 
 Applications that use encryption.
+
 =Description
 
-A chosen plaintext attack (CPA) is a form of cryptanalysis where it is assumed that the attacker has access to a device that provides her the capability to choose arbitrary plaintext to be encrypted and obtain the corresponding ciphertext.
+A chosen plaintext attack (CPA) is a form of cryptanalysis where it is assumed that the attacker has access to a device that provides the capability to choose arbitrary plaintext to be encrypted and obtain the corresponding ciphertext.
 
-An attacker with such capabilities will perform the encryption of selected plaintext and then analyze the resulting ciphertext in order to gain some further information that reduces the security of the encryption scheme. In the worst case, a chosen plaintext attack could reveal the scheme's secret key.
+An attacker with such capabilities will encrypt selected plaintext, and then analyze the resulting ciphertext to gain further information that reduces the security of the encryption scheme. In the worst case, a chosen plaintext attack could reveal the scheme's secret key.
+
 =Impact
 
-    *Disclosure of sensitive data
+    *Disclosure of sensitive data.
 
 =Vulnerabilities
 
@@ -44,8 +46,8 @@ An attacker with such capabilities will perform the encryption of selected plain
     *Use large keys (128-bit symmetric or 1024-bit asymmetric keys).
     *Utilize platform supplied features to store secret keys.
     *Follow principle of least privilege to provide limited access to the secret key.
-    *Maintain key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot).
-    *If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text and use a chaining mode to prevent the replacement of individual blocks of the ciphertext.
+    *Maintain the key outside of the application domain (e.g., for a Web server, keep the key outside of the webroot).
+    *If using a symmetric cipher, utilize a unique random IV to hide the underlying character pattern of the plain text, and use a chaining mode to prevent the replacement of individual blocks of the ciphertext.
     *If using a cryptographic hash algorithm, salt the hash value with a unique random bit stream.
 
 =Additional Resources
