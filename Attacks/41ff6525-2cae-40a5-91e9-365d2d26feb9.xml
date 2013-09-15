@@ -21,27 +21,30 @@
     <Data><![CDATA[=Applies To
 
 Any two applications which communicate over any networked channel, such as the internet.
+
 =Description
 
-A Man in the Middle (MiTM) Attack occurs when an attacker intercepts messages sent between two parties without their knowledge. The attacker is usually capable of reading, inserting and modifying the messages it intercepts. MiTM attacks can be carried out on various protocols and against various technologies to intercept and modify data being exchanged between two parties in such a way that the attacker compromises the confidentiality, integrity and/or availability of protected information. Any network request involving client-server communication (including web requests, Distributed Component Object Model (DCOM) requests, and calls to remote components and Web services) is subject to man in the middle attacks. MiTM attacks can be used to attack unencrypted channels as well as encrypted channels (such as SSL) under certain circumstances.
+A man in the middle (MiTM) attack occurs when an attacker intercepts messages sent between two parties without their knowledge. The attacker is usually capable of reading, inserting and modifying the messages it intercepts. MiTM attacks can be carried out on various protocols and against various technologies to intercept and modify data being exchanged between two parties. This is done in such a way that the attacker compromises the confidentiality, integrity and/or availability of protected information. Any network request involving client-server communication -- including web requests, distributed component object model (DCOM) requests, and calls to remote components and Web services -- is subject to MiTM attacks. MiTM attacks can be used to attack unencrypted channels as well as encrypted channels (such as SSL) under certain circumstances.
+
 =Impact
 
     *Loss of confidentiality: The attacker will be able to view potentially sensitive information by sitting in between the server and the client.
     *Loss of integrity: The attacker will be able to change the data being sent to or from the server.
     *Loss of availability: If the attacker can send unexpected data to a host and cause it to crash, then it could lead to a denial of service on the affected host.
-    *Alteration of Keys: Modification of public keys during key exchanges between two parties.
+    *Alteration of keys: Modification of public keys during key exchanges between two parties.
 
 =Vulnerabilities
 
     *Network vulnerabilities: A man in the middle attack is usually carried out by means of one of the following:
-        **ARP Spoofing Attack
+        **ARP spoofing attack
         **DNS hijacking or DNS Cache Poisoning
         **DHCP message subversion/take-over
-        **Wireless Packet Injection Attack
+        **Wireless packet injection attack
         **Gateway takeover using various packet redirects
         **Subversion of a gateway, router, or proxy between the victim and the server.
 
 *In addition to these network vulnerabilities, MiTM attacks become much easier to conduct if unencrypted or weakly encrypted communication channels are being used.
+
 =Countermeasures
 
 *Since the network weaknesses described above cannot be controlled for all potential users, it is recommended that cryptographic suites be used. Below are some examples at different layers:
@@ -52,12 +55,12 @@ A Man in the Middle (MiTM) Attack occurs when an attacker intercepts messages se
 
 =Example
 
-A few examples are described below to demonstrate the various types of problems that can be caused using MiTM attacks:
+A few examples are described below to demonstrate the various types of problems that MiTM attacks can cause:
 
-    *Code or Command Injection: Malicious code could be inserted into web-pages or email which would be executed on the client application.
-    *Key exchange: Public keys exchanged by the server and the client could be modified and replaced with the attackers public key. The attacker would then be able to read and modify traffic to and from both entities.
+    *Code or command injection: Malicious code could be inserted into web-pages or email, which would be executed on the client application.
+    *Key exchange: Public keys exchanged by the server and the client could be modified and replaced with the attacker's public key. The attacker would then be able to read and modify traffic to and from both entities.
     *Parameter substitution: Parameters to applications running on the client or the server could be modified by the attacker to alter the behavior of an application. A common attack here is to substitute the SSL version supported by the server. By forcing the client and server to negotiate on a weaker version of SSL, an attacker can easily compromise the confidentiality of the data.
-    *IPSec Failure: By blocking the key material exchange on UDP port 500 the end point will think that the other cannot start an IPSec connection. Worse, if the client is configured in rollback mode, there is a good chance that the user will not notice that the connection is in clear text
+    *IPSec Failure: By blocking the key material exchange on UDP port 500, the end point will think that the other cannot start an IPSec connection. Worse, if the client is configured in rollback mode, there is a good chance that the user will not notice that the connection is in clear text.
 
 =Additional Resources
 
