@@ -14,15 +14,23 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Data leaks between sessions occur when unintentional access to one session's data is provided to another session. Data leaks between sessions usually occur when session-specific data is stored in member variables of singleton object and objects from a shared pool. The impact of this vulnerability is that an attacker may be able to access other users' data. This vulnerability affects all Java Web applications, especially ones that use Servlets. To prevent this vulnerability, avoid storing session-specific data in shared objects and ensure proper thread safety for HttpSession object access. 
+Data leaks between sessions occur when unintentional access to one session's data is provided to another session. Data leaks between sessions usually occur when session-specific data is stored in member variables of singleton object and objects from a shared pool. The impact of this vulnerability is that an attacker may be able to access other users' data. This vulnerability affects all Java Web applications, especially ones that use Servlets. 
 
-==Impact==
+=Impact
 
-A data leak between sessions vulnerability allows an attacker to access other user's data. The exact impact depends on what information exactly is leaking between sessions, but generally speaking the attack is limited to accessing the leaking information. 
+A data leak between sessions vulnerability allows an attacker to access other users' data. The exact impact depends on the exact information that is leaking between sessions, but, generally speaking, the attack is limited to accessing the leaking information. 
 
-==Specific Technologies==
+=Countermeasures
+
+To prevent this vulnerability, avoid storing session-specific data in shared objects and ensure proper thread safety for HttpSession object access. 
+
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that session-specific data is not stored in shared objects, and that proper thread safety for HttpSession object access is assured.
+
+=Specific Technologies
 
 * [[00000000-0000-0000-0000-0000004bcf37|Java Data Leak Between Sessions]]]]></Data>
   </Content>
