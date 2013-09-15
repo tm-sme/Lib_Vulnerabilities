@@ -14,15 +14,23 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Many web applications use URL redirection as a feature to direct a user to another site or page on the same site. Some web sites make it possible to manipulate the destination of the URL redirection. An attacker may be able to abuse this functionality to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website. This vulnerability applies to all applications that use URL redirection. To prevent this problem, validate destinations of redirects, use reference maps to limit possible destinations, and avoid redirection based on user input if possible. To check your code for this problem, identify all URL redirects and check whether data used to determine destinations is sufficiently validated. 
+Many web applications use URL redirection to direct a user to another site or page on the same site. Some web sites make it possible to manipulate the destination of the URL redirection. An attacker may be able to abuse this functionality to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website. This vulnerability applies to all applications that use URL redirection. 
 
-==Impact==
+=Impact
 
-Open redirects allow an attacker to send users to a malicious site via a legitimate-looking URL. Many users are tricked by the legitimate-looking URL into thinking that they are browsing a trusted site. The malicious site may have an authentic looking login page tempting unsuspecting users into entering their usernames and passwords into it. When personal information is entered into the malicious login page, it is recorded for the attacker's use. Once the attacker has valid user credentials, he can access or modify users' data in the application. If the attacker is able to take over an administrative account, he may gain full control of the application. 
+Open redirects allow an attacker to send users to a malicious site via a legitimate-looking URL. Many users are tricked by the legitimate-looking URL into thinking that they are browsing a trusted site. The malicious site may have an authentic looking login page, which tempts unsuspecting users into entering their usernames and passwords. When personal information is entered into the malicious login page, it is recorded for the attacker's use. Once the attacker has valid user credentials, he can access or modify users' data in the application. If the attacker is able to take over an administrative account, he may gain full control of the application. 
 
-==Specific Technologies==
+=Countermeasures
+
+To prevent this problem, validate destinations of redirects, use reference maps to limit possible destinations, and avoid redirection based on user input if possible. 
+
+=Application Check
+
+To check for adequate protection against this problem, identify all URL redirects and check whether data used to determine destinations is sufficiently validated. 
+
+=Specific Technologies
 
 * [[00000000-0000-0000-0000-00000003a00a|ASP.NET Open Redirect]]
 * [[00000000-0000-0000-0000-0000000a5e9a|Java Open Redirect]]
