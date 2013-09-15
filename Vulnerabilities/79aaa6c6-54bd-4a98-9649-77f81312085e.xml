@@ -42,7 +42,7 @@ If user input is necessary, and it is possible to clearly define valid redirecti
 
 =Application Check
 
-To check for adequate protection against this problem, choose the application checks below that fit the above Countermeasures strategy that you have chosen:  Ensure that redirects are not used.  OR  Ensure that redirection is not based on user input.  OR  If user input is needed, ensure that reference maps are used to limit permissible redirect destinations, and always validate the destinations of redirects.
+To check for adequate protection against this problem, choose the application checks below that fit the above Countermeasures strategy you have chosen:  Ensure that redirects are not used.  OR  Ensure that redirection is not based on user input.  OR  If user input is needed, ensure that reference maps are used to limit permissible redirect destinations, and always validate the destinations of redirects.
 
 If it is acceptable to remove redirection or redirection targets cannot be clearly defined:
 * [[11e960d3-09c4-4b40-9e20-a17fbe3116e7|Redirects And Forwards Are Not Used Unless Necessary]]
