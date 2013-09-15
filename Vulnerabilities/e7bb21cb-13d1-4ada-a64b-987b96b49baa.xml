@@ -36,7 +36,9 @@ Don't store sensitive data in user accessible parameters:
 Use strong session identifiers:
 * [[e00c3d06-d939-494d-a42c-88878f26f2fc|Use Strong Session IDs]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that platform provided session management is used, sensitive data is not stored in user accessible parameters, and strong session identifiers are used. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges.
 
 Platform-provided session management is used:
 * [[bc3f332a-c395-486b-b095-6b7cc4935367|PHP Session Management Is Used]]
@@ -47,7 +49,7 @@ Sensitive data is not stored in user accessible parameters:
 Strong session identifiers are used:
 * [[da9827ed-e835-49a8-b6d0-7feee8cb5a09|Strong Session IDs Are Used]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering]]></Data>
   </Content>
