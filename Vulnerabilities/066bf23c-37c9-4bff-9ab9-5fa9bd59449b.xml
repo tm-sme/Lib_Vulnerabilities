@@ -15,15 +15,17 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Information exposure through an error message occurs when an error message discloses sensitive information that may help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and in some cases it is required for an attack to succeed. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. To prevent error message information disclosure, handle all errors, use simple error messages, and log detailed error information. To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged.
+Information exposure through an error message occurs when an error message discloses sensitive information that may help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and, in some cases, it is required for an attack to succeed. In general, error messages should not disclose sensitive information to the end user. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. 
 
-==Impact==
+=Impact
 
-Error message information disclosure provided information to the attacker that enables him to carry out additional attacks. The two most common and dangerous scenarios are disclosing SQL queries after database errors and whether a username is valid during authentication. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. Another common error message disclosure scenario is when authentication errors indicate whether a username is valid or not. Knowing the username greatly simplifies password guessing attacks. In general, error messages should not disclose sensitive information to the end user.
+Information exposure through an error message provides information to the attacker that enables him to carry out additional attacks. The two most common and dangerous scenarios are disclosing whether a username is valid during failed authentication, and disclosing SQL queries after database errors. Knowing the username greatly simplifies password guessing attacks. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent error message information disclosure, handle all errors, use simple error messages, and log detailed error information. 
 
 Handle all errors:
 
@@ -37,8 +39,9 @@ Log detailed error information:
 
 * [[0109ec06-1830-472d-95ed-7ec64404c961|Log Important Event Details]]
 
+=Application Check
 
-==Checklists==
+To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged.
 
 All errors are handled:
 
