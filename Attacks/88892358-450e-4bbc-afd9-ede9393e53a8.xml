@@ -20,15 +20,17 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Local applications that deal with secret data such as passwords, encryption keys, etc.
+Local applications that deal with secret data such as passwords and encryption keys.
+
 =Description
 
-Attackers often scan the memory space of a locally running application if they need to find certain secrets that the application contains. This is because developers are usually lax when dealing with sensitive data securely when the data is inside the application's own memory space.
+Attackers often scan the memory space of a locally running application to find certain secrets that the application contains. This is because developers are usually lax when dealing with sensitive data securely when the data is inside the application's own memory space.
 
-It is common knowledge that in most modern operating systems, an application's memory space is protected and is not accessible by other applications on the same system. However, reading and modifying another application's memory is also essential for debuggers to work. For this purpose, operating systems contain workarounds to accommodate reading and writing to another application's memory. This allows any application on the system to debug another process and read its memory content. Although operating systems do require the debugger process to have special permissions in order to debug another application, this still remains a problem in situations where users have administrative privileges on their local machines.
+It is common knowledge that in most modern operating systems, an application's memory space is protected and is not accessible by other applications on the same system. However, reading and modifying another application's memory is essential for debuggers to work. For this purpose, operating systems contain workarounds to accommodate reading and writing to another application's memory. This allows any application on the system to debug another process and read its memory content. Although operating systems do require the debugger process to have special permissions in order to debug another application, this still remains a problem in situations where users have administrative privileges on their local machines.
+
 =Impact
 
-    *Disclosure of sensitive information to an attacker: This could be a an encryption key, another user's personal information or any other data that an attacker should not have access to.
+    *Disclosure of sensitive information to an attacker: This could be a an encryption key, another user's personal information, or any other data that an attacker should not have access to.
 
 =Vulnerabilities
 
@@ -38,8 +40,8 @@ It is common knowledge that in most modern operating systems, an application's m
 =Countermeasures
 
     *Encrypt secret data: When sensitive data is present in application memory, it should be encrypted and the clear-text data should be overwritten as soon as possible. Freeing a variable does not clear the data it holds from memory; therefore it is important to remember to explicitly overwrite the memory segment where sensitive information was stored.
-    *Store sensitive data in mutable objects: Mutable objects allow the data in them to be overwritten. This is especially useful in managed languages as objects are required to be de-allocated through the garbage collector. Therefore there is no certainty when the sensitive data will be de-allocated from the current process space.
-    *Clear all sensitive data instances: Make sure that all memory locations, where sensitive data has been stored, are cleared/overwritten after their use. Losing a pointer to a sensitive data instance can result in not cleaning that particular memory and allowing the sensitive data to leak.
+    *Store sensitive data in mutable objects: Mutable objects allow the data in them to be overwritten. This is especially useful in managed languages, as objects are required to be de-allocated through the garbage collector. Therefore, there is no certainty when the sensitive data will be de-allocated from the current process space.
+    *Clear all sensitive data instances: Make sure that all memory locations where sensitive data has been stored are cleared/overwritten after their use. Losing a pointer to a sensitive data instance can result in not cleaning that particular memory and allowing the sensitive data to leak.
 
 =Additional Resources
 
