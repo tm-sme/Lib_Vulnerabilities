@@ -14,15 +14,23 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-When a Cookie has the Secure flag set, that cookie will not be sent over a non-encrypted connection. If the Secure attribute is not set on a sensitive cookie, the cookie may be sent in plaintext and an attacker may intercept it. If an attacker is able to intercept a session cookie, he can impersonate an authenticated user. This vulnerability affects web applications that use authentication. To prevent this problem, set Secure and HTTP-Only flags on all sensitive cookies and send session cookies over HTTPS. To check for this flaw, find all code that stores session cookies and make sure that it sets the Secure flag. 
+When a Cookie has the Secure flag set, that cookie will not be sent over a non-encrypted connection. If the Secure attribute is not set on a sensitive cookie, the cookie may be sent in plaintext and an attacker may intercept it. If an attacker is able to intercept a session cookie, he can impersonate an authenticated user. This vulnerability affects web applications that use authentication. 
 
-==Impact==
+=Impact
 
 Sending a sensitive cookie in plaintext creates a risk that an eavesdropping attacker may intercept it. Once the attacker has intercepted a session cookie, he can use it to hijack the user's session. Hijacking the user's session allows the attacker to impersonate that user. If the attacker hijacks an administrator's session, the attacker may take full control of the application. 
 
-==Specific Technologies==
+=Countermeasures
+
+To prevent this problem, set Secure and HTTP-Only flags on all sensitive cookies and send session cookies over HTTPS. 
+
+=Application Check
+
+To check for adequate protection against this vulnerability, find all code that stores session cookies to ensure that it sets the Secure flag, and ensure that session cookies are sent over HTTPS. 
+
+=Specific Technologies
 
 * [[00000000-0000-0000-0000-000000861d97|Java Sensitive Cookie in HTTPS Session without Secure Attribute]]]]></Data>
   </Content>
