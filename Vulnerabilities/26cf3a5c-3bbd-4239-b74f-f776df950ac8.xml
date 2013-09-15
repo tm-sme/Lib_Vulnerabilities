@@ -17,7 +17,7 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description
 
-LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
+Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner.  LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
 
 =Impact
 
@@ -25,7 +25,7 @@ LDAP injection allows an attacker to access and/or modify restricted data in the
 
 =Countermeasures
 
-To prevent LDAP injection, validate all input. Ideally, parameterized APIs should be used for LDAP queries, but such APIs are usually not available. 
+To prevent LDAP injection, validate all input and use parameterized APIs if they are available. 
 
 Validate all input:
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
@@ -33,7 +33,7 @@ Validate all input:
 
 =Application Check
 
-To check for this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
+To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
 
 All input is validated:
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
