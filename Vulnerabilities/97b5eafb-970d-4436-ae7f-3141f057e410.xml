@@ -15,22 +15,26 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Input and data validation for security purposes should be implemented on the server. Client-side validation can be easily bypassed leading to vulnerabilities that impact server functionality and data integrity. Client-side validation is appropriate if you need to provide the user immediate feedback on their input for usability purposes, but should never be used to make security decisions. This vulnerability impacts web applications and applications that use a client-server architecture. To protect your code against this problem, ensure that your input and data validation architecture is implemented in server-side code. To check your own code, review client-side code for validation and ensure the application is not reliant upon client-side security checks. It’s ok to perform data validation on the client for performance reasons as long as it is backed up by equivalent or more stringent server-side checks.
+Input and data validation for security purposes should be implemented on the server. Client-side validation can be easily bypassed, leading to vulnerabilities that impact server functionality and data integrity. Client-side validation is appropriate if you need to provide the user immediate feedback on their input for usability purposes, but should never be used to make security decisions. This vulnerability impacts web applications and applications that use a client-server architecture.  It’s ok to perform data validation on the client for performance reasons as long as it is backed up by equivalent or more stringent server-side checks.
 
-==Impact==
+=Impact
 
-The exact impact of this vulnerability depends exactly on what kind of data is being validated. Usually client-side only validation will allow the attacker to submit malicious input that exploits other vulnerabilities. In some cases, the data validated has immediate security implications. For example, if authentication is somehow implemented on the client-side, the attacker is able to authenticate as any user of his choosing. One common scenario is validating submitted files on the client-side - in that case the attacker is able to send in malicious files by bypassing client-side validation. Being able to send malicious files often allows an attacker to upload a script that will give him full control of the application. 
+The exact impact of this vulnerability depends exactly on the kind of data being validated. Usually, client-side only validation will allow the attacker to submit malicious input that exploits other vulnerabilities. In some cases, the data validated has immediate security implications. For example, if authentication is somehow implemented on the client-side, the attacker is able to authenticate as any user of his choosing. One common scenario is validating submitted files on the client-side: In this case the attacker is able to send in malicious files by bypassing client-side validation. The ability to send malicious files often allows an attacker to upload a script that will give him full control of the application. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent this problem, ensure that your input and data validation architecture is implemented in server-side code. 
 
 Implement security controls on the server-side:
 
 * [[14d4d65c-8bba-4fef-8261-e76895882942|Do Not Rely on Client-side Validation]]
 * [[8774a92a-2008-488d-8bcf-20b365b8a752|Perform Authentication on the Server]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that client-side validation is not relied on for security, and ensure that authentication is performed on the server. 
 
 Security controls are implemented on the server-side:
 
