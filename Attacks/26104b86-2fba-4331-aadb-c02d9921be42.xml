@@ -23,15 +23,16 @@
 All web applications.
 =Description
 
-With a forceful browsing attack, the attacker gains access to a restricted page within a Web application by supplying a URL directly (forcing the URL) rather than by accessing it by following links from other pages in the application. The intended workflow to get to the restricted page is through another page which authorizes the user to access the target page. This attack also allows attacker to gain access to resources to which no direct links exist.
+In a forceful browsing attack, the attacker gains access to a restricted page within a web application by supplying a URL directly -- i.e., forcing the URL -- rather than by following links to access it from other pages in the application. The intended workflow is to get to the restricted page through another page which authorizes the user to access the target page. A forceful browsing attack also allows the attacker to gain access to resources to which no direct links exist.
+
 =Impact
 
-    *Unauthorized access to Web site functionality.
+    *Unauthorized access to web site functionality.
 
 =Vulnerabilities
 
-    *Poor authorization control
-    *Missing authentication on pages
+    *Poor authorization control.
+    *Missing authentication on pages.
 
 =Countermeasures
 
