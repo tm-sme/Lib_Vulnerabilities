@@ -33,7 +33,7 @@ Use platform-provided session management:
 Don't store sensitive data in user accessible parameters:
 * [[9df0b518-f832-4a7c-9857-0517638c47db|Do Not Make Security Decisions Based on Client-Accessible Parameters]]
 
-==Checklists==
+=Application Check
 
 To check for adequate protection against this vulnerability, ensure that platform provided session management is used, and sensitive data is not stored in user accessible parameters. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges. 
 
@@ -43,7 +43,7 @@ Platform-provided session management is used:
 Sensitive data is not stored in user accessible parameters:
 * [[4436e342-64d9-4b1b-ae9b-3e00696053fb|Security Decisions Are Not Made Based on Client-Accessible Parameters]]
 
-==Additional Resources==
+=Additional Resources
 
 * For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering]]></Data>
   </Content>
