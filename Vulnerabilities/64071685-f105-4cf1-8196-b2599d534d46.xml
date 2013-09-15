@@ -36,7 +36,9 @@ Don't store sensitive data in user accessible parameters:
 Use strong session identifiers:
 * [[00000000-0000-0000-0000-000000345bc8|Use Strong Session Identifiers]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, ensure that platform provided session management is used, sensitive data is not stored in user accessible parameters, and strong session identifiers are used. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges.
 
 Platform-provided session management is used:
 * [[505042f3-ae71-4a3a-bf71-03fa1dbe34a7|ASP.NET Session Management Is Used]]
@@ -47,8 +49,7 @@ Sensitive data is not stored in user accessible parameters:
 Strong session identifiers are used:
 * [[00000000-0000-0000-0000-0000002ca360|Strong Session Identifiers Are Used]]
 
-
-==Additional Resources==
+=Additional Resources
 
 * For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering]]></Data>
   </Content>
