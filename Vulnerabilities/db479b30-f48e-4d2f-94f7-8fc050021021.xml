@@ -25,7 +25,7 @@ The exact impact of parameter tampering depends on the parameters that are avail
 
 =Countermeasures
 
-To prevent this problem, use platform provided session management, don't store sensitive data in user accessible parameters, and use strong session identifiers. 
+To prevent this problem, use platform provided session management, and don't store sensitive data in user accessible parameters. 
 
 Use platform-provided session management:
 * [[0ed7310a-a0fd-4074-9c0f-37f48cf2bf4f|Use Session Management Offered by the Framework]]
@@ -34,6 +34,8 @@ Don't store sensitive data in user accessible parameters:
 * [[9df0b518-f832-4a7c-9857-0517638c47db|Do Not Make Security Decisions Based on Client-Accessible Parameters]]
 
 ==Checklists==
+
+To check for adequate protection against this vulnerability, ensure that platform provided session management is used, and sensitive data is not stored in user accessible parameters. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges. 
 
 Platform-provided session management is used:
 * [[3f2660b3-a935-4b4e-85ff-27ae28683f5b|Session Management Offered by the Framework Is Used]]
