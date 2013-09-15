@@ -21,24 +21,26 @@
     <Data><![CDATA[=Applies To
 
 Applications using wireless technology, or whose clients may be connected wirelessly.
+
 =Description
 
 Due to the open nature of wireless networks, an attacker physically located within range of the network can more easily inject packets into the datastream of an application than they can with wired networks. This may allow an attacker to hijack a user session or create a man in the middle type situation. There are a variety of network technologies involved, but many wireless networks offer little or no protection for users of the network.
+
 =Impact
 
-    *Information Disclosure: An attacker may be able to read traffic crossing the network in cleartext, even if the data is encrypted at the network layer.
-    *Denial of Service: An attacker can trivially disrupt all traffic on the network, just by generating RF noise. If the attacker can read network traffic, they can perform more surgical denial of service attacks.
-    *Traffic Injection and Modification: In many systems, an attacker will be able to modify or create traffic on the network which appears to come from other hosts on the network or the Internet.
+    *Information disclosure: An attacker may be able to read traffic crossing the network in cleartext, even if the data is encrypted at the network layer.
+    *Denial of service: An attacker can trivially disrupt all traffic on the network, just by generating RF noise. If the attacker can read network traffic, they can perform more surgical denial of service attacks.
+    *Traffic injection and modification: In many systems, an attacker will be able to modify or create traffic on the network which appears to come from other hosts on the network or the Internet.
 
 =Vulnerabilities
 
-    *Improper Network Configuration: Using no network encryption or using nework encryption which can be easily brute forced is the primary vulnerabilty associated with packet injection. Specifically, all versions of WEP and all Bluetooth data transfers can be trivially cracked in real time. WPA2 is currently considered relatively strong, but this should be monitored.
-    *Failure to Use Upper Layer Encryption: Transport or application layer encryption provides a layer of protection against network-layer attacks.
+    *Improper network configuration: Using no network encryption or using nework encryption which can be easily brute-forced is the primary vulnerability associated with packet injection. Specifically, all versions of WEP and all Bluetooth data transfers can be trivially cracked in real time. WPA2 is currently considered relatively strong, but this should be monitored.
+    *Failure to use upper layer encryption: Transport or application layer encryption provides a layer of protection against network-layer attacks.
 
 =Countermeasures
 
-    *Use Appropriate Network Configuration: Use strong network layer encryption, and ensure that the system will not fall back to weaker configurations. While the details of this are very dependent on the technologies being used, some systems can be configured so that if a higher level of security cannot be negotiated with a client, the network will allow the client in with a lower level of security. This behaviour is, of course, trivially exploitable by an attacker.
-    *Use Upper Layer Encryption: Use SSL or IPSec to secure sensitive data even if the network layer is breached.
+    *Use appropriate network configuration: Use strong network layer encryption, and ensure that the system will not fall back to weaker configurations. While the details of this are very dependent on the technologies being used, some systems can be configured so that if a higher level of security cannot be negotiated with a client, the network will allow the client in with a lower level of security. This behavior, of course, is trivially exploitable by an attacker.
+    *Use upper layer encryption: Use SSL or IPSec to secure sensitive data even if the network layer is breached.
 
 =Additional Resources
 
