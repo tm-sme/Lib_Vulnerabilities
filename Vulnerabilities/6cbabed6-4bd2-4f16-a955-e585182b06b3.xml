@@ -4,12 +4,12 @@
     <Id>6cbabed6-4bd2-4f16-a955-e585182b06b3</Id>
     <Id_History>00000000-0000-0000-0000-0000007dc07e,</Id_History>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>Information Leak through Persistent Cookies</Title>
+    <Title>Information Leak Through Cookies</Title>
     <Category>Session Management</Category>
     <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
-    <DirectLink>Information Leak through Persistent Cookies</DirectLink>
+    <DirectLink>Information Leak Through Cookies</DirectLink>
     <Author />
     <Priority />
     <Status />
@@ -17,11 +17,11 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description
 
-Cookies are used by web applications to store data on the browser. Cookies may be marked as persistent and stored for an extended period of time. An attacker may gain access to the drive that stores the cookies and recover the sensitive data from them. The exact impact depends on the nature of the sensitive data in the cookies. This vulnerability applies to web applications that use cookies. 
+Cookies are used by web applications to store data in the browser. Cookies may be marked as persistent and stored for an extended period of time. An attacker may gain access to the drive that stores the cookies and recover sensitive data from them. The exact impact depends on the nature of the sensitive data in the cookies. This vulnerability applies to web applications that use cookies. 
 
 =Impact
 
-The exact impact of this vulnerability depends on the sensitive data stored in the cookies. Usually this is session data that keeps a user authenticated to an application. In that case, the attacker is able to impersonate the authenticated user. Being able to impersonate an authenticated user allows the attacker to carry out any actions that are available to that user within the application. That might be enough for the attacker or he may use that access to leverage additional vulnerabilities for additional privileges.
+The exact impact of this vulnerability depends on the sensitive data stored in the cookies that the attacker has gained access to. Usually this is session data that keeps a user authenticated to an application. In that case, the attacker is able to impersonate the authenticated user. The ability to impersonate an authenticated user allows the attacker to carry out any actions that are available to that user within the application. That might be enough for the attacker, or he may use that access to leverage additional vulnerabilities for additional privileges. 
 
 =Countermeasures
 
@@ -33,7 +33,7 @@ Don't store sensitive data in persistent cookies:
 
 =Application Check
 
-To check for this vulnerability, find all code that stores cookies and check what kind of data is stored in the cookies.
+To check for adequate protection against this vulnerability, find all code that stores cookies and ensure that sensitive data is not stored in persistent cookies. 
 
 Sensitive data is not stored in persistent cookies:
 * [[00000000-0000-0000-0000-000000152037|Sensitive Data Is Not Stored in Persistent Cookies]]
