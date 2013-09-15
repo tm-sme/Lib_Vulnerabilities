@@ -14,15 +14,23 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-Missing XML validation means that an attacker may cause the application to parse invalid XML data. This vulnerability type refers specifically to not validating XML against a schema. In itself, this might not cause any harm, but it may enable other vulnerabilities, such as XML Entity Injection. This vulnerability type affects all applications that parse XML data. To prevent "missing XML validation", untrusted XML data should be validated. To check for adequate protection against this vulnerability type, verify that untrusted XML data is validated.
+Missing XML validation means that an attacker may cause the application to parse invalid XML data. This vulnerability type refers specifically to not validating XML against a schema. In itself, this might not cause any harm, but it may enable other vulnerabilities, such as XML Entity Injection. This vulnerability type affects all applications that parse XML data. 
 
-==Impact==
+=Impact
 
-Missing XML validation may enable other attacks that exploit other vulnerabilities. The exact impact depends on what kind of other vulnerabilities are enabled. The most likely and dangerous scenario is some form of XML injection attack where the attack manipulates application data by sending malformed XML data. For example, if the application uses XML to store authentication credentials, the attacker may be able to send XML data that authenticates him as an administrative user and then take over the application. A number of other vulnerabilities in addition to XML validation would need to be present for that to be possible. In general, XML validation helps prevent attacks that exploit other vulnerabilities and should always be used when untrusted XML data is processed.
+Missing XML validation may enable other attacks that exploit other vulnerabilities. The exact impact depends on the kind of other vulnerabilities that are enabled. The most likely and dangerous scenario is some form of XML injection attack, where the attack manipulates application data by sending malformed XML data. For example, if the application uses XML to store authentication credentials, the attacker may be able to send XML data that authenticates him as an administrative user, and he may then take over the application. For that to be possible, a number of other vulnerabilities in addition to missing XML validation would need to be present. 
 
-==Specific Technologies==
+=Countermeasures
+
+To prevent this vulnerability type, validate untrusted XML data.  XML validation helps prevent attacks that exploit other vulnerabilities, and should always be used when untrusted XML data is processed.
+
+=Application Check
+
+To check for adequate protection against this vulnerability type, verify that untrusted XML data is validated.
+
+=Specific Technologies
 
 * ADD CORRECT LINK ASP.NET Missing XML Validation
 * ADD CORRECT LINK Java Missing XML Validation ]]></Data>
