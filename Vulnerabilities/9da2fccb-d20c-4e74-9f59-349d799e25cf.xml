@@ -12,22 +12,26 @@
     <DirectLink>XPath Injection</DirectLink>
   </Metadata>
   <Content Sanitized="false" DataType="WikiText">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[=Description
 
-XPath injection is a type of vulnerabilities that allows attackers to execute arbitrary queries on XML databases. XPath injection most commonly occurs as a result of concatenating user input with query strings. XPath injection vulnerabilities are similar to SQL injection vulnerabilities, but target XML databases instead of SQL databases. XPath injection vulnerabilities are often more dangerous than SQL injection attacks, because permissions are not enforced and the malicious queries can access every part of the XML documents. XPath injection attacks may allow retrieving, manipulating, or destroying data stored in XML documents.
+XPath injection is a type of vulnerability that allows attackers to execute arbitrary queries on XML databases. XPath injection vulnerabilities are similar to SQL injection vulnerabilities, but they affect XML databases instead of SQL databases. XPath injection is often more dangerous than SQL injection, because permissions are not enforced and the malicious queries can access every part of the XML documents. XPath injection applies to any application that uses XPath to query XML documents. 
 
-==Countermeasures==
+=Impact
 
-The following TeamMentor articles describe effective counter-measures against XPath injection vulnerabilities:
+XPath injection attacks may allow an attacker to retrieve, manipulate, or destroy data stored in XML documents. The exact impact depends on the type of XML data that is exposed via XPath injection. If authentication data is exposed, the attacker is able to take over any user account. By taking over the administrator's account, the attacker is able to take full control of the application. 
+
+=Countermeasures
+
+To prevent this vulnerability, validate all input and use parameterized APIs if possible. 
 
 * [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
 * [[14d4d65c-8bba-4fef-8261-e76895882942|Do Not Rely on Client-side Validation]]
 * [[e59923e7-c2fb-4a75-8db7-a9a91e869f74|Validate Input for Length, Range, Format, And Type]]
 * [[a880d974-3543-4190-ae63-ea7e8ac11d0a|Do Not Disclose Valuable Information in Error Messages]]
 
-==Checklists==
+=Application Check
 
-The following checklist items can help make sure that effective counter-measures against XPath injection vulnerabilities have been implemented:
+To check for adequate protection against this vulnerability, find all code that uses XPath queries and make sure it does not include unvalidated user input. 
 
 * [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
 * [[eda2c482-6e7f-4370-9d2f-deeca845c82b|Client-side Validation Is Not Relied On]]
