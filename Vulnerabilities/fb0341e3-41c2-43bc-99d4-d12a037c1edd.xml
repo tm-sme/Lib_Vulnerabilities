@@ -17,13 +17,15 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
-Unchecked error conditions may allow attacks to go unnoticed. Checking error conditions helps the application determine if someone out of the ordinary is happening and log that information. Log information helps administrators determine when an attack is taking place and provides information about the attack. Unchecked error condition flaws may occur in any type of application. To prevent unchecked error conditions, use global exception handlers and log error information. To make sure that all error conditions are checked, verify that global exception handlers are used and error information is logged.
+Unchecked error conditions may allow attacks to go unnoticed. Checking error conditions helps the application to determine if something out of the ordinary is happening and to log that information. Log information helps administrators determine when an attack is taking place and provides information about the attack. Unchecked error condition flaws may occur in any type of application. 
 
 ==Impact==
 
-Unchecked error conditions may result in other, more serious vulnerabilities. An unchecked error condition may not actually give any advantage to the attacker. However, if the application contains a lot of code that may produce unchecked errors, that creates a fertile field for the attacker to look for vulnerabilities.
+Unchecked error conditions may result in other, more serious vulnerabilities. An unchecked error condition may not actually give any advantage to the attacker. However, if the application contains a lot of code that may produce unchecked errors, that creates a fertile field for the attacker to look for vulnerabilities. 
 
-==Countermeasures==
+=Countermeasures
+
+To prevent unchecked error conditions, use structured exception handling, use a global exception handler for unhandled exceptions, and log error information. 
 
 Use structured exception handling:
 * [[afb7610c-53ab-49dd-a425-f3e3272f7749|Use Structured Exception Handling]]
@@ -34,7 +36,9 @@ Use a global exception handler:
 Log error information:
 * [[00000000-0000-0000-0000-00000035b501|Log Error Information]]
 
-==Checklists==
+=Application Check
+
+To check for adequate protection against this vulnerability, verify that structured exception handling is used, a global exception handler is used, and error information is logged. 
 
 Structured exception handling is used:
 * [[bf298d0e-9433-44c1-b9af-66ba69662d18|Structured Exception Handling Is Used]]
@@ -45,7 +49,7 @@ A global exception handler is used:
 Error information is logged:
 * [[00000000-0000-0000-0000-00000023f8a3|Error Information Is Logged]]
 
-==Additional Resources==
+=Additional Resources
 
 * For the CWE page about unchecked error conditions, see http://www.cvedetails.com/cwe-details/391/Unchecked-Error-Condition.html]]></Data>
   </Content>
