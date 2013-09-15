@@ -21,14 +21,16 @@
     <Data><![CDATA[=Applies to
 
 Any network application.
+
 =Description
 
-In an ARP spoofing or poisoning attack the attacker is able to inject fake or spoofed ARP messages to the Ethernet LAN. The spoofed ARP messages contain false MAC address to IP address mappings, which can confuse other hosts on the network as well as network devices like switches or routers. Results of such an attack include the affected device routing all of its traffic through the attacking host, or all devices on the network sending traffic intended for another host to the attacking machine.
+In an ARP spoofing or poisoning attack, the attacker is able to inject fake or spoofed ARP messages to the Ethernet LAN. The spoofed ARP messages contain false MAC address to IP address mappings, which can confuse other hosts on the network as well as network devices like switches or routers. Such an attack can cause the affected device to route all of its traffic through the attacking host, or cause all devices on the network to send traffic intended for another host to the attacking machine.
+
 =Impact
 
-    *Information disclosure - because the network traffic is being routed through the attacker's computer they can see any unencrypted data that is sent.
-    *Denial of service - if the attacker so chooses they can disrupt network service by not forwarding legitimate packets on.
-    *Spoofing - an attacker can inject new traffic into the data stream, or selectively edit or forward legitimate traffic.
+    *Information disclosure: Because the network traffic is being routed through the attacker's computer, the attacker can see any unencrypted data that is sent.
+    *Denial of service: If the attacker so chooses, he can disrupt network service by not forwarding legitimate packets on.
+    *Spoofing: An attacker can inject new traffic into the data stream, or selectively edit or forward legitimate traffic.
 
 =Vulnerabilities
 
@@ -37,13 +39,13 @@ In an ARP spoofing or poisoning attack the attacker is able to inject fake or sp
 
 =Countermeasures
 
-    *For smaller networks (~ 30 machines) use static IP-Addresses and static ARP tables. This will prevent attackers from adding spoofed APR entries for devices in the network.
+    *For smaller networks (i.e., around 30 machines), use static IP-addresses and static ARP tables. This will prevent attackers from adding spoofed APR entries for devices in the network.
 
-    *For larger networks, it is not sustainable to use static IP-Addresses and ARP tables. Follow these tips to prevent ARP Spoofing on larger networks:
+    *For larger networks, it is not sustainable to use static IP-addresses and ARP tables. Follow these tips to prevent ARP Spoofing on larger networks:
         **Use tools that monitor ARP tables and notify the system administrator of any changes. An example of such a tool is ARPWatch.
         **Be careful of whom you allow connections on the internal network. Allowing outsiders to anonymously connect to your network increases the risk of an attack.
         **Use 802.1x (IIRC) to authenticate all network users.
-       **Implement an Intrusion Detection System (IDS)
+        **Implement an Intrusion Detection System (IDS)
 
 =Additional Resources
 
