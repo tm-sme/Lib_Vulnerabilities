@@ -20,33 +20,35 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Any application that builds a file name, or path string, host name, url, or other resource identifier based on user input.
+Any application that uses user input to build a file name, path string, host name, url, or other resource identifier.
+
 =Description
 
 Different forms of input that resolve to the same standard name (the canonical name), is referred to as canonicalization. Code is particularly susceptible to canonicalization issues if it makes security decisions based on the name of a resource that is passed to the program as input. Files, paths, host names, and URLs are resource types that are vulnerable to canonicalization because in each case there are many different ways to represent the same name.
+
 =Impact
 
-    *Unauthorized access
-    *Information disclosure
-    *Elevation of privilege
+    *Unauthorized access.
+    *Information disclosure.
+    *Elevation of privilege.
 
 =Vulnerabilities
 
-    *Making security decisions based on the non-canonical form of resources strings supplied by untrusted input. Common examples of such resource strings include URLs, file names, and file paths.
+    *Making security decisions based on the non-canonical form of resource strings supplied by untrusted input. Common examples of such resource strings include URLs, file names, and file paths.
 
 =Countermeasures
 
     *Choose a standard 'canonical' representation for all strings that are used to make security decisions.
 
     *Convert all such strings to their canonical form before making security decisions. For example:
-        **Convert URL encoded strings into their unicode equivalent
+        **Convert URL encoded strings into their unicode equivalent.
         **Convert relative paths to absolute paths for files and URL strings.
 
     *If available, use common libraries for canonicalization. Only write your own canonicalization routines if absolutely necessary.
 
-    *Avoid input file names where possible and instead use absolute file paths that cannot be changed by the end user.
+    *Avoid input file names where possible, and instead use absolute file paths that cannot be changed by the end user.
 
-    *Reject incorrectly encoded characters and do not accept alternate representations of standard characters.
+    *Reject incorrectly encoded characters, and do not accept alternate representations of standard characters.
 
     *Check all resource via whitelist, not blacklist.
 
