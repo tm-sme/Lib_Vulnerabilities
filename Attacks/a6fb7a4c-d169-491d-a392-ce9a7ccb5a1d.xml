@@ -20,15 +20,17 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Applications written in any languages which provides string methods that accept a format specifier.
+Applications written in any languages which provide string methods that accept a format specifier.
+
 =Description
 
 Format string attacks are a class of vulnerabilities that can be used to crash a program or to execute harmful code. If unfiltered user input is used as the format string parameter in C functions that perform formatting, such as printf(), an attacker can use the %s, %x, and other format tokens to print data either from the stack or sometimes from other memory locations. Arbitrary data can be written anywhere in memory using the %n format token, used to specify that the number of bytes formatted should be written to the supplied pointer argument. More stack manipulation is required, but this argument can be inserted as part of a format string attack.
+
 =Impact
 
-    *Elevation of Privilege
-    *Read or Write sensitive information in memory
-    *Arbitrary code execution
+    *Elevation of privilege.
+    *Read or write sensitive information in memory.
+    *Arbitrary code execution.
 
 =Vulnerabilities
 
