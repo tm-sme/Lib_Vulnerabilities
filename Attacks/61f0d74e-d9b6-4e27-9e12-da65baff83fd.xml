@@ -20,31 +20,31 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Applications using LDAP
+Applications using LDAP.
+
 =Description
 
-LDAP injection is a technique for exploiting applications that use input from users to query an LDAP directory. Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner, for example the phone directory.
+Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner, for example the phone directory.
 
-In principle this is exactly the same attack as SQL or XML injection; the only difference is the query language used and the database accessed. Because directories are primarily used to maintain information about people, LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. The most common mistake is creating filter statements dynamically without validating user input.
+LDAP injection is a technique for exploiting applications that use input from users to query an LDAP directory. In principle this is exactly the same attack as SQL or XML injection. The only difference is the query language used and the database accessed. Because directories are primarily used to maintain information about people, LDAP injection gives an attacker the potential to view, modify, or remove personal information about anyone in the directory. The most common mistake that leads to an LDAP injection vulnerability is creating filter statements dynamically without validating user input.
+
 =Impact
 
-    *Unintentional information disclosure
-    *Elevation of privilege through manipulation of query results
-    *Corruption of LDAP data store through manipulation of updates
+    *Unintentional information disclosure,
+    *Elevation of privilege through manipulation of query results,
+    *Corruption of LDAP data store through manipulation of updates,
 
 =Vulnerabilities
 
-    *Building dynamic LDAP queries using untrusted input
+    *Building dynamic LDAP queries using untrusted input.
 
 =Countermeasures
 
-    *Untrusted input should be validated against an inclusion list before use (e.g., RegEx pattern, primitive type casting, domain constraint, etc.)
+    *Validate untrusted input against an inclusion list before use (e.g., RegEx pattern, primitive type casting, domain constraint, etc.).
 
 =Example
 
-Vulnerable Code:
-
-The following PHP code connects to an LDAP server on localhost and searches for records where the surname equals the value supplied by the user.
+Vulnerable code:  The following PHP code connects to an LDAP server on localhost and searches for records where the surname equals the value supplied by the user.
 
 {{{
 <?php$ds=ldap_connect("localhost");
@@ -79,9 +79,9 @@ If this code is in {{{index.php at teammentorexample.com}}} then the following U
 
 {{{http://teammentorexample.com/index.php?surname=Smith}}}
 
-Attack Example:
-
-Now suppose an attacker entered:
+//
+//
+Attack example:  Now suppose an attacker entered:
 
 {{{
     x)(|(cn=*
