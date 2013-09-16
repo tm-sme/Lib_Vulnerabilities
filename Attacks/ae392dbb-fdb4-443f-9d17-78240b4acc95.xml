@@ -111,11 +111,11 @@ After we insert {{{$data}}} into the {{{email}}} field above, the result will be
 
 =Additional Resources
 
-    *For more information on http://www.w3.org/XML/Processing/
-    *For more information on http://www-128.ibm.com/developerworks/xml/library/x-think37/index.html
-    *For more information onhttp://www.owasp.org/index.php/Data_Validation
-    *For more information on http://www-128.ibm.com/developerworks/xml/library/x-tipcfsx.html
-    *For more information on http://www.w3schools.com/xml/xml_cdata.asp
+    *For more information on the XML Processing Model, see http://www.w3.org/XML/Processing/
+    *For more information on Managing XML Datasets for Security, see: http://www-128.ibm.com/developerworks/xml/library/x-think37/index.html
+    *For more information on Data Validation, see: http://www.owasp.org/index.php/Data_Validation
+    *For more information on Configuring SAX Parsers for Security, see: http://www-128.ibm.com/developerworks/xml/library/x-tipcfsx.html
+    *For more information on XML CDATA, see: http://www.w3schools.com/xml/xml_cdata.asp
 
 =Related Items
 
