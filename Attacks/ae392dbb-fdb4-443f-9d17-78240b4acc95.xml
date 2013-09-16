@@ -119,13 +119,13 @@ After we insert {{{$data}}} into the {{{email}}} field above, the result will be
 
 =Related Items
 
-    *[[Attack: Xpath-XQuery Attack]]
-    *[[Attack: SQL Injection Attack]]
-    *[[Attack: Information Disclosure Attack]]
-    *[[Attack: Server-Side Code Injection Attack]]
-    *[[Attack: AJAX Injection Attack]]
-    *[[Attack: LDAP Injection Attack]]
-    *[[Attack: Client-side Validation Attack]]
+    *[[1508d763-03f1-4b43-bf8e-ad7cf8edebd7|Attack: Xpath-XQuery Attack]]
+    *[[b1757bda-0a0d-48e7-b101-3c4088e41878|Attack: SQL Injection Attack]]
+    *[[8482159c-5ec2-4b89-9c65-9af765030ff5|Attack: Information Disclosure Attack]]
+    *[[9d60faca-687b-4c69-91ba-f5712af0fd02|Attack: Server-Side Code Injection Attack]]
+    *[[e4a899ec-9301-4751-ae07-69a265336d8b|Attack: AJAX Injection Attack]]
+    *[[61f0d74e-d9b6-4e27-9e12-da65baff83fd|Attack: LDAP Injection Attack]]
+    *[[1408d3c3-7fc1-4ff0-910e-cdf0e191b669|Attack: Client-side Validation Attack]]
    ]]></Data>
   </Content>
 </TeamMentor_Article>
