@@ -21,34 +21,35 @@
     <Data><![CDATA[=Applies To
 
 Any web application.
+
 =Description
 
-HTTP Response Splitting occurs when an attacker is able to inject arbitrary data into the headers of an HTTP response. In the presence of this vulnerability, the attacker can essentially force an HTTP response that contains HTML of the attacker's choosing. This is accomplished by simply terminating the header section of the response with the 0x0d 0x0a byte sequence and continuing with the malicious HTML. The resulting byte stream appears to the browser as two separate HTTP respsonses. The first contains the malicious HTML and is interpreted by the browser as being the legitimate response. The second contains the actual HTML that would have been returned by the server and is typically ignored.
+HTTP response splitting occurs when an attacker is able to inject arbitrary data into the headers of an HTTP response. In the presence of this vulnerability, the attacker can essentially force an HTTP response that contains HTML of the attacker's choosing. This is accomplished by simply terminating the header section of the response with the 0x0d 0x0a byte sequence and continuing with the malicious HTML. The resulting byte stream appears to the browser as two separate HTTP responses. The first contains the malicious HTML and is interpreted by the browser as being the legitimate response. The second contains the actual HTML that would have been returned by the server and is typically ignored.
 
-By allowing the attacker essentially complete control over an HTTP response that is rendered in the context of your domain, you open the door for a Phishing Attack or a Cross Site Scripting Attack.
+By essentially allowing the attacker complete control over an HTTP response that is rendered in the context of your domain, the door is opened for a phishing or a cross site scripting attack.
+
 =Impact
 
-    *Elevation of Privilege: The attacker can execute script in the context of your web application's domain.
+    *Elevation of privilege: The attacker can execute script in the context of your web application's domain.
     *Access control: The attacker can steal authentication cookies or at the very least execute additional HTTP requests in the context of the currently logged in user.
-    *Defacement: The attacker can author pages with arbitrary content
+    *Defacement: The attacker can author pages with arbitrary content.
 
 =Vulnerabilities
 
-*HTTP Response headers populated with untrusted and un-encoded input. The most common scenarios where this occurs are:
-**HTTP Redirects (see example)
-**HTTP Cookie values supplied by the user. For instance, if your application allows the user to supply a name and then sets a cookie value using that name. It is important to note that cookies are set with the Set-Cookie HTTP Response header.
+*HTTP response headers populated with untrusted and un-encoded input. The most common scenarios where this occurs are:
+**HTTP redirects (see example).
+**HTTP cookie values supplied by the user. For instance, your application allows the user to supply a name and then sets a cookie value using that name. It is important to note that cookies are set with the Set-Cookie HTTP response header.
 
 =Countermeasures
 
-Perform context sensitive scrubbing and encoding of untrusted input before it is used in an HTTP response header.
-
-    *Remove or encode user input before using it in an HTTP response header.
-    *In particular RFC 2616 states that CRs and LFs are not allowed in HTTP response headers, especially in the "Location" and "Set-Cookie" fields. Also remove sequences of CRs, LFs, SPs, and HTs and do not accept any input where LF is not followed by SP or HT.
+*Perform context-sensitive scrubbing and encoding of untrusted input before it is used in an HTTP response header.
+*In particular RFC 2616 states that CRs and LFs are not allowed in HTTP response headers, especially in the "Location" and "Set-Cookie" fields. Also remove sequences of CRs, LFs, SPs, and HTs and do not accept any input where LF is not followed by SP or HT.
 
 As with any blacklist strategy, this is a good start but will not catch everything. Web proxies, such as Sun Java System Web Proxy Server, cause problems with this approach because they often accept CR only as a valid end of line marker and hence can be exploited by using only CR.
+
 =Example
 
-To demonstrate the response splitting attack consider the following situation. Suppose there is a web server located at the domain {{{example.com}}} that has two pages. The first page located at {{{/redirect.php}}} is used to redirect users to the second page at {{{/hello/world.html}}}.
+To demonstrate the response splitting attack, consider the following situation. Suppose there is a web server located at the domain {{{example.com}}} that has two pages. The first page located at {{{/redirect.php}}} is used to redirect users to the second page at {{{/hello/world.html}}}.
 
 Here is a simple redirect.php
 
@@ -114,7 +115,9 @@ Content-Type: text/html
  <html>hello world!</html>
 }}}
 
-There are a few things to note at this point. Each line in the above headers end with the carriage return line feed (CRLF) sequence {{{\r\n}}}. They are not shown in the above dialog to make things easier to read, but they exist and are important to applications when communicating. The next thing to note is that the URL-encoded CRLF sequence {{{%0d%0a}}} is equivalent to {{{\r\n}}} and can be used to embed Header information into a URL. The next part of this example demonstrates how this can be used to deliver an attacker controlled page to a users browser.
+There are a few things to note at this point. Each line in the above headers end with the carriage return line feed (CRLF) sequence {{{\r\n}}}. To make things easier to read, they are not shown in the above dialog, but they exist and are important to applications when communicating. 
+
+The next thing to note is that the URL-encoded CRLF sequence {{{%0d%0a}}} is equivalent to {{{\r\n}}} and can be used to embed header information into a URL. The next part of this example demonstrates how this can be used to deliver an attacker-controlled page to a user's browser.
 
 Consider what happens when the following is injected into a URL:
 
@@ -128,7 +131,7 @@ That is, the user is given the following link:
 http://example.com/redirect.php?site=%0d%0aContent-Type: text/html%0d%0aHTTP/1.1 200 OK%0d%0aContent-Type: text/html%0d%0a%0d%0a%3Chtml%3E Insert attacker payload here! %3C/html%3E
 }}}
 
-Now we take a look at what happens to the headers during the during the dialog when a client requests the above URL.
+Now we take a look at what happens to the headers during the dialog when a client requests the above URL.
 
 {{{
 GET http://example.com/redirect.php?site=%0d%0aContent-Type: text/html%0d%0a
@@ -163,7 +166,7 @@ Proxy-Connection: Keep-Alive
 Pragma: no-cache
 }}}
 
-When the server receives this header it sends the following two responses which include the attackers payload.
+When the server receives this header, it sends the following two responses which include the attacker's payload.
 
 {{{
 HTTP/1.1 302 Found
