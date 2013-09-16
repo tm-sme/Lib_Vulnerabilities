@@ -21,28 +21,30 @@
     <Data><![CDATA[=Applies To
 
 .NET applications, Java applications, and applications written in any other language which supports reflection.
+
 =Description
 
 Reflection is a programming technique provided by an API that let's you treat class definitions themselves as objects. It gives the programmer a way to view and modify class members such as constructors, methods, interfaces, and fields at runtime. This is often used for the of development tools such as class browsers or GUI designers. However, if untrusted user input is used to manipulate objects at runtime, injection is possible. Attackers may be able to view or modify which classes are used or even run arbitrary code.
+
 =Impact
 
-    *Execution of arbitrary code
-    *Bypass of security controls
+    *Execution of arbitrary code.
+    *Bypass of security controls.
 
 =Vulnerabilities
 
-    *Failure to validate input
-    *Validation of a library based solely on the name
-    *Loading libraries based on external input
+    *Failure to validate input.
+    *Validation of a library based solely on the name.
+    *Loading libraries based on external input.
 
 =Countermeasures
 
-    *Constrain input: Use vigorous whitelist style input checking of any input received from the user.
-    *Signed Certificates: Use strongly signed assemblies only, only load a class if it passes this check.
+    *Validate input: Use vigorous whitelist style input checking of any input received from the user.
+    *Use signed certificates: Use strongly signed assemblies only, only load a class if it passes this check.
 
 =Example
 
-A common example of this attack occurs when an attacker can inject code to provide the name of a less secure class that implements the same interface as what was meant to be instantiated. The Java code below creates and uses an HTTP connection based on a user supplied string that defines the type.
+A common example of a reflection injection attack occurs when an attacker can inject code to provide the name of a less secure class that implements the same interface as the one meant to be instantiated. The Java code below creates and uses an HTTP connection based on a user supplied string that defines the type.
 
 {{{
 import java.lang.reflect.*;
@@ -81,7 +83,7 @@ class ExampleReflection
 }
 }}}
 
-Now suppose an attacker could inject {{{"HttpUrlConnection"}}} into the string {{{mycon}}} instead of {{{"HttpsUrlConnection"}}}. Then instead of an SSL secured connection, an insecure connection will be created leaving the data in transit unprotected. The application does not know any different because both {{{HttpUrlConnection}}} and {{{HttpsUrlConnection}}} implement {{{UrlConnection}}}.
+Now suppose an attacker could inject {{{"HttpUrlConnection"}}} into the string {{{mycon}}} instead of {{{"HttpsUrlConnection"}}}. Then, instead of an SSL secured connection, an insecure connection will be created, leaving the data in transit unprotected. The application does not know any differently, because both {{{HttpUrlConnection}}} and {{{HttpsUrlConnection}}} implement {{{UrlConnection}}}.
 
 =Additional Resources
 
