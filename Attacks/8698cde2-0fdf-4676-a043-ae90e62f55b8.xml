@@ -21,26 +21,28 @@
     <Data><![CDATA[=Applies To
 
 All applications.
+
 =Description
 
-Command injection problems are a subset of injection problems in which the process is tricked into either executing code or calling external processes of the attacker's choice through the injection of control information into the data stream.
+Command injection attacks are a subset of injection attacks. Through injection of control information into the data stream, a command injection attack tricks the process into either executing code or calling external processes of the attacker's choice.
+
 =Impact
 
-    *Elevation of Privilege: Command injection can allow for the execution of arbitrary commands and code by the attacker.
+    *Elevation of privilege: Command injection can allow an attacker to execute arbitrary commands and code.
 
 =Vulnerabilities
 
-    *Failure to Validate User Input: Situations where control information and data are mixed create opportunities for command injection.
+    *Failure to validate user input: Situations where control information and data are mixed create opportunities for command injection.
 
 =Countermeasures
 
-    *Validate user input. Prevent commands from being included in data by validating input for type, length, range, and format. Whitelist acceptable input and reject everything else. Escape meta characters and be aware of canonicalization issues. Remember that data may be changed as it flows through the program, so validating at multiple stages is often appropriate.
-    *Do not use input data in commands directly. Clever formatting may be used so that the user's input is treated as its own separate command instead of as data. Therefore, validate the input and explicitly type it as data so that it cannot be interpreted as a command even if it contains one.
-    *Avoid using command interpreters. Although not always practical, using a well maintained API will have better results than invoking commands through an interpreter or external process.
+    *Validate user input: Prevent commands from being included in data by validating input for type, length, range, and format. Use a whitelist approach to validate acceptable input, and reject everything else. Escape meta characters and be aware of canonicalization issues. Remember that data may be changed as it flows through the program, so validating at multiple stages is often appropriate.
+    *Do not use input data directly in commands: An attacker may use clever formatting so that input is treated as its own separate command instead of as data. Therefore, validate the input and explicitly type it as data so that it cannot be interpreted as a command even if it contains one.
+    *Avoid using command interpreters: Although not always practical, using a well maintained API will have better results than invoking commands through an interpreter or external process.
 
 =Example
 
-The following code is wrapper around the UNIX command cat which prints the contents of a file to standard out. It is also injectable:
+The following code is a wrapper around the UNIX command cat which prints the contents of a file to standard out. It is also injectable:
 
 {{{
 #include <stdio.h>
@@ -85,7 +87,7 @@ catWrapper
 
 If catWrapper had been set to have a higher privilege level than the standard user or could be executed anonymously, arbitrary commands could be executed with that higher privilege.
 
-Another example of this type of behavior can be seen with XSL, the style sheet language for XML. The primary purpose of XSL is to provide an easy and modular way to transform XML documents into other XML documents such as HTML. In particular, different XSL styles can be attached to the same XML and are sometimes supplied by the user. Microsoft extended the functionality of XSL to allow scripting code to be embedded in the style sheets with the <msxsl:script> tag. If an attacker has the ability to modify or replace the XSL style sheet in use, they can therefore inject any command to the system running the application simply by including it in the style sheet.
+Another example of this type of behavior can be seen with XSL, the style sheet language for XML. The primary purpose of XSL is to provide an easy and modular way to transform XML documents into other XML documents such as HTML. In particular, different XSL styles can be attached to the same XML and are sometimes supplied by the user. Microsoft extended the functionality of XSL to allow scripting code to be embedded in the style sheets with the <msxsl:script> tag. If an attacker has the ability to modify or replace the XSL style sheet in use, he can then inject any command into the system running the application simply by including it in the style sheet.
 
 =Additional Resources
 
