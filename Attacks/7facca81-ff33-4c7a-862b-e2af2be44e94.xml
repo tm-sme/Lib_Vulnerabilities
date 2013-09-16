@@ -20,10 +20,11 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-All applications which use user input to construct the file name or path before accessing a file resource.
+All applications that use user input to construct the file name or path before accessing a file resource.
+
 =Description
 
-If user input is used to construct a filename or path it is possible for that input to be format so that an unintended or protected file is read, modified, or executed instead. This is commonly accomplished by exploiting canonicalization issues or alternate data streams. Command injection may also be possible and would allow the attacker to execute arbitrary commands. The impact of such vulnerabilities is compounded if the application is running with elevated privileges.
+If user input is used to construct a filename or path, it is possible for that input to be format so that an unintended or protected file is read, modified, or executed instead. This is commonly accomplished by exploiting canonicalization issues or alternate data streams. Command injection may also be possible and would allow the attacker to execute arbitrary commands. The impact of such vulnerabilities is compounded if the application is running with elevated privileges.
 =Impact
 
     *Command execution via command injection
