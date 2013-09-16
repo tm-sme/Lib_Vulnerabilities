@@ -21,24 +21,26 @@
     <Data><![CDATA[=Applies To
 
 Applications encrypting sensitive data.
+
 =Description
 
-Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets.
+Given large sets of encrypted data, an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system, or by passively listening to network traffic for interesting packets.
+
 =Impact
 
-    *Discovery of encryption keys (WEP Key Attack)
-    *Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more
-    *Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.
+    *Discovery of encryption keys (WEP Key Attack).
+    *Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more.
+    *Harvesting of unencrypted data: An attack listening to all encrypted e-mail would also recover all unencrypted header information such as To, From, CC, Timestamp, and Subject.
 
 =Vulnerabilities
 
-    *False sense of security when using encryption libraries
+    *False sense of security when using encryption libraries.
 
 =Countermeasures
 
-    *Always be sure you know what is and what is not being encrypted
-    *Understand what bits of information can be discovered by analyzing packets or information being sent on the network
-    *Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks
+    *Always be sure you know what is and what is not being encrypted.
+    *Understand what bits of information can be discovered by analyzing packets or information being sent on the network.
+    *Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks.
 
 =Related Items
 
