@@ -21,46 +21,48 @@
     <Data><![CDATA[=Applies To
 
 Any application that restricts access to certain types of information, including configuration and deployment details.
+
 =Description
 
-An Information Disclosure attack results in an application revealing sensitive information to the attacker. Examples of sensitive information include system specific data such as overly descriptive error messages, source code, software distribution and version numbers, database information, passwords, machine names and file paths to other sensitive areas.
+An information disclosure attack results in an application revealing sensitive information to the attacker. Examples of sensitive information include system-specific data such as overly descriptive error messages, source code, software distribution and version numbers, database information, passwords, machine names and file paths to other sensitive areas.
 
-For web applications there are several methods that can be used by an attacker to get more information from the application, such as directory indexing, path traversal, reading source code or error messages and comments left behind by developers, etc.
+There are several methods that an attacker can use to get more information from web applications, such as directory indexing, path traversal, and reading source code or error messages and comments left behind by developers.
 
-If the attacker can gain access to the binaries of the application (in the case of an installed client application), or through forceful browsing or other attacks (for a server application), the information disclosure attack surface becomes much larger. In this case the attacker can employ debuggers, de-compilers, hex editors and other tools to search for secrets left in the application.
+If the attacker can gain access to the binaries of the application (in the case of an installed client application), or through forceful browsing or other attacks (for a server application), the information disclosure attack surface becomes much larger. In this case the attacker can employ debuggers, de-compilers, hex editors, and other tools to search for secrets left in the application.
 
-SQL injection, whether in a web application or installed client application, can also be considered a type of information disclosure attack because it can be used to access sensitive information that is stored in a database, as can other similar query-based attacks.
+SQL injection and other similar query-based attacks, whether in a web application or in an installed client application, can also be considered a type of information disclosure attack, because it can be used to access sensitive information that is stored in a database.
+
 =Impact
 
-    *Confidentiality: An attacker gains access to sensitive information which may be used to launch further exploits against the application, or which may be of direct value (sensitive user information such as passwords or social security numbers, for instance)
+    *Confidentiality: An attacker gains access to sensitive information (such as passwords or social security numbers) which may be used to launch further exploits against the application, or which may be of direct value.
     *Authentication: Through an error message that reveals too much information or a SQL injection exploit, an attacker may be able to figure out another user's ID and password, and log in as that user.
 
 =Vulnerabilities
 
-    *Improper permissions: Through forceful browsing an attacker may be able to discover sensitive information that should not be available such as source code, binaries, backup files, etc.
-    *Directory indexing left on: This can allow an attacker to freely browse an entire directory on a website which can tell an attacker all available files on the server.
-    *Storing sensitive data in plaintext: Storing sensitive data in plain or weakly encoded text can lead to an attacker discovering username/password pairs, cryptography keys, or other sensitive data
-    *Detailed error messages: Propagating SQL errors, exception handler errors or stack traces do not help users solve a problem but can drastically reduce the amount of time it takes an attacker to exploit a system.
-    *Comments left in code: The client downloads and has access to all client side code. Any comments left in HTML, AJAX, or other script can easily be discovered.
-    *Hard coded usernames and passwords: Opening an application in a hex editor will show any hard coded strings in the application, this can lead an attacker directly to hard coded credentials
-    *Running with more privilege than is needed: This can allow an attacker to gain access to information on the server that should not be available. Permissions should be limited for all users including: SQL, Web Service, Web Application, etc.
+    *Improper lax permissions: Through forceful browsing, an attacker may be able to discover sensitive information that should not be available, such as source code, binaries, and backup files.
+    *Directory indexing left on: This can allow an attacker to freely browse an entire directory on a website, which can disclose all available files on the server.
+    *Storing sensitive data in plaintext: Storing sensitive data in plain or weakly encoded text can lead to an attacker discovering username/password pairs, cryptography keys, or other sensitive data.
+    *Detailed error messages: Propagation of SQL errors, exception handler errors, or stack traces does not help a legitimate user solve any problem--but it can drastically reduce the amount of time it takes an attacker to exploit a system.
+    *Comments left in code: The client downloads and has access to all client-side code. Any comments left in HTML, AJAX, or other script can be easily discovered.
+    *Hard-coded usernames and passwords: An attacker can open an application in a hex editor to see any hard coded strings and credentials in the application.
+    *Running with more privilege than is needed: This can allow an attacker to gain access to information on the server that should not be available. Permissions should be limited for all users, including SQL, web service, web application, and so on.
 
 =Countermeasures
 
-    *Use language specific comments: These comments will be automatically removed by the parsing or compiling engine and are not visible client side. Note: be careful with comments that are similar to HTML comments such as ColdFusion comments ( {{{<!--- comment --->}}} ).
-    *Use proper permissions: Restrict access to files and directories on the server, so users cannot access any file they want using directory/path traversal.
-    *Use strong encryption algorithms: whenever sensitive data is stored ensure that it is properly protected using strong encryption
-    *Use least privilege: Ensure that your application uses the principle of least privilege if it uses a backend database server.
-    *Use terse error messages: Be sure to only use short, generic error messages that don't reveal any sensitive information and never directly display error messages returned by a back-end database or other system.
-    *Use the principle of open design: When designing an application, assume the attacker has access to all information; bake security into your application so even with this information no further attacks are possible
+    *Use language-specific comments: These comments will be automatically removed by the parsing or compiling engine and are not visible client-side. Note: Be careful with comments that are similar to HTML comments such as ColdFusion comments ( {{{<!--- comment --->}}} ).
+    *Use proper permissions: Restrict access to files and directories on the server, so that users cannot access any file they want using directory/path traversal.
+    *Use strong encryption algorithms: Whenever sensitive data is stored, ensure that it is properly protected using strong encryption.
+    *Use least privilege: Ensure that your application uses the principle of least privilege if it uses a back-end database server.
+    *Use terse error messages: Be sure to use only short, generic error messages that don't reveal sensitive information. Never directly display error messages returned by a back-end database or other system.
+    *Use the principle of open design: When designing an application, assume the attacker has access to all information. Bake security into your application, so that even with this information no further attacks are possible.
 
 =Example
 
-Directory indexing: The HTTP request{{{ 'GET /<null byte>.jsp HTTP/1.0'}}} allows an attacker to view the directory and file listing due to improper handling of null bytes
+Directory indexing: The HTTP request{{{ 'GET /<null byte>.jsp HTTP/1.0'}}} allows an attacker to view the directory and file listing due to improper handling of null bytes.
 
-Directory traversal: The URL {{{http://www.example.com/../restricted-file.cgi}}} allows an attacker to access the file 'restricted-file.cgi' which lies outside the web document root directory
+Directory traversal: The URL {{{http://www.example.com/../restricted-file.cgi}}} allows an attacker to access the file 'restricted-file.cgi' which lies outside the web document root directory.
 
-Directory traversal with encoded characters: The URL {{{http://www.example.com/..%255c..%255c/restricted-file.cgi}}} is similar to the one above, but the '/' characters are double encoded to bypass security filters
+Directory traversal with encoded characters: The URL {{{http://www.example.com/..%255c..%255c/restricted-file.cgi}}} is similar to the one above, but the '/' characters are double-encoded to bypass security filters.
 
 Examples of too much information in error messages:
 
