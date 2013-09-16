@@ -20,14 +20,15 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-Web Applications
+All web applications.
 
 =Description
 
-Many web applications use URL redirection as a feature to direct a user to another site or page on the same site. An attacker may be able to leverage this vulnerability to trick users into entering sensitive information into a malicious website while seemingly navigating within a trusted website.
+Many web applications use URL redirection to direct a user to another site or page on the same site. In a URL redirection attack, an attacker tricks users into entering sensitive information into a malicious website while seemingly navigating within a trusted website.
+
 =Impact
 
-    *Website forgery: If an attacker can redirect a user from one trusted site to another site, the victim may not notice the redirection and extend trust a malicious web site.
+    *Website forgery: If an attacker can redirect a user from one trusted site to another site, the victim may not notice the redirection and may extend their trust to a malicious site.
 
 =Vulnerabilities
 
@@ -36,13 +37,15 @@ Many web applications use URL redirection as a feature to direct a user to anoth
 
 =Countermeasures
 
-    *Never allow silent redirects to a user specified URL, even if the hostname is fixed.
+    *Never allow silent redirects to a user-specified URL, even if the hostname is fixed.
 
 =Example
 
-The login page for a web application has a feature that redirects the user, with a full query string, to a specified page within the site after the user logs in. This is used to allow pages to force the user to login before they are accessed, without losing track of the page the user was attempting to load. Unfortunately, this application also has pages, which alter the application state with a single get request. This combination allows an attacker to craft a single URL which will ask the user for their credentials on the legitimate login page, and subsequently perform some action as that user, without the user's knowledge. In order to fix this, the redirect links should be signed by the application in some way and protected against replay, thus guaranteeing that only legitimate uses of the feature will occur. Additionally, redirect strings should be passed as POST variables thus preventing attackers from crafting links that look like they are part of the legitimate site.
+The login page for a web application has a feature that redirects the user, with a full query string, to a specified page within the site after the user logs in. This is used to allow pages to force the user to login before they are accessed, without losing track of the page the user was attempting to load. Unfortunately, this application also has pages that alter the application state with a single get request. This combination allows an attacker to craft a single URL which will ask the user for their credentials on the legitimate login page, and subsequently perform some action as that user, without the user's knowledge. 
 
-In another example, a page has a utility function which allows developers to construct transparent redirects to other sites. This allows a phishing group to construct a seemingly legitimate URL on the application site which redirects silently to a malicious site. They can then pass this URL out to unsuspecting users, who can be tricked into visiting the malicious site while believing they're using the legitimate one.
+In order to fix this, the redirect links should be signed by the application in some way and protected against replay, thus guaranteeing that only legitimate uses of the redirect feature will occur. Additionally, redirect strings should be passed as POST variables, thus preventing attackers from crafting links that look like they are part of the legitimate site.
+
+In another example, a page has a utility function that allows developers to construct transparent redirects to other sites. This allows a phishing group to construct a seemingly legitimate URL on the application site which redirects silently to a malicious site. They can then pass this URL out to unsuspecting users, who can be tricked into visiting the malicious site while believing they're using the legitimate one.
 
 =Additional Resources
 
