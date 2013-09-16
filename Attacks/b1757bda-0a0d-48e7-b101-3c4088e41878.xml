@@ -21,17 +21,20 @@
     <Data><![CDATA[=Applies To
 
 Any application that interacts with a SQL database.
+
 =Description
 
-A SQL injection attack exploits vulnerabilities in input validation to run arbitrary commands in the database. It can occur when your application uses input to construct dynamic SQL statements to access the database. It can also occur if your code uses stored procedures that are passed strings that contain raw user input. Using the SQL injection attack, an attacker can execute arbitrary commands in your database, with all the privileges granted to the process being attacked. The issue is magnified if the application uses an over-privileged account to connect to the database. In this instance it is possible to use the database server to run operating system commands and potentially compromise other servers, in addition to being able to retrieve, manipulate, and destroy data.
+A SQL injection attack exploits missing or poor input validation to run arbitrary commands in the database. It can occur when your application uses input to construct dynamic SQL statements to access the database. It can also occur if your code uses stored procedures to which are passed strings that contain raw user input. Using the SQL injection attack, an attacker can execute arbitrary commands in your database, with all the privileges granted to the process being attacked. The issue is magnified if the application uses an over-privileged account to connect to the database. In this instance it is possible for the attacker to use the database server to run operating system commands and potentially compromise other servers, as well as to retrieve, manipulate, and destroy data.
+
 =Impact
 
-    *Confidentiality: Since SQL databases generally hold sensitive data, loss of confidentiality is a frequent problem with SQL injection vulnerabilities.
-    *Authentication: If poor SQL commands are used to check user names and passwords, it may be possible to connect to a system as another user with no previous knowledge of the password.
-    *Authorization: If authorization information is held in an SQL database, it may be possible to change this information through the successful exploitation of an SQL injection vulnerability.
-    *Integrity: Just as it may be possible to read sensitive information, it is also possible to make changes or even delete this information with an SQL injection attack.
-
+    *Confidentiality: Since SQL databases generally hold sensitive data, loss of confidentiality is a frequent impact of SQL injection attacks.
+    *Integrity: An attacker may be able not only to read sensitive data, but also to change or even delete this information.
+    *Authentication: If poorly formed SQL commands are used to check user names and passwords, it may be possible to connect to a system as another user with no previous knowledge of the password.
+    *Authorization: If authorization information is held in an SQL database, the attacker may be able to change this information.
+    
 The capabilities of an attacker are constrained by the permissions of the account you use to connect to the database. For this reason, your application should connect to the database with an account that has the minimum necessary set of privileges.
+
 =Vulnerabilities
 
     *Weak input validation.
@@ -40,15 +43,15 @@ The capabilities of an attacker are constrained by the permissions of the accoun
 
 =Countermeasures
 
-    *Constrain input. Use vigorous white-list style checking and type checking on any user input that may be used in an SQL command. Rather than escape meta-characters, it is safest to avoid adding them to your white-list. Later use of data that has been entered in the database may neglect to escape meta-characters before use.
-    *Use Parameterized SQL statements and stored procedures. Parameterized SQL statements will process characters that have special meaning to SQL (like single quote) without negative security implications.
-    *Use escaping routines. If you cannot use parameters and must use dynamic SQL, use escaping routines to handle special characters that have meaning to the database.
-    *Use an account with limited permissions in the database. Ideally the account should only have execute permissions on the set of stored procedures that your application needs to use and it should have no direct table access.
-    *Do not echo database errors. Catch exceptions on the server and return generic error messages to the client.
+    *Validate input: Use vigorous white-list validation and type checking on any user input that may be used in an SQL command. Rather than escape meta-characters, it is safer to avoid adding them to your white-list. Later use of data that has been entered in the database may neglect to escape meta-characters before use.
+    *Use parameterized SQL statements and stored procedures: Parameterized SQL statements will process characters that have special meaning to SQL (such as single quotes) without negative security implications.
+    *Use escaping routines: If you cannot use parameters and must use dynamic SQL, use escaping routines to handle special characters that have meaning to the database.
+    *Use an account with limited permissions in the database: Ideally the account should only have execute permissions on the set of stored procedures that your application needs to use and it should have no direct table access.
+    *Do not echo database errors: Catch exceptions on the server and return generic error messages to the client.
 
 =Example
 
-While it is easier and more reliable to fix SQL injection by parameterization, it can be fixed without it. Suppose we have a PHP/MySQL application that has two tables: {{{users and products}}}. Each row in the {{{USER table}}} contains the {{{users ID, name, password, credit card number, and address}}}. Similarly, the product table has a column for the {{{product ID, description, and price}}}. The application contains a SQL Query that retrieves the description of a product given its {{{ID}}}.
+While it is easier and more reliable to fix SQL injection by parameterization, it can be fixed in other ways. Suppose we have a PHP/MySQL application that has two tables: {{{users and products}}}. Each row in the {{{USER table}}} contains the {{{users ID, name, password, credit card number, and address}}}. Similarly, the product table has a column for the {{{product ID, description, and price}}}. The application contains a SQL query that retrieves the description of a product given its {{{ID}}}.
 
 {{{
 $query = "SELECT description FROM products WHERE product_id = " + $prod_id + ";";$result = mysql_query($query);
@@ -66,13 +69,13 @@ An attacker enters the following string where the application asks for the {{{pr
 5; SELECT * from users
 }}}
 
-Now {{{$query}}} has the following value which is a perfectly legitimate SQL query:
+Now {{{$query}}} has the following value, which is a perfectly legitimate SQL query:
 
 {{{
 SELECT description FROM products WHERE product_id = 5; SELECT * from users;
 }}}
 
-The query is executed and the product description is returned along with every row in the {{{User table}}} and the attacker has all of the confidential information from the database.
+The query is executed and the product description is returned along with every row in the {{{User table}}}, and the attacker has all of the confidential information from the database.
 
 Every situation and programming language presents its own challenge but in this case we can escape the character sequence so that MySQL interprets the entire user-supplied string as part of the {{{WHERE}}} clause. The PHP function to do this is {{{mysql_real_escape_string()}}}.
 
@@ -86,7 +89,8 @@ The value of {{{$query}}} should now look like the following:
 SELECT description FROM products WHERE product_id = \'5; SELECT * from users\';
 }}}
 
-All potentially dangerous characters in the string provided by the user have been escaped and it can be safely put in a MySQL query.
+All potentially dangerous characters in the string provided by the user have been escaped, and it can be safely put in a MySQL query.
+
 =Additional Resources
 
     *For more information on SQL Injection, see: http://en.wikipedia.org/wiki/SQL_injection
