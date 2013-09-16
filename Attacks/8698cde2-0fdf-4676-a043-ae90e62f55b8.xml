@@ -92,9 +92,7 @@ Another example of this type of behavior can be seen with XSL, the style sheet l
 =Additional Resources
 
     *For more information on the Javascript Eval function, see: http://en.wikipedia.org/wiki/Eval.
-    *For more information on script blocks in XSL, see: Script Blocks Using msxsl:script
-    *For more information on XSL transformations, see: XSL Transformations
-
+    
 =Related Items
 
     *[[00d296c8-2c75-47ef-a659-5b4f25d5c73f|Attack: Canonicalization Attack]]
