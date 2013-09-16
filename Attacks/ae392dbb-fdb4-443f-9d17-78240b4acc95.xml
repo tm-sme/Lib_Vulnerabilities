@@ -107,6 +107,21 @@ $evil_input = "Gandalf@MiddleEarth.com</email>
 
 After we insert {{{$data}}} into the {{{email}}} field above, the result will be the following acceptable XML:
 
+{{{
+<userrecord>
+  
+<uniqueid>5</uniqueid>  
+<name>Gandalf</name>  
+<email><!--[CDATA[Gandalf@MiddleEarth.com</Email--><uniqueid>0</uniqueid>            
+<name>Gandalf</name>
+<email>Gandalf@MiddleEarth.com]]&gt;></email>  
+<address>One Middle Earth Way, ME</address>  
+<zipcode>10000</zipcode>  
+<phonenumber>123-456-7890</phonenumber>
+</email>
+
+</userrecord>
+}}}
 
 =Additional Resources
 
