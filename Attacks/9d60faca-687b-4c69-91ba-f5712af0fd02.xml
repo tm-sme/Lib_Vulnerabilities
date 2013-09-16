@@ -20,34 +20,35 @@
   <Content Sanitized="true" DataType="wikitext">
     <Data><![CDATA[=Applies To
 
-All web applications that process user supplied input on the server.
+All web applications that process user-supplied input on the server.
+
 =Description
 
-An attacker conducts a Server-Side code injection attack by submitting malicious input which gets executed on the server. This malicious input could be submitted via numerous means, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner which forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an Information Disclosure Attack.
+In a server-side code injection attack, and attacker submits malicious input which gets executed on the server. This malicious input could be submitted in many different ways, including web form elements and URL parameters. Since the malicious input needs to be crafted and submitted in a manner that forces the back-end applications on the server to process the input, the attacker usually needs to gain an understanding of the back-end applications. Attackers can gain knowledge about the back-end system by using an information disclosure attack.
 
-Depending on the type of back-end applications, the type of attacks vary. Some common Server-side code injection attacks are:
+Depending on the type of back-end applications, the type of attacks vary. Some common server-side code injection attacks are:
 
-    *SQL Injection Attack
-    *Command Injection Attack
-    *Buffer Overflow Attack
+    *SQL injection attack
+    *Command injection attack
+    *Buffer overflow attack
 
 =Impact
 
-    *Execution of malicious code on the server which may threaten the confidentiality, integrity and availability of services and data.
+    *Execution of malicious code on the server, which may threaten the confidentiality, integrity and availability of services and data.
 
 =Vulnerabilities
 
-    *Weak or no validation of user supplied input.
-    *Running with elevated privileges - Although this does not result in code execution, it does make the impact of an attack much worse.
+    *Weak or no validation of user-supplied input.
+    *Running with elevated privileges: Although this does not result in code execution, it does make the impact of an attack much worse.
 
 =Countermeasures
 
-    *Input Validation: User supplied input should be validated for type, size, form and content before it is processed by the server.
-    *Separation of Control and Data Flow: User input should be segregated from any context where control information is present, and the seperation should be maintained.
+    *Validate input: Validate user-supplied input for type, size, form and content before it is processed by the server.
+    *Separate of control and data flow: Segregate user input from any context where control information is present, and maintain the separation.
 
 =Example
 
-Please refer to the examples presented in the specific attack types mentioned in the Description section.
+Please refer to the examples presented in the SQL Injection Attack, Command Injection Attack, and Buffer Overflow Attack articles.
 
 =Related Items
 
