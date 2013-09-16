@@ -24,33 +24,34 @@ Any web application that requires a user to login to use a service.
 
 =Description
 
-Phishing is an attempt by an attacker to trick a legitimate user into entering personal information into an attacker's website. The attacker typically constructs a website that appears identical to a legitimate website but be data is posted to an illegitimate website.
+Phishing is an attempt by an attacker to trick a legitimate user into entering personal information into an attacker's website. The attacker typically constructs a website that appears identical to a legitimate site, but the data is posted to an illegitimate site.
 
-Most often, the attacker will send a mass e-mail to many users requesting them to update their information on the illegitimate website. The attacker may provide legitimate looking logos which have been harvested off the original website, or even text from past legitimate correspondences. The attacker will then provide a link to their malicious website, which has been setup to emulate every aspect the valid site. The attacker may use a number of techniques to hide the true nature of the URL including URL redirection or known e-mail client or browser vulnerabilities. Once the victim browses to the malicious website and submits their information to the site the information is stored by the attacker and the user is redirected to the login site of the legitimate site. The malicious webpage may ask the user for any number of bits of sensitive information including: username, password, social security number, phone number, mother's maiden name, address, e-mail address, etc.
+Most often, the attacker will send a mass e-mail to many users requesting them to update their information on the illegitimate website. The email may contain authentic-looking logos harvested off the original website, and even text from past legitimate correspondences. The attacker will then provide a link to their malicious site, which has been set up to emulate every aspect of the valid site. The attacker may use a number of techniques to hide the true nature of the URL, including URL redirection or exploiting known e-mail client or browser vulnerabilities. The malicious site may ask the victim for information such as username, password, social security number, phone number, mother's maiden name, address, and e-mail address. The information submitted by the victim to the malicious site is stored by the attacker, and the victim is then redirected to the legitimate site. 
+
 =Impact
 
-    *Confidentiality: This attack can be used by an attacker to obtain sensitive information about the victim user.
-    *Authentication: The sensitive information (username, passwords) obtained using this attack can be used to log in as another user and access more information such as bank account details.
+    *Confidentiality: This attack can be used by an attacker to obtain sensitive information about the victim.
+    *Authentication: The sensitive information obtained through this attack can be used to log in as another user and access more information, such as bank account details.
 
 =Vulnerabilities
 
     *Web browsers failing to verify a website's security certificate.
     *Lack of policy against request of such information.
     *Failure to use modern anti-phishing techniques.
-    *Lack of education for users.
+    *Lack of security education for users.
     *Using multiple domains to host content within the same site, effectively priming users to ignore which domain they're currently talking to.
 
 =Countermeasures
 
-    *Implement and use SSL: Getting a certificate for use in SSL from a trusted Certificate Authority will help the user to verify the server is legitimate.
-    *Create a policy: Publicly announce your company will never send a link in an e-mail to update information. Require your users to browse to your website manually.
-    *Use additional security measures: New anti-phishing mechanisms require a user to choose a personal image or theme. First, the user submits their username or a cookie (a form of loose identification), then the server responds by showing the user the image or theme they have chosen upon account creation, and finally, if the image or theme matches the theme the user remembers selecting, the user logs in completely.
-    *Support only modern browsers: Most modern web browsers include basic anti-phishing mechanisms that will help your users verify the legitimacy of the website they are browsing. Encourage your users to upgrade to the latest version of their browser software.
+    *Implement and use SSL: Get a certificate for use in SSL from a trusted Certificate Authority to help the user verify that the server is legitimate.
+    *Create a policy: Publicly announce that your company will never send a link in an e-mail to update information. Require your users to browse to your website manually.
+    *Use additional security measures: New anti-phishing mechanisms require a user to choose a personal image or theme. First, the user submits their username or a cookie (a form of loose identification). The server then responds by showing the user the image or theme they have chosen upon account creation. Finally, if the image or theme matches the theme that the user remembers selecting, the user logs in completely.
+    *Support only modern browsers: Most modern web browsers include basic anti-phishing mechanisms that will help your users verify the legitimacy of websites. Encourage your users to upgrade to the latest version of their browser software.
     *Use a single domain for all parts of an application: This way, if an attacker attempts to create a fake site to harvest user information, users will be primed to expect all pages to come from the same URL.
 
 =Example
 
-Attacker's may use variations on the legitimate website address, such as:
+Attackers may use variations on the legitimate website address, such as:
 
     *Subdomains: {{{http://www.abcbank.com.attack.com/}}}\\
     *Similar domains: {{{http://www.abcbank-security.com/}}}\\
@@ -58,7 +59,7 @@ Attacker's may use variations on the legitimate website address, such as:
     *Different languages or encodings: {{{http://www.abcbànk.com}}}\\
     *Obscure URL features: Some browsers allow the user to provide credentials in the address bar. This is done by preceding the real address with the credentials and the @ (at) symbol, such as: {{{http://www.abcbank.com@attacker.com.}}}\\
 
-    In this example the user would be directed to attacker.com with the credentials of {{{www.abcbank.com}}} which can easily be disregarded by the attacker's website.
+    In this example the user would be directed to attacker.com with the credentials of {{{www.abcbank.com}}}, which can easily be disregarded by the attacker's website.
 
 =Additional Resources
 
