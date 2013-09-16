@@ -21,25 +21,28 @@
     <Data><![CDATA[=Applies To
 
 Any application that uses credentials.
+
 =Description
 
-A dictionary attack is a technique for defeating weak authentication credentials using a pre-compiled list of common usernames and passwords. It relies on the fact that users tend to use weak passwords that can be easily remembered. Although similar to Brute-Force Attack, this technique performs faster as it exhausts only the common possibilities. The input set in a Dictionary Attack is limited only to words that could be derived from a dictionary; therefore the name of the attack.
+A dictionary attack is a technique to defeat weak authentication credentials using a pre-compiled list of common usernames and passwords. It relies on the fact that users tend to use weak passwords that can be easily remembered. Though similar to a brute-force attack, this technique is faster as it exhausts only the common possibilities. The input-set in a dictionary attack is limited to words that could be derived from a dictionary, hence the name of the attack.
 
-If the attacker has a large amount of time available and the application is not denying login attempts after a certain number of attempts the attacker may script login attempts using large lists of usernames and passwords. Username lists and common password lists are freely available from many websites.
+If the attacker has a lot of time available and the application does not deny repeated login attempts after a threshold number of attempts, the attacker may script login attempts using large lists of usernames and passwords. Username lists and common password lists are freely available from many websites.
+
 =Impact
 
-    *Credential compromise
+    *Credential compromise.
 
 =Vulnerabilities
 
-    *Weak password policy
+    *Weak password policy.
 
 =Countermeasures
 
-    *Enforce strong passwords: Applications should enforce strong passwords that would require users to construct their passwords using a larger input set. *An example for stronger password requirements is:
+    *Enforce strong passwords: Applications should enforce strong passwords that require users to construct their passwords using a larger input-set. 
+    *An example of strong password requirements is:
         **At least 8 characters long.
-        **Contains lower case letters, upper case letters, and numbers.
-        **The password is regularly changed by the user, e.g. once every 3 months.
+        **Contains lower case letters, upper case letters, numbers, and special characters.
+        **The password is regularly changed by the user, such as once every 3 months.
 
 =Additional Resources
 
