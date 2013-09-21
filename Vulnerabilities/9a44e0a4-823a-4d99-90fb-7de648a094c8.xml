@@ -28,7 +28,7 @@ An insufficiently protected credential vulnerability makes it easier for an atta
 To prevent this vulnerability type, use PBKDF2 to secure passwords and send authentication credentials over encrypted tunnels. 
 
 Use PBKDF2 to secure passwords:
-* LINK
+* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
 
 Send authentication credentials only over SSL:
 * [[00000000-0000-0000-0000-000000960e37|Use SSL to Communicate Authentication Credentials]]
@@ -38,7 +38,7 @@ Send authentication credentials only over SSL:
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords and that authentication credentials are never sent in plain-text. 
 
 PBKDF2 is used to secure passwords:
-*LINK
+* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
 
 Authentication credentials are only sent over SSL:
 * [[00000000-0000-0000-0000-0000008f91de|SSL Is Used to Communicate Authentication Credentials]]
