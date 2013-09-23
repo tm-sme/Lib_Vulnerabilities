@@ -55,6 +55,9 @@ All input is validated:
 Access control checks are performed for all filesystem access:
 * [[9a2923bd-0501-4a2c-867f-09fbc054c840|Access Control Permissions Are Checked When Referencing Objects]]
 
+Reference maps are used to access objects:
+* [[bb14e1b4-65d9-4d65-9c46-fd4941a9827b|Indirect Object References Are Used]]
+
 Directory browsing is disabled:
 * [[6a97132c-6047-4619-bc13-fea1797a9278|Directory Browsing Is Disabled]]
 
