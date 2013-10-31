@@ -60,6 +60,24 @@ Input included in output is encoded:
 * [[90893370-cbce-4116-b9ff-2e69dab56cfa|All Untrusted Data in HTML Contexts Is Escaped in JSF]]
 * [[02c900ca-0740-412a-b685-56b13408793d|All Untrusted Data in HTML Contexts Is Escaped in JSP]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses to learn more about Cross-Site Scripting including techniques for remediation and prevention.
+
+==Creating Secure Code – JRE Foundations==
+
+In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
+
+For more information about Cross-Site Scripting in Java applications, see screens 26-31 in [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615|COD 211 Creating Secure Code – JRE Foundations]].
+
+==Creating Secure J2EE Code==
+
+This course introduces and explains the precautionary measures you can use to avoid Web software security vulnerabilities, such as data leakage attacks, client/server protocol manipulation, injection attacks, and exploiting authentication.  At the end of this course, you will have learned about time-tested defensive coding principles and how to use them to increase the security of your application, and prevent common security vulnerabilities.
+
+For more information about Cross-Site Scripting in Java applications, see screen 9 in [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127619|COD 313 Creating Secure J2EE Code]].
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about cross-site scripting, see http://en.wikipedia.org/wiki/Cross-site_scripting]]></Data>
