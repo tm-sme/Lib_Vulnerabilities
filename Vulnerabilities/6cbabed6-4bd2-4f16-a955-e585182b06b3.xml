@@ -38,6 +38,18 @@ To check for adequate protection against this vulnerability, find all code that 
 Sensitive data is not stored in persistent cookies:
 * [[00000000-0000-0000-0000-000000152037|Sensitive Data Is Not Stored in Persistent Cookies]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses to learn more about Information Leaks through Persistent Cookies including techniques for remediation and prevention.
+
+==Creating Secure PHP Code==
+
+This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code. 
+
+For more information about Information Leaks through Persistent Cookies in PHP applications, see screen 9 in [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620|COD 315 Creating Secure PHP Code]].
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 *For the CWE page about this vulnerability type, see http://cwe.mitre.org/data/definitions/539.html
