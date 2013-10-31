@@ -53,6 +53,18 @@ Parameterized APIs are used for database access:
 * [[d5a1c94b-601e-4e2a-9ad8-33461792a8bb|Parameterized APIs Are Used for Data Access]]
 * [[93d15ca4-c950-4370-8de5-cdb2cc2974fe|Dynamic SQL in Stored Procedures Is Parameterized]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses to learn more about SQL Injection including techniques for remediation and prevention.
+
+==Creating Secure Code – JRE Foundations==
+
+In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
+
+For more information about SQL Injection in Java applications, see screens 20-23 in [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615|COD 211 Creating Secure Code – JRE Foundations]].
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about SQL injection attacks, please see http://en.wikipedia.org/wiki/SQL_injection]]></Data>
