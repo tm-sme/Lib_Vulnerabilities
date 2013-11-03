@@ -32,8 +32,8 @@ To check for adequate protection against this vulnerability, ensure that a secur
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-000000063602|ASP.NET Use of Hard-coded Cryptographic Key]]
-* [[00000000-0000-0000-0000-00000057d3ef|Java Use of Hard-coded Cryptographic Key]]
-* [[00000000-0000-0000-0000-000000071654|PHP Use of Hard-coded Cryptographic Key]]]]></Data>
+* [[bbe58089-1a45-458f-81d2-12ad6c3c797c|ASP.NET Use of Hard-coded Cryptographic Key]]
+* [[1d41e495-bd7d-4961-8dd7-7d4cfaa37814|Java Use of Hard-coded Cryptographic Key]]
+* [[07d18aec-f7cc-4932-a734-97e31a6f7f07|PHP Use of Hard-coded Cryptographic Key]]]]></Data>
   </Content>
 </TeamMentor_Article>
