@@ -32,7 +32,7 @@ To check for adequate protection against this vulnerability, examine all code th
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-00000038d138|ASP.NET Use of Hard-coded Password]]
-* [[00000000-0000-0000-0000-000000133551|Java Use of Hard-coded Password]]]]></Data>
+* [[0cc358fe-0396-4142-bab5-ad327920b340|ASP.NET Use of Hard-coded Password]]
+* [[d18c00d5-2365-45c8-bde7-0e189f812ff6|Java Use of Hard-coded Password]]]]></Data>
   </Content>
 </TeamMentor_Article>
