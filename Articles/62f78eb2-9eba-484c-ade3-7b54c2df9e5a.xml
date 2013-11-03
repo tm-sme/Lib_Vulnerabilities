@@ -34,8 +34,8 @@ To check for adequate protection against CSRF, ensure that unique tokens are use
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-000000956375|ASP.NET Cross-Site Request Forgery]]
-* [[00000000-0000-0000-0000-0000007c30fb|Java Cross-Site Request Forgery]]
-* [[00000000-0000-0000-0000-0000000a973e|PHP Cross-Site Request Forgery]]]]></Data>
+* [[36d0c6a6-8a5c-4586-b0d5-917a9aff9557|ASP.NET Cross-Site Request Forgery]]
+* [[f4f6aab8-f22e-4189-98bd-0a879cdedc40|Java Cross-Site Request Forgery]]
+* [[11baa288-69b3-4bbd-9133-e9675228e75d|PHP Cross-Site Request Forgery]]]]></Data>
   </Content>
 </TeamMentor_Article>
