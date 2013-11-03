@@ -27,7 +27,7 @@ To prevent this problem, canonicalize all file paths and name input, validate al
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-000000871a68|ASP.NET Path Traversal]]
-* [[00000000-0000-0000-0000-0000003bcfab|PHP Path Traversal]]]]></Data>
+* [[ee22e5e0-0953-4276-b0e6-955becda5ee8|ASP.NET Path Traversal]]
+* [[b88255fa-86f1-4d3b-9f7f-66bc144e985c|PHP Path Traversal]]]]></Data>
   </Content>
 </TeamMentor_Article>
