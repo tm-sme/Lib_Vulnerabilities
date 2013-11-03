@@ -32,7 +32,7 @@ To check for adequate protection against this vulnerability, find all code that 
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-0000007a1206|ASP.NET Command Injection]]
-* [[00000000-0000-0000-0000-000000859bca|Java Command Injection]]]]></Data>
+* [[ea00a8ee-1248-42b5-9954-439a93fb14d8|ASP.NET Command Injection]]
+* [[2e03d087-3614-4927-8d20-d9efc3f7bbc4|Java Command Injection]]]]></Data>
   </Content>
 </TeamMentor_Article>
