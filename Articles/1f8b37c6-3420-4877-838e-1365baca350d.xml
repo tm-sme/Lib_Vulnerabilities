@@ -16,12 +16,30 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+In certain file systems it is possible to ‘hide’ data through the use of multiple data streams in a single file. When a file is accessed normally through the file system the stream name is left off and the default DATA stream is used. Every file on the file system has at least one stream. Alternate streams may be used for metadata or for nefarious reasons such as information hiding. Because most UIs do not provide a way of accessing alternate data streams they remain hidden from all but advanced users. However, creating and accessing multiple data streams is not difficult through the command line or programmatically.
+
+Additionally, to implement alternate data streams, the operating system must provide some way of representing the stream in the filename. With NTFS, this representation is to append ::$StreamName to the end of the filename. This causes problems because often security decisions are based on the filename. Since many programmers are unaware of this functionality, the implemented authorization checks do not take into account the possibility of alternate stream names.
+
+Failure to validate user input
+
+Failure to consider the possibility of alternate stream names appearing in file names.
+
 
 =Impact=
 
+Information disclosure: By providing a valid alternate name (index.asp::$DATA) for a file an attacker may be able to bypass authorization checks that fail to consider the possibility of stream names. A perfect example of this occurred in the IIS web server. If an attacker requested index.asp::$DATA, the server responded with the plain text of the server side script instead of running it through the interpreter.
+
+Hidden malware: Alternate data streams provide an easy place to hide and execute root kits, viruses and other malware from system administrators.
 
 =Countermeasures=
 
+Do not allow user-specified filenames unless a specific need exists: Use GUIDs for filenames and store the suggested filename in a database.
+
+Constrain input: Use vigorous white-list style checking on any input received from the user.
+
+Resolve all filenames through the file system: Leveraging the file system can ensure proper decision making.
+
+Use a white-list to validate filenames: Use regular expressions to ensure proper file validation.
 
 =Application Check=
 
