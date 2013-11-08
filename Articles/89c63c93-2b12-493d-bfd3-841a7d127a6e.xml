@@ -3,10 +3,12 @@
   <Metadata>
     <Id>89c63c93-2b12-493d-bfd3-841a7d127a6e</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Chosen Plaintext Vulnerability</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>Chosen Plaintext Vulnerability</DirectLink>
     <Author />
     <Priority />
     <Status />
