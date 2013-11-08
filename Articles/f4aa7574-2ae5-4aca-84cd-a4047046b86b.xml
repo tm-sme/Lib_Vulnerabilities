@@ -3,10 +3,12 @@
   <Metadata>
     <Id>f4aa7574-2ae5-4aca-84cd-a4047046b86b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Credential Brute Forcing Vulnerability</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>Credential Brute Forcing Vulnerability</DirectLink>
     <Author />
     <Priority />
     <Status />
