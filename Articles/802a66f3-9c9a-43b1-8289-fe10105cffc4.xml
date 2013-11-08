@@ -3,10 +3,12 @@
   <Metadata>
     <Id>802a66f3-9c9a-43b1-8289-fe10105cffc4</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Chosen Ciphertext Vulnerability</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>Chosen Ciphertext Vulnerability</DirectLink>
     <Author />
     <Priority />
     <Status />
