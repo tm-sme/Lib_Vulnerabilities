@@ -3,10 +3,12 @@
   <Metadata>
     <Id>86c2e5c1-83f4-46a7-abba-f28fcea8a323</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>AJAX Injection</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>AJAX Injection</DirectLink>
     <Author />
     <Priority />
     <Status />
