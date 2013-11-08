@@ -20,6 +20,10 @@ A lockout policy is used during authentication to prevent attackers from attempt
 
 This attack is especially powerful if the attacker can guess a large number of usernames or account numbers for a scripted attack on many users.
 
+Weak implementation or configuration of the lockout policy. A weak policy could have any of the following characteristics: Invalid login attempt limit too low. Low or no timeout between login attempts. No incremental timeout between unsuccessful login attempts.
+
+Valid username disclosure <ul><li>This could be a result of an Information Disclosure Vulnerability where an attacker can tell the distinction between a non-existent username and a bad password.
+
 =Impact=
 
 Results in a Denial-of-Service for the users whose accounts have been locked out.
