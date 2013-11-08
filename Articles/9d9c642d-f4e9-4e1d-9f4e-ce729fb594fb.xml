@@ -3,10 +3,12 @@
   <Metadata>
     <Id>9d9c642d-f4e9-4e1d-9f4e-ce729fb594fb</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>HTTP Replay Vulnerability</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>HTTP Replay Vulnerability</DirectLink>
     <Author />
     <Priority />
     <Status />
