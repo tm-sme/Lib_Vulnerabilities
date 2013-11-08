@@ -22,6 +22,7 @@ This attack is especially powerful if the attacker can guess a large number of u
 
 =Impact=
 
+Results in a Denial-of-Service for the users whose accounts have been locked out.
 
 =Countermeasures=
 
