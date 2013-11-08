@@ -3,10 +3,12 @@
   <Metadata>
     <Id>4afcccf5-5593-4bc7-90e4-2a0c1da71f9d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>DNS Cache Poisoning</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>DNS Cache Poisoning</DirectLink>
     <Author />
     <Priority />
     <Status />
