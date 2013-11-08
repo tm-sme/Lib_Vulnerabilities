@@ -13,7 +13,18 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[=Description=
+
+
+=Impact=
+
+
+=Countermeasures=
+
+
+=Application Check=
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
