@@ -4,12 +4,12 @@
     <Id>b29a1f85-4dfa-4a3d-ae2b-79688d3fb131</Id>
     <Id_History>00000000-0000-0000-0000-0000004be9ad,</Id_History>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>File Canonicalization</Title>
+    <Title>File Canonicalization Vulnerability</Title>
     <Category>Canonicalization</Category>
     <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
-    <DirectLink>File Canonicalization</DirectLink>
+    <DirectLink>File Canonicalization Vulnerability</DirectLink>
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description
