@@ -3,10 +3,12 @@
   <Metadata>
     <Id>88cca0ca-ffd9-4b11-8d1f-dd84f882c789</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Integer Underflow</Title>
     <Category />
+    <Phase />
     <Technology />
     <Type />
+    <DirectLink>Integer Underflow</DirectLink>
     <Author />
     <Priority />
     <Status />
