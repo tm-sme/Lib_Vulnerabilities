@@ -16,12 +16,31 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+The issue of repudiation is concerned with a user denying that he or she performed an action or initiated a transaction. You need defense mechanisms in place to ensure that all user activity can be tracked and recorded. These mechanisms are a key to defending against the insider threat problem.
 
 =Impact=
 
+Actions, possibly malicious, by an authorized user that can not be traced back to a particular user
+
+Increased insider threat
 
 =Countermeasures=
 
+Determine what actions in the system require protection against repudiation. Consider creating a threat model to help with this process.
+
+Disable anonymous access and authenticate every principle.
+
+Consider using a more granular authorization model in order to produce precise logs at all tiers.
+
+Log actions to identify the user's identity, the action performed, the time, and the component or interface involved (who, what where, when) while not capturing any sensitive data in logs (e.g., SSN, CC's, passwords, etc.).
+
+Enable logging to an object with append-only permissions from the application.
+
+Ensure that logs can be easily correlated across the application if multiple layers or logs are involved, and consider performing the correlation automatically for larger applications. 
+
+Ensure that logs are kept at all relevant levels in the application for sensitive operations.
+
+Establish a policy to review logs for anomalies.
 
 =Application Check=
 
