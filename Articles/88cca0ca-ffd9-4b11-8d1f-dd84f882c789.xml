@@ -16,12 +16,35 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+An integer underflow occurs when an integer is decremented under the limit that the data type can hold. The most common result of an integer underflow is that instead of the resulting value becoming smaller, the data structure "wraps" and becomes as large as the data type can hold.
+
+Improper arithmetic
+
+Failure to validate integer input
+
+Integer calculations or assignments used to determine the size of a buffer
+
+Insufficient bounds checking and failure to consider sign
+
+Program logic that makes assumptions about the value of integers
 
 =Impact=
 
+Denial of Service: Most often the integer underflow will cause the application to crash, after a memory address dereference.
+
+Data Corruption: If the result is used in a file read or write operation the application may read or write from the wrong place in disk or memory, resulting in corruption.
+
+Remote Code Execution: In some cases remote code may be executed if the calculated result is used for memory management or indexing into a buffer.
 
 =Countermeasures=
 
+Arithmetic checking: Always ensure that when subtracting two numbers the result is smaller than either operands. Take extra care when performing arithmetic operations with values near the maximum or minimum of the data type.
+
+Use a language or framework that does integer checking: Frameworks like .net and java can be set to automatically check for integer overflows and underflows. (e.g. CheckForOverflowUnderflow in C# and RemoveIntegerChecks in VB.NET.)
+
+Validate input: Always check the untrusted input for upper and lower limits and sign
+
+Verify Logic: Ensure that all integer logic will operate appropriately for the accepted limits, in all cases.
 
 =Application Check=
 
