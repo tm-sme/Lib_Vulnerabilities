@@ -16,12 +16,25 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+By closely monitoring the amount of time it takes certain cryptosystems to execute certain private key an attacker may be able to discern information about the algorithm being used, find fixed Diffie-Hellman exponents, factor RSA keys and break other cryptosystems. Additionally, some protocols may leak security relevant information in other ways. For instance, if one is checking a list of users, some of whom are authenticated locally, and some of whom have extra privilege and are authenticated against a remote authentication server, an attacker will be able to determine which accounts have extra privilege by recording how long the system takes to check a password.
+
+Timing analysis can also be used to discern information about other network interactions. For example by analyzing the frequency of packets being sent over the network during an SSH interactive session it may be possible to deduce the length of a user’s password because SSH transmits a message after every keystroke. 
 
 =Impact=
 
+Information disclosure
+
+Ability to recover private key information
+
+Ability to discover information about the quality of information being sent over the network
 
 =Countermeasures=
 
+Using a cryptographic implementation that takes constant time no matter what the input.
+
+Introduce a randomization factor in the transmission of sensitive data.
+
+Bundle sensitive information transmissions together.
 
 =Application Check=
 
