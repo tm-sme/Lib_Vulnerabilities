@@ -16,11 +16,36 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Brute forcing credentials requires the attacker to try to log in to the application using every username and password; however, there are a number of tools and techniques the attacker can use to quicken or automate the process.
+
+Brute force attacks are divided into two categories, online and offline brute force attacks. With online attacks, the attacker is actively submitting each attempted credential to the application under attack. Online attacks are generally very easy to detect, assuming a large number of attempts are needed, and can be largely prevented by throttling the rate at which new authentication requests can be made. Offline attacks are much more difficult to prevent; if an attacker can gain access to some resource, such as a piece of encrypted data, there is little that the system can do to prevent them from attempting to decrypt it. That said, many offline attacks require significantly more computation on the part of the attacker.
+
+The first line of defense, and the first place attackers start, is the strength of the password or passphrase in question. There has been a large amount of research into the kinds of weak passwords which users tend to choose. Consequently, attackers have access to large lists of potential passwords, sorted in rough probability order. This can make brute force attacks much easier by allowing them to try the most likely entries first before they make an exhaustive search. For systems where the element being attacked is a key, not a passphrase, cryptographically strong randomness is critical to ensuring key strength, as is understanding what, if any, properties about a key can significantly weaken it for the algorithm in question.
+
+The next avenue of attack involves statistical analysis. Many authentication systems are much weaker than they intially appear to be, especially systems involving cryptography. Depending on the protocol, many things can leak information about the nature of the encrypted traffic, even the timing of keystrokes in interactive protocols. Analysis of these components can dramatically reduce the amount of effort required to brute force the system credentials. A good example of this is the WEP system initially used to secure 802.11 networks; an attacker can break this protocol by only collecting a few thousand encrypted packets and doing a relatively trivial set of computations on them. This has dropped by many orders of magnitude from the initial estimates of its security.
+
+Finally, rainbow tables can be used against systems that improperly protect passwords with a one-way hashing function.
 
 =Impact=
 
+Credential compromise
+
+Credential disclosure
+
+Information disclosure
 
 =Countermeasures=
+
+Use strong encryption and hashing algorithms: Research the current best practice for hashing algorithms, as it does change. Currently, AES or AES256 are good choices for symmetric encryption, 2048 bit RSA is a good choice for public key encryption, and SHA or SHA256 are good choices for a hashing algorithm. The strength of the algorithm required should be matched to the security profile of the application. Under no circumstances should you attempt to design your own algorithm; only standard implementations of well known, tested, and appropriately chosen modern algorithms should be used.
+
+Use well known security protocols: Use only known and tested protocols, like SSL, IPSec, and Kerberos when securing authentication data. Do not design your own protocol, as it is likely to have flaws you're not aware of.
+
+Hash plaintext credentials with salt: Salting a hash adds a value which is different for each password, thus forcing the attacker to attack each instance directly. If possible, keep the salt from the attacker, as this will greatly increase the amount of work required, even if they have access to the hashed data. A credential can either be hashed with a unique stored value every time it is set, or a combination of known values can be used, like the username, a unique identifier for the system or application, and the time the password was set. While a unique value is somewhat more secure, the primary issue is ensuring that the same credential will have different has values if used by multiple users or by the same user repeatedly or across systems.
+
+Throttle login attempts: When protecting against online brute force attacks, do not allow the attacker to repeatedly attempt to log in.
+
+Do not disclose data uneccessarily: Ensure that only users who absolutely must have access to it can obtain encrypted or hashed authentication data.
+
 
 
 =Application Check=
