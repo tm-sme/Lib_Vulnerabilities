@@ -16,12 +16,31 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Serialization is the process of saving the state of an object for later reconstruction. This enables applications to take objects from memory and send them to a disk, database, or across a network. Deserialization is the reverse process. Loading untrusted data into memory for direct use puts the application at risk of being placed in an insecure state or crashing. Many languages have built in serialization routines that do the heavy lifting for the programmer. They do not, however, protect the data integrity or prevent attackers from viewing sensitive information. Therefore, no serialized object should be considered safe for deserialization until rigorous validation and cryptographic countermeasures have been taken to prevent tampering.
+
+Failure to validate untrusted data during deserialization.
+
+Failure to cryptographically sign or encode data before serialization.
 
 =Impact=
 
+Untrusted data may not be well formatted and could lead to erroneous or non-terminating deserialization or crash.
+
+Serialization may expose sensitive information because it does not protect private fields by default.
+
+Trusting deserialized data without proper validation may lead to altered program logic or elevation of user privileges.
 
 =Countermeasures=
 
+Sign objects before serialization. Use a cryptographic library to sign data with a private key prior to serialization. This way the application can know when data has been changed and is therefore untrustworthy. This also provides authentication of the sender.
+
+Encrypt objects before serialization. Along with all the benefits of signing objects, correctly encrypting the entire object with an appropriate asymmetric cipher prevents untrusted users from examining the contents of the object as well.
+
+Populate new objects. Instead of using the generic object serialization routines, write your own custom routines for each class. When deserializing, populate a new object with the data the same way it was created by the application the first time. This ensures a known good state by using constructors and other initialization routines. It also makes it easier to validate each variable separately and is much safer than accepting an object as a whole. 
+
+Explicitly prevent serialization where appropriate. When private data should be protected by not serializing at all, explicitly overload the default serialization functionality to prevent it in the class any any class that inherits from it. 
+
+Make fields transient to prevent them for being serialized. Sometimes you may only have specific fields that should not be serialized. In this case prevent it by using the language specific keyword to make them transient.
 
 =Application Check=
 
