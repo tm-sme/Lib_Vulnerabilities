@@ -18,7 +18,7 @@
 
 Attackers attempt to create a denial of service situation by causing the application or device to cease responding to valid requests from users. The attacker can do this either by sending malicious input to the application or by utilizing application features to exploit a design flaw, which leads to a denial of service to legitimate users.
 
-Malicious input causes the application to either:<
+Malicious input causes the application to either:
 
 Process a single set of data indefinitely or enter a state of deadlock, thereby making the service too busy or unable to respond to other legitimate requests
 
