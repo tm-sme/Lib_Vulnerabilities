@@ -16,12 +16,23 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Format string attacks are a class of vulnerabilities that can be used to crash a program or to execute harmful code. If unfiltered user input is used as the format string parameter in C functions that perform formatting, such as <i>printf()</i>, an attacker can use the %s, %x, and other format tokens to print data either from the stack or sometimes from other memory locations. Arbitrary data can be written anywhere in memory using the %n format token, used to specify that the number of bytes formatted should be written to the supplied pointer argument. More stack manipulation is required, but this argument can be inserted as part of a format string attack.
 
 =Impact=
 
+Elevation of Privilege
+
+Read or Write sensitive information in memory
+
+Arbitrary code execution
 
 =Countermeasures=
 
+Hard code the format string
+
+Format strings should not contain any user controlled data.
+
+Use code scanners. Code scanners are effective at detecting format string vulnerabilities.
 
 =Application Check=
 
