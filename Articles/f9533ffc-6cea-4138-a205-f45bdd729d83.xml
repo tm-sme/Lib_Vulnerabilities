@@ -16,12 +16,19 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+By doubly encoding input, an attacker may be able to bypass security checks that are only decoded once. The singly decoded input will pass security checks and allow the malicious input to be passed to backend servers where it will be fully decoded and interpreted as input.
 
 =Impact=
 
+This attack is often used in conjunction with XSS or SQL injection to bypass security checks.
+
+By encoding '../' and variants, security checks may be bypassed and later interpreted by the server or file system allowing the attacker to access protected files.
 
 =Countermeasures=
 
+Constrain input: Use vigorous white-list style checking on any user input.
+
+Fully decode: Ensure all input is fully decoded using methods at the backend server before operating on received data.
 
 =Application Check=
 
