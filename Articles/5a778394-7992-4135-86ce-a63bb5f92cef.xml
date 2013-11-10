@@ -16,12 +16,25 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Traffic analysis is the process of intercepting and examining network traffic in order to deduce information from patterns in communication. It can be performed even when the traffic is encrypted and cannot be decrypted by the party performing the analysis. This usefulness of this type of an attack increases when a large amount of traffic can be observed, periodic traffic can be observed over time, or encrypted traffic can be correlated with plaintext traffic. The attacker then attempts to find patterns from the small segments of information that she has intercepted. In addition to more general analysis of statistical information about message length, headers, repeated patterns of communication, etc., careful analysis of the timing of transmissions is an important component of traffic analysis. Similar to other brute force attacks on cryptographic systems, timing information can leak information about the exact nature of computations being performed by one or both parties to the communication, which can greatly aid analysis.
+
+Both conducting traffic analysis attacks and protecting against it require a relatively high degree of sophistication. For most applications, simply being aware of the possibility of this attack is sufficient.
 
 =Impact=
 
+Disclosure about the identity of the communicating parties.
+
+Disclosure about the frequency of communication between two parties. 
+
+Disclosure about the volume of communication between two parties.
+
+Disclosure about (some) content of the communication.
+
+Disclosure about the protocols in use, which allows an attacker to determine possible attack vectors.
 
 =Countermeasures=
 
+Protocol design for protection against traffic analysis is a very complicated process, equivalent to designing cryptographic algorithms, and possibly more difficult. Applications requiring this level of secure communication should use an existing traffic-analysis resistent transport, like Tor, and take care to use it in ways which preserve its security properties.
 
 =Application Check=
 
