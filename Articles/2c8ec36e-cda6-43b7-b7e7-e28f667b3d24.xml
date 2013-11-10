@@ -16,12 +16,23 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+A dictionary attack is a technique for defeating weak authentication credentials using a precompiled list of common usernames and passwords. It relies on the fact that users tend to use weak passwords that can be easily remembered. Although similar to Brute-Force Attack, this technique performs faster as it exhausts only the common possibilities. The input set in a Dictionary Attack is limited only to words that could be derived from a dictionary; therefore the name of the attack.
+
+If the attacker has a large amount of time available and the application is not denying login attempts after a certain number of attempts the attacker may script login attempts using large lists of usernames and passwords. Username lists and common password lists are freely available from many websites.
 
 =Impact=
 
+Credential compromise 
 
 =Countermeasures=
 
+Enforce strong passwords: Applications should enforce strong passwords that would require users to construct their passwords using a larger input set. An example for stronger password requirements is:
+
+At least 8 characters long.
+
+Contains lower case letters, upper case letters, and numbers.
+
+The password is regularly changed by the user, eg. once every 3 months.
 
 =Application Check=
 
