@@ -16,12 +16,19 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+With a forceful browsing attack, the attacker gains access to a restricted page within a Web application by supplying a URL directly (forcing the URL) rather than by accessesing it by following links from other pages in the application. The intended workflow to get to the restricted page is through another page which authorizes the user to access the target page. This attack also allows attacker to gain access to resources to which no direct links exist.
 
 =Impact=
 
+Unauthorized access to Web site functionality.
 
 =Countermeasures=
 
+Every object needs to have an authorization control that authorizes access based on the identity of the authenticated principle requesting access.
+
+Access to all sensitive pages should require a valid authentication ticket.
+
+Pages which are intended to be part of a workflow should enforce that workflow.
 
 =Application Check=
 
