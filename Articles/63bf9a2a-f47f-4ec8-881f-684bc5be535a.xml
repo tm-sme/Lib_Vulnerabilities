@@ -16,12 +16,29 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Attackers can reverse weak passwords by generating large tables of hashed values. The tables, called ‘rainbow tables’ map the plaintext value to a hashed value so when the hacker discovers a table of usernames and hashed passwords a simple lookup is all that is necessary to discover the plaintext password. Rainbow tables are very expensive to create, often taking weeks or months to generate and consuming very large amounts of hard drive space. For this reason rainbow tables are usually not generated for each attack, but generated once and reused multiple times.
+
+Weak hashing algorithm: Many hashing algorithms have been cracked allowing for passwords to be recovered easily. Hashing algorithms that are not proven secure can be easily reversed, even if the attacker does not have the original source and therefore one should never attempt to write their own hashing algorithm.
+
+Lack of salt: A random value can be added to the plaintext of the passwords ensure that previously calculated rainbow tables cannot be used.
 
 =Impact=
 
+Credential compromise
+
+Information disclosure
 
 =Countermeasures=
 
+Use strong hashing algorithms: Research the current best practice for hashing algorithms, currently SHA256 is best practice.
+
+Encrypt the plaintext passwords with salt: Salt adds a random value to the password so previously calculated rainbow tables cannot be used. The salt must be stored to verify the challenge password. 
+
+Use only one way hashing algorithms: Using one way hashing algorithms will ensure proper use of the hash. Hash the challenge password and compare the calculated hash with the stored hash. This will minimize the amount of time the plaintext password is stored in memory.
+
+Create a password policy: Determine the level of password or passphrase strength required by your application and state it in policy. Ensure that the system enforces the policy automatically, to prevent users from accidentally or intentionally choosing weak passwords. 
+
+Require regular password changes: Regular password changes reduce the amount of time an account with a potentially weak password is exposed for, and they give an attack less time to attempt to crack the password.
 
 =Application Check=
 
