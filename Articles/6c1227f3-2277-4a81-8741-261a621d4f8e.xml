@@ -16,12 +16,25 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+Reflection is a programming technique provided by an API that let's you treat class definitions themselves as objects. It gives the programmer a way to view and modify class members such as constructors, methods, interfaces, and fields at runtime. This is often used for the of development tools such as class browsers or GUI designers. However, if untrusted user input is used to manipulate objects at runtime, injection is possible. Attackers may be able to view or modify which classes are used or even run arbitrary code.
+
+Failure to validate input
+
+Validation of a library based solely on the name 
+
+Loading libraries based on external input
 
 =Impact=
 
+Execution of arbitrary code
+
+Bypass of security controls
 
 =Countermeasures=
 
+Constrain input: Use vigorous whitelist style input checking of any input received from the user.
+
+Signed Certificates: Use strongly signed assemblies only, only load a class if it passes this check.
 
 =Application Check=
 
