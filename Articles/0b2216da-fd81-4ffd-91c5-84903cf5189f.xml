@@ -16,12 +16,27 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+HTTP Request Smuggling is a technique to take advantage of discrepancies in parsing when one or more HTTP devices are between the user and the web server. An attacker may be able to 'smuggle' malicious requests through a packet inspector, firewall or web proxy server. This technique may leave the web server vulnerable to various attacks such as web cache poisoning or allow the attacker to request protected files on the web server.
+
+Web Server, packet inspector, firewall, or web proxy server misconfiguration.
 
 =Impact=
 
+Cache Poisoning: An attacker may be able to ‘rewire’ a web server cache so that one page is served when another is requested.
+
+Malicious Requests: An attacker may be able to smuggle a malicious request through a packet inspector, web proxy server or firewall because of discrepancies in security rules between it and the web server 
+
+Credential Hijacking: An attacker may be able to insert a request into the HTTP flow thereby manipulating the web server’s request/response sequencing which can allow the attacker to hijack a third party’s credentials.
 
 =Countermeasures=
 
+Deploy a non-vulnerable web server - Web servers with a very strict HTTP parsing procedure may not be vulnerable to this attack.
+
+Change all pages to non-cacheable - This will force the proxy to retrieve the pages from the web server every time. Although from a security perspective this is better, the reality is that caching significantly improves the servers performance and reduces latency. This makes other countermeasures a better long term fix.
+
+Rewrite all HTTP requests - Install a module on a firewall or proxy server to rewrite each HTTP request on the fly to a known valid request type.
+
+Update your web server - Contact the web server vendor and check if there has been a patch released for a this type of vulnerability.
 
 =Application Check=
 
