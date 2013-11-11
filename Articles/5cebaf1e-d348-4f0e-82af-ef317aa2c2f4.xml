@@ -16,9 +16,27 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+An XML injection vulnerability will allow an attacker to insert malicious data into XML which resides on the server. Depending on the type of XML parser used (SAX or DOM), this malicious data could be used to either overwrite the values in previous nodes or cause the XML parser to consume an excessive amount of memory on the server.
+
+Dynamic XML generation using untrusted input
+
+Incorrectly defined schema 
+
+Lack of schema validation 
+
+Failure to validate input and properly encode any dangerous meta characters according to the context
 
 =Impact=
 
+Modification of previous node values in the XML
+
+Denial of Service on the server 
+
+Exposure of entire XML document to unauthorized users. 
+
+Addition of new nodes or even entire documents.
+
+Addition of new nodes or even entire documents.
 
 =Countermeasures=
 
