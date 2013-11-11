@@ -16,12 +16,29 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+In the session prediction attack the malicious user will attempt to discern the method used to create new session IDs for past, current or future sessions. If a session ID can be guessed the attacker can piggyback on the credentials of an authenticated user and masquerade as that user.
+
+Poor or predictable session identifiers - using a small ID space increases the likelihood that IDs will have to be reused and increases the probability of successful session ID guessing
+
+Long session timeouts - if sessions do not expire or take a very long time to expire an attacker has more time to guess or use sniffed session IDs 
+
+Insecure communications channel - using insecure communication channels will allow an attacker to sniff valid session IDs in real time
 
 =Impact=
 
+Elevation of privilege: Session hijacking allows the attacker to act as the user whose session was hijacked.
 
 =Countermeasures=
 
+Use strong random numbers for session identifiers - using a cryptographically secure random number (e.g., GUIDs) generator for session IDs will ensure that the session ID cannot be predicted 
+
+Use a large ID space - this will ensure session IDs are not repeated as often
+
+Use small session timeout windows - if the timeout window is very small the session may have expired by the time the attacker can guess or sniff a valid session ID.
+
+Use a secure communication channel - if the communication channel is secure, the attacker will have less data to guess the session ID with, and the possibility of them simply sniffing the session identifier is eliminated.
+
+Do not reuse session identifiers - Do not reuse session IDs for the same user, assign a new cryptographically random session ID upon every successful login.
 
 =Application Check=
 
