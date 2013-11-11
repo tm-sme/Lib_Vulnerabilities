@@ -16,12 +16,35 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
 
+An attacker may be able to stop an application from responding or to cause it to use unintended resources through a race condition. By getting between the time a developer checks for the availability of a resource and when it is used the attacker may be able to change something about that resource to cause the application to behave unexpectedly. All external resources that do not automatically handle multiple users, processes or threads could be vulnerable to this type of attack. The term originates from two or more signals or processes racing to change or influence the output before the others.
+
+When waiting for a resource to become available multiple threads may use a semaphore or key to specify which thread can access the resource, if the semaphore is not set properly or the key is dropped all threads may be set to a waiting state while no thread is actually using the resource. Alternately if multiple threads attempt to use the same resource at the same time the resource may halt, crash, or corrupt data.
+
+An attacker may also be able to redirect an application to another resource if the time between check and use is sufficient. See example section for an example.
+
+Waiting longer than necessary to use a resource after checking
+
+Not using transactions
+
+Improper key or semaphore use
 
 =Impact=
 
+Denial of Service: If an attacker can make a resource unavailable after the application checks for the resource and before the application uses it the application may crash or hang while it waits for the resource to become available.
+
+Escalation of privilege: An attacker may be able to redirect a user from a resource she has access to, to a resource she does not have access to by replacing the resource with a symbolic link.
 
 =Countermeasures=
 
+Ensure proper privilege: Make sure your application uses proper privileges when dealing with resources
+
+Ensure exclusive rights: Make sure your application or thread properly locks the resource before it uses it.
+
+Use resource immediately after checking: Minimize the amount of time between check and use by placing use code immediately after checking code. Use atomic versions of resource manipulation if possible. Ensure that the resource is checked every time the resource is used.
+
+Use transactions when possible: Transactions allow you to ensure the transaction is completed before committing; if a resource changes or becomes unavailable before the transaction is complete you can roll back the changes, preparing the resource for another transaction 
+
+Test key or semaphore use thoroughly: Locking resources is difficult to do, ensure it is properly tested before release.
 
 =Application Check=
 
