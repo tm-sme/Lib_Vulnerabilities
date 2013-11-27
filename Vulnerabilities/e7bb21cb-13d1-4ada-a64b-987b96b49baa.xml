@@ -49,6 +49,12 @@ Sensitive data is not stored in user accessible parameters:
 Strong session identifiers are used:
 * [[da9827ed-e835-49a8-b6d0-7feee8cb5a09|Strong Session IDs Are Used]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering]]></Data>
