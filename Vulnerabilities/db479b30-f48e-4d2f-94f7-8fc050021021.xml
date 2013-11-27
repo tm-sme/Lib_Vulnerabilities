@@ -43,6 +43,12 @@ Platform-provided session management is used:
 Sensitive data is not stored in user accessible parameters:
 * [[4436e342-64d9-4b1b-ae9b-3e00696053fb|Security Decisions Are Not Made Based on Client-Accessible Parameters]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering]]></Data>
