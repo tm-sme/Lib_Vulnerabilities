@@ -53,13 +53,13 @@ Users are required to re-authenticate for sensitive operations:
 
 =Computer Based Training Links=
 
-Use the following Computer Based Training courses to learn more about Cross-Site Request Forgery including techniques for remediation and prevention.
+Use the following Computer Based Training course(s) to learn more about Cross-Site Request Forgery including techniques for remediation and prevention.
 
 ==Creating Secure Code – JRE Foundations==
 
 In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
 
-For more information about Cross-Site Request Forgery in Java applications, see screens 40-45 in [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615|COD 211 Creating Secure Code – JRE Foundations]].
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615|COD 211 Creating Secure Code – JRE Foundations]].
 
 //Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 
