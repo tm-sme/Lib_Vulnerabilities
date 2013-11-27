@@ -70,11 +70,11 @@ Software development is about creating functionality, features, and performance 
 
 [[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123386|DES 311 Creating Secure Application Architecture]]
 
-==Creating Secure ASP.NET Code==
+==Creating Secure J2EE Code==
 
-This in-depth course examines the development of secure Web applications in ASP.Net. It provides developers and testers with an overview of common Web application vulnerabilities and a set of nine best practices and techniques to follow in order to avoid them. Throughout the course, students are provided with interactive games and simulations designed to reinforce the secure design and coding concepts that were introduced.
+This course introduces and explains the precautionary measures you can use to avoid Web software security vulnerabilities, such as data leakage attacks, client/server protocol manipulation, injection attacks, and exploiting authentication.  At the end of this course, you will have learned about time-tested defensive coding principles and how to use them to increase the security of your application, and prevent common security vulnerabilities.
 
-[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123389|COD 311 Creating Secure ASP.NET Code]]
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123401|COD 313 Creating Secure J2EE Code]]
 
 //Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 
