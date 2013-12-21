@@ -3,10 +3,12 @@
   <Metadata>
     <Id>a749782c-1f6b-4020-aea3-77046fabf428</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Double Free</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>C++</Technology>
     <Type />
+    <DirectLink>Double Free</DirectLink>
     <Author />
     <Priority />
     <Status />
