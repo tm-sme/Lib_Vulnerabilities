@@ -3,10 +3,12 @@
   <Metadata>
     <Id>7cd2af83-de04-47ac-992c-945642fa579d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Weak Cryptographic Hash</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>ASP.NET 4.0</Technology>
     <Type />
+    <DirectLink>Weak Cryptographic Hash</DirectLink>
     <Author />
     <Priority />
     <Status />
