@@ -3,10 +3,12 @@
   <Metadata>
     <Id>26bf5ca8-ab99-4a82-9d15-9094a2af4ac2</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Path Traversal</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>C++</Technology>
     <Type />
+    <DirectLink>Path Traversal</DirectLink>
     <Author />
     <Priority />
     <Status />
