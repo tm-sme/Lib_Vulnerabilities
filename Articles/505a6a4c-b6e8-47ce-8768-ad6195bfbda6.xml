@@ -3,10 +3,12 @@
   <Metadata>
     <Id>505a6a4c-b6e8-47ce-8768-ad6195bfbda6</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insecure Randomness</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>PHP</Technology>
     <Type />
+    <DirectLink>Insecure Randomness</DirectLink>
     <Author />
     <Priority />
     <Status />
