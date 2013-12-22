@@ -3,10 +3,12 @@
   <Metadata>
     <Id>87c49e4c-3c24-4925-aef9-c1333ecea6fe</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>XPath Injection</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>PHP</Technology>
     <Type />
+    <DirectLink>XPath Injection</DirectLink>
     <Author />
     <Priority />
     <Status />
