@@ -28,7 +28,7 @@ System information leaks can be used by attackers to exploit other vulnerabiliti
 To prevent system information leaks, be sure to handle all errors, use simple error messages, and disable platform banners. 
 
 =Application Check=
-To verify that system information leaks are prevented, verify that all errors are handled, simple error messages are used, and platform banners are disabled.
+To check for adequate protection against system information leaks, verify that all errors are handled, simple error messages are used, and platform banners are disabled.
 
 ]]></Data>
   </Content>
