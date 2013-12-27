@@ -28,12 +28,7 @@ The exact impact of cookie security issues depends on the kind of data stored in
 To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over SSL/TLS, set strict domain and path values, and ensure that sensitive cookies are not  persistent.
 
 =Application Check=
-To check for adequate protection against cookie security vulnerabilities, verify the following for sensitive cookies:
-*The HTTPOnly flag is set.
-*The Secure flag is set.
-*Sensitive cookies are sent only over SSL/TLS.
-*Strict domain and path values are set.
-*Sensitive cookies are not persistent.
+To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over SSL/TLS, strict domain and path values are set, and sensitive cookies are not persistent.
 
 
 \\
