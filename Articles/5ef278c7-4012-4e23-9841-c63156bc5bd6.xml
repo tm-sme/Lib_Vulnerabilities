@@ -34,7 +34,7 @@ To prevent this problem:
 *Use parameterized APIs for database access. 
 
 =Application Check=
-To check for adequate protection against this vulnerability, verify that:
+To check for adequate protection against this vulnerability, verify the following:
 *All input is validated.
 *Parameterized APIs are used for database access.]]></Data>
   </Content>
