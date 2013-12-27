@@ -44,8 +44,8 @@ To prevent buffer overflows:
 
 =Application Check=
 To check for adequate protection against buffer overflows, verify that:
-*All input is validated
-*The sizes of data and target buffers are validated before copying*
+*All input is validated.
+*The sizes of data and target buffers are validated before copying.
 *Dangerous APIs are not used.
 
 
