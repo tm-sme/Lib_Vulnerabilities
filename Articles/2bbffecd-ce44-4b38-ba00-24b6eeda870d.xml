@@ -29,16 +29,10 @@ Another likely scenario is using format string exploits against remote network s
 Real-world format string vulnerability exploitation is mostly focused on Linux and UNIX style operating systems. Thanks to highly effective automated code analysis tools, format string vulnerabilities are somewhat rare in popular applications.
 
 =Countermeasures=
-To prevent format string vulnerabilities:
-*Don't use functions with format string parameters.
-*Don’t hard-code format strings.
-*Don't allow users to manipulate format strings.
+To prevent format string vulnerabilities, don't use functions with format string parameters, don’t hard-code format strings, and don't allow users to manipulate format strings.
 
 =Application Check=
-To check for adequate protection against this vulnerability, verify the following:
-*Functions with format string parameters are not used.
-*Format strings are not hard-coded.
-*Users cannot manipulate format strings.
+To check for adequate protection against this vulnerability, verify that functions with format string parameters are not used, format strings are not hard-coded, and users cannot manipulate format strings.
 ]]></Data>
   </Content>
 </TeamMentor_Article>
