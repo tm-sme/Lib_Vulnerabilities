@@ -43,10 +43,10 @@ To prevent buffer overflows, validate all input, validate the sizes of data and 
 To check for adequate protection against buffer overflows, verify that all input is validated, that the sizes of data and target buffers are validated before copying, and that dangerous APIs are not used.
 
 
-Buffer Overflow /
-Buffer Overflow: Format String /
-Buffer Overflow: Format String (%f/%F) /
-Buffer Overflow: Off-by-One /
-Buffer Overflow: Signed Comparison /]]></Data>
+Buffer Overflow \\
+Buffer Overflow: Format String \\
+Buffer Overflow: Format String (%f/%F) \\
+Buffer Overflow: Off-by-One \\
+Buffer Overflow: Signed Comparison \\]]></Data>
   </Content>
 </TeamMentor_Article>
