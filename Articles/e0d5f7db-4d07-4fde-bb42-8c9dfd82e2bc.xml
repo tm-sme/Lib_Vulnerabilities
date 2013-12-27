@@ -37,6 +37,7 @@ To check for adequate protection against path manipulation vulnerabilities, veri
 *All file path and name input is canonicalized.
 *All input is validated.
 *Access control checks are performed for all filesystem access.
+*Reference maps are used to access objects.
 *Directory browsing is disabled. 
 
 
