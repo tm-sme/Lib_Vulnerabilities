@@ -21,15 +21,10 @@ XQuery injection vulnerabilities occur when untrusted data is concatenated into 
 XQuery injection allows the attacker to execute arbitrary XQuery queries. XQuery injection attacks may allow an attacker to retrieve, manipulate, or destroy data stored in XML documents. The exact impact depends on the type of XML data that is exposed via XQuery injection. If authentication data is exposed, the attacker is able to take over any user account. By taking over the administrator's account, the attacker is able to take full control of the application. 
 
 =Countermeasures=
-To prevent this vulnerability:
-
-*Validate all input.
-*Use parameterized APIs if possible.  
+To prevent this vulnerability, validate all input, and use parameterized APIs if possible.  
 
 =Application Check=
-To check for adequate protection against this vulnerability:
-*Find all code that uses XQuery queries and make sure it does not include unvalidated user input.
-*Verify that parameterized APIs are used when possible.
+To check for adequate protection against this vulnerability, find all code that uses XQuery queries and make sure it does not include unvalidated user input, and verify that parameterized APIs are used when possible.
 ]]></Data>
   </Content>
 </TeamMentor_Article>
