@@ -28,7 +28,7 @@ Another attack vector is remote server-side exploitation, where the exploit is e
 To prevent use after free vulnerabilities, write code in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
 
 =Application Check=
-To check for adequate protection against these vulnerabilities, verify that code is written in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
+To check for adequate protection against use after free vulnerabilities, verify that code is written in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
 ]]></Data>
   </Content>
 </TeamMentor_Article>
