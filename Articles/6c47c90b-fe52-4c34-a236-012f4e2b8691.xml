@@ -27,14 +27,10 @@ If the document produced by applying the stylesheet is interpreted as code by th
 A real attacker would almost certainly choose cross-site scripting as the method to exploit XSLT injection. If XSLT injection is present in authentication code, which is impractical and therefore highly unlikely, the attacker might abuse this vulnerability to bypass authentication. Otherwise, there are few real scenarios where the attacker would want to manipulate the output of the XSLT parser for purposes other than cross-site scripting. The cross-site scripting exploit can be used to steal user's session identifiers, redirect them to other sites, and perform actions on the user's behalf in applications where the user is authenticated.
 
 =Countermeasures=
-To prevent XSLT injection vulnerabilities:
-*Validate all data.
-*Don't concatenate user data into XSL stylesheets.
+To prevent XSLT injection vulnerabilities, validate all data, and don't concatenate user data into XSL stylesheets.
 
 =Application Check=
-To check for adequate protection against XSLT injection vulnerabilities, verify that:
-*All data is validated.
-*User data is not concatenated into XSL stylesheets.
+To check for adequate protection against XSLT injection vulnerabilities, verify that all data is validated, and that user data is not concatenated into XSL stylesheets.
 
 \\
 http://php.net/manual/en/xsltprocessor.registerphpfunctions.php\\
