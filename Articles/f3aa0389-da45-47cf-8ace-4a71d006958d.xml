@@ -14,6 +14,45 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[=Description=
+Cookie security issues occur when all the measures available for protecting cookies are not fully taken advantage of. Measures that can be used to protect cookies are listed below, in the **Countermeasures** section of this article. 
+
+Cookies that contain session identifiers have to be treated with extra caution, because if the session identifiers are compromised, an attacker will be able to hijack user sessions. 
+
+Cookie security issues affect all web applications that use cookies.
+
+=Impact=
+The exact impact of cookie security issues depends on the kind of data stored in the vulnerable cookie and the manner in which it is exposed. The most common serious cookie security issues are exposing session identifiers to cross-site scripting or man-in-the-middle attacks. Once the attacker has compromised the session identifier, he can impersonate the authenticated user to the application and perform any actions that don't require re-authentication on behalf of that user. The exact actions that are available are different for different applications, but, for non-privileged users, the impact will typically be limited to some mischief. If the compromised user has administrative privileges, the attacker might be able to upload malicious code to the web server and execute it with the privileges of the web server. If the attacker is able to execute arbitrary application code, they will have full control of the application and its data, and have the ability to abuse the web server.
+
+=Countermeasures=
+To protect sensitive cookies:
+*Set the HTTPOnly flag.
+*Set the Secure flag.
+*Send cookies only over SSL/TLS.
+*Set strict domain and path values.
+*Sensitive cookies should not be persistent.
+
+=Application Check=
+To check for adequate protection against cookie security vulnerabilities, verify that sensitive cookies:
+*Have the HTTPOnly flag set.
+*Have the Secure flag set.
+*Are sent only over SSL/TLS.
+*Have strict domain and path values,
+*Are not persistent.
+
+
+\\
+Cookie Security: HTTPOnly not Set on Session Cookie \\
+Cookie Security: Persistent Session Cookie \\
+Cookie Security: Session Cookie not Sent Over SSL \\
+Cookie Security: Cookie not Sent Over SSL\\
+Cookie Security: HTTPOnly not Set \\
+Cookie Security: HTTPOnly not Set on Session Cookie \\
+Cookie Security: Overly Broad Domain \\
+Cookie Security: Overly Broad Session Cookie Domain \\
+Cookie Security: Overly Broad Session Cookie Path \\
+Cookie Security: Persistent Cookie \\
+Cookie Security: Persistent Session Cookie \\
+Cookie Security: Session Cookie not Sent Over SSL\\]]></Data>
   </Content>
 </TeamMentor_Article>
