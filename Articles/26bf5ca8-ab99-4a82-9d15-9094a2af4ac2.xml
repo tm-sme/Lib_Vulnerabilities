@@ -23,16 +23,10 @@ Path traversal vulnerabilities typically affect web applications.
 Using path traversal, an attacker is able to access files outside of the scope intended by the application. The attacker may then access sensitive operating system files, and application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered to take full control of the application or the application server.
 
 =Countermeasures=
-To prevent path traversal vulnerabilities:
-*Canonicalize all file paths and name input.
-*Validate all input.
-*Perform access control checks for all filesystem access.
+To prevent path traversal vulnerabilities, canonicalize all file paths and name input, validate all input, and perform access control checks for all filesystem access.
 
 =Application Check=
-To check for adequate protection against path traversal vulnerabilities, verify the following:
-*All file path and name input is canonicalized.
-*All input is validated.
-*Access control checks are performed for all filesystem access.
+To check for adequate protection against path traversal vulnerabilities, verify that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.
 ]]></Data>
   </Content>
 </TeamMentor_Article>
