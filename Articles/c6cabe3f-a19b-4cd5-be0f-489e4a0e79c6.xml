@@ -15,7 +15,7 @@
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
-Applications often execute external commands as a part of their functionality. If an attacker  is able to manipulate the choice of external commands or their parameters, he may be able to use this functionality to execute arbitrary commands. If he succeeds, he is typically able to take over the application and possibly take over the entire system. 
+Applications often execute external commands as part of their functionality. If an attacker is able to manipulate the choice of external commands or their parameters, he may be able to use this functionality to execute arbitrary commands. If he succeeds, he is typically able to take over the application and possibly take over the entire system. 
 
 All applications that use external applications are affected by command injection vulnerabilities. Web applications are especially at risk, because they are exposed to the Internet. 
 
@@ -25,10 +25,16 @@ Command injection allows an attacker to execute arbitrary commands. Using this v
 A command injection vulnerability acts as a virtual backdoor for an attacker to use the application and the server for his purposes. Any data that may be stored by or accessed by the application can also be compromised. 
 
 =Countermeasures=
-To prevent command injection vulnerabilities, validate all input, use parameterized APIs to execute external commands if such APIs are available, and avoid using external commands if possible. 
+To prevent command injection vulnerabilities:
+*Validate all input.
+*Use parameterized APIs to execute external commands if such APIs are available.
+*Avoid using external commands if possible. 
 
 =Application Check=
-To check for adequate protection against this vulnerability, ensure that all input is validated, parameterized APIs are used, and external commands are avoided. 
+To check for adequate protection against this vulnerability, verify the following:
+*All input is validated.
+*Parameterized APIs are used.
+*Use of external commands is avoided. 
 ]]></Data>
   </Content>
 </TeamMentor_Article>
