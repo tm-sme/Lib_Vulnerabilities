@@ -34,7 +34,7 @@ To prevent command injection vulnerabilities:
 To check for adequate protection against this vulnerability, verify the following:
 *All input is validated.
 *Parameterized APIs are used.
-*Use of external commands is avoided. 
+*Use of external commands is avoided when possible. 
 ]]></Data>
   </Content>
 </TeamMentor_Article>
