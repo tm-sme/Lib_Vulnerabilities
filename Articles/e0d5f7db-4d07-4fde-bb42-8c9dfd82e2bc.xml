@@ -24,21 +24,11 @@ Using path traversal, an attacker is able to access files outside of the scope i
 
 =Countermeasures=
 
-To prevent path manipulation vulnerabilities:
-*Canonicalize all file path and name input.
-*Validate all input.
-*Perform access control checks for any filesystem access.
-*Use reference maps to access objects.
-*Disable directory browsing. 
+To prevent path manipulation vulnerabilities, canonicalize all file path and name input, validate all input, perform access control checks for any filesystem access, use reference maps to access objects, and disable directory browsing. 
 
 =Application Check=
 
-To check for adequate protection against path manipulation vulnerabilities, verify the following:
-*All file path and name input is canonicalized.
-*All input is validated.
-*Access control checks are performed for all filesystem access.
-*Reference maps are used to access objects.
-*Directory browsing is disabled. 
+To check for adequate protection against path manipulation vulnerabilities, verify that all file path and name input is canonicalized, all input is validated, access control checks are performed for all filesystem access, reference maps are used to access objects, and directory browsing is disabled. 
 
 
 ]]></Data>
