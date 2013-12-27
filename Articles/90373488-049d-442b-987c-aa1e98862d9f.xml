@@ -25,16 +25,10 @@ The impact of using weak encryption is that the attacker will be able to recover
 There is a broad range of possible attack scenarios that involve weak encryption, but in practice, the most common cases of weak encryption are also the most trivial. Many applications use algorithms that are not even meant to be used for encryption, such as XOR, ROT-13 and base64_encode to obfuscate data. To make things worse, that data is often placed in a location accessible by the attacker. In such cases, the attacker will be able to easily recover the obfuscated data. 
 
 =Countermeasures=
-To prevent weak encryption issues:
-*Use strong cryptographic algorithms correctly.
-*Use strong encryption keys.
-*Protect the encryption keys.
+To prevent weak encryption issues, use strong cryptographic algorithms correctly, use strong encryption keys, and protect the encryption keys.
 
 =Application Check=
-To ensure that strong encryption is used, verify the following:
-*Strong cryptographic algorithms are used, and are used correctly.
-*Strong encryption keys are used.
-*Encryption keys are protected.
+To ensure that strong encryption is used, verify that strong cryptographic algorithms are used correctly, strong encryption keys are used, and encryption keys are protected.
 
 \\
 Weak Encryption \\
