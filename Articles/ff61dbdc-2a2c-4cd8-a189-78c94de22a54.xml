@@ -14,9 +14,7 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[File Upload
-
-=Description=
+    <Data><![CDATA[=Description=
 File upload vulnerabilities allow attackers to upload malicious code. (Technically, allowing users to upload anything that the application's design doesn't account for can be considered a file upload vulnerability. In practice, real file upload vulnerabilities are those that allow attackers to upload and execute malicious code.) 
 
 The principle of Web Applications is that application files are executed as code when they are accessed via the Web server. If an attacker can upload his own application files and execute them by accessing them via the Web server, he can compromise the application. File upload vulnerabilities occur when the application allows users to upload files to Web accessible locations without placing sufficient restrictions on the kinds of files that can be uploaded. 
