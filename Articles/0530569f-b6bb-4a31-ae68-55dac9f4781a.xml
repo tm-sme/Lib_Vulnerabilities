@@ -43,7 +43,7 @@ To prevent buffer overflows:
 *Avoid dangerous APIs.
 
 =Application Check=
-To check for adequate protection against buffer overflows, verify that:
+To check for adequate protection against buffer overflows, verify the following:
 *All input is validated.
 *The sizes of data and target buffers are validated before copying.
 *Dangerous APIs are not used.
