@@ -28,8 +28,7 @@ To prevent this problem:
 *Validate all input.
 *Perform access control checks for all filesystem access.
 
-
-==Application Check=
+=Application Check=
 To check for adequate protection against this vulnerability, verify the following:
 *All file path and name input is canonicalized.
 *All input is validated.
