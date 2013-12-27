@@ -37,16 +37,10 @@ The impact of buffer overflow vulnerabilities might be mitigated by measures bui
 The notoriety of buffer overflows and their extreme potential danger resulted in defenses being placed against it into most common operating systems. Combined with other security measures, such as improved network periphery defenses and increased popularity of managed languages, buffer overflows have become significantly less common. Let's not make any new ones. Follow the instructions below to prevent buffer overflows.
 
 =Countermeasures=
-To prevent buffer overflows:
-*Validate all input. 
-*Validate the sizes of data and the buffer before copying.
-*Avoid dangerous APIs.
+To prevent buffer overflows, validate all input, validate the sizes of data and the buffer before copying, and avoid dangerous APIs.
 
 =Application Check=
-To check for adequate protection against buffer overflows, verify the following:
-*All input is validated.
-*The sizes of data and target buffers are validated before copying.
-*Dangerous APIs are not used.
+To check for adequate protection against buffer overflows, verify that all input is validated, the sizes of data and target buffers are validated before copying, and dangerous APIs are not used.
 
 
 \\
