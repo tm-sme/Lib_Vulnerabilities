@@ -33,12 +33,12 @@ To protect sensitive cookies:
 *Sensitive cookies should not be persistent.
 
 =Application Check=
-To check for adequate protection against cookie security vulnerabilities, verify that sensitive cookies:
-*Have the HTTPOnly flag set.
-*Have the Secure flag set.
-*Are sent only over SSL/TLS.
-*Have strict domain and path values,
-*Are not persistent.
+To check for adequate protection against cookie security vulnerabilities, verify the following for sensitive cookies:
+*The HTTPOnly flag is set.
+*The Secure flag is set.
+*Sensitive cookies are sent only over SSL/TLS.
+*Strict domain and path values are set.
+*Sensitive cookies are not persistent.
 
 
 \\
