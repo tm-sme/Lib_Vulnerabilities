@@ -15,7 +15,7 @@
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
-Cookie security issues occur when all the measures available for protecting cookies are not fully taken advantage of. Measures that can be used to protect cookies are listed in the **Countermeasures** section of this article (see below). 
+Cookie security issues occur when all the measures available for protecting cookies are not fully implemented. Measures that can be used to protect cookies are listed in the **Countermeasures** section of this article (see below). 
 
 Cookies that contain session identifiers have to be treated with extra caution, because if the session identifiers are compromised, an attacker will be able to hijack user sessions. 
 
