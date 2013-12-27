@@ -14,6 +14,25 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[=Description=
+XML injection occurs when an attacker is able to supply data to the application that is interpreted as a part of an XML document in a manner that violates the intended use of XML by the application. XML injection vulnerabilities occur when untrusted data is allowed to be concatenated with XML data. Concatenating the attacker's data with XML allows the attacker to manipulate the syntax and the contents of the XML document and thus allows the attacker to modify the behavior of the application. 
+
+This issue affects all applications that use XML.
+
+=Impact=
+The exact impact of an XML injection vulnerability depends on the application. The most likely practical attack vector is that the attacker will be able to manipulate the business logic of the application. For example, the attacker might be able to change prices of items in an online store. If the application's authentication mechanism is affected, the attacker might be able to bypass authentication controls. 
+
+Another likely scenario is that the attacker will use XML injection to perform cross-site scripting attacks by modifying XML data to include client-side scripts. The cross-site scripting vector requires that the XML data is included in Web pages without being properly encoded. 
+
+=Countermeasures=
+To protect against XML injection attacks:
+*Validate all input.
+*Use parameterized APIs to build XML documents (instead of concatenating user data into strings that contain XML data).
+
+=Application Check=
+To check for adequate protection against XML injection, verify the following:
+*All input is validated.
+*Parameterized APIs are used to build XML documents.
+]]></Data>
   </Content>
 </TeamMentor_Article>
