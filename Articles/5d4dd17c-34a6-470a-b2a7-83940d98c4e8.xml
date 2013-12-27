@@ -3,12 +3,12 @@
   <Metadata>
     <Id>5d4dd17c-34a6-470a-b2a7-83940d98c4e8</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>Out-of-bounds Read</Title>
+    <Title>Out-of-Bounds Read</Title>
     <Category />
     <Phase />
     <Technology>C++</Technology>
     <Type />
-    <DirectLink>Out-of-bounds Read</DirectLink>
+    <DirectLink>Out-of-Bounds Read</DirectLink>
     <Author />
     <Priority />
     <Status />
