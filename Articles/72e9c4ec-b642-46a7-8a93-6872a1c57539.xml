@@ -26,13 +26,13 @@ There is a broad range of possible attack scenarios that involve weak encryption
 
 =Countermeasures=
 To prevent encryption issues:
-*Use strong cryptographic algorithms correctly.
+*Use strong cryptographic algorithms, and use them correctly.
 *Use strong keys.
 *Protect the encryption keys.
 
 =Application Check=
 To ensure that strong encryption is used, verify the following:
-*Strong cryptographic algorithms are used, and are used correctly,
+*Strong cryptographic algorithms are used, and are used correctly.
 *Strong encryption keys are used.
 *Encryption keys are protected.
 
