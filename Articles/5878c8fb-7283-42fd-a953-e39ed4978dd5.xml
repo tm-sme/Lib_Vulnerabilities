@@ -14,6 +14,21 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[Null Dereference
+
+=Description=
+Null pointer dereference vulnerabilities occur when the application attempts to use a pointer/object reference that has a null value as if it has a valid value. If application code checks pointers/object references for null before using them, null pointer dereference vulnerabilities won't occur. 
+
+Null pointer dereference issues affect all applications.
+
+=Impact=
+The impact of null dereference in managed languages is denial of service. The application will throw an exception and usually crash when it attempts to dereference a null pointer. In some cases, the application might not even crash.
+
+=Countermeasures=
+To prevent null dereference vulnerabilities, check object references for null before using them. Usually, an object reference is passed as an argument to a function - in such situations, it is best to check these object references for null in the very beginning of the function and throw an exception or return an error code if a null value is detected. 
+
+=Application Check=
+To check for adequate protection against this vulnerability, make sure that object references are checked for null in the beginning of function definitions or at least before the object references are used.
+]]></Data>
   </Content>
 </TeamMentor_Article>
