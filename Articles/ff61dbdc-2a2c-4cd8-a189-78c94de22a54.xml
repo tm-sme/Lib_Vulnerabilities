@@ -31,13 +31,7 @@ After installing the initial backdoor, the attacker is likely to use that backdo
 After gaining as much access as possible, the attacker will typically evaluate the value of the compromised application and server and decide how to abuse it for maximum profit, which usually translates into maximum damage for the owner of the application and the server. Some examples of abuse are: redirecting the application's users to exploit packs, using the server to send spam, defacing the application, leaking application data, selling application data on the black market, modifying application code to spy on users, using the server as a proxy for other attacks, using the server as a part of a DDoS botnet to attack other Internet hosts, etc.
 
 =Countermeasures=
-To prevent file upload vulnerabilities:
-*Do not allow users to upload files.
-*Store uploaded files outside of web root.
-*Prevent access to uploaded files.
-*Preventing execution of uploaded files.
-*Scramble names of uploaded files.
-*Limit the types of file types that are allowed to be uploaded. Note that this is the weakest measure of this list, and is often insufficient in itself to prevent file upload vulnerabilities. Use this as a defense-in-depth measure, but do not rely upon it on its own.
+To prevent file upload vulnerabilities, do not allow users to upload files, store uploaded files outside of web root, prevent access to uploaded files, prevent execution of uploaded files, scramble names of uploaded files, and limit the types of file types that are allowed to be uploaded. Note that the last measure -- limiting the file types allowed to be uploaded -- is the weakest measure of this list, and is often insufficient in itself to prevent file upload vulnerabilities. Use this as a defense-in-depth measure, but do not rely upon it on its own.
 
 =Application Check=
 To check for adequate protection against file upload vulnerabilities, verify the following:
