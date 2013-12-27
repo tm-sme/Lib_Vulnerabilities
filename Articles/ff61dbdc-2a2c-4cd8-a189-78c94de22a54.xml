@@ -34,13 +34,7 @@ After gaining as much access as possible, the attacker will typically evaluate t
 To prevent file upload vulnerabilities, do not allow users to upload files, store uploaded files outside of web root, prevent access to uploaded files, prevent execution of uploaded files, scramble names of uploaded files, and limit the types of file types that are allowed to be uploaded. Note that the last measure -- limiting the file types allowed to be uploaded -- is the weakest measure of this list, and is often insufficient in itself to prevent file upload vulnerabilities. Use this as a defense-in-depth measure, but do not rely upon it on its own.
 
 =Application Check=
-To check for adequate protection against file upload vulnerabilities, verify the following:
-*Users are prevented from uploading files.
-*Uploaded files are stored outside of web root.
-*Access to uploaded files is blocked.
-*Uploaded files cannot be executed.
-*Names of uploaded files are scrambled.
-*The types of files that can be uploaded are limited.
+To check for adequate protection against file upload vulnerabilities, verify that users are prevented from uploading files, uploaded files are stored outside of web root, access to uploaded files is blocked, uploaded files cannot be executed, names of uploaded files are scrambled, and the types of files that can be uploaded are limited.
 
 
 ]]></Data>
