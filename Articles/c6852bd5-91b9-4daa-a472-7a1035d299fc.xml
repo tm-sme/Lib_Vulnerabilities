@@ -14,6 +14,24 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[=Description=
+SSL/TLS should be used to protect any sensitive data in transit. Some applications don't use SSL even during authentication or when transmitting sensitive data, and an attacker may be able to intercept such data that is sent over the network unencrypted. 
+
+This vulnerability applies to all applications that send sensitive data over the network. 
+
+=Impact=
+Transmitting data without using SSL allows attackers to intercept sensitive information using man-in-the-middle attacks. There are many different attack scenarios that are enabled by not using SSL. One common attack vector is exposed by the Firesheep tool. The Firesheep tool monitors open wireless networks for information about user sessions for some social networking web sites. Once that information has been sniffed from the network, the attacker is able to take over the user's session. Taking over the user's session allows the attacker to view the victim user's data and to impersonate him. This attack would not be possible if the target sites used SSL. 
+
+=Countermeasures=
+To prevent insecure transport vulnerabilities:
+*Use SSL for all sensitive communications.
+*Configure SSL to use strong cipher suites.
+*Use valid certificates. 
+
+=Application Check=
+To check for adequate protection against this vulnerability, verify the following:
+*SSL is used for all sensitive communications.
+*SSL is configured to use strong cipher suites.
+*Valid certificates are used. ]]></Data>
   </Content>
 </TeamMentor_Article>
