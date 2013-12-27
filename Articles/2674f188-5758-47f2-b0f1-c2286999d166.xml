@@ -27,13 +27,9 @@ The impact of integer overflow vulnerabilities depends on many variables, but us
 Execution of arbitrary code using integer overflows usually occurs when a vulnerable integer variable is used to control the amount of memory allocated for data. If the attacker can manipulate the amount of memory allocated and the data placed into that memory, he can usually execute arbitrary code with the privileges of the application. Such a vulnerability is actually a form of buffer overflow, but it relies on the integer overflow to be exploitable. In such cases, operating system and platform specific defenses against buffer overflows that are deployed on the target system might mitigate the vulnerability. However, generally speaking, integer overflow based buffer overflows result in arbitrary code execution and can be difficult to detect with code analysis.
 
 =Countermeasures=
-To prevent integer overflows:
-*Validate all input.
-*Check results of calculations for maximum and minimum values before assigning them to integer variables.
+To prevent integer overflows, validate all input, and check results of calculations for maximum and minimum values before assigning them to integer variables.
 
 =Application Check=
-To check for adequate protection against integer overflows, verify the following:
-*All input is validated.
-*Results of calculations are checked for maximum and minimum values before assigning them to integer variables.]]></Data>
+To check for adequate protection against integer overflows, verify that all input is validated, and results of calculations are checked for maximum and minimum values before assigning them to integer variables.]]></Data>
   </Content>
 </TeamMentor_Article>
