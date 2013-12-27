@@ -36,7 +36,7 @@ To prevent this vulnerability type:
 =Application Check=
 To check for adequate protection against this vulnerability type, verify the following:
 *PBKDF2 is used to secure passwords.
-*Aauthentication credentials are never sent in plain-text. 
+*Authentication credentials are never sent in plain-text. 
 
 
 \\
