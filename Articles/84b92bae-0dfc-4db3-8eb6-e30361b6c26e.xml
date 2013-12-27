@@ -14,6 +14,31 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[=Description=
+A system information leak occurs when either the application or the application server discloses information about the web application platform that might be useful to the attacker. Some examples of information that might benefit the attacker are: the file system path of the application, the name and version of the operating system, the name and version of the web server software, and the name and version of the web application platform and its configuration options. 
+
+The danger of system information leaks is that they make other attacks easier to carry out. In general, the application should volunteer as little information as possible about the platform on which it is running. 
+
+All applications are affected by this vulnerability type.
+
+=Impact=
+System information leaks can be used by attackers to exploit other vulnerabilities, if other vulnerabilities are present. By itself, a system information leak doesn't give an attacker any additional abilities. System information leaks have to be combined with other vulnerabilities to result in a compromise. For example, the operating system used by the application server might be outdated and vulnerable, but the attacker won't know that until the application tells him that the server is outdated. At that point, the attacker can use an exploit targeting the server operating system to compromise the application. 
+
+=Countermeasures=
+To prevent system information leaks:
+*Handle all errors.
+*Use simple error messages.
+*Disable platform banners.
+
+=Application Check=
+To check for adequate protection against system information leaks, verify the following: 
+*All errors are handled.
+*Simple error messages are used.
+*Platform banners are disabled.
+
+\\
+System Information Leak: PHP Errors \\
+System Information Leak: PHP Version \\
+]]></Data>
   </Content>
 </TeamMentor_Article>
