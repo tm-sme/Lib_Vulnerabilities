@@ -15,7 +15,7 @@
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[=Description=
-Null pointer dereference vulnerabilities occur when the application attempts to use a pointer (object reference) that has a null value as if it has a valid value. If application code checks pointers/object references for null before using them, null pointer dereference vulnerabilities won't occur. 
+Null pointer dereference vulnerabilities occur when the application attempts to use a pointer/object reference that has a null value as if it has a valid value. If application code checks pointers/object references for null before using them, null pointer dereference vulnerabilities won't occur. 
 
 Null pointer dereference issues affect all applications.
 
