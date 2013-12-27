@@ -14,6 +14,18 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[=Description=
+Regular expression denial of service vulnerabilities occur when the application applies regular expressions to attacker-supplied data in a manner that requires prohibitive computational resources to complete. 
+
+Regular expression denial of service vulnerabilities affect all applications that use regular expressions on user-supplied data.
+
+=Impact=
+Regular expression denial of service attacks result in the vulnerable application taking up a lot of CPU time and potentially causing the application server to become unresponsive. The attack scenario usually involves the attacker rapidly sending requests with malformed data that causes regular expressions used by the application on that data to take a very long time to compute. The result is that the application server will become unusable for the duration of the attack. In some cases, the application server might crash from overheating. If the application cannot use up 100% of the server's CPU time, the application alone might become unresponsive, while the rest of the server continues to function.
+
+=Countermeasures=
+To prevent regular expression denial of service attacks, check the length of user-supplied data before passing it to regular expressions.
+
+=Application Check=
+To check for adequate protection against regular expression denial of service attacks, verify that the length of user-supplied data is checked before the data is passed to regular expressions.]]></Data>
   </Content>
 </TeamMentor_Article>
