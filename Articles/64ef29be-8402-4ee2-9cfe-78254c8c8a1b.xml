@@ -14,6 +14,34 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[]]></Data>
+    <Data><![CDATA[
+=Description=
+Poorly handled error conditions may allow attacks to go unnoticed. Checking error conditions helps the application to determine if something out of the ordinary is happening and to log that information. Log information helps administrators determine when an attack is taking place and provides information about the attack. 
+
+Poorly handled error condition flaws may occur in any type of application. 
+
+=Impact=
+Poorly handled error conditions may result in other, more serious vulnerabilities. A poorly handled error condition may not actually give any advantage to the attacker. However, if the application contains a lot of code that may produce poorly handled errors, it creates a fertile field for the attacker to look for vulnerabilities. 
+
+=Countermeasures=
+To prevent unchecked error conditions:
+*Use structured exception handling.
+*Use a global exception handler for unhandled exceptions.
+*Log error information. 
+
+=Application Check=
+To check for adequate protection against this vulnerability, verify the following:
+*Structured exception handling is used.
+*A global exception handler is used for unhandled exceptions.
+*Error information is logged. 
+
+\\
+Poor Error Handling: Empty Catch Block \\
+Poor Error Handling: Overly Broad Catch\\
+Poor Error Handling: Overly Broad Throws \\
+Poor Error Handling: Program Catches NullPointerException \\
+Poor Error Handling: Return Inside Finally \\
+Poor Error Handling: Swallowed ThreadDeath \\
+Poor Error Handling: Throw Inside Finally \\]]></Data>
   </Content>
 </TeamMentor_Article>
