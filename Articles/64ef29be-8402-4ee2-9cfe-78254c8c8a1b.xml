@@ -24,16 +24,10 @@ Poorly handled error condition flaws may occur in any type of application.
 Poorly handled error conditions may result in other, more serious vulnerabilities. A poorly handled error condition may not actually give any advantage to the attacker. However, if the application contains a lot of code that may produce poorly handled errors, it creates a fertile field for the attacker to look for vulnerabilities. 
 
 =Countermeasures=
-To prevent unchecked error conditions:
-*Use structured exception handling.
-*Use a global exception handler for unhandled exceptions.
-*Log error information. 
+To prevent unchecked error conditions, use structured exception handling, use a global exception handler for unhandled exceptions, and log error information. 
 
 =Application Check=
-To check for adequate protection against this vulnerability, verify the following:
-*Structured exception handling is used.
-*A global exception handler is used for unhandled exceptions.
-*Error information is logged. 
+To check for adequate protection against this vulnerability, verify that structured exception handling is used, a global exception handler is used for unhandled exceptions, and error information is logged. 
 
 \\
 Poor Error Handling: Empty Catch Block \\
