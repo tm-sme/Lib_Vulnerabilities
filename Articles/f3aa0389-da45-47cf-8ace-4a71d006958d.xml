@@ -27,22 +27,20 @@ The exact impact of cookie security issues depends on the kind of data stored in
 =Countermeasures=
 To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over SSL/TLS, set strict domain and path values, and ensure that sensitive cookies are not  persistent.
 
+* [[46cf80ac-3093-4f90-a133-2cf5e1a2881c|Set Strict Domains And Paths in Session Cookies]]
+* [[00000000-0000-0000-0000-000000894eab|Set HTTP-Only and Secure Flags on Session Cookies]]
+* [[00000000-0000-0000-0000-000000737bd8|Send Session Cookies Only Using SSL/TLS]]
+* [[00000000-0000-0000-0000-0000007cad1c|Do Not Store Sensitive Data in Persistent Cookies]]
+
 =Application Check=
 To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over SSL/TLS, strict domain and path values are set, and sensitive cookies are not persistent.
 
+* [[d17c6d07-e12a-4e6a-aaea-17b093f1d989|Session Cookies Have Strict Domains And Paths Set]]
+* [[00000000-0000-0000-0000-000000570fbb|HTTP-Only and Secure Flags Are Set on Session Cookies]]
+* [[00000000-0000-0000-0000-00000071f956|Session Cookies Are Sent Only over SSL/TLS]]
+* [[00000000-0000-0000-0000-00000047e84e|Sensitive Data Is Not Stored in Persistent Cookies]]
 
-\\
-Cookie Security: HTTPOnly not Set on Session Cookie \\
-Cookie Security: Persistent Session Cookie \\
-Cookie Security: Session Cookie not Sent Over SSL \\
-Cookie Security: Cookie not Sent Over SSL\\
-Cookie Security: HTTPOnly not Set \\
-Cookie Security: HTTPOnly not Set on Session Cookie \\
-Cookie Security: Overly Broad Domain \\
-Cookie Security: Overly Broad Session Cookie Domain \\
-Cookie Security: Overly Broad Session Cookie Path \\
-Cookie Security: Persistent Cookie \\
-Cookie Security: Persistent Session Cookie \\
-Cookie Security: Session Cookie not Sent Over SSL\\]]></Data>
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
