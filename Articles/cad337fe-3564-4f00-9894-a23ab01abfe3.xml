@@ -29,18 +29,13 @@ An insufficiently protected credential vulnerability makes it easier for an atta
 Malicious hackers usually target privileged accounts to take over the application. After taking over the application, an attacker may leverage other vulnerabilities to take over the application platform and use it to pivot for other attacks. Compromising the application also gives the attacker access to user data, thus enabling him to impersonate the user. 
 
 =Countermeasures=
-To prevent this vulnerability type, use PBKDF2 to secure passwords, and send authentication credentials over encrypted tunnels. 
+To prevent this vulnerability type, use PBKDF2 to secure passwords. 
+
+* [[62593693-31c2-441a-b6f8-4fc47acac06d|Store Passwords Securely]]
 
 =Application Check=
-To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords, and that authentication credentials are never sent in plain-text. 
+To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords.
 
-\\
-Password Management: Empty Password \\
-Password Management: Hardcoded Password \\
-Password Management: Null Password \\
-Password Management: Password in Comment \\
-Password Management: Weak Cryptography \\
-
-]]></Data>
+* [[3daed10e-b47a-40fe-b75d-3c68532c1f0d|Passwords Are Stored Securely]]]]></Data>
   </Content>
 </TeamMentor_Article>
