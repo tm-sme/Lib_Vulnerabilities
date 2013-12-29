@@ -29,7 +29,15 @@ Execution of arbitrary code using integer overflows usually occurs when a vulner
 =Countermeasures=
 To prevent integer overflows, validate all input, and check results of calculations for maximum and minimum values before assigning them to integer variables.
 
+* [[a8eb9762-08f6-4e61-afa7-23386cbca281|Validate All Input]]
+* [[eeb8a6d5-2181-48fa-8b2a-3e44a532a50a|Validate Ranges of All Integer Values]]
+* [[2f6f114a-7be0-4f92-8a45-23a6029dbcf1|Prevent Unsigned Integers from Wrapping]]
+
 =Application Check=
-To check for adequate protection against integer overflows, verify that all input is validated, and results of calculations are checked for maximum and minimum values before assigning them to integer variables.]]></Data>
+To check for adequate protection against integer overflows, verify that all input is validated, and results of calculations are checked for maximum and minimum values before assigning them to integer variables.
+
+* [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
+* [[4b60e560-1e2d-4284-bc67-b9a0edf1ff96|Integer Values Are Validated]]
+* [[747fed1a-6444-4fe1-86f3-ff48bf344938|Unsigned Integers Don't Wrap]]]]></Data>
   </Content>
 </TeamMentor_Article>
