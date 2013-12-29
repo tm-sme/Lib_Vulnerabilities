@@ -31,13 +31,15 @@ Malicious hackers usually target privileged accounts to take over the applicatio
 =Countermeasures=
 To prevent this vulnerability type, use PBKDF2 to secure passwords, and send authentication credentials over encrypted tunnels. 
 
+* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
+* [[508f4130-96fd-40b8-9358-552795b810e3|Encrypt Sensitive Data During Transmission]]
+
 =Application Check=
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords, and that authentication credentials are never sent in plain-text. 
 
+* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
+* [[00000000-0000-0000-0000-0000008f91de|SSL Is Used to Communicate Authentication Credentials]]
 
-\\
-Password Management: Empty Password \\
-Password Management: Null Password \\
 
 ]]></Data>
   </Content>
