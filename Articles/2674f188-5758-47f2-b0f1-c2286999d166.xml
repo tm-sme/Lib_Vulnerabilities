@@ -4,10 +4,10 @@
     <Id>2674f188-5758-47f2-b0f1-c2286999d166</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Integer Overflow</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Integer Overflow</DirectLink>
     <Author />
     <Priority />
