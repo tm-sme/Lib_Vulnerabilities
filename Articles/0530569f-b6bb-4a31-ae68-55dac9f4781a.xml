@@ -39,15 +39,16 @@ The notoriety of buffer overflows and their extreme potential danger resulted in
 =Countermeasures=
 To prevent buffer overflows, validate all input, validate the sizes of data and the buffer before copying, and avoid dangerous APIs.
 
+* [[a8eb9762-08f6-4e61-afa7-23386cbca281|Validate All Input]]
+* [[c62fb9d2-95f1-4e36-b10f-cdf9451d15ce|Allocate Enough Buffer Space for Copying Data]]
+* [[3f725650-1e28-4ee0-810c-133cd5912c91|Do Not Use Dangerous APIs]]
+
 =Application Check=
 To check for adequate protection against buffer overflows, verify that all input is validated, the sizes of data and target buffers are validated before copying, and dangerous APIs are not used.
 
-
-\\
-Buffer Overflow \\
-Buffer Overflow: Format String \\
-Buffer Overflow: Format String (%f/%F) \\
-Buffer Overflow: Off-by-One \\
-Buffer Overflow: Signed Comparison \\]]></Data>
+* [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
+* [[07732230-8869-45d1-b65c-278142d32f31|Buffer Size Is Checked During Copying]]
+* [[09a478f6-b186-4ce0-9d3b-b27164eeb8e9|Dangerous APIs Are Avoided Or Used with Care]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
