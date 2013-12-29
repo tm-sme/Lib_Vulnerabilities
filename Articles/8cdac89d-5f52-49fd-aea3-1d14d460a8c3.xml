@@ -29,7 +29,11 @@ Both managed and unmanaged languages are subject to null pointer dereferences, b
 =Countermeasures=
 To prevent missing check against null issues, check pointers/object references for null before using them. Usually, a pointer/object reference is passed as an argument to a function - in such situations, it is best to check these pointers/object references for null right in the very beginning of the function and throw an exception or return an error code if a null value is detected. 
 
+* [[bc36816b-a414-4c4a-90d1-68c34df9856a|Check for Null Before Dereferencing an In-Parameter Pointer]]
+
 =Application Check=
-To check for adequate protection against these issues, make sure that pointers/object references are checked for null in the beginning of function definitions.]]></Data>
+To check for adequate protection against these issues, make sure that pointers/object references are checked for null in the beginning of function definitions.
+
+* [[2a74b6b3-39db-4613-97e3-5a951e948fd3|In-parameter Pointers Are Checked for Null Before Dereferencing]]]]></Data>
   </Content>
 </TeamMentor_Article>
