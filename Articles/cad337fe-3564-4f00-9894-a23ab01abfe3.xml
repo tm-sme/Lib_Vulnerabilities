@@ -4,10 +4,10 @@
     <Id>cad337fe-3564-4f00-9894-a23ab01abfe3</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Password Management</Title>
-    <Category />
-    <Phase />
+    <Category>Authentication</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Password Management</DirectLink>
     <Author />
     <Priority />
