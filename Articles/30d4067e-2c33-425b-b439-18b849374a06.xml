@@ -33,7 +33,11 @@ One possible scenario is that the hashes are recovered using a SQL injection att
 =Countermeasures=
 To prevent weak cryptographic hashing vulnerabilities, use a strong hashing algorithm iteratively or use a key derivation algorithm, and use a unique salt for each hashed value.
 
+* [[db8663bc-c0ee-4fba-8eb3-95f777c97a00|Store Passwords Securely]]
+
 =Application Check=
-To verify that cryptographic hashing is used properly, verify that strong hashing algorithms are used iteratively or key derivation algorithms are used, and that a unique salt is used for each hashed value.]]></Data>
+To verify that cryptographic hashing is used properly, verify that strong hashing algorithms are used iteratively or key derivation algorithms are used, and that a unique salt is used for each hashed value.
+
+* [[c936d4cc-5b20-4da0-a8eb-eb2153f9353e|Passwords Are Stored Securely]]]]></Data>
   </Content>
 </TeamMentor_Article>
