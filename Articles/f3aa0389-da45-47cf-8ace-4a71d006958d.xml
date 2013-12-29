@@ -4,10 +4,10 @@
     <Id>f3aa0389-da45-47cf-8ace-4a71d006958d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Cookie Security</Title>
-    <Category />
-    <Phase />
+    <Category>Session Management</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Cookie Security</DirectLink>
     <Author />
     <Priority />
