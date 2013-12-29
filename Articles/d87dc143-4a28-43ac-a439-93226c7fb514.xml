@@ -25,7 +25,11 @@ The impact of uninitialized variables is that the application won't work properl
 =Countermeasures=
 To prevent uninitialized variable vulnerabilities, initialize variables before using them.
 
+* [[377919e5-9cd3-40f1-9658-1d4cdabf2b3a|Initialize All Variables Before Use]]
+
 =Application Check=
-To check for adequate protection against this vulnerability, ensure that variables are initialized before being used.]]></Data>
+To check for adequate protection against this vulnerability, ensure that variables are initialized before being used.
+
+* [[d284ab1c-86f5-441d-84df-f25bcbb58f3a|Variables Are Initialized Before Use]]]]></Data>
   </Content>
 </TeamMentor_Article>
