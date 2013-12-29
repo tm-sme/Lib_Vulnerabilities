@@ -4,10 +4,10 @@
     <Id>d87dc143-4a28-43ac-a439-93226c7fb514</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Uninitialized Variable</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Uninitialized Variable</DirectLink>
     <Author />
     <Priority />
