@@ -4,10 +4,10 @@
     <Id>8cdac89d-5f52-49fd-aea3-1d14d460a8c3</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Missing Check Against Null</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Missing Check Against Null</DirectLink>
     <Author />
     <Priority />
