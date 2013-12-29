@@ -27,14 +27,17 @@ The exact impact of cookie security issues depends on the kind of data stored in
 =Countermeasures=
 To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over SSL/TLS, set strict domain and path values, and ensure that sensitive cookies are not  persistent.
 
+* [[9b7e6e63-c37c-403b-a2f5-60b1e1abbb0b|Set the Secure And HTTPOnly Flags on All Sensitive Cookies]]
+* [[6012e717-6ba6-4380-8ca8-2f0b7c69d717|Protect Session Cookies]]
+* [[7a517ad5-8640-4bc7-9e84-ccc313a71901|Set the Domain And Path Values of Session Cookies]]
+* [[42276b64-f51d-4b89-8c33-0ffd9b098890|Use Session Management Offered by the Framework]]
+
 =Application Check=
 To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over SSL/TLS, strict domain and path values are set, and sensitive cookies are not persistent.
 
-\\
-
-Cookie Security: Cookie not Sent Over SSL \\
-Cookie Security: Overly Broad Domain \\
-Cookie Security: Overly Broad Path \\
-Cookie Security: Persistent Cookie\\]]></Data>
+* [[9b7e6e63-c37c-403b-a2f5-60b1e1abbb0b|Set the Secure And HTTPOnly Flags on All Sensitive Cookies]]
+* [[59132a30-2bae-45e9-9d85-8de26441be29|Session Cookies Are Protected]]
+* [[7a517ad5-8640-4bc7-9e84-ccc313a71901|Set the Domain And Path Values of Session Cookies]]
+* [[3f2660b3-a935-4b4e-85ff-27ae28683f5b|Session Management Offered by the Framework Is Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
