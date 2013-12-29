@@ -31,7 +31,12 @@ Another attack vector is remote server-side exploitation, where the exploit is e
 =Countermeasures=
 To prevent double-free vulnerabilities, write code in such a way that provides a guarantee that allocated memory is freed only once.
 
+* [[73c9c4be-a26e-4d66-8067-cea0862f086b|Free Dynamically Allocated Memory Once]]
+
 =Application Check=
-To check for adequate protection against double-free vulnerabilities, verify that code is written in such a way that provides a guarantee that allocated memory is freed only once.]]></Data>
+To check for adequate protection against double-free vulnerabilities, verify that code is written in such a way that provides a guarantee that allocated memory is freed only once.
+
+* [[20b0fd6d-bfc8-4a26-96e7-f698a8065ce5|Dynamically Allocated Memory Is Only Freed Once]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
