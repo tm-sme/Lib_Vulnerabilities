@@ -4,10 +4,10 @@
     <Id>d2455286-ddf5-474b-b8c9-7cede24ef31a</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>System Information Leak</Title>
-    <Category />
-    <Phase />
+    <Category>Error Handling</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>System Information Leak</DirectLink>
     <Author />
     <Priority />
