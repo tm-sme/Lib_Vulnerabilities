@@ -27,8 +27,11 @@ Another attack vector is remote server-side exploitation, where the exploit is e
 =Countermeasures=
 To prevent use after free vulnerabilities, write code in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
 
+* [[b8b0d075-5aa2-4095-a441-210f38fc3b3e|Don't Access Unallocated Memory]]
+
 =Application Check=
 To check for adequate protection against use after free vulnerabilities, verify that code is written in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
-]]></Data>
+
+* [[b6152bf7-294d-448b-9af0-149b2c994980|Unallocated Memory Is Not Accessed]]]]></Data>
   </Content>
 </TeamMentor_Article>
