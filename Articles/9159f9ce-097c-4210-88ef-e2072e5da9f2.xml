@@ -25,7 +25,12 @@ Regular expression denial of service attacks result in the vulnerable applicatio
 =Countermeasures=
 To prevent regular expression denial of service attacks, check the length of user-supplied data before passing it to regular expressions.
 
+* [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
+
 =Application Check=
-To check for adequate protection against regular expression denial of service attacks, verify that the length of user-supplied data is checked before the data is passed to regular expressions.]]></Data>
+To check for adequate protection against regular expression denial of service attacks, verify that the length of user-supplied data is checked before the data is passed to regular expressions.
+
+* [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
