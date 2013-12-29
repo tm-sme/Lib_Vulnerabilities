@@ -14,8 +14,7 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[
-=Description=
+    <Data><![CDATA[=Description=
 Session fixation vulnerabilities occur when the application doesn't sufficiently protect session identifiers. This allows an attacker to hijack active user sessions. 
 
 Most web application platforms provide functionality that will handle session management in a reasonably secure manner. However, some programmers, especially new ones, write their own session management code that doesn't sufficiently protect session identifiers. Some common mistakes are including session identifiers in URLs or making session identifiers predictable. Including the session identifier in the URL allows an attacker to send a link that includes a session identifier of his choice to the victim user. If the victim user clicks on that link and then logs into the application, the attacker will be able to hijack the user's session by clicking on that same link after the user has authenticated. 
@@ -28,8 +27,11 @@ Session fixation vulnerabilities allow attackers to perform actions on behalf of
 =Countermeasures=
 To prevent session fixation vulnerabilities, use platform provided session management.
 
+* [[42276b64-f51d-4b89-8c33-0ffd9b098890|Use Session Management Offered by the Framework]]
+
 =Application Check=
 To check for adequate protection against session fixation vulnerabilities, verify that platform provided session management is used.
-]]></Data>
+
+* [[3f2660b3-a935-4b4e-85ff-27ae28683f5b|Session Management Offered by the Framework Is Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
