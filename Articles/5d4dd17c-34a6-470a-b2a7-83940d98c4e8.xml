@@ -27,8 +27,12 @@ A common code execution attack vector targets web browsers. The exploit is place
 =Countermeasures=
 To prevent out-of-bounds reads, check array indexes before use.
 
+* [[155aadfd-39f0-454e-8d45-53553eb612d1|Check Array Indexes Before Use]]
+
 =Application Check=
 To check for adequate protection against out-of-bounds reads, verify that array indexes are checked before use.
+
+* [[2f13ab0d-7e7c-4de5-81c3-5044a4304846|Bounds Are Checked When Using Arrays]]
 
 ]]></Data>
   </Content>
