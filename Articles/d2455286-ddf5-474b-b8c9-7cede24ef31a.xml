@@ -27,9 +27,13 @@ System information leaks can be used by attackers to exploit other vulnerabiliti
 =Countermeasures=
 To prevent system information leaks, be sure to handle all errors, use simple error messages, and disable platform banners. 
 
+* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
+* [[508f4130-96fd-40b8-9358-552795b810e3|Encrypt Sensitive Data During Transmission]]
+
 =Application Check=
 To check for adequate protection against system information leaks, verify that all errors are handled, simple error messages are used, and platform banners are disabled.
 
-]]></Data>
+* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
+* [[00000000-0000-0000-0000-0000008f91de|SSL Is Used to Communicate Authentication Credentials]]]]></Data>
   </Content>
 </TeamMentor_Article>
