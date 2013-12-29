@@ -4,10 +4,10 @@
     <Id>1f4a41a3-1598-4a12-a63c-966d0c6ad77c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Password Management</Title>
-    <Category />
-    <Phase />
+    <Category>Authentication</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Password Management</DirectLink>
     <Author />
     <Priority />
@@ -31,16 +31,11 @@ Malicious hackers usually target privileged accounts to take over the applicatio
 =Countermeasures=
 To prevent this vulnerability type, use PBKDF2 to secure passwords, and send authentication credentials over encrypted tunnels. 
 
+* [[db8663bc-c0ee-4fba-8eb3-95f777c97a00|Store Passwords Securely]]
+
 =Application Check=
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords, and authentication credentials are never sent in plain-text. 
 
-
-\\
-Password Management: Empty Password \\
-Password Management: Hardcoded Password \\
-Password Management: Null Password \\
-Password Management: Password in Comment \\
-Password Management: Weak Cryptography \\
-]]></Data>
+* [[c936d4cc-5b20-4da0-a8eb-eb2153f9353e|Passwords Are Stored Securely]]]]></Data>
   </Content>
 </TeamMentor_Article>
