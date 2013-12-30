@@ -37,6 +37,12 @@ To prevent double-free vulnerabilities, write code in such a way that provides a
 To check for adequate protection against double-free vulnerabilities, verify that code is written in such a way that provides a guarantee that allocated memory is freed only once.
 
 * [[20b0fd6d-bfc8-4a26-96e7-f698a8065ce5|Dynamically Allocated Memory Is Only Freed Once]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 ]]></Data>
   </Content>
 </TeamMentor_Article>
