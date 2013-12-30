@@ -38,6 +38,13 @@ To check for adequate protection against integer overflows, verify that all inpu
 
 * [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
 * [[4b60e560-1e2d-4284-bc67-b9a0edf1ff96|Integer Values Are Validated]]
-* [[747fed1a-6444-4fe1-86f3-ff48bf344938|Unsigned Integers Don't Wrap]]]]></Data>
+* [[747fed1a-6444-4fe1-86f3-ff48bf344938|Unsigned Integers Don't Wrap]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+]]></Data>
   </Content>
 </TeamMentor_Article>
