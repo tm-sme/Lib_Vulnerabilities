@@ -36,6 +36,12 @@ To prevent this vulnerability type, use PBKDF2 to secure passwords, and send aut
 =Application Check=
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords, and authentication credentials are never sent in plain-text. 
 
-* [[c936d4cc-5b20-4da0-a8eb-eb2153f9353e|Passwords Are Stored Securely]]]]></Data>
+* [[c936d4cc-5b20-4da0-a8eb-eb2153f9353e|Passwords Are Stored Securely]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//]]></Data>
   </Content>
 </TeamMentor_Article>
