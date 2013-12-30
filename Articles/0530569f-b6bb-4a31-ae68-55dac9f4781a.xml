@@ -49,6 +49,12 @@ To check for adequate protection against buffer overflows, verify that all input
 * [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
 * [[07732230-8869-45d1-b65c-278142d32f31|Buffer Size Is Checked During Copying]]
 * [[09a478f6-b186-4ce0-9d3b-b27164eeb8e9|Dangerous APIs Are Avoided Or Used with Care]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 ]]></Data>
   </Content>
 </TeamMentor_Article>
