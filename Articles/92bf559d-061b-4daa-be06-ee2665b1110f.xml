@@ -32,6 +32,13 @@ To prevent session fixation vulnerabilities, use platform provided session manag
 =Application Check=
 To check for adequate protection against session fixation vulnerabilities, verify that platform provided session management is used.
 
-* [[3f2660b3-a935-4b4e-85ff-27ae28683f5b|Session Management Offered by the Framework Is Used]]]]></Data>
+* [[3f2660b3-a935-4b4e-85ff-27ae28683f5b|Session Management Offered by the Framework Is Used]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+]]></Data>
   </Content>
 </TeamMentor_Article>
