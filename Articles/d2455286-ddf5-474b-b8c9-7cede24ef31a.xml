@@ -37,6 +37,11 @@ To check for adequate protection against system information leaks, verify that a
 * [[f0c2bed2-b530-46bc-9e64-8041e0def190|Global Error Handlers Are Used to Catch Unhandled Exceptions]]
 * [[00000000-0000-0000-0000-0000002f7a79|Simple Error Messages Are Used]]
 * [[76fb9a2a-2091-4d47-a65d-588eda490c90|Valuable Information Is Not Disclosed in Error Messages]]
-]]></Data>
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//]]></Data>
   </Content>
 </TeamMentor_Article>
