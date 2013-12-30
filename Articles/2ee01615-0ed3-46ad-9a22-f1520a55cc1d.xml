@@ -32,6 +32,12 @@ To prevent use after free vulnerabilities, write code in a way that guarantees t
 =Application Check=
 To check for adequate protection against use after free vulnerabilities, verify that code is written in a way that guarantees that pointers are not used after the memory that they point to has been deallocated.
 
-* [[b6152bf7-294d-448b-9af0-149b2c994980|Unallocated Memory Is Not Accessed]]]]></Data>
+* [[b6152bf7-294d-448b-9af0-149b2c994980|Unallocated Memory Is Not Accessed]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//]]></Data>
   </Content>
 </TeamMentor_Article>
