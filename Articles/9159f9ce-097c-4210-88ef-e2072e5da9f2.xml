@@ -31,6 +31,12 @@ To prevent regular expression denial of service attacks, check the length of use
 To check for adequate protection against regular expression denial of service attacks, verify that the length of user-supplied data is checked before the data is passed to regular expressions.
 
 * [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 ]]></Data>
   </Content>
 </TeamMentor_Article>
