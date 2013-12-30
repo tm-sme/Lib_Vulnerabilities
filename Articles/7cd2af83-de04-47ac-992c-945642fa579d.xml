@@ -39,6 +39,13 @@ To prevent weak cryptographic hashing vulnerabilities, use a strong hashing algo
 To verify that cryptographic hashing is used properly, verify that strong hashing algorithms are used iteratively or key derivation algorithms are used, and that a unique salt is used for each hashed value.
 
 * [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 ]]></Data>
   </Content>
 </TeamMentor_Article>
