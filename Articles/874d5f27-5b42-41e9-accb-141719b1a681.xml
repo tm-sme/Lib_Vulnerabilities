@@ -4,7 +4,7 @@
     <Id>874d5f27-5b42-41e9-accb-141719b1a681</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Cookie Security</Title>
-    <Category />
+    <Category>Session Management</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
