@@ -42,6 +42,10 @@ To verify that cryptographic hashing is used properly, verify that strong hashin
 
 =Specific Technologies=
 
+* [[7cd2af83-de04-47ac-992c-945642fa579d|ASP.NET Weak Cryptographic Hash]]
+* [[0010a1e4-6d8f-41a4-8eaf-d047398a34bc|Java Weak Cryptographic Hash]]
+* [[7d7de04c-96d1-4b2e-bf99-9ef0555f3332|PHP Weak Cryptographic Hash]]
+* [[30d4067e-2c33-425b-b439-18b849374a06|C++ Weak Cryptographic Hash]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
