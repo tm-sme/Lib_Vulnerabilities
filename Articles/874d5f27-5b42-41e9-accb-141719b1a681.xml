@@ -36,6 +36,9 @@ To check for adequate protection of sensitive cookies, verify that the HTTPOnly 
 
 =Specific Technologies=
 
+* [[f3aa0389-da45-47cf-8ace-4a71d006958d|ASP.NET Cookie Security]]
+* [[5b5754fa-53f7-467e-93c5-ff4dc8c2f32b|Java Cookie Security]]
+* [[acc078c3-b325-4430-a521-c91e47b40305|PHP Cookie Security]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
