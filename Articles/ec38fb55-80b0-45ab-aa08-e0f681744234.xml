@@ -4,7 +4,7 @@
     <Id>ec38fb55-80b0-45ab-aa08-e0f681744234</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Missing Check Against Null</Title>
-    <Category />
+    <Category>Input and Data Validation</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
