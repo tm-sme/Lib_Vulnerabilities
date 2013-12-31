@@ -4,7 +4,7 @@
     <Id>aca8fc61-4b62-48a0-843a-1bdf8f19e34c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Use After Free</Title>
-    <Category />
+    <Category>Memory Management</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
@@ -36,6 +36,6 @@ To check for adequate protection against use after free vulnerabilities, verify 
 
 =Specific Technologies=
 
-]]></Data>
+* [[2ee01615-0ed3-46ad-9a22-f1520a55cc1d|C++ Use After Free]]]]></Data>
   </Content>
 </TeamMentor_Article>
