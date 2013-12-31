@@ -4,7 +4,7 @@
     <Id>161382ce-e097-492d-aae1-90dac335aa66</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Weak Encryption</Title>
-    <Category />
+    <Category>Cryptographic Storage</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
