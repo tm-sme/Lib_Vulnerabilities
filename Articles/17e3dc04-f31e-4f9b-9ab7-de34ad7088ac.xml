@@ -40,6 +40,9 @@ To check for adequate protection against this vulnerability type, verify that PB
 
 =Specific Technologies=
 
+* [[b07ad2fb-1079-4097-a1ff-3991f1f64e05|ASP.NET Password Management]]
+* [[cad337fe-3564-4f00-9894-a23ab01abfe3|PHP Password Management]]
+* [[1f4a41a3-1598-4a12-a63c-966d0c6ad77c|C++ Password Management]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
