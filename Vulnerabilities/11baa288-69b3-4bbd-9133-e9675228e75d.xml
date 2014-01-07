@@ -45,6 +45,18 @@ Unique tokens are used in sensitive requests:
 Users are required to re-authenticate for sensitive operations:
 * [[0c6a261a-14e8-4c36-838d-17b4a8b6532c|Reauthentication Is Required for Sensitive Operations]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training courses to learn more about Cross-Site Request Forgery including techniques for remediation and prevention.
+
+==Creating Secure PHP Code==
+
+This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code. 
+
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620|COD 315 Creating Secure PHP Code]]
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about Cross-Site Request Forgery, see http://en.wikipedia.org/wiki/Cross-site_request_forgery]]></Data>

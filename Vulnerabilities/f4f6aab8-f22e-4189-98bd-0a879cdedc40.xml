@@ -51,6 +51,18 @@ Unique tokens are used in sensitive requests:
 Users are required to re-authenticate for sensitive operations:
 * [[df093ee3-ad7b-4191-935c-8bb0cad78d98|Re-authentication Is Enforced When Executing Critical Functionality]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training course(s) to learn more about Cross-Site Request Forgery including techniques for remediation and prevention.
+
+==Creating Secure Code – JRE Foundations==
+
+In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
+
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615|COD 211 Creating Secure Code – JRE Foundations]].
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For more information about Cross-Site Request Forgery, see http://en.wikipedia.org/wiki/Cross-site_request_forgery]]></Data>

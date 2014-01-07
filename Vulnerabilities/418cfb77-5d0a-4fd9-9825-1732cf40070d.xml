@@ -42,6 +42,23 @@ To check for adequate protection against this vulnerability, find all code that 
 All input is validated:
 * [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Input from All Sources Is Validated]]
 * [[61869793-2c10-40c0-b82a-babcc0312697|Input Is Validated for Length, Range, Format And Type]]
-]]></Data>
+
+=Computer Based Training Links=
+
+Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+
+==PCI Best Practices for Developers==
+
+Payment Card Industry Data Security Standards (PCI-DSS) provide minimum requirements for addressing the security of software systems handling credit card information. Addressing the requirements during the design and build stages of the development life cycle improves application security and simplifies compliance. This course will provide software developers with an in-depth understanding of application security issues within the PCI-DSS and best practices for addressing each requirement.
+
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123434|COD 222 PCI Best Practices for Developers]]
+
+==Creating Secure Application Architecture==
+
+Software development is about creating functionality, features, and performance that meet user requirements. Secure system development requires you to think about what users want to do, what users should not be able to do, and then creating a solution. Users should not be able to access or tamper with resources that are not allocated to them.
+
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123386|DES 311 Creating Secure Application Architecture]]
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//]]></Data>
   </Content>
 </TeamMentor_Article>

@@ -39,6 +39,18 @@ Passwords are hashed and salted for storage using PBKDF2:
 * [[d74fe6bf-387f-4ff1-9edb-d0275eedffc0|Passwords Are Stored Securely]]
 * [[9031f577-80b0-4a2e-9652-7b470439a0df|Access to the Credential Store Is Limited]]
 
+=Computer Based Training Links=
+
+Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+
+==Fundamentals of Application Security==
+
+This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk. 
+
+[[http://teamprofessor.absorbtraining.com/ninja/#/courses/course/123404|AWA 101 Fundamentals of Application Security]]
+
+//Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
+
 =Additional Resources
 
 * For the CWE page about this vulnerability type, see http://cwe.mitre.org/data/definitions/522.html]]></Data>

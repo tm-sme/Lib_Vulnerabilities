@@ -32,8 +32,8 @@ To check for adequate protection against this vulnerability, identify all user-m
 
 =Specific Technologies
 
-* [[00000000-0000-0000-0000-000000559673|ASP.NET Parameter Tampering]]
-* [[00000000-0000-0000-0000-000000140c0a|Java Parameter Tampering]]
-* [[00000000-0000-0000-0000-0000000966f0|PHP Parameter Tampering]]]]></Data>
+* [[64071685-f105-4cf1-8196-b2599d534d46|ASP.NET Parameter Tampering]]
+* [[db479b30-f48e-4d2f-94f7-8fc050021021|Java Parameter Tampering]]
+* [[e7bb21cb-13d1-4ada-a64b-987b96b49baa|PHP Parameter Tampering]]]]></Data>
   </Content>
 </TeamMentor_Article>

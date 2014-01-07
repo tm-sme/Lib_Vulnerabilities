@@ -5,7 +5,7 @@
     <Id_History>6223be91-b703-41cb-83db-ceb4afb98c78,</Id_History>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Weak Keystore Protection Attack</Title>
-    <Category>Encryption</Category>
+    <Category>Cryptographic Storage</Category>
     <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Attack</Type>
