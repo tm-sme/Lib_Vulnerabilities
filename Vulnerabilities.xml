@@ -10,7 +10,7 @@
         <view id="c045c767-1360-4455-baa1-93a08cd01566" caption="A2 Broken Authentication and Session Management" creationDate="2014-04-02T11:53:39.0268+00:00">
           <items />
         </view>
-        <view id="15907acb-b64e-43cf-b90e-1341e3f0a038" caption="new view" creationDate="2014-04-02T11:54:04.018+00:00">
+        <view id="15907acb-b64e-43cf-b90e-1341e3f0a038" caption="A3-Cross-Site Scripting (XSS)" creationDate="2014-04-02T11:54:04.018+00:00">
           <items />
         </view>
       </folder>
