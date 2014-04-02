@@ -55,7 +55,9 @@
           <items />
         </view>
         <view id="9d84eb41-831d-4502-962e-117a4461daa0" caption="A10-Unvalidated Redirects and Forwards" creationDate="2014-04-02T11:56:16.5868+00:00">
-          <items />
+          <items>
+            <item>90608236-847e-47ff-bb8f-b551297a25af</item>
+          </items>
         </view>
       </folder>
     </libraryStructure>
