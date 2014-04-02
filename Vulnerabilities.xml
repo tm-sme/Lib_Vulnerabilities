@@ -3,7 +3,11 @@
   <library name="be5273b1-d682-4361-99d9-6204f2d47eb7" caption="Vulnerabilities">
     <items />
     <libraryStructure>
-      <folder folderId="c53ab3f8-ec69-4856-8a20-3aa3c68ce053" caption="OWASP Top 10 2013" />
+      <folder folderId="c53ab3f8-ec69-4856-8a20-3aa3c68ce053" caption="OWASP Top 10 2013">
+        <view id="90bbf77c-c2fb-402e-9511-b35903b04030" caption="new view" creationDate="2014-04-02T11:53:13.2088+00:00">
+          <items />
+        </view>
+      </folder>
     </libraryStructure>
   </library>
 </guidanceExplorer>
