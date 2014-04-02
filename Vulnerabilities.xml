@@ -31,6 +31,9 @@
         <view id="2578658c-a73d-4194-b7ff-bf734577a735" caption="A9-Using Components with Known Vulnerabilities" creationDate="2014-04-02T11:56:05.1832+00:00">
           <items />
         </view>
+        <view id="9d84eb41-831d-4502-962e-117a4461daa0" caption="new view" creationDate="2014-04-02T11:56:16.5868+00:00">
+          <items />
+        </view>
       </folder>
     </libraryStructure>
   </library>
