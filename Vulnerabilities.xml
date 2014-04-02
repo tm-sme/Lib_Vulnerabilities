@@ -4,7 +4,12 @@
     <items />
     <libraryStructure>
       <view id="4aae031e-6e37-40b8-b6ee-9cef33ffeefc" caption="OWASP Top 10 2013" creationDate="2014-04-02T11:51:23.26+00:00">
-        <items />
+        <items>
+          <item>5869ac6a-0a19-4541-ac8f-0d74e09f3156</item>
+          <item>8eba1b70-1b1a-4810-a819-1c212cf33099</item>
+          <item>94e52aca-06b6-4747-9bc9-f0149208f18c</item>
+          <item>c4914e51-2609-4edc-8133-31491f1b03c0</item>
+        </items>
       </view>
     </libraryStructure>
   </library>
