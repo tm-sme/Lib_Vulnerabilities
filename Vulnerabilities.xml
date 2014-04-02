@@ -14,7 +14,14 @@
           </items>
         </view>
         <view id="c045c767-1360-4455-baa1-93a08cd01566" caption="A2-Broken Authentication and Session Management" creationDate="2014-04-02T11:53:39.0268+00:00">
-          <items />
+          <items>
+            <item>57829386-5df5-4f7f-993a-3552ab3a292c</item>
+            <item>6d9c6ae8-f88a-408c-80d2-1c8a801cbc6b</item>
+            <item>7f9f3bce-a716-42fc-9f5b-2e452346743f</item>
+            <item>ad57c433-709e-4958-985c-4fd6e69e81b8</item>
+            <item>fbd326f5-b3fc-4d40-b562-19ec7299f892</item>
+            <item>fd3db9ad-33b8-41af-aba9-fc5fb12bb562</item>
+          </items>
         </view>
         <view id="15907acb-b64e-43cf-b90e-1341e3f0a038" caption="A3-Cross-Site Scripting (XSS)" creationDate="2014-04-02T11:54:04.018+00:00">
           <items>
