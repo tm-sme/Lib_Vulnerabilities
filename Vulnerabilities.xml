@@ -7,6 +7,9 @@
         <view id="90bbf77c-c2fb-402e-9511-b35903b04030" caption="A1 Injection" creationDate="2014-04-02T11:53:13.2088+00:00">
           <items />
         </view>
+        <view id="c045c767-1360-4455-baa1-93a08cd01566" caption="new view" creationDate="2014-04-02T11:53:39.0268+00:00">
+          <items />
+        </view>
       </folder>
     </libraryStructure>
   </library>
