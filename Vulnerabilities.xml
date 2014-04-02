@@ -35,7 +35,13 @@
           <items />
         </view>
         <view id="4eb415d6-1e3b-4bdc-a062-d0c07bb7a970" caption="A6-Sensitive Data Exposure" creationDate="2014-04-02T11:55:16.7296+00:00">
-          <items />
+          <items>
+            <item>17ecc589-9be2-4429-8dc4-9f61556f63b1</item>
+            <item>57829386-5df5-4f7f-993a-3552ab3a292c</item>
+            <item>6b5c9bf9-5d45-4192-a2da-3194ddf3416b</item>
+            <item>b2211d6a-c90a-4a42-8586-b364c3630d2c</item>
+            <item>b2e4cadd-9cac-42c5-9740-eba332d64ee5</item>
+          </items>
         </view>
         <view id="03a92311-a4da-42bf-88e8-0309f1f7a094" caption="A7-Missing Function Level Access Control" creationDate="2014-04-02T11:55:30.364+00:00">
           <items />
