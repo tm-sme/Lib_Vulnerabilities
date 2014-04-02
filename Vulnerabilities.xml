@@ -3,7 +3,7 @@
   <library name="be5273b1-d682-4361-99d9-6204f2d47eb7" caption="Vulnerabilities">
     <items />
     <libraryStructure>
-      <view id="4aae031e-6e37-40b8-b6ee-9cef33ffeefc" caption="new view" creationDate="2014-04-02T11:51:23.26+00:00">
+      <view id="4aae031e-6e37-40b8-b6ee-9cef33ffeefc" caption="OWASP Top 10 2013" creationDate="2014-04-02T11:51:23.26+00:00">
         <items />
       </view>
     </libraryStructure>
