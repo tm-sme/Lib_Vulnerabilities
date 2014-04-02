@@ -2,6 +2,8 @@
 <guidanceExplorer>
   <library name="be5273b1-d682-4361-99d9-6204f2d47eb7" caption="Vulnerabilities">
     <items />
-    <libraryStructure />
+    <libraryStructure>
+      <folder folderId="c53ab3f8-ec69-4856-8a20-3aa3c68ce053" caption="new folder" />
+    </libraryStructure>
   </library>
 </guidanceExplorer>
