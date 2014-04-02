@@ -19,7 +19,7 @@
         <view id="e5dd0783-29cf-464b-b5bb-684b9d1f75f1" caption="A5-Security Misconfiguration" creationDate="2014-04-02T11:55:03.1732+00:00">
           <items />
         </view>
-        <view id="4eb415d6-1e3b-4bdc-a062-d0c07bb7a970" caption="new view" creationDate="2014-04-02T11:55:16.7296+00:00">
+        <view id="4eb415d6-1e3b-4bdc-a062-d0c07bb7a970" caption="A6-Sensitive Data Exposure" creationDate="2014-04-02T11:55:16.7296+00:00">
           <items />
         </view>
       </folder>
