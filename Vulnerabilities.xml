@@ -25,6 +25,9 @@
         <view id="03a92311-a4da-42bf-88e8-0309f1f7a094" caption="A7-Missing Function Level Access Control" creationDate="2014-04-02T11:55:30.364+00:00">
           <items />
         </view>
+        <view id="8eeb651d-2c75-4a10-a811-e0bb8501d0f9" caption="new view" creationDate="2014-04-02T11:55:52.672+00:00">
+          <items />
+        </view>
       </folder>
     </libraryStructure>
   </library>
