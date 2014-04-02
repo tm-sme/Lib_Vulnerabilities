@@ -16,7 +16,7 @@
         <view id="ddc3b05d-290c-4f6d-9586-ffee479bcd91" caption="A4-Insecure Direct Object References" creationDate="2014-04-02T11:54:39.3988+00:00">
           <items />
         </view>
-        <view id="e5dd0783-29cf-464b-b5bb-684b9d1f75f1" caption="new view" creationDate="2014-04-02T11:55:03.1732+00:00">
+        <view id="e5dd0783-29cf-464b-b5bb-684b9d1f75f1" caption="A5-Security Misconfiguration" creationDate="2014-04-02T11:55:03.1732+00:00">
           <items />
         </view>
       </folder>
