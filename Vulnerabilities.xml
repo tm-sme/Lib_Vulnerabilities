@@ -22,6 +22,9 @@
         <view id="4eb415d6-1e3b-4bdc-a062-d0c07bb7a970" caption="A6-Sensitive Data Exposure" creationDate="2014-04-02T11:55:16.7296+00:00">
           <items />
         </view>
+        <view id="03a92311-a4da-42bf-88e8-0309f1f7a094" caption="new view" creationDate="2014-04-02T11:55:30.364+00:00">
+          <items />
+        </view>
       </folder>
     </libraryStructure>
   </library>
