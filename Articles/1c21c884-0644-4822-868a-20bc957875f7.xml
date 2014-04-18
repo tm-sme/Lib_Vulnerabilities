@@ -25,7 +25,11 @@ The impact of XML external entity injection vulnerabilities is information discl
 =Countermeasures=
 To prevent XML external entity injection vulnerabilities, disable the "external entities" feature.
 
+* [[5b653aa9-7669-4dcb-88d2-8b0f601da772|Disable the External Entities Feature]]
+
 =Application Check=
-To check for adequate protection against this vulnerability, verify that the "external entities" feature is disabled.]]></Data>
+To check for adequate protection against this vulnerability, verify that the "external entities" feature is disabled.
+
+* [[6683aea9-bb36-4b3d-916d-b94927faa528|The External Entities Feature Is Disabled]]]]></Data>
   </Content>
 </TeamMentor_Article>
