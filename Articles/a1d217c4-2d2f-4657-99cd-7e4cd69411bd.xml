@@ -13,7 +13,19 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[=Description=
+Some applications allow the user to choose which files to access. Some of these applications don't sufficiently validate the selected file path. This path traversal vulnerability allows an attacker to access files outside of the locations authorized by the application. 
+
+Path traversal vulnerabilities typically affect web applications. 
+
+=Impact=
+Using path traversal, an attacker is able to access files outside of the scope intended by the application. The attacker may then access sensitive operating system files, and application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered to take full control of the application or the application server.
+
+=Countermeasures=
+To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for all filesystem access.
+
+==Application Check=
+To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.]]></Data>
   </Content>
 </TeamMentor_Article>
