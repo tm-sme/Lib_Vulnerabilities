@@ -27,8 +27,16 @@ Another likely scenario is that the attacker will use XML injection to perform c
 =Countermeasures=
 To protect against XML injection attacks, validate all input and use parameterized APIs to build XML documents (instead of concatenating user data into strings that contain XML data).
 
+* [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
+
+* [[3ed12a86-3f05-4abd-b848-70b17fee1ca0|Use Parameterized APIs to Build XML Documents]]
+
 =Application Check=
 To check for adequate protection against XML injection, verify that all input is validated and that parameterized APIs are used to build XML documents.
+
+* [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
+
+* [[67ddb761-0356-4c65-b233-0ef0ac635bb8|Parameterized APIs Are Used to Build XML Documents]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
