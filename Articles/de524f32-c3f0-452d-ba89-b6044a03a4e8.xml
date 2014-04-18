@@ -36,7 +36,11 @@ File upload vulnerabilities can be prevented by storing uploaded files outside o
 * [[ef3540f4-3ab7-4e17-a9bd-c30bac1f7c72|Scramble Names of Uploaded Files]]
 
 =Application Check=
-To check for adequate protection against file upload vulnerabilities, check if users are prevented from uploading files, that uploaded files are stored outside of web root, that access to uploaded files is blocked, that uploaded files cannot be executed, that names of uploaded files are scrambled, and that the types of files that can be uploaded are limited.
+To check for adequate protection against file upload vulnerabilities, check if uploaded files are stored outside of web root and if names of uploaded files are scrambled.
+
+* [[bb3388d3-b96e-4937-a527-c23f8b96f926|Uploaded Files Are Stored Outside of Root]]
+
+* [[9bdec757-76ad-4924-a18b-91ab7ec1e526|Names of Uploaded Files Are Scrambled]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
