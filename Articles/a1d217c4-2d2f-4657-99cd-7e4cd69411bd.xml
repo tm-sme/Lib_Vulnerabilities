@@ -34,6 +34,14 @@ To prevent this problem, canonicalize all file paths and name input, validate al
 * [[da2ef63c-2068-41a2-a096-564da21ead6a|Use Reference Maps to Access Objects]]
 
 ==Application Check=
-To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.]]></Data>
+To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.
+
+* [[fa1c9336-4e98-4970-8c77-535a20a2f2a9|All Input Used to Identify Resources Is Canonicalized]]
+
+* [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
+
+* [[70a45962-ca20-4795-bd0c-032178332ece|Access Control Checks Are Performed for All Filesystem Access]]
+
+* [[b86589e0-1cba-4b09-8746-84d6db219e24|Reference Maps Are Used to Access Objects]]]]></Data>
   </Content>
 </TeamMentor_Article>
