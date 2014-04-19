@@ -28,7 +28,20 @@ A command injection vulnerability acts as a virtual backdoor for an attacker to 
 =Countermeasures=
 To prevent command injection vulnerabilities, validate all input, use parameterized APIs to execute external commands if such APIs are available, and avoid using external commands if possible. 
 
+* [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
+
+* [[90c1c015-6bee-4368-80e2-5e87d630c606|Avoid Using External Commands]]
+
+* [[4b8969b1-057e-484d-ad24-7d030cd47e02|Use Parameterized APIs to Execute External Commands]]
+
 =Application Check=
-To check for adequate protection against this vulnerability, ensure that all input is validated, parameterized APIs are used, and external commands are avoided. ]]></Data>
+To check for adequate protection against this vulnerability, ensure that all input is validated, parameterized APIs are used, and external commands are avoided. 
+
+* [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
+
+* [[bc682ac4-f9ae-4354-9c15-db06e508ca84|External Commands Are Avoided]]
+
+* [[62ea2ac6-66d8-47b1-a2c0-7b63bd70b581|Parameterized APIs Are Used to Execute External Commands]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
