@@ -25,7 +25,11 @@ Unreleased resource issues might result in Denial of Service conditions. If the 
 =Countermeasures=
 To prevent resource leaks, release all system resources after using them.
 
+* [[2eaec1a2-2a85-40dd-b295-e9f865002bc1|Release All System Resources after Using Them]]
+
 =Application Check=
-To check for adequate protection against resource leaks, make sure that all system resources are released after being used.]]></Data>
+To check for adequate protection against resource leaks, make sure that all system resources are released after being used.
+
+* [[0ffa3bea-c40f-4723-84ae-ba97886c2148|All System Resources Are Released After Being Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
