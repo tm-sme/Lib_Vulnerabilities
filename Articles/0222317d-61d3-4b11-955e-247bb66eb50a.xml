@@ -25,8 +25,11 @@ The impact of null dereference in managed languages is denial of service. The ap
 =Countermeasures=
 To prevent null dereference vulnerabilities, check object references for null before using them. Usually, an object reference is passed as an argument to a function - in such situations, it is best to check these object references for null in the very beginning of the function and throw an exception or return an error code if a null value is detected. 
 
+* [[92f27c14-6962-4366-875f-101e6ab68230|Check Object References for Null Before Using Them]]
+
 =Application Check=
 To check for adequate protection against this vulnerability, make sure that object references are checked for null in the beginning of function definitions or at least before the object references are used.
-]]></Data>
+
+* [[54335321-0b6a-4d2e-8ee3-594ecf8c00cf|Object References Are Checked for Null Before Being Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
