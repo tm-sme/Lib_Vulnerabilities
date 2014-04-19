@@ -38,6 +38,16 @@ To prevent this problem, canonicalize all file path and name input, validate all
 
 =Application Check=
 
-To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, access control checks are performed for all filesystem access, and directory browsing is disabled. ]]></Data>
+To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, access control checks are performed for all filesystem access, and directory browsing is disabled. 
+
+* [[4e9ccc32-97e6-441e-8d0c-9e969c8634ab|All File Name and Path Input Is Canonicalized]]
+
+* [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]
+
+* [[f3747faf-6e0b-43af-ae92-ed3736be390a|Access Control Permissions Are Checked When Referencing Objects]]
+
+* [[54ea1759-e5e8-4eee-84cc-67607fef0c30|Indirect Object References Are Used]]
+
+* [[65e70f79-645d-415c-9e71-9cff045cc1c4|Directory Browsing Is Disabled]]]]></Data>
   </Content>
 </TeamMentor_Article>
