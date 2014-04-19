@@ -31,7 +31,15 @@ After gaining as much access as possible, the attacker will typically evaluate t
 =Countermeasures=
 File upload vulnerabilities can be prevented by storing uploaded files outside of web root and scrambling names of uploaded files.
 
+* [[1eb615f4-c256-485e-be57-d35ab9b7b63f|Store Uploaded Files Outside of Web Root]]
+
+* [[1b606305-833f-46bd-b40d-81cd6c76d607|Scramble Names of Uploaded Files]]
+
 =Application Check=
-To check for adequate protection against file upload vulnerabilities, check if uploaded files are stored outside of web root and if names of uploaded files are scrambled.]]></Data>
+To check for adequate protection against file upload vulnerabilities, check if uploaded files are stored outside of web root and if names of uploaded files are scrambled.
+
+* [[ac20a446-7eec-4a71-97fd-b6a0c8b57c42|Uploaded Files Are Stored Outside of Web Root]]
+
+* [[8377689b-57ca-4b72-91a3-1a4b0f41f2e0|Names of Uploaded Files Are Scrambled]]]]></Data>
   </Content>
 </TeamMentor_Article>
