@@ -23,9 +23,13 @@ XPath injection applies to any application that uses XPath to query XML document
 XPath injection attacks may allow an attacker to retrieve, manipulate, or destroy data stored in XML documents. The exact impact depends on the type of XML data that is exposed via XPath injection. If authentication data is exposed, the attacker is able to take over any user account. By taking over the administrator's account, the attacker is able to take full control of the application. 
 
 =Countermeasures=
-To prevent this vulnerability, validate all input and use parameterized APIs if possible. 
+To prevent this vulnerability, validate all input. 
+
+* [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
 
 =Application Check=
-To check for adequate protection against this vulnerability, find all code that uses XPath queries and make sure it does not include unvalidated user input.]]></Data>
+To check for adequate protection against this vulnerability, find all code that uses XPath queries and make sure it does not include unvalidated user input.
+
+* [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
