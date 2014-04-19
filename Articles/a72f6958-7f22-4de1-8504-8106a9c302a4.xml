@@ -31,7 +31,15 @@ Many database servers also allow execution of arbitrary operating system command
 =Countermeasures=
 To prevent this problem, validate all input and use parameterized APIs for database access. 
 
+* [[a8eb9762-08f6-4e61-afa7-23386cbca281|Validate All Input]]
+
+* [[6c0bb66c-0fd6-4297-a2b6-d3cf399030fa|Use Parameterized APIs for Database Access]]
+
 =Application Check=
-To check for adequate protection against this vulnerability, ensure that all input is validated and that parameterized APIs are used for database access.]]></Data>
+To check for adequate protection against this vulnerability, ensure that all input is validated and that parameterized APIs are used for database access.
+
+* [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]
+
+* [[bd42f983-e0f6-4dd9-8dfb-51cba674b906|Parameterized APIs Are Used for Database Access]]]]></Data>
   </Content>
 </TeamMentor_Article>
