@@ -27,7 +27,19 @@ There is a broad range of possible attack scenarios that involve weak encryption
 =Countermeasures=
 To prevent encryption issues, use strong cryptographic algorithms correctly, use strong keys, and protect the encryption keys.
 
+* [[ef249787-65df-476b-a344-d2df7578732e|Use Strong Cryptographic Algorithms to Secure Sensitive Data]]
+
+* [[58b12785-2ca7-48b0-89c5-8bee7aaa1cf8|Use Strong Encryption Keys]]
+
+* [[b017f172-171b-4aa3-96d4-47cbaaf362e2|Protect the Encryption Keys]]
+
 =Application Check=
-To ensure that strong encryption is used, verify that strong cryptographic algorithms are used, verified that they are used correctly, verify that strong keys are used and that the keys are protected.]]></Data>
+To ensure that strong encryption is used, verify that strong cryptographic algorithms are used, verified that they are used correctly, verify that strong keys are used and that the keys are protected.
+
+* [[dab7ea8c-2c13-4aa6-b644-897960e4859a|Strong Cryptographic Algorithms Are Used to Secure Sensitive ]]
+
+* [[e19e6c8e-f5e4-4607-8c71-34102dc2e760|Encryption Keys Are Protected]]
+
+* [[d498b6c2-c007-4094-9a46-f3e06bdf50e7|Strong Encryption Keys Are Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
