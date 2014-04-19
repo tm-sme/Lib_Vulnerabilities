@@ -25,7 +25,11 @@ XPath injection attacks may allow an attacker to retrieve, manipulate, or destro
 =Countermeasures=
 To prevent this vulnerability, validate all input and use parameterized APIs if possible. 
 
+* [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
+
 =Application Check=
-To check for adequate protection against this vulnerability, find all code that uses XPath queries and make sure it does not include unvalidated user input.]]></Data>
+To check for adequate protection against this vulnerability, find all code that uses XPath queries and make sure it does not include unvalidated user input.
+
+* [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]]]></Data>
   </Content>
 </TeamMentor_Article>
