@@ -21,9 +21,13 @@ Lightweight Directory Access Protocol (LDAP) is a widely used protocol for acces
 LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker may leverage this vulnerability to view personal user information, to give himself administrative privileges, or to take over another account. Once the attacker has administrative privileges, he usually has full control of the application. 
 
 =Countermeasures=
-To prevent LDAP injection, validate all input and use parameterized APIs if they are available. 
+To prevent LDAP injection, validate all input.
+
+* [[a8eb9762-08f6-4e61-afa7-23386cbca281|Validate All Input]]
 
 =Application Check=
-To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated.]]></Data>
+To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated.
+
+* [[8d8c24b0-096b-43f4-9391-9b293313a0e8|All Input Is Validated]]]]></Data>
   </Content>
 </TeamMentor_Article>
