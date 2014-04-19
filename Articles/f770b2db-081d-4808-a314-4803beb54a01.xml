@@ -31,9 +31,11 @@ A client-side network exploit involves the attacker placing exploit code as a tr
 =Countermeasures=
 To prevent string termination errors, validate data length before copying.
 
-
+* [[c62fb9d2-95f1-4e36-b10f-cdf9451d15ce|Allocate Enough Buffer Space for Copying Data]]
 
 =Application Check=
-To check for adequate protection against string termination errors, verify that data length is validated before copying.]]></Data>
+To check for adequate protection against string termination errors, verify that data length is validated before copying.
+
+* [[07732230-8869-45d1-b65c-278142d32f31|Buffer Size Is Checked During Copying]]]]></Data>
   </Content>
 </TeamMentor_Article>
