@@ -25,6 +25,14 @@ Using path traversal, an attacker is able to access files outside of the scope i
 =Countermeasures=
 To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for all filesystem access.
 
+* [[004526a6-5b2f-4094-94fa-a80d818c0a41|Canonicalize All Input Used to Identify Resources]]
+
+* [[a8eb9762-08f6-4e61-afa7-23386cbca281|Validate All Input]]
+
+* [[983726cb-b3a5-4e23-af5f-04d64e95a59f|Perform Access Control Checks for Any Filesystem Access]]
+
+* [[da2ef63c-2068-41a2-a096-564da21ead6a|Use Reference Maps to Access Objects]]
+
 ==Application Check=
 To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.]]></Data>
   </Content>
