@@ -27,7 +27,20 @@ System information leaks can be used by attackers to exploit other vulnerabiliti
 =Countermeasures=
 To prevent system information leaks, make sure to handle all errors, use simple error messages, and disable platform banners.
 
+* [[a706450d-653c-4928-84ea-b9f754db8644|Use Structured Exception Handling]]
+
+* [[fd1d911e-c8ad-4951-a047-62e5b422f094|Display Simple Error Messages]]
+
+* [[7f064998-a562-4e03-abef-676230e80d7c|Disable Platform Banners]]
+
 =Application Check=
-To verify that system information leaks are prevented, make sure that all errors are handled, simple error messages are used, and platform banners are disabled.]]></Data>
+To verify that system information leaks are prevented, make sure that all errors are handled, simple error messages are used, and platform banners are disabled.
+
+* [[3fcd2a1c-d362-4a89-954d-b31a7c93df7f|Structured Exception Handling Is Used]]
+
+* [[7e9f8f71-a09e-44c2-adf6-80261985ed26|Simple Error Messages Are Used]]
+
+* [[e235601d-39dd-4235-b638-2321eb014f15|Platform Banners Are Disabled]]
+]]></Data>
   </Content>
 </TeamMentor_Article>
