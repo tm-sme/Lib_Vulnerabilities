@@ -27,7 +27,11 @@ If a pseudo-random number generator with poor entropy is used, the cryptographic
 =Countermeasures=
 To prevent insecure randomness vulnerabilities, use a cryptographically strong pseudo-random number generator.
 
+* [[603cc670-a592-486e-8e85-629f2d9e531e|Use a Strong PRNG]]
+
 =Application Check=
-To check for adequate protection against insecure randomness vulnerabilities, make sure that a cryptographically strong pseudo-random number generator is used.]]></Data>
+To check for adequate protection against insecure randomness vulnerabilities, make sure that a cryptographically strong pseudo-random number generator is used.
+
+* [[17176ab2-aeee-4847-bd4a-a4109040710b|A Strong PRNG Is Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
