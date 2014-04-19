@@ -29,7 +29,15 @@ A real attacker would almost certainly choose cross-site scripting as the method
 =Countermeasures=
 To prevent XSLT injection vulnerabilities, validate all data and don't concatenate user data into XSL stylesheets.
 
+* [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
+
+* [[62b76b9c-cf83-4d44-9ad5-0c6fef61d563|Do Not Concatenate User Data into XSL Stylesheets]]
+
 =Application Check=
-To check for adequate protection against XSLT injection vulnerabilities, verify that all data is validated and that user data is not concatenated into XSL stylesheets.]]></Data>
+To check for adequate protection against XSLT injection vulnerabilities, verify that all data is validated and that user data is not concatenated into XSL stylesheets.
+
+* [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
+
+* [[679e37ba-e939-4798-83fc-0056af42426e|Data Is Not Concatenated Into XSL Stylesheets]]]]></Data>
   </Content>
 </TeamMentor_Article>
