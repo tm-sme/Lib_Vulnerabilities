@@ -4,8 +4,8 @@
     <Id>fc1d8337-3bc1-40f5-bc88-db1575d5657a</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>File Upload</Title>
-    <Category />
-    <Phase />
+    <Category>Authorization</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>File Upload</DirectLink>
