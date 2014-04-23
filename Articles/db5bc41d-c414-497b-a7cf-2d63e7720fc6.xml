@@ -4,8 +4,8 @@
     <Id>db5bc41d-c414-497b-a7cf-2d63e7720fc6</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Command Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Command Injection</DirectLink>
