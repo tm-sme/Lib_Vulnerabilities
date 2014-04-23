@@ -37,6 +37,8 @@ To ensure that strong encryption is used, verify that strong cryptographic algor
 =Specific Technologies=
 
 * [[40181068-beac-49cc-bd9a-bc4a208dad8d|ASP.NET Weak Encryption]]
-* [[676b874a-f1e3-4957-855e-c386bd289e22|Java Weak Encryption]]]]></Data>
+* [[676b874a-f1e3-4957-855e-c386bd289e22|Java Weak Encryption]]
+* [[bd46c04c-a6bc-44f7-bf00-646738e228c6|C++ Weak Encryption]]
+* [[88aedbf8-d924-412b-a941-05f70d0c9820|PHP Weak Encryption]]]]></Data>
   </Content>
 </TeamMentor_Article>
