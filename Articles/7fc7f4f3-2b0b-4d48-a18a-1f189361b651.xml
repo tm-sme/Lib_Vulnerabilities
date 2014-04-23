@@ -4,8 +4,8 @@
     <Id>7fc7f4f3-2b0b-4d48-a18a-1f189361b651</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>LDAP Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>LDAP Injection</DirectLink>
