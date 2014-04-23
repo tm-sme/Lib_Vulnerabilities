@@ -3,10 +3,12 @@
   <Metadata>
     <Id>f5f78214-e44f-4147-aed3-32bf78fb20db</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
-    <Category />
-    <Technology />
-    <Type />
+    <Title>Unreleased Resource</Title>
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Unreleased Resource</DirectLink>
     <Author />
     <Priority />
     <Status />
