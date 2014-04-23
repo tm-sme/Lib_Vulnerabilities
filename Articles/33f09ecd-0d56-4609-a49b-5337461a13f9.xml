@@ -13,7 +13,21 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[=Description=
+XQuery injection vulnerabilities occur when untrusted data is concatenated into XQuery queries, which allows the attacker to execute arbitrary queries. XQuery injection vulnerabilities are similar to SQL injection vulnerabilities, but they affect XML databases instead of SQL databases. XQuery injection is often more dangerous than SQL injection, because permissions are not enforced and the malicious queries can access every part of the XML documents. XQuery injection applies to any application that uses XQuery to query XML documents. 
+
+=Impact=
+XQuery injection allows the attacker to execute arbitrary XQuery queries. XQuery injection attacks may allow an attacker to retrieve, manipulate, or destroy data stored in XML documents. The exact impact depends on the type of XML data that is exposed via XQuery injection. If authentication data is exposed, the attacker is able to take over any user account. By taking over the administrator's account, the attacker is able to take full control of the application. 
+
+=Countermeasures=
+To prevent this vulnerability, validate all input.  
+
+=Application Check=
+To check for adequate protection against this vulnerability, find all code that uses XQuery queries and make sure it does not include unvalidated user input.
+
+=Specific Technology=
+
+* [[09e95598-89b6-43b9-b910-a2f0100648ce|PHP XQuery Injection]]]]></Data>
   </Content>
 </TeamMentor_Article>
