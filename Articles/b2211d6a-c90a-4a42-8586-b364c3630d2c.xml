@@ -37,6 +37,7 @@ To check for adequate protection against system information leaks, verify that a
 =Specific Technologies=
 
 * [[d2455286-ddf5-474b-b8c9-7cede24ef31a|ASP.NET System Information Leak]]
+* [[829e3767-afca-4485-9fbb-8c7ab3be3061|PHP System Information Leak]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
