@@ -4,8 +4,8 @@
     <Id>bd46c04c-a6bc-44f7-bf00-646738e228c6</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Weak Encryption</Title>
-    <Category />
-    <Phase />
+    <Category>Cryptographic Storage</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Weak Encryption</DirectLink>
