@@ -4,8 +4,8 @@
     <Id>0c03c774-eb34-4c5e-bbbb-c231fff51eb5</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>XSLT Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>XSLT Injection</DirectLink>
