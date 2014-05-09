@@ -3,10 +3,12 @@
   <Metadata>
     <Id>d703cb26-0090-4750-84a2-6aaeb8fb22d2</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Improper Output Handling</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology> Any</Technology>
     <Type />
+    <DirectLink>Improper Output Handling</DirectLink>
     <Author />
     <Priority />
     <Status />
