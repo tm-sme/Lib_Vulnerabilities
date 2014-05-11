@@ -4,10 +4,10 @@
     <Id>b6888db3-516e-4f62-994c-240e652ecb31</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Authorization</Title>
-    <Category />
-    <Phase />
+    <Category>Authorization</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Insufficient Authorization</DirectLink>
     <Author />
     <Priority />
