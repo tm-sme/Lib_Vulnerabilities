@@ -13,7 +13,37 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Session hijacking (a.k.a. credential and session prediction) vulnerabilities occur when the application uses easy to predict session identifiers or other easy to predict methods to track user sessions.  This allows an attacker to guess the session identifier of a user and then carry out actions on the behalf of that user within the application.
+
+All web applications that use sessions are potentially affected by session hijacking vulnerabilities.
+
+==Impact==
+
+The impact of session hijacking vulnerabilities is that an attacker will be able to carry out actions on behalf of authenticated users with currently active sessions. 
+
+The greatest danger occurs when an attacker is able to hijack an administrative session. This enables the attacker to perform actions with administrative privileges and attempt to inject malicious code into the application or its data. If the attacker is able to inject malicious code, they will be able to execute arbitrary code on the server with the privileges of the compromised application. 
+
+In the event that the attacker compromises the session of a regular user, they will be able to perform actions on behalf of the hijacked user account. Usually, the attacker will be able to take over the account by changing the password, send messages to other users if the application allows it, and access the user's application data.
+
+==Countermeasures==
+
+To prevent session hijacking vulnerabilities, use platform-provided session management and force re-authentication for sensitive operations.
+
+==Application Check==
+
+To make sure that session hijacking vulnerabilities are prevented, verify that platform-provided session management is used and re-authentication is forced for sensitive operations.
+
+==Computer Based Training==
+
+
+==Additional Resources==
+
+
+
+* For more information about credential and session prediction, see http://projects.webappsec.org/w/page/13246918/Credential%20and%20Session%20Prediction
+]]></Data>
   </Content>
 </TeamMentor_Article>
