@@ -32,17 +32,10 @@ To prevent Server-side Include injection vulnerabilities, validate all user inpu
 
 To verify that server-side include injection vulnerabilities are prevented, make sure that all user input is validated and that file names of uploaded files are scrambled.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-
-
-* For more information about SSI injection, see http://projects.webappsec.org/w/page/13246964/SSI%20Injection
-]]></Data>
+* [[ea07a583-92f0-444e-9dd9-0026811631be|ASP.NET SSI Injection]]
+* [[4fb356d3-4298-4430-9e47-503664f29521|Java SSI Injection]]
+* [[393a1d1d-291f-4dc2-82f7-33ff189a830c|PHP SSI Injection]]]]></Data>
   </Content>
 </TeamMentor_Article>
