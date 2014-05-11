@@ -34,9 +34,12 @@ To prevent insufficient authentication vulnerabilities, require authentication f
 
 To verify that insufficient authentication vulnerabilities are prevented, make sure that authentication is required for all sensitive pages and operations.
 
+==Specific Technologies==
 
+* [[83394ce6-2dc3-4133-a899-5c3e2d37dbef|ASP.NET Insufficient Authentication]]
+* [[8d8845fe-cc58-43a9-bd52-158f4a08ce9a|Java Insufficient Authentication]]
+* [[0c9061c2-8b14-4c64-8a9a-de50216a8d84|PHP Insufficient Authentication]]
 
-==Computer Based Training==
 ]]></Data>
   </Content>
 </TeamMentor_Article>
