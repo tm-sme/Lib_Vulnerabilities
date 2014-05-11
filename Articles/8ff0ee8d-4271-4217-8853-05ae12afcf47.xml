@@ -3,10 +3,12 @@
   <Metadata>
     <Id>8ff0ee8d-4271-4217-8853-05ae12afcf47</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insufficient Authorization</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>Java</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Insufficient Authorization</DirectLink>
     <Author />
     <Priority />
     <Status />
