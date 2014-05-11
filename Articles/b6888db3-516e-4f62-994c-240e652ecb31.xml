@@ -40,15 +40,10 @@ To prevent insufficient authorization vulnerabilities, check access control perm
 
 To make sure that insufficient authorization vulnerabilities are prevented, verify that access control permissions are checked for all sensitive operations and that role-based authorization is used.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-* For more information about insufficient authorization, see http://projects.webappsec.org/w/page/13246940/Insufficient%20Authorization
-]]></Data>
+* [[d639e1ab-088f-4ddd-bf9a-e931ce781277|ASP.NET Insufficient Authorization]]
+* [[8ff0ee8d-4271-4217-8853-05ae12afcf47|Java Insufficient Authorization]]
+* [[5ea74c71-cd09-4d6a-ac02-fdb5f329f353|PHP Insufficient Authorization]]]]></Data>
   </Content>
 </TeamMentor_Article>
