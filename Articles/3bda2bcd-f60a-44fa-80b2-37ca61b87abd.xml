@@ -4,10 +4,10 @@
     <Id>3bda2bcd-f60a-44fa-80b2-37ca61b87abd</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Authentication</Title>
-    <Category />
-    <Phase />
+    <Category>Authentication</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Insufficient Authentication</DirectLink>
     <Author />
     <Priority />
