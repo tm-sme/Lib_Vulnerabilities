@@ -13,7 +13,30 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Insufficient authentication vulnerabilities occur when the application allows users to perform sensitive operations or access sensitive information without properly checking their authentication credentials. The result is that attackers will be able to use application functionality that should only be available to authenticated users.
+
+All applications that use authentication are potentially affected by insufficient authentication vulnerabilities.
+
+==Impact==
+
+The impact of insufficient authentication vulnerabilities is usually that attackers that don't have legitimate application accounts will be able to perform operations that only legitimate users should be able to perform. In an extreme case, insufficient authentication might allow attackers to change user passwords and then take over their accounts. A more common example is that an attacker might be able to access or download content, such as music, without creating an account.
+
+In some cases, insufficient authentication vulnerabilities will allow attackers to perform administrative actions that allow them to take over the application. For example, an application might have a feature for executing administrators’ system commands (this is a dangerous feature to have, but some hosting panels have such functionality). If the application doesn't check authentication credentials properly before executing system commands, the attacker will be able to execute system commands and take over the applications.
+
+==Countermeasures==
+
+To prevent insufficient authentication vulnerabilities, require authentication for all sensitive pages and operations.
+
+==Application Check==
+
+To verify that insufficient authentication vulnerabilities are prevented, make sure that authentication is required for all sensitive pages and operations.
+
+
+
+==Computer Based Training==
+]]></Data>
   </Content>
 </TeamMentor_Article>
