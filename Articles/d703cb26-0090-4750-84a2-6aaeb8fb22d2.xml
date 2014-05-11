@@ -34,9 +34,12 @@ To prevent improper output handling vulnerabilities, encode all untrusted data t
 
 To make sure that improper output handling vulnerabilities are prevented, verify that all untrusted data that is included in output is encoded for the correct context and that all input is validated. 
 
-==Computer Based Training==
+==Specific Technologies==
 
-* For more information about improper output handling vulnerabilities, see http://projects.webappsec.org/w/page/13246934/Improper%20Output%20Handling
+* [[c917a959-5245-47d6-ae66-bc008512dd9c|ASP.NET Improper Output Handling]]
+* [[1eab334a-63ff-44a2-80ce-b4d407723124|Java Improper Output Handling]]
+* [[74b4e45b-cfce-44da-b368-0e2506532d28|PHP Improper Output Handling]]
+
 ]]></Data>
   </Content>
 </TeamMentor_Article>
