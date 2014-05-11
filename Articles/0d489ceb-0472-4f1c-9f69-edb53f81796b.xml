@@ -46,15 +46,12 @@ To prevent improper input handling vulnerabilities, validate all input and encod
 
 To make sure that sufficient defenses are implemented against input handling vulnerabilities, verify that all input is validated and that all untrusted data that is going to be processed or displayed is encoded for the correct context.
 
-==Computer Based Training==
+==Specific Technologies==
 
+* [[5a5359c5-7f8d-495c-9c12-ff4e8e942213|ASP.NET Improper Input Handling]]
+* [[80537b63-2f48-4e7d-a07c-bb658b912799|Java Improper Input Handling]]
+* [[b9123429-b684-4c93-bbd1-e2f1e2881420|PHP Improper Input Handling]]
 
-
-==Additional Resources==
-
-
-
-* For more information about improper input handling, see http://projects.webappsec.org/w/page/13246933/Improper%20Input%20Handling
 ]]></Data>
   </Content>
 </TeamMentor_Article>
