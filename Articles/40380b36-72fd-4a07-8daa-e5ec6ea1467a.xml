@@ -36,14 +36,11 @@ To prevent session hijacking vulnerabilities, use platform-provided session mana
 
 To make sure that session hijacking vulnerabilities are prevented, verify that platform-provided session management is used and re-authentication is forced for sensitive operations.
 
-==Computer Based Training==
+==Specific Technologies==
 
-
-==Additional Resources==
-
-
-
-* For more information about credential and session prediction, see http://projects.webappsec.org/w/page/13246918/Credential%20and%20Session%20Prediction
+* [[0c167dc8-c7c6-49df-a146-a46f819338cb|ASP.NET Session Hijacking]]
+* [[00869e27-75c2-4ba3-a91b-d15aea30411d|Java Session Hijacking]]
+* [[c13db965-fb40-4254-a7b6-3d60c579746e|PHP Session Hijacking]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
