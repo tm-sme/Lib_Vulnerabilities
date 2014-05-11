@@ -4,10 +4,10 @@
     <Id>40380b36-72fd-4a07-8daa-e5ec6ea1467a</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Session Hijacking</Title>
-    <Category />
-    <Phase />
+    <Category>Session Management</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Session Hijacking</DirectLink>
     <Author />
     <Priority />
