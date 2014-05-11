@@ -4,10 +4,10 @@
     <Id>23662293-5ddf-4a22-a5d8-e2d7186148d2</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>SSI Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>SSI Injection</DirectLink>
     <Author />
     <Priority />
