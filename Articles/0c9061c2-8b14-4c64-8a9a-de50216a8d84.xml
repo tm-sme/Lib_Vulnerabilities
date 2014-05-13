@@ -30,13 +30,14 @@ In some cases, insufficient authentication vulnerabilities will allow attackers 
 
 To prevent insufficient authentication vulnerabilities, require authentication for all sensitive pages and operations.
 
+* [[8eba2142-4a6e-4f2c-9648-3ba1cadf9621|Force Reauthentication for Sensitive Operations]]
+
 ==Application Check==
 
 To verify that insufficient authentication vulnerabilities are prevented, make sure that authentication is required for all sensitive pages and operations.
 
+* [[0c6a261a-14e8-4c36-838d-17b4a8b6532c|Reauthentication Is Required for Sensitive Operations]]
 
-
-==Computer Based Training==
 ]]></Data>
   </Content>
 </TeamMentor_Article>
