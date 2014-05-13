@@ -16,7 +16,7 @@
   <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
-Server-side Include Injection (SII) vulnerabilities occur when the application allows creation of files that contain Server-side Include directives. If an attacker is able to create files that contain Server-side Include directives, and then is able to cause the server to execute these directives by issuing HTTP requests for these files, the attacker will be able to execute arbitrary system commands on the server with the privileges of the web server daemon. 
+Server-side Include Injection (SSI) vulnerabilities occur when the application allows creation of files that contain Server-side Include directives. If an attacker is able to create files that contain Server-side Include directives, and then is able to cause the server to execute these directives by issuing HTTP requests for these files, the attacker will be able to execute arbitrary system commands on the server with the privileges of the web server daemon. 
 
 All web applications are affected by Server-side Include Injection vulnerabilities.
 
