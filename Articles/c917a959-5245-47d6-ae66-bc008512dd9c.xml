@@ -4,8 +4,8 @@
     <Id>c917a959-5245-47d6-ae66-bc008512dd9c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Improper Output Handling</Title>
-    <Category />
-    <Phase />
+    <Category>Encoding</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Improper Output Handling</DirectLink>
