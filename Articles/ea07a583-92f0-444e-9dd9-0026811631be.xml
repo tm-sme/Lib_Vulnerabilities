@@ -4,8 +4,8 @@
     <Id>ea07a583-92f0-444e-9dd9-0026811631be</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>SSI Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>SSI Injection</DirectLink>
