@@ -36,19 +36,19 @@ Other types of insufficient authorization vulnerabilities exist. They tend to be
 
 To prevent insufficient authorization vulnerabilities, check access control permissions before performing any sensitive operations and use role-based authorization.
 
+* [[ae289022-d611-4fe4-b177-45066a398da8|Force Re-authentication When Executing Critical Functionality]]
+
+* [[b0a206b5-61c4-4d9f-8c06-057783ebf249|Use Role-based Authorization]]
+
 ==Application Check==
 
 To make sure that insufficient authorization vulnerabilities are prevented, verify that access control permissions are checked for all sensitive operations and that role-based authorization is used.
 
+* [[4e186cf4-06df-4cf1-aeb9-731e218612d1|Re-authentication Is Enforced When Executing Critical Functionality]]
 
-
-==Computer Based Training==
-
-
+* [[e38cab08-316c-4257-8001-e490827fed6e|Role-based Authorization Is Used]]
 
 ==Additional Resources==
-
-
 
 * For more information about insufficient authorization, see http://projects.webappsec.org/w/page/13246940/Insufficient%20Authorization
 ]]></Data>
