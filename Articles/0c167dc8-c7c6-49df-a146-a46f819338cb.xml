@@ -32,16 +32,19 @@ In the event that the attacker compromises the session of a regular user, they w
 
 To prevent session hijacking vulnerabilities, use platform-provided session management and force re-authentication for sensitive operations.
 
+* [[96059535-1543-458e-afb7-e40360b9dcd2|Use ASP.NET Session Management]]
+
+* [[ae289022-d611-4fe4-b177-45066a398da8|Force Re-authentication When Executing Critical Functionality]]
+
 ==Application Check==
 
 To make sure that session hijacking vulnerabilities are prevented, verify that platform-provided session management is used and re-authentication is forced for sensitive operations.
 
-==Computer Based Training==
+* [[505042f3-ae71-4a3a-bf71-03fa1dbe34a7|ASP.NET Session Management Is Used]]
 
+* [[4e186cf4-06df-4cf1-aeb9-731e218612d1|Re-authentication Is Enforced When Executing Critical Functionality]]
 
 ==Additional Resources==
-
-
 
 * For more information about credential and session prediction, see http://projects.webappsec.org/w/page/13246918/Credential%20and%20Session%20Prediction
 ]]></Data>
