@@ -42,17 +42,19 @@ If input is not properly encoded when it is being processed, then the attacker m
 
 To prevent improper input handling vulnerabilities, validate all input and encode all untrusted data that is going to be processed or displayed for the correct context.
 
+* [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
+
+* [[f83b953a-9b0c-406a-b274-9b2962d9c4e7|Encode All Output Data]]
+
 ==Application Check==
 
 To make sure that sufficient defenses are implemented against input handling vulnerabilities, verify that all input is validated and that all untrusted data that is going to be processed or displayed is encoded for the correct context.
 
-==Computer Based Training==
+* [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]
 
-
+* [[13112146-7c14-4b6d-9e94-24daa22eefc4|All Output Data Is Encoded]]
 
 ==Additional Resources==
-
-
 
 * For more information about improper input handling, see http://projects.webappsec.org/w/page/13246933/Improper%20Input%20Handling
 ]]></Data>
