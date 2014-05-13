@@ -30,9 +30,17 @@ Cross-Site Scripting vulnerabilities are usually used to steal users' cookies, t
 
 To prevent improper output handling vulnerabilities, encode all untrusted data that is included in output for the correct context and validate all input.
 
+* [[f83b953a-9b0c-406a-b274-9b2962d9c4e7|Encode All Output Data]]
+
+* [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
+
 ==Application Check==
 
 To make sure that improper output handling vulnerabilities are prevented, verify that all untrusted data that is included in output is encoded for the correct context and that all input is validated. 
+
+* [[13112146-7c14-4b6d-9e94-24daa22eefc4|All Output Data Is Encoded]]
+
+* [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]
 
 ==Computer Based Training==
 
