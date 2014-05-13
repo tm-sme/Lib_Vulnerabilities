@@ -4,8 +4,8 @@
     <Id>5ea74c71-cd09-4d6a-ac02-fdb5f329f353</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Authorization</Title>
-    <Category />
-    <Phase />
+    <Category>Authorization</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insufficient Authorization</DirectLink>
