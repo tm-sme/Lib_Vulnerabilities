@@ -4,8 +4,8 @@
     <Id>74b4e45b-cfce-44da-b368-0e2506532d28</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Improper Output Handling</Title>
-    <Category />
-    <Phase />
+    <Category>Encoding</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Improper Output Handling</DirectLink>
