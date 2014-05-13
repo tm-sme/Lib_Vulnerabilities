@@ -30,13 +30,13 @@ In some cases, insufficient authentication vulnerabilities will allow attackers 
 
 To prevent insufficient authentication vulnerabilities, require authentication for all sensitive pages and operations.
 
+* [[ae289022-d611-4fe4-b177-45066a398da8|Force Re-authentication When Executing Critical Functionality]]
+
 ==Application Check==
 
 To verify that insufficient authentication vulnerabilities are prevented, make sure that authentication is required for all sensitive pages and operations.
 
-
-
-==Computer Based Training==
+* [[4e186cf4-06df-4cf1-aeb9-731e218612d1|Re-authentication Is Enforced When Executing Critical Functionality]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
