@@ -32,16 +32,19 @@ In the event that the attacker compromises the session of a regular user, they w
 
 To prevent session hijacking vulnerabilities, use platform-provided session management and force re-authentication for sensitive operations.
 
+* [[b42309de-b99e-4a32-a36e-6c4cdf9e3a6e|Use PHP Session Management]]
+
+* [[8eba2142-4a6e-4f2c-9648-3ba1cadf9621|Force Reauthentication for Sensitive Operations]]
+
 ==Application Check==
 
 To make sure that session hijacking vulnerabilities are prevented, verify that platform-provided session management is used and re-authentication is forced for sensitive operations.
 
-==Computer Based Training==
+* [[bc3f332a-c395-486b-b095-6b7cc4935367|PHP Session Management Is Used]]
 
+* [[0c6a261a-14e8-4c36-838d-17b4a8b6532c|Reauthentication Is Required for Sensitive Operations]]
 
 ==Additional Resources==
-
-
 
 * For more information about credential and session prediction, see http://projects.webappsec.org/w/page/13246918/Credential%20and%20Session%20Prediction
 ]]></Data>
