@@ -4,8 +4,8 @@
     <Id>1eab334a-63ff-44a2-80ce-b4d407723124</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Improper Output Handling</Title>
-    <Category />
-    <Phase />
+    <Category>Encoding</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Improper Output Handling</DirectLink>
