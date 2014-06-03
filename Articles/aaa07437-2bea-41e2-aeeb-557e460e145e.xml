@@ -13,7 +13,44 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Insecure indexing vulnerabilities occur when the application discloses the location of sensitive or otherwise valuable files. Insecure indexing typically occurs when a web search engine finds sensitive files while indexing the site, hence the name. Once a search engine has indexed sensitive data, an attacker can use search engine queries to retrieve the sensitive data either from the search engine cache or by following the URLs to the affected site. 
+
+All web applications are affected by insecure indexing vulnerabilities.
+
+==Impact==
+
+The impact of insecure indexing vulnerabilities is that the attacker will be able to download sensitive or otherwise valuable files without authorization. A typical scenario involves the attacker downloading sensitive documents, or downloading paid content, such as music or software, without paying.
+
+Less frequently, an attacker might be able to download database backups, authentication stores, or configuration files. The attacker will then have some authentication credentials to attempt to gain additional access to the application. An attacker who manages to gain administrative access to the application will try to inject malicious code to try to take over the application, and execute arbitrary code on the server with the privileges of the affected application. The attacker might attempt to leverage additional vulnerabilities on the server to elevate privileges and gain superuser access to the server. These scenarios are less likely, but realistic. 
+
+==Countermeasures==
+
+
+
+
+
+
+
+==Application Check==
+
+
+
+
+
+
+
+==Computer Based Training== 
+
+
+
+==Additional Resources==
+
+
+
+* For more information about insecure indexing, see http://projects.webappsec.org/w/page/13246937/Insecure%20Indexing
+]]></Data>
   </Content>
 </TeamMentor_Article>
