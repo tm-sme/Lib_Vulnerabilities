@@ -7,7 +7,7 @@
     <Category />
     <Phase />
     <Technology>Java</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Application Misconfiguration</DirectLink>
     <Author />
     <Priority />
