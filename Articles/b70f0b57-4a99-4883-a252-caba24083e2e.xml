@@ -3,10 +3,12 @@
   <Metadata>
     <Id>b70f0b57-4a99-4883-a252-caba24083e2e</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>HTTP Response Smuggling</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>ASP.NET 4.0</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>HTTP Response Smuggling</DirectLink>
     <Author />
     <Priority />
     <Status />
