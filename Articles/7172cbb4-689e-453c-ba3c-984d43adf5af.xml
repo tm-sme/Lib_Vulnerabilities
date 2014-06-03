@@ -44,20 +44,12 @@ In summary, to prevent server misconfiguration vulnerabilities, harden the serve
 
 To verify that server misconfiguration vulnerabilities are prevented, make sure that the server is hardened, all the latest patches are installed, the defense in depth principle is used, and the least privilege principle is used.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-
-
-==Additional Resources==
-
-
-
-* For more information about server misconfiguration, see http://projects.webappsec.org/w/page/13246959/Server%20Misconfiguration
-
+* [[151c5d49-b59a-45cc-9d04-32c505b7c75a|ASP.NET Server Misconfiguration]]
+* [[e078e657-4a31-4daa-91be-ec4009fa2ab9|C++ Server Misconfiguration]]
+* [[bc6dfdfe-5f79-4112-a452-b02be48538ff|Java Server Misconfiguration]]
+* [[6a1a01e1-8730-450a-946c-b9fd5483f9aa|PHP Server Misconfiguration]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
