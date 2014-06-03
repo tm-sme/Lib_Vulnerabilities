@@ -3,10 +3,12 @@
   <Metadata>
     <Id>b49ada22-a22a-4fc0-8bc6-89689288728f</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Null Byte Injection</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>Java</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Null Byte Injection</DirectLink>
     <Author />
     <Priority />
     <Status />
