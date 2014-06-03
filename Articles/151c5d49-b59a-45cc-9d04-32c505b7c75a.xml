@@ -28,7 +28,7 @@ All applications are potentially affected by server misconfiguration vulnerabili
 
 ==Impact==
 
-The impact of a server misconfiguration vulnerability can range from hypothetical to extremely dangerous.  It depends on the nature of the misconfigured settings and the additional vulnerabilities that are present. . 
+The impact of a server misconfiguration vulnerability can range from hypothetical to extremely dangerous.  It depends on the nature of the misconfigured settings and the additional vulnerabilities that are present.
 
 For example, a server on an internal network might have open file shares that give access to all authenticated users on the local network and contain sensitive data. An administrator might feel that this is safe to do because unauthenticated users on the local network can't gain access to the files and users from the Internet can't access the internal network. 
 
