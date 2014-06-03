@@ -3,10 +3,12 @@
   <Metadata>
     <Id>dcedcd75-908a-466b-8777-1e38f2799599</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Application Misconfiguration</Title>
     <Category />
-    <Technology />
+    <Phase />
+    <Technology>ASP.NET 4.0</Technology>
     <Type />
+    <DirectLink>Application Misconfiguration</DirectLink>
     <Author />
     <Priority />
     <Status />
