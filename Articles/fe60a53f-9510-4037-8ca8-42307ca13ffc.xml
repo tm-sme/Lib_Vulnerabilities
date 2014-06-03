@@ -38,17 +38,11 @@ There are no application security measures that can mitigate HTTP request smuggl
 
 To verify that HTTP request smuggling vulnerabilities are mitigated, verify that all systems are updated.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-
-
-* For more information about HTTP request smuggling, see http://projects.webappsec.org/w/page/13246928/HTTP%20Request%20Smuggling
+* [[97d90145-e03c-4f62-97fb-9d67b470f54c|ASP.NET HTTP Request Smuggling]]
+* [[c7f8b8b1-9eda-4e47-9f33-ea2f66b7cf2d|Java HTTP Request Smuggling]]
+* [[2b8e8e73-cc6e-4e00-bfa8-139c5da9f026|PHP HTTP Request Smuggling]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
