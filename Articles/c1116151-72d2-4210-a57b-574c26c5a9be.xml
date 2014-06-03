@@ -4,10 +4,10 @@
     <Id>c1116151-72d2-4210-a57b-574c26c5a9be</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Application Misconfiguration</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology> Any</Technology>
-    <Type />
+    <Type>Vulnerability</Type>
     <DirectLink>Application Misconfiguration</DirectLink>
     <Author />
     <Priority />
