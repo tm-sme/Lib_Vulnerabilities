@@ -32,14 +32,11 @@ HTTP request splitting is not a vulnerability in the application, so there are n
 
 To make sure that HTTP request splitting is prevented, verify that all systems on the network are updated.
 
+==Specific Technologies==
 
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-* For more information about HTTP request splitting, see http://projects.webappsec.org/w/page/13246929/HTTP%20Request%20Splitting
+* [[effbab1d-ff37-4135-938e-a1a21a6aa878|ASP.NET HTTP Request Splitting]]
+* [[395a3676-d277-49e0-b6d3-da0c1aba6f9c|Java HTTP Request Splitting]]
+* [[69656636-f6a4-4107-9974-02f8e4981d7d|PHP HTTP Request Splitting]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
