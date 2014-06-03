@@ -36,17 +36,10 @@ HTTP response smuggling is a vulnerability in the HTTP firewall or proxy, so the
 
 To verify that HTTP response smuggling is preventing, make sure that all network devices are updated.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-
-
-* For more information about HTTP response smuggling, see http://projects.webappsec.org/w/page/13246930/HTTP%20Response%20Smuggling
-]]></Data>
+* [[b70f0b57-4a99-4883-a252-caba24083e2e|ASP.NET HTTP Response Smuggling]]
+* [[c7f8b8b1-9eda-4e47-9f33-ea2f66b7cf2d|Java HTTP Response Smuggling]]
+* [[2b8e8e73-cc6e-4e00-bfa8-139c5da9f026|PHP HTTP Response Smuggling]]]]></Data>
   </Content>
 </TeamMentor_Article>
