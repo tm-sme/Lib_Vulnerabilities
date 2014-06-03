@@ -4,8 +4,8 @@
     <Id>fe60a53f-9510-4037-8ca8-42307ca13ffc</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>HTTP Request Smuggling</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>HTTP Request Smuggling</DirectLink>
