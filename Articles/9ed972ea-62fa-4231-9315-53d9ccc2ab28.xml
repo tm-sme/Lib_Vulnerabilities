@@ -4,8 +4,8 @@
     <Id>9ed972ea-62fa-4231-9315-53d9ccc2ab28</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Directory Indexing</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Directory Indexing</DirectLink>
