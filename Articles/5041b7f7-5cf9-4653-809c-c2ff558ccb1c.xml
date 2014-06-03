@@ -3,10 +3,12 @@
   <Metadata>
     <Id>5041b7f7-5cf9-4653-809c-c2ff558ccb1c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Improper Filesystem Permissions</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>PHP</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Improper Filesystem Permissions</DirectLink>
     <Author />
     <Priority />
     <Status />
