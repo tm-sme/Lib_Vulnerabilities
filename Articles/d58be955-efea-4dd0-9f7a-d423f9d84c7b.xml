@@ -34,21 +34,19 @@ Lastly, improper filesystem permissions affect the systems themselves, especiall
 
 ==Countermeasures==
 
-
-
-
-
-
+To prevent improper filesystem permissions vulnerabilities, harden the server.
 
 ==Application Check==
 
+To verify that improper filesystem permissions vulnerabilities are prevented, make sure that the server is hardened.
 
+==Specific Technologies==
 
+* [[943fcf2e-ce5b-490d-98b7-6da15c1efc13|ASP.NET Improper Filesystem Permissions]]
+* [[f2549cc1-8937-4a41-9ed9-91eeefb10ed2|C++ Improper Filesystem Permissions]]
+* [[0a093ac2-c3ed-4fe3-b4a2-f178c3d0ecb6|Java Improper Filesystem Permissions]]
+* [[5041b7f7-5cf9-4653-809c-c2ff558ccb1c|PHP Improper Filesystem Permissions]]
 
-
-
-
-==Computer Based Training==
 ]]></Data>
   </Content>
 </TeamMentor_Article>
