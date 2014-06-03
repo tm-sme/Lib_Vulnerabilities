@@ -36,21 +36,11 @@ To prevent directory indexing vulnerabilities, disable directory indexing on the
 
 To verify that directory indexing vulnerabilities are prevented, verify that directory indexing is disabled on the servers.
 
+==Specific Technologies==
 
-
-==Computer Based Training==
-
-
-
-
-
-
-
-==Additional Resources==
-
-
-
-* For more information about directory indexing, see http://projects.webappsec.org/w/page/13246922/Directory%20Indexing
+* [[0f313b4b-0d19-4255-aef2-725e5d4b89b5|ASP.NET Directory Indexing]]
+* [[adb3a363-0742-4172-b87a-984050299980|Java Directory Indexing]]
+* [[57066928-62c5-41d7-8ca2-6ad0e09435fb|PHP Directory Indexing]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
