@@ -4,8 +4,8 @@
     <Id>d4185020-774b-4eec-b25e-9fedfd3193d0</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>HTTP Request Splitting</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>HTTP Request Splitting</DirectLink>
