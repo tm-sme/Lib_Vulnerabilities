@@ -13,7 +13,36 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+SOAP array abuse vulnerabilities occur when a web-service processes incoming SOAP arrays without validating them. If a web-service processes large SOAP arrays sent by an attacker, the attacker can cause the web-service to allocate large amounts of memory, ultimately exhausting the available memory on the server. Once free memory on the server has been exhausted, new applications will fail to start and existing applications will start to crash. The result is that applications on the server will become inaccessible to the users, which is a Denial of Service condition.
+
+All web-services that process SOAP arrays are affected by SOAP array abuse vulnerabilities.
+
+==Impact==
+
+The impact of SOAP array abuse vulnerabilities is Denial of Service. SOAP array abuse vulnerabilities allow attackers to force the application to allocate large amounts of memory, ultimately exhausting available memory of the server. Once the server has no more memory available, new applications will not start and existing applications will start to crash. The most likely outcome is that the server will crash and need to be restarted. Whether the server actually crashes or not, applications running on the server will become unresponsive at least for the duration of the attack.
+
+==Countermeasures==
+
+To prevent SOAP array abuse vulnerabilities, validate all input.
+
+==Application Check==
+
+To verify that SOAP array abuse vulnerabilities are prevented, make sure that all input is validated.
+
+
+
+==Computer Based Training==
+
+
+
+==Additional Resources==
+
+
+
+* For more information about SOAP array abuse, see http://projects.webappsec.org/w/page/13246962/SOAP%20Array%20Abuse
+]]></Data>
   </Content>
 </TeamMentor_Article>
