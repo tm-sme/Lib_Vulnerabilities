@@ -28,29 +28,17 @@ Less frequently, an attacker might be able to download database backups, authent
 
 ==Countermeasures==
 
-
-
-
-
-
+To prevent insecure indexing, block search engines from sensitive areas.
 
 ==Application Check==
 
+To make sure that insecure indexing is prevented, verify that search engines are blocked from sensitive areas.
 
+==Specific Technologies==
 
-
-
-
-
-==Computer Based Training== 
-
-
-
-==Additional Resources==
-
-
-
-* For more information about insecure indexing, see http://projects.webappsec.org/w/page/13246937/Insecure%20Indexing
+* [[f60eabf7-737b-4883-ac71-333db910b2e1|ASP.NET Insecure Indexing]]
+* [[57cf2869-9b92-43f1-8b55-94beaa8bdcba|Java Insecure Indexing]]
+* [[7479dfef-3217-4f35-badb-3827c25b7327|PHP Insecure Indexing]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
