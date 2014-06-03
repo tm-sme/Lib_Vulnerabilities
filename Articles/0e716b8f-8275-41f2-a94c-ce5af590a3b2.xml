@@ -38,17 +38,12 @@ To prevent null byte injection vulnerabilities, install system updates.
 
 To make sure that null byte injection vulnerabilities are prevented, verify that system updates are installed.
 
+==Specific Technologies==
 
+* [[3626380f-ef11-4a99-88e0-298b0016647d|ASP.NET Null Byte Injection]]
+* [[b49ada22-a22a-4fc0-8bc6-89689288728f|Java Null Byte Injection]]
+* [[cd5d4c60-13c3-4870-bf92-9e3e7aed4077|PHP Null Byte Injection]]
 
-==Computer Based Training==
-
-
-
-==Additional Resources==
-
-
-
-* For more information about null byte injection, see http://projects.webappsec.org/w/page/13246949/Null%20Byte%20Injection
 ]]></Data>
   </Content>
 </TeamMentor_Article>
