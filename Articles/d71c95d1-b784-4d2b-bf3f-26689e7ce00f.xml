@@ -6,7 +6,7 @@
     <Title>Insecure Direct Object References</Title>
     <Category />
     <Phase />
-    <Technology />
+    <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insecure Direct Object References</DirectLink>
     <Author />
