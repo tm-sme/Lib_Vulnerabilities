@@ -26,16 +26,15 @@ The impact of HTTP response splitting is the ability to perform cross-site scrip
 
 ==Countermeasures==
 
-HTTP request splitting is not a vulnerability in the application, so there are no application security measures to defend against it. To prevent HTTP request splitting, update all systems on the network.
+HTTP request splitting is not a vulnerability in the application, so there are no application security measures to defend against it. To prevent HTTP request splitting, update network hardware.
+
+* [[af3c9f89-0145-4970-bd13-dd30bf7ab387|Update Network Hardware]]
 
 ==Application Check==
 
-To make sure that HTTP request splitting is prevented, verify that all systems on the network are updated.
+To make sure that HTTP request splitting is prevented, verify that network hardware is updated.
 
-
-==Computer Based Training==
-
-
+* [[57ef23a2-5371-4d52-9ec8-53fda4542b95|Network Hardware Is Updated]]
 
 ==Additional Resources==
 
