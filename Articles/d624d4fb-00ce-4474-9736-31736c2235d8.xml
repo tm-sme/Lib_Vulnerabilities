@@ -4,8 +4,8 @@
     <Id>d624d4fb-00ce-4474-9736-31736c2235d8</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>HTTP Request Smuggling</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>HTTP Request Smuggling</DirectLink>
@@ -42,13 +42,8 @@ To verify that HTTP request smuggling vulnerabilities are mitigated, verify that
 
 * [[de92378e-1d64-4567-88b1-2e40fe037a01|Network Hardware Is Updated]]
 
-==Computer Based Training==
-
-
 
 ==Additional Resources==
-
-
 
 * For more information about HTTP request smuggling, see http://projects.webappsec.org/w/page/13246928/HTTP%20Request%20Smuggling
 ]]></Data>
