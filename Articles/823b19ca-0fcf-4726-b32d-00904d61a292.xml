@@ -4,8 +4,8 @@
     <Id>823b19ca-0fcf-4726-b32d-00904d61a292</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>SOAP Array Abuse</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>SOAP Array Abuse</DirectLink>
