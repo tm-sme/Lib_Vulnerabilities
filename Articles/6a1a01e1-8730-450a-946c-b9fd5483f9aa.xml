@@ -36,25 +36,20 @@ However, if an attacker compromises an Internet-exposed server that happens to b
 
 
 ==Countermeasures==
-Some types of server misconfiguration vulnerabilities are obvious and these types of vulnerabilities can be easily fixed by following simple hardening guides. For example, disabling or misconfiguring SSL/TLS on a web server is something that can be easily diagnosed and fixed by using guides and standards. Other types of server misconfiguration vulnerabilities are more ambiguous, harder to find, and prevent. The principles of defense in depth and lowest required privilege are the keys to preventing the complex server misconfiguration vulnerabilities.
 
-In summary, to prevent server misconfiguration vulnerabilities, harden the server, install all the latest patches, follow the defense in depth principle, and follow the least privilege principle.
+To prevent server misconfiguration vulnerabilities, harden the server and install all the latest patches.
+
+* [[99297f49-528b-4a25-bc35-3b82ef14404a|Harden the Server]]
+* [[5bc20f6a-d144-4491-95e3-52aa62c2593c|Install Patches]]
 
 ==Application Check==
 
-To verify that server misconfiguration vulnerabilities are prevented, make sure that the server is hardened, all the latest patches are installed, the defense in depth principle is used, and the least privilege principle is used.
+To verify that server misconfiguration vulnerabilities are prevented, make sure that the server is hardened and all the latest patches are installed.
 
-
-
-==Computer Based Training==
-
-
-
-
+* [[408f56bf-9ca6-482d-bff2-a2495ff80917|The Server Is Hardened]]
+* [[99062fc5-6b58-46f5-b375-9bb7c8387ef2|Patches Are Installed]]
 
 ==Additional Resources==
-
-
 
 * For more information about server misconfiguration, see http://projects.webappsec.org/w/page/13246959/Server%20Misconfiguration
 
