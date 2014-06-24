@@ -4,8 +4,8 @@
     <Id>69656636-f6a4-4107-9974-02f8e4981d7d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>HTTP Request Splitting</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>HTTP Request Splitting</DirectLink>
