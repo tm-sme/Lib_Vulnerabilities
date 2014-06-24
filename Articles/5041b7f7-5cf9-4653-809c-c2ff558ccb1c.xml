@@ -4,8 +4,8 @@
     <Id>5041b7f7-5cf9-4653-809c-c2ff558ccb1c</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Improper Filesystem Permissions</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Improper Filesystem Permissions</DirectLink>
