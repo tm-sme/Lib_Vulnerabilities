@@ -32,13 +32,15 @@ In the event of successful compromise of a user's system, the attacker will gain
 
 ==Countermeasures==
 
-There are no application security measures that can mitigate HTTP request smuggling vulnerabilities, because these vulnerabilities are in the network devices that developers usually cannot reprogram themselves. To mitigate HTTP request smuggling vulnerabilities, update all systems.
+There are no application security measures that can mitigate HTTP request smuggling vulnerabilities, because these vulnerabilities are in the network devices that developers usually cannot reprogram themselves. To mitigate HTTP request smuggling vulnerabilities, update network hardware.
+
+* [[0179b95b-f2eb-44f0-8048-3696ea9c4be8|Update Network Hardware]]
 
 ==Application Check==
 
-To verify that HTTP request smuggling vulnerabilities are mitigated, verify that all systems are updated.
+To verify that HTTP request smuggling vulnerabilities are mitigated, verify that network hardware is updated.
 
-
+* [[de92378e-1d64-4567-88b1-2e40fe037a01|Network Hardware Is Updated]]
 
 ==Computer Based Training==
 
