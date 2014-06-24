@@ -4,8 +4,8 @@
     <Id>0f313b4b-0d19-4255-aef2-725e5d4b89b5</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Directory Indexing</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Directory Indexing</DirectLink>
