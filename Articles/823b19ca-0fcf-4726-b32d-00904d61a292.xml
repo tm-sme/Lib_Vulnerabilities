@@ -26,21 +26,17 @@ The impact of SOAP array abuse vulnerabilities is Denial of Service. SOAP array 
 
 ==Countermeasures==
 
-To prevent SOAP array abuse vulnerabilities, validate all input.
+To prevent SOAP array abuse vulnerabilities, validate SOAP array size.
+
+* [[67586da5-b7e8-4888-9bb2-1fe7920facd7|Validate SOAP Array Size]]
 
 ==Application Check==
 
-To verify that SOAP array abuse vulnerabilities are prevented, make sure that all input is validated.
+To verify that SOAP array abuse vulnerabilities are prevented, make sure that SOAP array size is validated.
 
-
-
-==Computer Based Training==
-
-
+* [[16bac044-a243-4e5b-98dd-683e0040efc2|SOAP Array Size Is Validated]]
 
 ==Additional Resources==
-
-
 
 * For more information about SOAP array abuse, see http://projects.webappsec.org/w/page/13246962/SOAP%20Array%20Abuse
 ]]></Data>
