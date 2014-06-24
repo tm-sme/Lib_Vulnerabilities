@@ -28,27 +28,17 @@ Less frequently, an attacker might be able to download database backups, authent
 
 ==Countermeasures==
 
+To prevent insecure indexing vulnerabilities, block search engines from sensitive areas.
 
-
-
-
-
+* [[3064ad63-40cc-476e-a160-8a91d7ae5121|Block Search Engines from Sensitive Areas]]
 
 ==Application Check==
 
+To make sure that insecure indexing vulnerabilities are prevented, verify that search engines are blocked from sensitive areas.
 
-
-
-
-
-
-==Computer Based Training== 
-
-
+* [[ebb56508-bfbf-4e02-871c-b98dec27d836|Search Engines Are Blocked from Sensitive Areas]]
 
 ==Additional Resources==
-
-
 
 * For more information about insecure indexing, see http://projects.webappsec.org/w/page/13246937/Insecure%20Indexing
 ]]></Data>
