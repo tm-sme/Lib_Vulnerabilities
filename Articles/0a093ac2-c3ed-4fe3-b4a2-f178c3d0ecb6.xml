@@ -34,21 +34,14 @@ Lastly, improper filesystem permissions affect the systems themselves, especiall
 
 ==Countermeasures==
 
+To prevent improper filesystem permissions vulnerabilities, harden the server.
 
-
-
-
-
+* [[e7843706-203c-4e35-b89c-f318fa5ab6e6|Harden the Server]]
 
 ==Application Check==
 
+To make sure that improper filesystem permissions vulnerabilities are prevented, verify that the server is hardened.
 
-
-
-
-
-
-==Computer Based Training==
-]]></Data>
+* [[fee448aa-edac-408d-9d9c-dab4fcacd29f|The Server Is Hardened]]]]></Data>
   </Content>
 </TeamMentor_Article>
