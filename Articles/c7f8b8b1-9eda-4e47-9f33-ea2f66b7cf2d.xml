@@ -30,21 +30,17 @@ In some cases, HTTP response smuggling might result in HTTP responses from the a
 
 ==Countermeasures==
 
-HTTP response smuggling is a vulnerability in the HTTP firewall or proxy, so there is no application security countermeasure to prevent it. To prevent HTTP response smuggling, update all network devices.
+HTTP response smuggling is a vulnerability in the HTTP firewall or proxy, so there is no application security countermeasure to prevent it. To prevent HTTP response smuggling, update network hardware.
+
+* [[0179b95b-f2eb-44f0-8048-3696ea9c4be8|Update Network Hardware]]
 
 ==Application Check==
 
-To verify that HTTP response smuggling is preventing, make sure that all network devices are updated.
+To verify that HTTP response smuggling is preventing, make sure that network hardware is updated.
 
-
-
-==Computer Based Training==
-
-
+* [[de92378e-1d64-4567-88b1-2e40fe037a01|Network Hardware Is Updated]]
 
 ==Additional Resources==
-
-
 
 * For more information about HTTP response smuggling, see http://projects.webappsec.org/w/page/13246930/HTTP%20Response%20Smuggling
 ]]></Data>
