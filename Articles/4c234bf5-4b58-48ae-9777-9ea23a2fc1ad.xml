@@ -3,10 +3,12 @@
   <Metadata>
     <Id>4c234bf5-4b58-48ae-9777-9ea23a2fc1ad</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insecure Direct Object References</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>C++</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Insecure Direct Object References</DirectLink>
     <Author />
     <Priority />
     <Status />
