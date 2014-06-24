@@ -4,8 +4,8 @@
     <Id>57cf2869-9b92-43f1-8b55-94beaa8bdcba</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insecure Indexing</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insecure Indexing</DirectLink>
