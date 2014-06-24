@@ -13,7 +13,24 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+“Using components with known vulnerabilities” refers to an application that uses third-party code that contains known vulnerabilities. The result is that the vulnerabilities in the third-party code become vulnerabilities in the application. 
+
+This type of vulnerability affects all applications.
+
+==Impact==
+
+The impact of using components with known vulnerabilities depends on the nature of the vulnerabilities. Usually, this refers to code that is vulnerable to code injection, command injection or SQL injection. The impact in such scenarios is usually full system compromise. On top of that danger, attackers often scan for these types of vulnerabilities with automated tools, resulting in many non-targeted compromises. In other words, your application might get attacked simply because an attacker found a vulnerable component when scanning a large range of potential targets.
+
+==Countermeasures==
+
+To prevent using components with known vulnerabilities, install patches.
+
+==Application Check==
+
+To make sure that using components with known vulnerabilities is prevented, verify that patches are installed.
+]]></Data>
   </Content>
 </TeamMentor_Article>
