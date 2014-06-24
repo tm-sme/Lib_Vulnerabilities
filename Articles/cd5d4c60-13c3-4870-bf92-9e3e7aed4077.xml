@@ -34,19 +34,15 @@ To do this, the attacker sends a request to load a file named malicious.jpg%00.p
 
 To prevent null byte injection vulnerabilities, install system updates.
 
+* [[5bc20f6a-d144-4491-95e3-52aa62c2593c|Install Patches]]
+
 ==Application Check==
 
 To make sure that null byte injection vulnerabilities are prevented, verify that system updates are installed.
 
-
-
-==Computer Based Training==
-
-
+* [[99062fc5-6b58-46f5-b375-9bb7c8387ef2|Patches Are Installed]]
 
 ==Additional Resources==
-
-
 
 * For more information about null byte injection, see http://projects.webappsec.org/w/page/13246949/Null%20Byte%20Injection
 ]]></Data>
