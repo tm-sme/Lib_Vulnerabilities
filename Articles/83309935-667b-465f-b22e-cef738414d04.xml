@@ -26,12 +26,14 @@ The impact of an application misconfiguration vulnerability depends on its speci
 
 ==Countermeasures==
 
-To prevent application misconfiguration vulnerabilities, document the security implications of all configurable settings that affect the information assurance posture of the application.
+To prevent application misconfiguration vulnerabilities, harden the server.
+
+* [[9d434a73-5f75-48ab-907b-d1a44a76d936|Harden the Server]]
 
 ==Application Check==
 
-To verify that application misconfiguration vulnerabilities are prevented, verify that the security implications of all configurable settings that affect the information assurance posture of the application are documented.
+To verify that application misconfiguration vulnerabilities are prevented, verify that the server is hardened.
 
-]]></Data>
+* [[40d60385-86e3-432d-a047-37f628e454d7|The Server Is Hardened]]]]></Data>
   </Content>
 </TeamMentor_Article>
