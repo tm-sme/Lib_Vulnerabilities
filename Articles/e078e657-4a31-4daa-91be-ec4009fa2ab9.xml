@@ -34,30 +34,23 @@ For example, a server on an internal network might have open file shares that gi
 
 However, if an attacker compromises an Internet-exposed server that happens to be on the local network and is able to execute commands on that server with the privileges of an authenticated user, the attacker will be able to access the sensitive files on the network file server. If the attacker couldn't compromise the Internet-exposed server, they wouldn't be able to gain access to the local network file server. In this case, allowing authenticated users on the local network to access a file share is a server misconfiguration vulnerability which ultimately allows the attacker to gain access to the sensitive files. 
 
-
 ==Countermeasures==
-Some types of server misconfiguration vulnerabilities are obvious and these types of vulnerabilities can be easily fixed by following simple hardening guides. For example, disabling or misconfiguring SSL/TLS on a web server is something that can be easily diagnosed and fixed by using guides and standards. Other types of server misconfiguration vulnerabilities are more ambiguous, harder to find, and prevent. The principles of defense in depth and lowest required privilege are the keys to preventing the complex server misconfiguration vulnerabilities.
 
-In summary, to prevent server misconfiguration vulnerabilities, harden the server, install all the latest patches, follow the defense in depth principle, and follow the least privilege principle.
+To prevent server misconfiguration vulnerabilities, harden the server and install all the latest patches.
+
+* [[9d434a73-5f75-48ab-907b-d1a44a76d936|Harden the Server]]
+* [[8e0be904-c17c-4fd4-a6c5-97d9dd545765|Install Patches]]
 
 ==Application Check==
 
-To verify that server misconfiguration vulnerabilities are prevented, make sure that the server is hardened, all the latest patches are installed, the defense in depth principle is used, and the least privilege principle is used.
+To verify that server misconfiguration vulnerabilities are prevented, make sure that the server is hardened and all the latest patches are installed.
 
-
-
-==Computer Based Training==
-
-
-
-
+* [[40d60385-86e3-432d-a047-37f628e454d7|The Server Is Hardened]]
+* [[52385011-4463-4837-91b0-70810c55e829|Patches Are Installed]]
 
 ==Additional Resources==
 
-
-
 * For more information about server misconfiguration, see http://projects.webappsec.org/w/page/13246959/Server%20Misconfiguration
-
 ]]></Data>
   </Content>
 </TeamMentor_Article>
