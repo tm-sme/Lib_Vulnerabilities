@@ -32,23 +32,15 @@ In some cases, the attacker might be able to download stored authentication cred
 
 To prevent directory indexing vulnerabilities, disable directory indexing on the server.
 
+* [[f5d16838-a733-424d-bb02-5a58218b7ac4|Disable Directory Browsing]]
+
 ==Application Check==
 
 To verify that directory indexing vulnerabilities are prevented, verify that directory indexing is disabled on the servers.
 
-
-
-==Computer Based Training==
-
-
-
-
-
-
+* [[8e310bf1-f11b-47fa-9a3e-3dd9364080aa|Directory Browsing Is Disabled]]
 
 ==Additional Resources==
-
-
 
 * For more information about directory indexing, see http://projects.webappsec.org/w/page/13246922/Directory%20Indexing
 ]]></Data>
