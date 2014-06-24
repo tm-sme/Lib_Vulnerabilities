@@ -4,8 +4,8 @@
     <Id>0a093ac2-c3ed-4fe3-b4a2-f178c3d0ecb6</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Improper Filesystem Permissions</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Improper Filesystem Permissions</DirectLink>
