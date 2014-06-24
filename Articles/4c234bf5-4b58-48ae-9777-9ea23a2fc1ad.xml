@@ -13,7 +13,7 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
+  <Content Sanitized="false" DataType="wikitext">
     <Data><![CDATA[==Description==
 
 Insecure direct object reference vulnerabilities occur when an application exposes the system names of system resources that it uses and allows an attacker to manipulate these names. If an attacker can change the name of a system resource that is accessed by the application, he can access arbitrary system resources, such as files. 
