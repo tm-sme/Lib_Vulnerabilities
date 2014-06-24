@@ -4,8 +4,8 @@
     <Id>cd5d4c60-13c3-4870-bf92-9e3e7aed4077</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Null Byte Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Null Byte Injection</DirectLink>
