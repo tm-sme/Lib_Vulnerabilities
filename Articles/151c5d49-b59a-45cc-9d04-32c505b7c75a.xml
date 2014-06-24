@@ -4,8 +4,8 @@
     <Id>151c5d49-b59a-45cc-9d04-32c505b7c75a</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Server Misconfiguration</Title>
-    <Category />
-    <Phase />
+    <Category>Deployment Considerations</Category>
+    <Phase>Deployment</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Server Misconfiguration</DirectLink>
