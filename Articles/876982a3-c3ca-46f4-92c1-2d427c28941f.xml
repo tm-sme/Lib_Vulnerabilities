@@ -31,6 +31,14 @@ To prevent using components with known vulnerabilities, install patches.
 ==Application Check==
 
 To make sure that using components with known vulnerabilities is prevented, verify that patches are installed.
+
+==Specific Technologies==
+
+* [[3f11bcea-3331-4a23-9f2b-ce5a0e8c241e|ASP.NET Using Components with Known Vulnerabilities]]
+* [[e340b504-1fb3-4325-9f16-b2f6024f6bdb|Java Using Components with Known Vulnerabilities]]
+* [[29fec52e-a717-4f3a-a281-b1155d5f5c5c|C++ Using Components with Known Vulnerabilities]]
+* [[e668bb37-d3a2-414e-9ed0-35ef7e8bc30d|PHP Using Components with Known Vulnerabilities]]
+
 ]]></Data>
   </Content>
 </TeamMentor_Article>
