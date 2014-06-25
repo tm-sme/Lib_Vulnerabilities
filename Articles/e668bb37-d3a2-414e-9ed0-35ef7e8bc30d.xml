@@ -28,9 +28,12 @@ The impact of using components with known vulnerabilities depends on the nature 
 
 To prevent using components with known vulnerabilities, install patches.
 
+* [[5bc20f6a-d144-4491-95e3-52aa62c2593c|Install Patches]]
+
 ==Application Check==
 
 To make sure that using components with known vulnerabilities is prevented, verify that patches are installed.
-]]></Data>
+
+* [[99062fc5-6b58-46f5-b375-9bb7c8387ef2|Patches Are Installed]]]]></Data>
   </Content>
 </TeamMentor_Article>
