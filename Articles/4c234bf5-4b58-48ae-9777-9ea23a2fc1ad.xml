@@ -30,9 +30,14 @@ Insecure direct object reference vulnerabilities apply almost exclusively to exp
 
 To prevent insecure direct object reference vulnerabilities, use mapping values to access objects and perform access control checks when using system resources.
 
+* [[983726cb-b3a5-4e23-af5f-04d64e95a59f|Perform Access Control Checks for Any Filesystem Access]]
+* [[da2ef63c-2068-41a2-a096-564da21ead6a|Use Reference Maps to Access Objects]]
+
 ==Application Check==
 
 To make sure that insecure direct object reference vulnerabilities are prevented, verify that mapping values are used to access objects and that access control checks are performed when using system resources.
-]]></Data>
+
+* [[70a45962-ca20-4795-bd0c-032178332ece|Access Control Checks Are Performed for All Filesystem Access]]
+* [[b86589e0-1cba-4b09-8746-84d6db219e24|Reference Maps Are Used to Access Objects]]]]></Data>
   </Content>
 </TeamMentor_Article>
