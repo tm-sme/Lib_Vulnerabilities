@@ -31,6 +31,11 @@ To prevent missing function level access control vulnerabilities, perform access
 ==Application Check==
 
 To make sure that missing function level access control vulnerabilities are prevented, verify that access control checks are performed for all sensitive operations.
-]]></Data>
+
+==Specific Technologies==
+
+* [[d1346385-f9af-4192-8fd1-e1f2f8e8c7d3|ASP.NET Missing Function Level Access Control]]
+* [[5278856a-e94a-4c76-97bf-c2850ec6acdb|Java Missing Function Level Access Control]]
+* [[8189ae58-d5d2-4a69-b527-3ab6cc5708a7|PHP Missing Function Level Access Control]]]]></Data>
   </Content>
 </TeamMentor_Article>
