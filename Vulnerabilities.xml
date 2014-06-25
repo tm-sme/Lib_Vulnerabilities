@@ -156,6 +156,9 @@
         <view id="8eeb651d-2c75-4a10-a811-e0bb8501d0f9" caption="A8-Cross-Site Request Forgery (CSRF)" creationDate="2014-04-02T11:55:52.672+00:00">
           <items>
             <item>62f78eb2-9eba-484c-ade3-7b54c2df9e5a</item>
+            <item>11baa288-69b3-4bbd-9133-e9675228e75d</item>
+            <item>36d0c6a6-8a5c-4586-b0d5-917a9aff9557</item>
+            <item>f4f6aab8-f22e-4189-98bd-0a879cdedc40</item>
           </items>
         </view>
         <view id="2578658c-a73d-4194-b7ff-bf734577a735" caption="A9-Using Components with Known Vulnerabilities" creationDate="2014-04-02T11:56:05.1832+00:00">
