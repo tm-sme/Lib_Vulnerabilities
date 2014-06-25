@@ -28,9 +28,13 @@ The impact of missing function level access control vulnerabilities depends on t
 
 To prevent missing function level access control vulnerabilities, perform access control checks for all sensitive operations.
 
+* [[326aa52e-5a89-43a7-84a4-cfece655fb55|Use Role-based Authorization]]
+
 ==Application Check==
 
 To make sure that missing function level access control vulnerabilities are prevented, verify that access control checks are performed for all sensitive operations.
+
+* [[dae3b6ec-9ef1-4f5b-9aae-1604d9c7e1cc|Role-based Authorization Is Used]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
