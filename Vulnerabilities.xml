@@ -78,6 +78,9 @@
         <view id="15907acb-b64e-43cf-b90e-1341e3f0a038" caption="A3-Cross-Site Scripting (XSS)" creationDate="2014-04-02T11:54:04.018+00:00">
           <items>
             <item>683d33a8-7979-4307-8cf0-3a82457f9f47</item>
+            <item>937f2173-5e39-48b6-bb3a-ecfd8f052bb0</item>
+            <item>add8a099-08da-40cc-a202-5e083267cef7</item>
+            <item>e1066fc2-22e3-47b3-ac0d-34a6fa70da68</item>
           </items>
         </view>
         <view id="ddc3b05d-290c-4f6d-9586-ffee479bcd91" caption="A4-Insecure Direct Object References" creationDate="2014-04-02T11:54:39.3988+00:00">
