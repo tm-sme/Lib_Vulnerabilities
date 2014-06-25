@@ -146,7 +146,12 @@
           </items>
         </view>
         <view id="03a92311-a4da-42bf-88e8-0309f1f7a094" caption="A7-Missing Function Level Access Control" creationDate="2014-04-02T11:55:30.364+00:00">
-          <items />
+          <items>
+            <item>667a7b36-4535-427e-8196-4c396802c1d8</item>
+            <item>d1346385-f9af-4192-8fd1-e1f2f8e8c7d3</item>
+            <item>5278856a-e94a-4c76-97bf-c2850ec6acdb</item>
+            <item>8189ae58-d5d2-4a69-b527-3ab6cc5708a7</item>
+          </items>
         </view>
         <view id="8eeb651d-2c75-4a10-a811-e0bb8501d0f9" caption="A8-Cross-Site Request Forgery (CSRF)" creationDate="2014-04-02T11:55:52.672+00:00">
           <items>
