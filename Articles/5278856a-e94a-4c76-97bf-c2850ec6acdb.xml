@@ -4,8 +4,8 @@
     <Id>5278856a-e94a-4c76-97bf-c2850ec6acdb</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Missing Function Level Access Control</Title>
-    <Category />
-    <Phase />
+    <Category>Authorization</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Missing Function Level Access Control</DirectLink>
