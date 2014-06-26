@@ -13,7 +13,35 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Insufficient anti-automation vulnerabilities occur when the application does not place limits on how rapidly sensitive operations can be performed. This allows an attacker to write an automatic tool that will continuously trigger sensitive operations. The goal of the attack depends on the circumstances, but is usually one of the following: causing the application to use a lot of resources to induce a denial of service condition, trying different values to guess a secret, or collecting information by accessing a large range of resources.
+
+All applications are potentially affected by insufficient anti-automation vulnerabilities.
+
+==Impact==
+
+The impact of insufficient anti-automation depends on the type of operation that can be repeatedly performed. The typical goal of the attacker is either denial of service, guessing secrets, or collecting information.
+
+Insufficient anti-automation can result in denial of service if the operation that can be automated consumes a lot of system resources. If the attacker continously triggers a computationally expensive operation, the system runs out of resources and becomes unresponsive for the duration of the attack. Text search functionality on databases tends to be commonly affected by this type of attack.
+
+Attackers frequently exploit insufficient anti-automation to guess passwords. If the login page allows rapid authentication attempts, an attacker can keep sending different authentication credentials in hopes of guessing a password and gaining access to the system. This attack vector is often successful because many people use weak passwords. Attackers usually target administrative accounts, so, when they succeed, the result is a complete compromise of the application.
+
+Insufficient anti-automation can be abused to collect information from the application. This occurs when the application displays information about a resource based on a value that is easy to predict, such as a numerical, sequential user identifier. For example, a common scenario is when an application shows information about its users based on an HTTP GET method id parameter. The attacker can write a script that will send HTTP requests with incremental id numbers and collect information about the users.
+
+==Countermeasures==
+
+To prevent insufficient anti-automation vulnerabilities, use CAPTCHA and throttle expensive operations.
+
+==Application Check==
+
+To verify that insufficient anti-automation vulnerabilities are prevented, make sure that CAPTCHA is used and expensive operations are throttled.
+
+
+==Additional Resources==
+
+* For more information about insufficient anti-automation, see http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation
+]]></Data>
   </Content>
 </TeamMentor_Article>
