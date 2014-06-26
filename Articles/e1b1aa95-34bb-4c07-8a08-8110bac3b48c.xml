@@ -13,7 +13,27 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+XML Attribute Blowup vulnerabilities occur when an application allows users to create XML documents with a large amount of attributes, and results in Denial of Service conditions. 
+
+An attacker can abuse this functionality to create an amount of XML attributes that will cause the application's XML parser to consume a large amount of CPU time and slow down the server. If the XML parser uses up all the available CPU time on the server, the application will become unresponsive to legitimate users. Other applications on the server are also liable to become unresponsive.
+
+All applications that use XML documents are affected by XML Attribute Blowup vulnerabilities.
+
+==Impact==
+
+The impact of XML Attribute Blowup vulnerabilities is a Denial of Service condition. If the attacker can abuse the application to create and parse an XML document with a very large amount of attributes, the XML parser will consume a large amount of CPU time, causing the server to lag. Depending on the power of the server and the amount of attributes, the server might become unresponsive and all the applications running on it will become unavailable to the users for the duration of the attack.
+
+==Countermeasures==
+
+To prevent XML Attribute Blowup vulnerabilities, don't allow users to create arbitrary amounts of XML attributes.
+
+==Application Check==
+
+To verify that XML Attribute Blowup vulnerabilities are prevented, make sure that users are not allowed to create arbitrary amounts of XML attributes.
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
