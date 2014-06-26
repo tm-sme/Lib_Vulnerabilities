@@ -13,7 +13,29 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Denial of service vulnerabilities occur when the application can be manipulated to use an excessive amount of the system's computational resources, manipulated to crash, or manipulated to perform some kind of malicious and destructive action, such as deleting files. 
+
+Denial of service via excessive resource use usually happens when the application performs computationally expensive actions in response to easy-to-perform user actions. For example, if the application executes complex SQL queries as a part of content searching functionality and the rate at which users can execute content searches is not throttled, an attacker will be able to flood the application with search requests. In this scenario, when the application receives a large amount of search requests, it will attempt to execute a large amount of complex SQL queries, causing the database server to become slow and potentially unusable. When the database server becomes slow, any functionality that uses the database server will become slow as well, often rendering the application unusable for the duration of the attack.
+
+Denial of service that results in the application crashing usually happens when there is a logical error or an unhandled error condition in the application code. For example, if the application can be manipulated to access an object that has not been created by dereferencing a null pointer, the application will crash and become unusable until it is restarted. The presence of such a vulnerability allows the attacker to crash the application at will, until the vulnerability is fixed.
+
+Denial of service that results in  the application performing some kind of malicious and destructive action usually stems from insufficient authorization controls on dangerous functionality. For example, if the application contains code that allows administrators to delete files, but this functionality can be triggered by unprivileged users and also allows them to choose what files to delete, an attacker might be able to delete valuable files.
+
+A peculiar type of denial of service vulnerability is when the application can be manipulated into performing denial of service attacks on other applications or systems. This occurs when the application has functionality for performing some kind of action on external systems as a result of a user request. For example, if the application can send e-mail as a result of filling out a form, an attacker might be able to flood the application with requests to send e-mail, which will cause the application to flood the target with e-mail. This results in a denial of service attack on both the vulnerable application and the target. In this example, the application server might get added to spam server lists for sending large amounts of junk mail, and the target recipient will get a cluttered inbox and possibly miss legitimate mail if their mailbox quota is exceeded.
+
+All applications are potentially affected by denial of service vulnerabilities.
+
+==Impact==
+
+The result of denial of service vulnerabilities is that the application and/or the system becomes unresponsive and unusable, and/or data is lost. 
+
+==Countermeasures==
+
+
+==Application Check==
+]]></Data>
   </Content>
 </TeamMentor_Article>
