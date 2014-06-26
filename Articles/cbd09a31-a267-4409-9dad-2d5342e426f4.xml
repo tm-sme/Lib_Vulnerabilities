@@ -3,10 +3,12 @@
   <Metadata>
     <Id>cbd09a31-a267-4409-9dad-2d5342e426f4</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insufficient Session Expiration</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>Java</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Insufficient Session Expiration</DirectLink>
     <Author />
     <Priority />
     <Status />
