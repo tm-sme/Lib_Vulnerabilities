@@ -3,10 +3,12 @@
   <Metadata>
     <Id>b07b1f54-6aad-49a1-86cc-3f067f95e53b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insufficient Anti-automation</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology> Any</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Insufficient Anti-automation</DirectLink>
     <Author />
     <Priority />
     <Status />
