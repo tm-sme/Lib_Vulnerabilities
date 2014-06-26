@@ -13,7 +13,34 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Insufficient session expiration vulnerabilities occur when the application keeps user sessions active for an unreasonably long period of time. The correct amount of time to keep a user session active depends on the application’s requirements. Thirty minutes since the last action is a reasonable standard. If the application keeps user sessions active for days, weeks, or even longer, an attacker might be able to take over the session after compromising a user's session identifier. 
+
+Even if the session expiration period is short, an attacker can still take over a user's session after compromising a user's session identifier, However, the longer the expiration period, the more time the attacker has to compromise the active session. Therefore, the standard practice is to limit the session expiration period to make it harder for an attacker to hijack an active session.
+
+Note that, to exploit this vulnerability, an attacker has to first compromise a user's session identifier by using some other attack. For example, an attacker might recover session cookies as a result of having physical access to the target computer. After recovering the session cookies, the attacker can import them into their own browser and use it to connect to the application that takes a long time to expire sessions.  If the session is still active, the attacker will be able to impersonate the user within the application and perform any action that doesn't require additional authentication.
+
+All web applications that keep track of user session state are potentially affected by insufficient session expiration vulnerabilities.
+
+==Impact==
+
+The impact of insufficient session expiration vulnerabilities is that they provide attackers with a greater window of opportunity to hijack active user sessions. 
+
+The most serious danger is that the attacker might compromise a privileged account and abuse administrative functions within the application to execute arbitrary code on the application server. In that case, the attacker will gain access to all application data and be able to use the server as a part of a botnet.
+
+==Countermeasures==
+
+To prevent insufficient session expiration vulnerabilities, place logout links on all pages that require authentication, expire sessions on the server after a period of user inactivity, and don't make session cookies persistent.
+
+==Application Check==
+
+To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
+
+==Additional Resources==
+
+* For more information about insufficient session expiration, see http://projects.webappsec.org/w/page/13246944/Insufficient%20Session%20Expiration
+]]></Data>
   </Content>
 </TeamMentor_Article>
