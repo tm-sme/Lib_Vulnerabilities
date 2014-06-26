@@ -3,10 +3,12 @@
   <Metadata>
     <Id>d4d942a8-0415-4ed1-88a7-488b1ca6b22b</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
-    <Title>New Guidance Item</Title>
+    <Title>Insufficient Session Expiration</Title>
     <Category />
-    <Technology />
-    <Type />
+    <Phase />
+    <Technology>ASP.NET 4.0</Technology>
+    <Type>Vulnerability</Type>
+    <DirectLink>Insufficient Session Expiration</DirectLink>
     <Author />
     <Priority />
     <Status />
