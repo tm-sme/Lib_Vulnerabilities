@@ -30,7 +30,7 @@ One of the most common examples of a predictable resource location vulnerability
 
 ==Countermeasures==
 
-To mitigate predictable resource location vulnerabilities, use access controls to protect sensitive functionality. This does not "fix" predictable resource location, but makes it much less useful to attackers. [***RANI’s NOTE:  Per first sentence of this article, is another countermeasure not to place things in easy to guess locations, like directories called “admin”? Or is that unavoidable?]
+To mitigate predictable resource location vulnerabilities, use access controls to protect sensitive functionality. This does not "fix" predictable resource location, but makes it much less useful to attackers. 
 
 ==Application Check==
 
