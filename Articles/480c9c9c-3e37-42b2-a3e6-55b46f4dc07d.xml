@@ -13,7 +13,31 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Mail command injection vulnerabilities occur when an application implements its own email client code and concatenates user data with email commands. There should be no reason to implement email client code in applications that are not email clients. 
+
+Most development platforms provide libraries that provide email functionality, and using these libraries will prevent mail command injection vulnerabilities. If an application implements its own email functionality in a dangerous manner, rather than using trusted third-party APIs, an attacker will be able to manipulate email sent by the application and will be able to send their own email.
+
+All applications that implement their own custom email client code instead of using trusted third-party APIs are affected by mail command injection vulnerabilities.
+
+==Impact==
+
+The impact of mail command injection vulnerabilities is that an attacker will be able to change the email that is being sent by the application to say whatever the attacker wants it to say and/or to send it to additional recipients. The most likely result is that the attacker will be able to use the vulnerable application to send spam. The attacker might also send messages to the application's users that appear to come from the application, and abuse the users' trust to trick them into doing something dangerous, like visiting a malicious site or disclosing their passwords.
+
+==Countermeasures==
+
+To prevent mail command injection vulnerabilities, use trusted third-party APIs for email functionality and don't include user data in email headers.
+
+==Application Check==
+
+To verify that mail command injection vulnerabilities are prevented, make sure that trusted third-party APIs are used for email functionality and that user data is not included in email headers.
+
+
+==Additional Resources==
+
+* For more information about mail command injection, see http://projects.webappsec.org/w/page/13246948/Mail%20Command%20Injection
+]]></Data>
   </Content>
 </TeamMentor_Article>
