@@ -13,7 +13,35 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Routing detour vulnerablities occur when an attacker is able to manipulate SOAP headers of an application that uses the WS-Routing protocol. The attacker must be able to conduct Man-in-the-Middle (MitM) attacks to exploit routing detour vulnerabilities - this places a severe restriction on their exploitability. 
+
+If the attacker can perform Man-in-the-Middle attacks, there are additional attack vectors that are potentially more dangerous than routing detour that become available to the attacker. For example, an attacker with MitM capability can redirect users to malicious pages that will attempt to exploit client-side vulnerabilities, or to fake authentication pages that will steal user credentials. 
+
+The impact of routing detour vulnerabilities is that the attacker will be able to route SOAP messages that use the WS-Routing protocol through an attacker-controlled server, and will thus be able to access the contents of these SOAP messages. It is unclear why an attacker with a MitM capability would bother doing this, instead of just sniffing the SOAP traffic (together with all the rest of the traffic).
+
+Applications that use the WS-Routing protocol are affected by routing detour vulnerabilities.
+
+==Impact==
+
+The impact of routing detour vulnerabilities is that an attacker with MitM capability can reroute SOAP messages to go through an attacker-controlled server and thus compromise the contents of these SOAP messages. The extent of damage depends on how sensitive the data in these SOAP messages is. 
+
+Overall, routing detour vulnerabilities are not practical to exploit, because an attacker with a MitM capability can just sniff the SOAP messages without rerouting them. Because routing detour is not a practical vulnerability to exploit, there is no typical attack vector that uses this vulnerability type.
+
+==Countermeasures==
+
+To prevent routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities, use SSL/TLS to protect web service connections.
+
+==Application Check==
+
+To make sure that routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities are prevented, verify that SSL/TLS is used to protect web service connections.
+
+
+==Additional Resources==
+
+* For more information about routing detour vulnerabilities, see http://projects.webappsec.org/w/page/13246956/Routing%20Detour
+]]></Data>
   </Content>
 </TeamMentor_Article>
