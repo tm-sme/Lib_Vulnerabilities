@@ -30,7 +30,7 @@ The most common attack scenario of abuse of functionality vulnerabilities is den
 
 Other attack scenarios involve bypassing access controls. Such scenarios result from a poorly thought out application design—it's hard to give a logical example of this, because the very essence of such vulnerabilities results from a logical flaw in the design. For example, if an application allows regular users to retrieve any file on the server, that functionality can be abused by attackers to retrieve server configuration files. The logical flaw in this example is obvious, but if the application is actually designed to give users full access to the filesystem, this is an abuse of functionality vulnerability, rather than an improperly implemented authorization issue. 
 
-Many abuse of functionality vulnerabilities can be avoided by having a logical application design, but others are very difficult to avoid and have to be considered on a case-by-case basis. [***RANI’s NOTE: I edited this in order not to categorize them as more and less serious vulnerabilities, as you never know which one could be very dangerous when it’s so application specific…feel free to edit it back if needed.]
+Many abuse of functionality vulnerabilities can be avoided by having a logical application design, but others are very difficult to avoid and have to be considered on a case-by-case basis. 
 
 ==Countermeasures==
 
