@@ -13,7 +13,35 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Insufficient process validation occurs when the application can be manipulated to execute multiple operations in a sequence that is different than intended, or to perform an inappropriate business operation. 
+
+Vulnerabilities that occur when the application's behavior does not correspond to the behavior of the business that it represents are also known as "business logic" vulnerabilities. Identifying business logic vulnerabilities requires knowledge of the specific business that is represented by the application. 
+
+Vulnerabilities that allow manipulating the order of steps in multi-step operations are also known as "flow control" vulnerabilities. Flow control vulnerabilities usually allow attackers to skip some steps, and are usually abused to skip some kind of verification to bypass access controls.
+
+All applications are potentially affected by insufficient process validation vulnerabilities.
+
+==Impact==
+
+The impact of insufficient process validation depends on the nature of the process that is being abused. When business logic vulnerabilities are abused, it is often for some kind of monetary gain. For example, if coupon functionality is vulnerable to unintended stacking, an attacker might be able to purchase items for a lower price than intended by stacking a lot of coupons. Another example is when the application allows attackers to manipulate prices when making a purchase. This can be abused to make purchases for a very low price, such as buying new laptops for $0.01. 
+
+When flow control vulnerabilities are abused, it is usually to skip some kind of verification steps. For example, an application might have functionality to reset a user's password after verifying their identity. If the attacker is able to skip the identity verification steps, they will be able to reset users' passwords. The exact impact depends on what functionality the attacker can abuse, but usually the result is some sort of unauthorized access.
+
+==Countermeasures==
+
+To prevent insufficient process validation, perform control flow analysis and check access controls for all sensitive operations.
+
+==Application Check==
+
+To make sure that insufficient process validation vulnerabilities are mitigated, verify that control flow analysis is performed and access controls are checked for all sensitive operations.
+
+
+==Additional Resources==
+
+* For more information about insufficient process validation, see http://projects.webappsec.org/w/page/13246943/Insufficient%20Process%20Validation
+]]></Data>
   </Content>
 </TeamMentor_Article>
