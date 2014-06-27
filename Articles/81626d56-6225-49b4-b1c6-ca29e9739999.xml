@@ -13,7 +13,32 @@
     <Priority />
     <Status />
   </Metadata>
-  <Content Sanitized="false" DataType="html">
-    <Data><![CDATA[]]></Data>
+  <Content Sanitized="false" DataType="wikitext">
+    <Data><![CDATA[==Description==
+
+Brute forcing is a broad term that refers to repeatedly performing a very simple, automated attack, which has a small chance of being successful for each iteration. The more iterations are performed, the more likely one of them is to succeed. The more resources the attacker has, the more iterations they will be able to perform and thus the more powerful the attack will be overall, hence the term brute force. 
+
+All application types are affected by brute forcing.
+
+==Impact==
+
+The impact of brute forcing depends on the nature of the automated attack. Common types of brute force attacks are password guessing, encryption key guessing, and hash cracking. 
+
+Password guessing attacks are usually aimed at taking over user accounts with the goal of either compromising user data or taking over the application. If an attacker is able to take over a user account, they will be able to perform any actions that the compromised account is able to perform and will have access to the data associated with that account. If the compromised account has administrative privileges, the attacker might be able to take over the application and execute arbitrary code, thus taking over the server. Taking over the server gives the attacker complete access to the data available to the application server and allows him to leverage the server for additional attacks.
+
+Encryption key guessing attacks are usually aimed at recovering cryptographic keys used to secure data at rest. If the attacker has downloaded or somehow acquired encrypted data without the matching encryption key(s), the attacker might attempt to guess the key with the goal of recovering the encrypted data. 
+
+==Countermeasures==
+
+To mitigate brute forcing, throttle sensitive and resource intensive operations and use strong cryptography and keys. Using strong cryptography and keys virtually nullifies the potential impact of brute force attacks against the encryption keys. 
+
+Though there is no way to completely prevent brute force attacks, these mitigations create conditions in which a very large amount of resources is required for an attack to be successful, making it improbable that an attack of such magnitude will take place. 
+
+
+==Application Check==
+
+To make sure that brute forcing is mitigated, verify that sensitive and resource intensive operations are throttled and that strong cryptography and keys are used.
+
+]]></Data>
   </Content>
 </TeamMentor_Article>
