@@ -32,18 +32,17 @@ If the attacker compromises an administrative account, they might be able to inj
 
 ==Countermeasures==
 
-To prevent insufficient password recovery vulnerabilities, verify user identity when resetting passwords, send a recovery token on a side-channel, and change the forgotten password.
+To prevent insufficient password recovery vulnerabilities, verify user identity when resetting passwords and send the reset token on a side-channel.
 
 ==Application Check==
 
-To verify that insufficient password recovery vulnerabilities are prevented, make sure that user identity is verified when resetting passwords, recovery tokens are sent on a side-channel, and the forgotten passwords are changed.
+To verify that insufficient password recovery vulnerabilities are prevented, make sure that user identity is verified when resetting passwords and the reset tokens are sent on a side-channel.
 
 
 
 ==Additional Resources==
 
 * For more information about insufficient password recovery, see http://projects.webappsec.org/w/page/13246942/Insufficient%20Password%20Recovery
-
 * For more guidance for preventing insufficient password recovery, see https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet
 ]]></Data>
   </Content>
