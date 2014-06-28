@@ -4,8 +4,8 @@
     <Id>bb23fddd-c1c4-4fbe-9279-0b4a4258cb85</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Password Recovery</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insufficient Password Recovery</DirectLink>
