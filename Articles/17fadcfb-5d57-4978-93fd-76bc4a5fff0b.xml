@@ -32,12 +32,15 @@ Insufficient anti-automation can be abused to collect information from the appli
 
 ==Countermeasures==
 
-To prevent insufficient anti-automation vulnerabilities, use CAPTCHA and throttle expensive operations.
+To prevent insufficient anti-automation vulnerabilities, throttle sensitive and resource intensive operations.
+
+* [[57247d0c-78e0-440d-b2c8-75ccb087dd00|Throttle Sensitive and Resource Intensive Operations]]
 
 ==Application Check==
 
-To verify that insufficient anti-automation vulnerabilities are prevented, make sure that CAPTCHA is used and expensive operations are throttled.
+To verify that insufficient anti-automation vulnerabilities are prevented, make sure that sensitive and resource intensive operations are throttled.
 
+* [[102fa882-8f61-496d-b3a5-b6f2c75f1136|Sensitive and Resource Intensive Operations Are Throttled]]
 
 ==Additional Resources==
 
