@@ -34,8 +34,14 @@ The result of denial of service vulnerabilities is that the application and/or t
 
 ==Countermeasures==
 
+To mitigate denial of service vulnerabilities, throttle resource intensive operations.
+
+* [[57247d0c-78e0-440d-b2c8-75ccb087dd00|Throttle Sensitive and Resource Intensive Operations]]
 
 ==Application Check==
-]]></Data>
+
+To verify that denial of service vulnerabilities are mitigated, verify that resource intensive operations are throttled.
+
+* [[102fa882-8f61-496d-b3a5-b6f2c75f1136|Sensitive and Resource Intensive Operations Are Throttled]]]]></Data>
   </Content>
 </TeamMentor_Article>
