@@ -4,8 +4,8 @@
     <Id>998facf0-cb65-4254-ab94-21b0b03a1923</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Mail Command Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Mail Command Injection</DirectLink>
