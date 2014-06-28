@@ -30,11 +30,14 @@ The impact of XML Entity Expansion vulnerabilities is a Denial of Service condit
 
 ==Countermeasures==
 
-To prevent XML Entity Expansion vulnerabilities, validate user input and use parameterized APIs to build XML documents.
+To prevent XML Entity Expansion vulnerabilities, validate the length of XML data.
+
+* [[95230d84-8661-48ba-93cd-d4ac45be0fe3|Validate the Length of XML Data]]
 
 ==Application Check==
 
-To make sure that XML Entity Expansion vulnerabilities are prevented, verify that user input is validated and that parameterized APIs are used to build XML documents.
-]]></Data>
+To make sure that XML Entity Expansion vulnerabilities are prevented, verify that the length of XML data is validated.
+
+* [[39e61983-ff70-4b65-9188-ac3b9203514c|The Length of XML Data Is Validated]]]]></Data>
   </Content>
 </TeamMentor_Article>
