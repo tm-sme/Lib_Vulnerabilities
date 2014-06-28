@@ -4,8 +4,8 @@
     <Id>2d6e459a-96e1-499a-9663-ebd5c228d888</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>XML Attribute Blowup</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>XML Attribute Blowup</DirectLink>
