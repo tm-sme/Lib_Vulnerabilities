@@ -18,6 +18,10 @@
 
 Content spoofing vulnerabilities occur when the application can be manipulated to display malicious content injected by the attacker. This is a very broad vulnerability class that can have multiple causes. Cross-site scripting (XSS) vulnerabilities can result in content spoofing, and cross-site scripting is itself a broad vulnerability class. Content spoofing can also result from poor authentication controls that allow the attacker to substitute application data with malicious data. 
 
+It is not necessary for the attacker to compromise the application – content spoofing is in the eye of the beholder; so long as the user sees the attacker's content and thinks it is coming from the application, content spoofing is taking place. 
+
+Content spoofing can be caused by many different mistakes, many of them outside the control of application developers. For example, a DNS hijack of a hostname that is used by an application can be used to redirect users to a spoof site. 
+
 Content spoofing overlaps with cross-site scripting where malicious data is injected in HTML contexts, but content spoofing is broader because it also  includes injecting content that is not interpreted as script by the client.
 
 All applications are potentially affected by content spoofing vulnerabilities.
@@ -30,11 +34,11 @@ Content spoofing might also be used to perform cross-site scripting (XSS) attack
 
 ==Countermeasures==
 
-To prevent content spoofing vulnerabilities, validate all input, encode all untrusted data that will be displayed, and perform access control checks for sensitive operations.
+To prevent content spoofing vulnerabilities, validate all input, encode all untrusted data that will be displayed, and use SSL/TLS.
 
 ==Application Check==
 
-To make sure that content spoofing vulnerabilities are prevented, verify that all input is validated, all untrusted data that will be displayed is encoded, and access control checks for sensitive operations are performed.
+To make sure that content spoofing vulnerabilities are prevented, verify that all input is validated, all untrusted data that will be displayed is encoded, and SSL/TLS is used.
 
 ==Additional Resources==
 
