@@ -28,12 +28,17 @@ The impact of mail command injection vulnerabilities is that an attacker will be
 
 ==Countermeasures==
 
-To prevent mail command injection vulnerabilities, use trusted third-party APIs for email functionality and don't include user data in email headers.
+To prevent mail command injection vulnerabilities, validate all input and use trusted third-party APIs for email functionality.
+
+* [[3de41277-0cc1-4ebc-8dd7-e96d161aa0ef|Validate All Input]]
+* [[111c98bb-5909-4bde-b961-64fc9fc14c3e|Use Parameterized Mail APIs]]
 
 ==Application Check==
 
-To verify that mail command injection vulnerabilities are prevented, make sure that trusted third-party APIs are used for email functionality and that user data is not included in email headers.
+To verify that mail command injection vulnerabilities are prevented, make sure that all data is validated and trusted third-party APIs are used for email functionality.
 
+* [[a210fcb7-f142-4c2e-844a-c43e0859f90d|All Input Is Validated]]
+* [[a103fa98-d464-4f33-a01b-ee8195526cdf|Parameterized Mail APIs Are Used]]
 
 ==Additional Resources==
 
