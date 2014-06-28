@@ -4,8 +4,8 @@
     <Id>6fe949ef-75dd-4ee7-be7c-5fe41a2469b2</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>XML Attribute Blowup</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>XML Attribute Blowup</DirectLink>
