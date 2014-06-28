@@ -28,12 +28,14 @@ The impact of XML Attribute Blowup vulnerabilities is a Denial of Service condit
 
 ==Countermeasures==
 
-To prevent XML Attribute Blowup vulnerabilities, don't allow users to create arbitrary amounts of XML attributes.
+To prevent XML Attribute Blowup vulnerabilities, validate the length of XML data.
+
+* [[c805f074-f69e-4139-892e-3ee200121c02|Validate the Length of XML Data]]
 
 ==Application Check==
 
-To verify that XML Attribute Blowup vulnerabilities are prevented, make sure that users are not allowed to create arbitrary amounts of XML attributes.
+To verify that XML Attribute Blowup vulnerabilities are prevented, make sure that the length of XML data is validated.
 
-]]></Data>
+* [[87733268-9e8d-4788-85e4-498544d4854d|The Length of XML Data Is Validated]]]]></Data>
   </Content>
 </TeamMentor_Article>
