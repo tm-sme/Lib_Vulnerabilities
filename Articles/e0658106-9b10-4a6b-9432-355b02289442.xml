@@ -34,11 +34,15 @@ If the attacker compromises an administrative account, they might be able to inj
 
 To prevent insufficient password recovery vulnerabilities, verify user identity when resetting passwords and send the reset token on a side-channel.
 
+* [[f5254af2-dcfb-4cdb-a35a-adf085645c1d|Verify User Identity when Resetting Passwords]]
+* [[8ec27c62-0e6a-4015-9889-ef5b8e42e017|Send Password Reset Tokens over a Side Channel]]
+
 ==Application Check==
 
 To verify that insufficient password recovery vulnerabilities are prevented, make sure that user identity is verified when resetting passwords and the reset tokens are sent on a side-channel.
 
-
+* [[32d5b593-da0b-45f0-b065-e5ffc35362ab|User Identity Is Verified when Resetting Passwords]]
+* [[f34fb46d-12c2-4dfa-ab61-0fa2f0ae9368|Password Reset Tokens Are Sent over a Side Channel]]
 
 ==Additional Resources==
 
