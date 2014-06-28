@@ -4,8 +4,8 @@
     <Id>64c34f42-a7bc-4d42-b219-a8a878e0367a</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Routing Detour</Title>
-    <Category />
-    <Phase />
+    <Category>Communication Security</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Routing Detour</DirectLink>
