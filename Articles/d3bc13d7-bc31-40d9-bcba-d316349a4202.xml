@@ -32,12 +32,17 @@ Overall, routing detour vulnerabilities are not practical to exploit, because an
 
 ==Countermeasures==
 
-To prevent routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities, use SSL/TLS to protect web service connections.
+To prevent routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities, use SSL/TLS to protect web service connections and don't use WS-Routing.
+
+* [[3ae23b58-be94-4af7-a255-dad706dd784e|Use SSL/TLS to Protect Web Service Connections]]
+* [[ae8357a3-2af0-4022-a9ee-77918d1de73c|Do Not Use WS-Routing]]
 
 ==Application Check==
 
-To make sure that routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities are prevented, verify that SSL/TLS is used to protect web service connections.
+To make sure that routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities are prevented, verify that SSL/TLS is used to protect web service connections and WS-Routing is not used.
 
+* [[88c4ea36-f910-40ac-b98b-4a42b2edd3b0|SSL/TLS Is Used to Protect Web Service Connections]]
+* [[ba5a7df0-f96f-4f39-9429-fbd566d7fd6b|WS-Routing Is Not Used]]
 
 ==Additional Resources==
 
