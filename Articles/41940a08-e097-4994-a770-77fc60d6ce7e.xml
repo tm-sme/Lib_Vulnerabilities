@@ -14,7 +14,8 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[==Description==
+    <Data><![CDATA[
+==Description==
 
 Content spoofing vulnerabilities occur when the application can be manipulated to display malicious content injected by the attacker. This is a very broad vulnerability class that can have multiple causes. Cross-site scripting (XSS) vulnerabilities can result in content spoofing, and cross-site scripting is itself a broad vulnerability class. Content spoofing can also result from poor authentication controls that allow the attacker to substitute application data with malicious data. 
 
