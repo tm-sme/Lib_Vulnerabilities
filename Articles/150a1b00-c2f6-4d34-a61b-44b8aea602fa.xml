@@ -4,8 +4,8 @@
     <Id>150a1b00-c2f6-4d34-a61b-44b8aea602fa</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Anti-automation</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insufficient Anti-automation</DirectLink>
