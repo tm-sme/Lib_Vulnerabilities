@@ -4,8 +4,8 @@
     <Id>719e0f46-1135-4102-9213-0a701f389c61</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Abuse of Functionality</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>ASP.NET 4.0</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Abuse of Functionality</DirectLink>
