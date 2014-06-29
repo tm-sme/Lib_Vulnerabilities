@@ -4,8 +4,8 @@
     <Id>20ef5018-573a-4ea7-9ed4-4df8b92fd2bf</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Predictable Resource Location</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Predictable Resource Location</DirectLink>
