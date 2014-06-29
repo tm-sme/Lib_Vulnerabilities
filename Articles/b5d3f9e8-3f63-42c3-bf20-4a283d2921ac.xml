@@ -34,8 +34,18 @@ The result of denial of service vulnerabilities is that the application and/or t
 
 ==Countermeasures==
 
+To mitigate denial of service vulnerabilities, throttle resource intensive operations.
 
 ==Application Check==
+
+To verify that denial of service vulnerabilities are mitigated, verify that resource intensive operations are throttled.
+
+==Specific Technologies==
+
+* [[04b16f87-f1e5-441a-9706-d0a4e99aae05|ASP.NET Denial of Service]]
+* [[264d58e6-04e7-46a3-b5dd-87a4abbb4c38|Java Denial of Service]]
+* [[6651a931-83e7-4b17-9014-be585922c229|C++ Denial of Service]]
+* [[a471e3f4-6fb2-4c3f-94ed-028e1e7710ad|PHP Denial of Service]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
