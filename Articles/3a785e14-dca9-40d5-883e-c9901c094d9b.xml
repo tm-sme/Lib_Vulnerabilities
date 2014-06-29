@@ -37,6 +37,13 @@ It might not be possible to prevent fingerprinting completely, but the potential
 ==Application Check==
 
 To make sure that fingerprinting is mitigated, verify that the server is hardened and application fingerprints are reduced.
+
+==Specific Technologies==
+
+* [[eae98954-f5cc-4f81-b541-f182b94e3e4f|ASP.NET Fingerprinting]]
+* [[0f4c7154-1768-4380-965c-5d40d0fe7eac|Java Fingerprinting]]
+* [[f84a42b2-f872-46a0-bfc4-a03571c727a8|C++ Fingerprinting]]
+* [[7ef97474-5640-4717-b85c-a72a4dfda750|PHP Fingerprinting]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
