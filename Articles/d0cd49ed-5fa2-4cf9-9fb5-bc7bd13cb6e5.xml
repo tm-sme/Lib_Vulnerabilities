@@ -32,12 +32,19 @@ When flow control vulnerabilities are abused, it is usually to skip some kind of
 
 ==Countermeasures==
 
-To prevent insufficient process validation, perform control flow analysis and check access controls for all sensitive operations.
+To prevent insufficient process validation, perform control flow analysis, check access controls for all sensitive operations, and keep track of progress in multi-step scripts.
+
+* [[5589885e-6287-4979-a158-13eff06027cc|Perform a Control Flow Analysis]]
+* [[b0a206b5-61c4-4d9f-8c06-057783ebf249|Use Role-based Authorization]]
+* [[8c77beb3-754b-4fe5-a10b-f2a529b054f9|Keep Track of Progress in Multi-page Scripts]]
 
 ==Application Check==
 
-To make sure that insufficient process validation vulnerabilities are mitigated, verify that control flow analysis is performed and access controls are checked for all sensitive operations.
+To make sure that insufficient process validation vulnerabilities are mitigated, verify that control flow analysis is performed, access controls are checked for all sensitive operations, and progress in multi-step scripts is tracked.
 
+* [[c248ea97-b884-4eff-8921-ae59dccd9879|A Control Flow Analysis Is Performed]]
+* [[e38cab08-316c-4257-8001-e490827fed6e|Role-based Authorization Is Used]]
+* [[0b53991d-8bb2-4720-a713-40129f737b24|Progress Between Pages In Multi-page Scripts Is Tracked]]
 
 ==Additional Resources==
 
