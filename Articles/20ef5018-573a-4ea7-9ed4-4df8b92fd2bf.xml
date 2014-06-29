@@ -36,9 +36,10 @@ To mitigate predictable resource location vulnerabilities, use access controls t
 
 To make sure that predictable resource location vulnerabilities are mitigated, make sure that sensitive functionality is protected using access controls.
 
-==Additional Resources==
+==Specific Technologies==
 
-* For more information about predictable resource location, see http://projects.webappsec.org/w/page/13246953/Predictable%20Resource%20Location
-]]></Data>
+* [[61b481cf-3b56-466b-b96e-f7ed6c4c1948|ASP.NET Predictable Resource Location]]
+* [[6c7e2c50-58d0-42bc-b3aa-cfa8f33eb0d0|Java Predictable Resource Location]]
+* [[9fd7582e-0cbe-4907-97e3-e332428cc565|PHP Predictable Resource Location]]]]></Data>
   </Content>
 </TeamMentor_Article>
