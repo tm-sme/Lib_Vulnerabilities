@@ -38,9 +38,11 @@ To prevent insufficient session expiration vulnerabilities, place logout links o
 
 To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
 
-==Additional Resources==
+==Specific Technologies==
 
-* For more information about insufficient session expiration, see http://projects.webappsec.org/w/page/13246944/Insufficient%20Session%20Expiration
+* [[d4d942a8-0415-4ed1-88a7-488b1ca6b22b|ASP.NET Insufficient Session Expiration]]
+* [[cbd09a31-a267-4409-9dad-2d5342e426f4|Java Insufficient Session Expiration]]
+* [[acc51b28-d106-4d6e-9065-81e51f0ec3f3|PHP Insufficient Session Expiration]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
