@@ -32,16 +32,17 @@ Insufficient anti-automation can be abused to collect information from the appli
 
 ==Countermeasures==
 
-To prevent insufficient anti-automation vulnerabilities, use CAPTCHA and throttle expensive operations.
+To prevent insufficient anti-automation vulnerabilities, throttle sensitive and resource intensive operations.
 
 ==Application Check==
 
-To verify that insufficient anti-automation vulnerabilities are prevented, make sure that CAPTCHA is used and expensive operations are throttled.
+To verify that insufficient anti-automation vulnerabilities are prevented, make sure that sensitive and resource intensive operations are throttled.
 
+==Specific Technologies==
 
-==Additional Resources==
-
-* For more information about insufficient anti-automation, see http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation
-]]></Data>
+* [[17fadcfb-5d57-4978-93fd-76bc4a5fff0b|ASP.NET Insufficient Anti-automation]]
+* [[150a1b00-c2f6-4d34-a61b-44b8aea602fa|Java Insufficient Anti-automation]]
+* [[0c8b078b-dd95-4c06-84c6-ad1696644b4c|C++ Insufficient Anti-automation]]
+* [[39b4df11-91d7-4ac3-8b75-10c4f64d20e1|PHP Insufficient Anti-automation]]]]></Data>
   </Content>
 </TeamMentor_Article>
