@@ -4,8 +4,8 @@
     <Id>623e234a-237b-4402-9cb5-ccc0100278a4</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Routing Detour</Title>
-    <Category />
-    <Phase />
+    <Category>Communication Security</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Routing Detour</DirectLink>
