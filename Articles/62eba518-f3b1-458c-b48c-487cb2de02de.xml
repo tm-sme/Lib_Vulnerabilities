@@ -4,8 +4,8 @@
     <Id>62eba518-f3b1-458c-b48c-487cb2de02de</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Information Leakage</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Information Leakage</DirectLink>
