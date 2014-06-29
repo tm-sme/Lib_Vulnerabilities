@@ -4,8 +4,8 @@
     <Id>54d5cd3a-9490-4e6e-971a-b90ff2508d7d</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Brute Force</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>Java</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Brute Force</DirectLink>
