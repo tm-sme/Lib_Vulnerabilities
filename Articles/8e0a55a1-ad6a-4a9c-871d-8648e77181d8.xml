@@ -4,8 +4,8 @@
     <Id>8e0a55a1-ad6a-4a9c-871d-8648e77181d8</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Content Spoofing</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology> Any</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Content Spoofing</DirectLink>
