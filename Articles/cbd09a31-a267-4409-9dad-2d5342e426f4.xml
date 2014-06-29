@@ -34,9 +34,17 @@ The most serious danger is that the attacker might compromise a privileged accou
 
 To prevent insufficient session expiration vulnerabilities, place logout links on all pages that require authentication, expire sessions on the server after a period of user inactivity, and don't make session cookies persistent.
 
+* [[b4f83e8e-3223-4e49-bc9c-56c8c7268582|Place Logout Links on All Pages That Require Authentication]]
+* [[acfe1a16-3f00-4383-ada4-bebafc98a836|Make Inactive Sessions Time-out]]
+* [[93d20f88-9a16-45b9-9dfd-9bdd25630bcf|Do Not Make Sensitive Cookies Persistent]]
+
 ==Application Check==
 
 To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
+
+* [[493e0e57-254a-4697-8fa1-c93e706d416d|All Pages That Use Authentication Have Logout Links]]
+* [[c486eeb2-f64f-480b-9823-48bd7d21047d|Inactive Sessions Time-out]]
+* [[4b8acf69-b890-44d9-831e-5e454c270db2|Sensitive Cookies Are Not Made Persistent]]
 
 ==Additional Resources==
 
