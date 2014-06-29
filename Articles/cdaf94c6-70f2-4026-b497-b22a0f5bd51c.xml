@@ -18,7 +18,6 @@
 
 Information leakage is a blanket term for vulnerabilities that disclose either something about the system or some of the application data to unauthorized users. Information leak vulnerabilities result when application code sends data to the user that the user is not authorized to receive. Most information leak vulnerabilities disclose something about the system and this helps the attacker exploit additional vulnerabilities. Some information leaks disclose application data and in that case the attack is usually after the data itself. Sometimes the disclosed data might include authentication credentials, which could be leveraged to take over users’ accounts or the application. All application types are affected by information leak vulnerabilities.
 
-
 ==Impact==
 
 There are two main types of information leakage: system information leaks and application data leaks.
@@ -35,6 +34,12 @@ To prevent system information leaks, use simple error messages and harden the se
 
 To check for adequate protection against system information leaks, verify that simple error messages are used and the server is hardened.
 
+==Specific Technologies==
+
+* [[ac3a5f4f-e0bb-4b63-b67f-efdc26fa2bcb|ASP.NET Information Leakage]]
+* [[62eba518-f3b1-458c-b48c-487cb2de02de|Java Information Leakage]]
+* [[219bb9d4-ddc9-4b1e-be27-e6adde7b6315|C++ Information Leakage]]
+* [[8ac332aa-aeb7-4c8c-aa85-94a570040f15|PHP Information Leakage]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
