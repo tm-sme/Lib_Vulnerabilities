@@ -40,9 +40,11 @@ To prevent content spoofing vulnerabilities, validate all input, encode all untr
 
 To make sure that content spoofing vulnerabilities are prevented, verify that all input is validated, all untrusted data that will be displayed is encoded, and SSL/TLS is used.
 
-==Additional Resources==
+==Specific Technologies==
 
-* For more information about content spoofing, see http://projects.webappsec.org/w/page/13246917/Content%20Spoofing
+* [[21a7c118-5112-40e6-a167-9790a2d9a116|ASP.NET Content Spoofing]]
+* [[a1e4199f-c906-4163-8a6d-de2b25a2384b|Java Content Spoofing]]
+* [[41940a08-e097-4994-a770-77fc60d6ce7e|PHP Content Spoofing]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
