@@ -39,6 +39,11 @@ Though there is no way to completely prevent brute force attacks, these mitigati
 
 To make sure that brute forcing is mitigated, verify that sensitive and resource intensive operations are throttled and that strong cryptography and keys are used.
 
-]]></Data>
+==Specific Technologies==
+
+* [[f4aa726a-7653-400f-af11-f0552459fdcf|ASP.NET Brute Force]]
+* [[54d5cd3a-9490-4e6e-971a-b90ff2508d7d|Java Brute Force]]
+* [[5716915d-e015-438a-9f33-e816da858104|C++ Brute Force]]
+* [[b4f63ea0-7221-42b5-a55b-efcb55f40d5f|PHP Brute Force]]]]></Data>
   </Content>
 </TeamMentor_Article>
