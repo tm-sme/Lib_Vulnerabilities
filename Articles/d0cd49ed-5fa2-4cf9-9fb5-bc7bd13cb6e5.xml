@@ -4,8 +4,8 @@
     <Id>d0cd49ed-5fa2-4cf9-9fb5-bc7bd13cb6e5</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Insufficient Process Validation</Title>
-    <Category />
-    <Phase />
+    <Category>Other</Category>
+    <Phase>Implementation</Phase>
     <Technology>PHP</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Insufficient Process Validation</DirectLink>
