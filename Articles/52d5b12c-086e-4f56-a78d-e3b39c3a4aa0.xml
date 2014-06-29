@@ -4,8 +4,8 @@
     <Id>52d5b12c-086e-4f56-a78d-e3b39c3a4aa0</Id>
     <Library_Id>be5273b1-d682-4361-99d9-6204f2d47eb7</Library_Id>
     <Title>Mail Command Injection</Title>
-    <Category />
-    <Phase />
+    <Category>Input and Data Validation</Category>
+    <Phase>Implementation</Phase>
     <Technology>C++</Technology>
     <Type>Vulnerability</Type>
     <DirectLink>Mail Command Injection</DirectLink>
