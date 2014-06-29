@@ -30,13 +30,18 @@ Fingerprinting can also be used just to see what's running on a system, but that
 
 ==Countermeasures==
 
+It might not be possible to prevent fingerprinting completely, but the potential for fingerprinting can be reduced. For example, you can reduce fingerprinting by not putting the name of the application on the front page of the application, or on other pages that are available without authentication. The goal is to make it difficult to find instances of the application using automated tools.
+
 To mitigate fingerprinting, harden the server and reduce application fingerprints. 
 
-It might not be possible to prevent fingerprinting completely, but the potential for fingerprinting can be reduced. For example, you can reduce fingerprinting by not putting the name of the application on the front page of the application, or on other pages that are available without authentication. 
+* [[e7843706-203c-4e35-b89c-f318fa5ab6e6|Harden the Server]]
+* [[11e4782b-9a15-4285-a171-733d0e731d8d|Reduce Application Fingerprints]]
 
 ==Application Check==
 
 To make sure that fingerprinting is mitigated, verify that the server is hardened and application fingerprints are reduced.
-]]></Data>
+
+* [[fee448aa-edac-408d-9d9c-dab4fcacd29f|The Server Is Hardened]]
+* [[34456ac9-adfc-4f0c-bad6-4d054cae64bd|Application Fingerprints Are Reduced]]]]></Data>
   </Content>
 </TeamMentor_Article>
