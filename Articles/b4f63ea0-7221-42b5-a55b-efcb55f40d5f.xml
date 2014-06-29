@@ -34,11 +34,16 @@ To mitigate brute forcing, throttle sensitive and resource intensive operations 
 
 Though there is no way to completely prevent brute force attacks, these mitigations create conditions in which a very large amount of resources is required for an attack to be successful, making it improbable that an attack of such magnitude will take place. 
 
+* [[da5ea99b-aa95-41d5-a6f8-464fa44b4b5d|Throttle Sensitive and Resource Intensive Operations]]
+* [[858b8b1d-3e18-4274-9e36-14a1dad64572|Use Strong Symmetric Encryption]]
+* [[c0e94eb7-79a2-4602-9bf5-0a446689510f|Use Strong Encryption Keys]]
 
 ==Application Check==
 
 To make sure that brute forcing is mitigated, verify that sensitive and resource intensive operations are throttled and that strong cryptography and keys are used.
 
-]]></Data>
+* [[f08d3a08-a560-4220-9962-5de047b00caa|Sensitive and Resource Intensive Operations Are Throttled]]
+* [[3f739b6f-771a-4ac2-a888-d9fada2721e1|Strong Symmetric Encryption Is Used]]
+* [[930c319f-2b5a-4fe5-ab80-11da593d3395|Strong Encryption Keys Are Used]]]]></Data>
   </Content>
 </TeamMentor_Article>
