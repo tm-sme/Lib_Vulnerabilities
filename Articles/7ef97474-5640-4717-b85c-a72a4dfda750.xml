@@ -34,9 +34,14 @@ To mitigate fingerprinting, harden the server and reduce application fingerprint
 
 It might not be possible to prevent fingerprinting completely, but the potential for fingerprinting can be reduced. For example, you can reduce fingerprinting by not putting the name of the application on the front page of the application, or on other pages that are available without authentication. 
 
+* [[99297f49-528b-4a25-bc35-3b82ef14404a|Harden the Server]]
+* [[2ed4ee74-fba9-4d3c-b753-0fc8d0295b3b|Reduce Application Fingerprints]]
+
 ==Application Check==
 
 To make sure that fingerprinting is mitigated, verify that the server is hardened and application fingerprints are reduced.
-]]></Data>
+
+* [[408f56bf-9ca6-482d-bff2-a2495ff80917|The Server Is Hardened]]
+* [[f5c4d2da-9a4a-4985-8699-998e00626c92|Application Fingerprints Are Reduced]]]]></Data>
   </Content>
 </TeamMentor_Article>
