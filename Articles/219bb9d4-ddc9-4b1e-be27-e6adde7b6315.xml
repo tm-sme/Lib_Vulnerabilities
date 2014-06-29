@@ -31,10 +31,14 @@ Application data leaks result in the attacker gaining unauthorized access to the
 
 To prevent system information leaks, use simple error messages and harden the server.
 
+* [[5c0c50cf-d3ed-462c-8ec7-2eb96cf23680|Don't Reveal Sensitive Information in Error Messages]]
+* [[9d434a73-5f75-48ab-907b-d1a44a76d936|Harden the Server]]
+
 =Application Check=
 
 To check for adequate protection against system information leaks, verify that simple error messages are used and the server is hardened.
 
-]]></Data>
+* [[4a3f39a5-075b-46cc-bb52-67709c3647d9|Error Messages Don't Reveal Sensitive Information]]
+* [[40d60385-86e3-432d-a047-37f628e454d7|The Server Is Hardened]]]]></Data>
   </Content>
 </TeamMentor_Article>
