@@ -24,7 +24,7 @@ All applications are affected by abuse of functionality vulnerabilities.
 
 The exact nature of abuse of functionality vulnerabilities is different for different applications—the attacker abuses the design of the application itself, which is different for different applications. The most common result is that the application can be used to perform denial of service attacks on other servers or to consume its own server's resources resulting in a local denial of service condition. In other, less common cases, functionality can be abused to access restricted information or to bypass access controls.
 
-One example of a classic abuse of functionality vulnerability is the WordPress pingback feature denial of service attack, which have been detected in early 2014. WordPress has a feature that allows notifying other sites when text from these sites is being used. The pingback feature essentially sends HTTP requests to hosts other than the one that is used by the WordPress application. An attacker is able to flood a remote server with HTTP requests by triggering the pingback feature repeatedly. Somebody was abusing this pingback feature to perform large-scale distributed denial of service attacks using as many as 150000+ WordPress application servers. Because the pingback feature was implemented the way that the WordPress team wanted to implement it, the WordPress team did not consider it to be vulnerable and did not plan to "fix" it, even after the fact of this feature being abused has been disclosed.
+One example of a classic abuse of functionality vulnerability is the WordPress pingback feature denial of service attack, which has been detected in early 2014. WordPress has a feature that allows notifying other sites when text from these sites is being used. The pingback feature essentially sends HTTP requests to hosts other than the one that is used by the WordPress application. An attacker is able to flood a remote server with HTTP requests by triggering the pingback feature repeatedly. Somebody was abusing this pingback feature to perform large-scale distributed denial of service attacks using as many as 150000+ WordPress application servers. Because the pingback feature was implemented the way that the WordPress team wanted to implement it, the WordPress team did not consider it to be vulnerable and did not plan to "fix" it, even after the fact of this feature being abused has been disclosed.
 
 The most common attack scenario of abuse of functionality vulnerabilities is denial of service attacks. Once an attacker finds a function that can be abused, they will use it to attempt to slow down or shut down a network server or application (typically not the one that has the abuse of functionality vulnerability). The result is that the target server or application becomes inaccessible to legitimate users for the duration of the attack.
 
@@ -34,13 +34,17 @@ Many abuse of functionality vulnerabilities can be avoided by having a logical a
 
 ==Countermeasures==
 
-The precise nature of abuse of functionality vulnerabilities varies greatly between different applications, so little can be provided in terms of practical methods that can be used to prevent such vulnerabilities. One effective measure is to restrict access to dangerous functions only to trusted users. This does not remove the vulnerability itself, but reduces the likelihood of it being used for an attack.
-
-Make it possible to disable potentially dangerous features.
-Require authenticatoin for potentially dangerous features.
-Disable potentially dangerous features by default.
+The precise nature of abuse of functionality vulnerabilities varies greatly between different applications, so little can be provided in terms of practical methods that can be used to prevent such vulnerabilities. One effective measure is to restrict access to dangerous functions only to trusted users. Another is to disable dangerous functions by default. These measures do not prevent abuse of functionality vulnerabilities, but reduce the likelihood of a successful attack.
 
 ==Application Check==
+
+To verify that abuse of functionality vulnerabilities are mitigated, make sure that authentication is required for all sensitive operations and dangerous functions are disabled by default.
+
+==Specific Technologies==
+
+* [[719e0f46-1135-4102-9213-0a701f389c61|ASP.NET Abuse of Functionality]]
+* [[2895d1d0-318b-4d7e-a428-cd03d2076970|Java Abuse of Functionality]]
+* [[58f29253-537a-482f-ab52-561a1ea4407e|PHP Abuse of Functionality]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
