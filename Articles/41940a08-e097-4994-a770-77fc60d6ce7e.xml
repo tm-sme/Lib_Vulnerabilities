@@ -14,8 +14,7 @@
     <Status />
   </Metadata>
   <Content Sanitized="false" DataType="wikitext">
-    <Data><![CDATA[
-==Description==
+    <Data><![CDATA[==Description==
 
 Content spoofing vulnerabilities occur when the application can be manipulated to display malicious content injected by the attacker. This is a very broad vulnerability class that can have multiple causes. Cross-site scripting (XSS) vulnerabilities can result in content spoofing, and cross-site scripting is itself a broad vulnerability class. Content spoofing can also result from poor authentication controls that allow the attacker to substitute application data with malicious data. 
 
@@ -37,9 +36,17 @@ Content spoofing might also be used to perform cross-site scripting (XSS) attack
 
 To prevent content spoofing vulnerabilities, validate all input, encode all untrusted data that will be displayed, and use SSL/TLS.
 
+* [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
+* [[00000000-0000-0000-0000-0000000960a4|Encode Input Included in Output]]
+* [[34c8d5b4-430d-4112-802b-f8c5fb786cfe|Use SSL]]
+
 ==Application Check==
 
 To make sure that content spoofing vulnerabilities are prevented, verify that all input is validated, all untrusted data that will be displayed is encoded, and SSL/TLS is used.
+
+* [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
+* [[00000000-0000-0000-0000-0000008a4b8e|Input Included in Output Is Encoded]]
+* [[3b1eb7f0-76cd-4e4f-8653-8a6a6a32d1c9|SSL Is Enabled]]
 
 ==Additional Resources==
 
