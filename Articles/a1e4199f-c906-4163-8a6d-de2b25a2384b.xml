@@ -36,9 +36,17 @@ Content spoofing might also be used to perform cross-site scripting (XSS) attack
 
 To prevent content spoofing vulnerabilities, validate all input, encode all untrusted data that will be displayed, and use SSL/TLS.
 
+* [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
+* [[f83b953a-9b0c-406a-b274-9b2962d9c4e7|Encode All Output Data]]
+* [[c317a2fc-cf4b-4b21-8523-4c911afca161|Use SSL]]
+
 ==Application Check==
 
 To make sure that content spoofing vulnerabilities are prevented, verify that all input is validated, all untrusted data that will be displayed is encoded, and SSL/TLS is used.
+
+* [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]
+* [[13112146-7c14-4b6d-9e94-24daa22eefc4|All Output Data Is Encoded]]
+* [[b473157f-aa07-4822-8d35-53ec73da44f4|SSL Is Used]]
 
 ==Additional Resources==
 
