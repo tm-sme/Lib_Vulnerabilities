@@ -36,6 +36,7 @@ To check for adequate protection against this vulnerability, verify that SSL is 
 =Specific Technologies=
 
 * [[c6852bd5-91b9-4daa-a472-7a1035d299fc|PHP Insecure Transport]]
+* [[879e6b77-2f11-4105-9c79-e0b35897359b|ASP.NET Insecure Transport]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>
