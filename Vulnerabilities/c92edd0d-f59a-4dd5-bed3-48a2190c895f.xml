@@ -37,7 +37,7 @@ Validate all input:
 * [[2f917654-65a8-49c9-b000-c17f9765bf42|Input Validation Using Struts 2]]
 
 Use parameterized APIs for database access:
-* [[7f8deb21-cd52-41be-80b4-8897612021dc|Use Parameterized APIs for Data Access]]
+* [[d2809cce-1af2-4896-a45c-b4b56deae282|Use Parameterized APIs for Data Access]]
 * [[bcfcbcbb-4bd6-4011-9e24-efa70d4a3724|Parameterize Dynamic SQL in Stored Procedures]]
 
 =Application Check
