@@ -29,12 +29,12 @@ The impact of an application misconfiguration vulnerability depends on its speci
 
 To prevent application misconfiguration vulnerabilities, harden the server.
 
-* [[9d434a73-5f75-48ab-907b-d1a44a76d936|Harden the Server]]
+* [[99297f49-528b-4a25-bc35-3b82ef14404a|Harden the Server]]
 
 ==Application Check==
 
 To verify that application misconfiguration vulnerabilities are prevented, verify that the server is hardened.
 
-* [[40d60385-86e3-432d-a047-37f628e454d7|The Server Is Hardened]]]]></Data>
+* [[408f56bf-9ca6-482d-bff2-a2495ff80917|The Server Is Hardened]]]]></Data>
   </Content>
 </TeamMentor_Article>
