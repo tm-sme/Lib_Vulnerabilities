@@ -37,10 +37,12 @@ To prevent encryption issues, use strong cryptographic algorithms correctly, use
 =Application Check=
 To ensure that strong encryption is used, verify that strong cryptographic algorithms are used, verified that they are used correctly, verify that strong keys are used and that the keys are protected.
 
-* [[dab7ea8c-2c13-4aa6-b644-897960e4859a|Strong Cryptographic Algorithms Are Used to Secure Sensitive ]]
+* [[dab7ea8c-2c13-4aa6-b644-897960e4859a|Strong Cryptographic Algorithms Are Used to Secure Sensitive Data]]
+
+* [[d498b6c2-c007-4094-9a46-f3e06bdf50e7|Strong Encryption Keys Are Used]]
 
 * [[e19e6c8e-f5e4-4607-8c71-34102dc2e760|Encryption Keys Are Protected]]
 
-* [[d498b6c2-c007-4094-9a46-f3e06bdf50e7|Strong Encryption Keys Are Used]]]]></Data>
+]]></Data>
   </Content>
 </TeamMentor_Article>

@@ -33,15 +33,15 @@ One of the most common examples of a predictable resource location vulnerability
 
 To mitigate predictable resource location vulnerabilities, use access controls to protect sensitive functionality. This does not "fix" predictable resource location, but makes it much less useful to attackers. 
 
-* [[ae289022-d611-4fe4-b177-45066a398da8|Force Re-authentication When Executing Critical Functionality]]
-* [[b0a206b5-61c4-4d9f-8c06-057783ebf249|Use Role-based Authorization]]
+* [[8eba2142-4a6e-4f2c-9648-3ba1cadf9621|Force Reauthentication When Executing Critical Functionality]]
+* [[326aa52e-5a89-43a7-84a4-cfece655fb55|Use Role-based Authorization]]
 
 ==Application Check==
 
 To make sure that predictable resource location vulnerabilities are mitigated, make sure that sensitive functionality is protected using access controls.
 
-* [[4e186cf4-06df-4cf1-aeb9-731e218612d1|Re-authentication Is Enforced When Executing Critical Functionality]]
-* [[e38cab08-316c-4257-8001-e490827fed6e|Role-based Authorization Is Used]]
+* [[0c6a261a-14e8-4c36-838d-17b4a8b6532c|Reauthentication Is Enforced When Executing Critical Functionality]]
+* [[dae3b6ec-9ef1-4f5b-9aae-1604d9c7e1cc|Role-based Authorization Is Used]]
 
 ==Additional Resources==
 

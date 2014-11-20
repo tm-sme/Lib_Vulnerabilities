@@ -59,6 +59,6 @@ This course introduces best practices for developing secure PHP code. The course
 
 =Additional Resources
 
-* For more information about Cross-Site Request Forgery, see http://en.wikipedia.org/wiki/Cross-site_request_forgery]]></Data>
+* For more information about Cross-Site Request Forgery, see https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29]]></Data>
   </Content>
 </TeamMentor_Article>

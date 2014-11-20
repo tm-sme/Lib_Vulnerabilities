@@ -32,12 +32,12 @@ Malicious hackers usually target privileged accounts to take over the applicatio
 =Countermeasures=
 To prevent this vulnerability type, use PBKDF2 to secure passwords, and send authentication credentials over encrypted tunnels. 
 
-* [[db8663bc-c0ee-4fba-8eb3-95f777c97a00|Store Passwords Securely]]
+* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
 
 =Application Check=
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords, and authentication credentials are never sent in plain-text. 
 
-* [[c936d4cc-5b20-4da0-a8eb-eb2153f9353e|Passwords Are Stored Securely]]
+* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
 
 =Computer Based Training Links=
 

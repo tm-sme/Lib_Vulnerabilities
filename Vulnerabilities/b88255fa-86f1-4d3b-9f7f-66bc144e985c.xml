@@ -34,7 +34,7 @@ Validate all input:
 * [[c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52|Use Positive Input Validation]]
 
 Perform access control checks for any filesystem access:
-* [[3f546271-6ecc-499e-bbf1-c221fdecc222|Check Access Control Permissions When Referencing Objects]]
+* [[983726cb-b3a5-4e23-af5f-04d64e95a59f|Check Access Control Permissions When Referencing Objects]]
 
 Use reference maps to access objects:
 * [[62aa729a-fafa-4327-a3b7-dc5747aed610|Use Indirect Object References]]
@@ -53,7 +53,7 @@ All input is validated:
 * [[d4129497-3a66-44d1-881e-e6f004af2e0d|Positive Input Validation Is Used]]
 
 Access control checks are performed for all filesystem access:
-* [[9a2923bd-0501-4a2c-867f-09fbc054c840|Access Control Permissions Are Checked When Referencing Objects]]
+* [[70a45962-ca20-4795-bd0c-032178332ece|Access Control Permissions Are Checked When Referencing Objects]]
 
 Reference maps are used to access objects:
 * [[bb14e1b4-65d9-4d65-9c46-fd4941a9827b|Indirect Object References Are Used]]
