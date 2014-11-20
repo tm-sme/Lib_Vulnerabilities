@@ -64,7 +64,7 @@ In this course, you will learn to recognize and remediate common Java Web softwa
 
 =Additional Resources
 
-* For more information about HTTP response splitting, see http://en.wikipedia.org/wiki/HTTP_response_splitting
+* For more information about HTTP response splitting, see https://www.owasp.org/index.php/HTTP_Response_Splitting
 * For the CWE page about this vulnerability type, see http://cwe.mitre.org/data/definitions/113.html]]></Data>
   </Content>
 </TeamMentor_Article>

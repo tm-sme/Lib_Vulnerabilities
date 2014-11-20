@@ -28,7 +28,7 @@ An insufficiently protected credential vulnerability makes it easier for an atta
 To prevent this vulnerability type, use PBKDF2 to secure passwords and send authentication credentials over encrypted tunnels. 
 
 Hash and salt passwords:
-* [[6e0918c1-90db-46d5-9f0e-8a98ddbcd7d5|Store Passwords Securely]]
+* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]]
 * [[bcf8adb4-8186-4b97-b490-4fa33f506bfd|Limit Access to the Credential Store]]
 
 =Application Check
@@ -36,7 +36,7 @@ Hash and salt passwords:
 To check for adequate protection against this vulnerability type, verify that PBKDF2 is used to secure passwords and that authentication credentials are never sent in plain-text. 
 
 Passwords are hashed and salted for storage using PBKDF2:
-* [[d74fe6bf-387f-4ff1-9edb-d0275eedffc0|Passwords Are Stored Securely]]
+* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]]
 * [[9031f577-80b0-4a2e-9652-7b470439a0df|Access to the Credential Store Is Limited]]
 
 =Computer Based Training Links=

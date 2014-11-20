@@ -35,14 +35,14 @@ It might not be possible to prevent fingerprinting completely, but the potential
 
 To mitigate fingerprinting, harden the server and reduce application fingerprints. 
 
-* [[e7843706-203c-4e35-b89c-f318fa5ab6e6|Harden the Server]]
+* [[99297f49-528b-4a25-bc35-3b82ef14404a|Harden the Server]]
 * [[11e4782b-9a15-4285-a171-733d0e731d8d|Reduce Application Fingerprints]]
 
 ==Application Check==
 
 To make sure that fingerprinting is mitigated, verify that the server is hardened and application fingerprints are reduced.
 
-* [[fee448aa-edac-408d-9d9c-dab4fcacd29f|The Server Is Hardened]]
+* [[408f56bf-9ca6-482d-bff2-a2495ff80917|The Server Is Hardened]]
 * [[34456ac9-adfc-4f0c-bad6-4d054cae64bd|Application Fingerprints Are Reduced]]]]></Data>
   </Content>
 </TeamMentor_Article>

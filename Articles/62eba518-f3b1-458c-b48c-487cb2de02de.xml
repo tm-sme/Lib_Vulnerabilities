@@ -34,7 +34,7 @@ To prevent system information leaks, use simple error messages and harden the se
 
 * [[fd4b2a8a-db2d-4594-ba30-3ce5f63ad459|Do Not Include Debug Data in Output]]
 * [[56ad1852-7fc3-4d1f-b109-bbcce29170f7|Do Not Disclose Exception Details to the Client]]
-* [[e7843706-203c-4e35-b89c-f318fa5ab6e6|Harden the Server]]
+* [[99297f49-528b-4a25-bc35-3b82ef14404a|Harden the Server]]
 
 =Application Check=
 
@@ -42,7 +42,7 @@ To check for adequate protection against system information leaks, verify that s
 
 * [[d33cc3de-517c-4c84-95bd-24f14d9d99d6|Debug Data Is Not Included in Output]]
 * [[d13e57d7-f6f5-4bd4-8629-26c45f9f029b|Exception Details Are Not Disclosed to the Client]]
-* [[fee448aa-edac-408d-9d9c-dab4fcacd29f|The Server Is Hardened]]
+* [[408f56bf-9ca6-482d-bff2-a2495ff80917|The Server Is Hardened]]
 ]]></Data>
   </Content>
 </TeamMentor_Article>

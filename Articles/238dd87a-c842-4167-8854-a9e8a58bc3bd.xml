@@ -31,7 +31,7 @@ To prevent this problem, canonicalize all file path and name input, validate all
 
 * [[b531d29c-86f7-4812-90ce-5f3f0f780aba|Validate Input from All Sources]]
 
-* [[92839e91-8f79-45fb-9b8d-76fc9c814fea|Check Access Control Permissions When Referencing Objects]]
+* [[983726cb-b3a5-4e23-af5f-04d64e95a59f|Check Access Control Permissions When Referencing Objects]]
 
 * [[b4a87891-a19a-41be-a1a3-f8a13c7f4881|Use Indirect Object References]]
 
@@ -45,7 +45,7 @@ To check for adequate protection against this vulnerability, ensure that all fil
 
 * [[7f8deb21-cd52-41be-80b4-8897612021dc|Input from All Sources Is Validated]]
 
-* [[f3747faf-6e0b-43af-ae92-ed3736be390a|Access Control Permissions Are Checked When Referencing Objects]]
+* [[70a45962-ca20-4795-bd0c-032178332ece|Access Control Permissions Are Checked When Referencing Objects]]
 
 * [[54ea1759-e5e8-4eee-84cc-67607fef0c30|Indirect Object References Are Used]]
 

@@ -38,7 +38,7 @@ Store encryption keys using protected storage APIs:
 To check for adequate protection against this vulnerability, ensure that a secure admin interface that allows for managing cryptographic keys is provided, and examine all code that uses encryption to ensure that encryption keys are stored using protected storage APIs.
 
 A secure administrative interface that allows managing cryptographic keys is provided:
-* [[00000000-0000-0000-0000-00000085b440|A Secure Administrative Interface that Allows Managing Cryptographic Keys Is Provided]]
+* [[8e2cab7b-bab6-488d-9487-d93b3f479b27|A Secure Administrative Interface that Allows Managing Cryptographic Keys Is Provided]]
 
 Encryption keys are stored using protected storage APIs:
 * [[08e76219-384d-4c5f-954e-09617f717558|A Secure Key Storage Location Is Used]]
