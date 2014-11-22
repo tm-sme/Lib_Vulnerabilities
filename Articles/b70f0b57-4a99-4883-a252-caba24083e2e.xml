@@ -39,7 +39,7 @@ HTTP response smuggling is a vulnerability in the HTTP firewall or proxy, so the
 
 To verify that HTTP response smuggling is preventing, make sure that network hardware is updated.
 
-* [[e1816a2b-bf3b-4d9a-93a7-f9d37078ed04|Network Hardware Is Updated]]
+* [[418f1de0-9d5f-44ef-b0b0-4f8b4af11ab9|Network Hardware Is Updated]]
 
 ==Additional Resources==
 

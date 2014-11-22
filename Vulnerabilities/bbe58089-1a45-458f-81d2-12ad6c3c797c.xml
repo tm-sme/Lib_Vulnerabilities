@@ -41,7 +41,7 @@ To check for adequate protection against this vulnerability, ensure that a secur
 
 A secure administrative interface that allows managing cryptographic keys is provided:
 
-* [[00000000-0000-0000-0000-0000000d4d94|A Secure Administrative Interface that Allows Managing Cryptographic Keys Is Provided]]
+* [[8e2cab7b-bab6-488d-9487-d93b3f479b27|A Secure Administrative Interface that Allows Managing Cryptographic Keys Is Provided]]
 
 Encryption keys are stored using protected storage APIs:
 * [[00000000-0000-0000-0000-000000177f63|Encryption Keys Are Stored Using Protected Storage APIs]]

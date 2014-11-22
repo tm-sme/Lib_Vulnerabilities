@@ -35,7 +35,7 @@ The most serious danger is that the attacker might compromise a privileged accou
 
 To prevent insufficient session expiration vulnerabilities, place logout links on all pages that require authentication, expire sessions on the server after a period of user inactivity, and don't make session cookies persistent.
 
-* [[be464dd0-9459-4e87-afce-6e686e1a5ef6|Place a Logout Link on Each Page That Requires Authentication]]
+* [[98e47f4f-928d-4520-b449-fe4d779e53f6|Place a Logout Link on Each Page That Requires Authentication]]
 * [[304f1b19-66fa-44e3-a6ec-742f5e0ffcd1|Make Sessions Expire After a Period of Inactivity]]
 * [[00000000-0000-0000-0000-0000007cad1c|Do Not Store Sensitive Data in Persistent Cookies]]
 
@@ -43,7 +43,7 @@ To prevent insufficient session expiration vulnerabilities, place logout links o
 
 To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
 
-* [[5045e40e-93da-4e43-aeb7-54a103cbc457|All Pages That Use Authentication Have Logout Links]]
+* [[197d4a9f-0a73-4fb0-913c-fc53c73c74d2|All Pages That Use Authentication Have Logout Links]]
 * [[05b02707-bf0f-49e5-875f-12775660c291|Sessions Expire After a Period of Inactivity]]
 * [[00000000-0000-0000-0000-00000047e84e|Sensitive Data Is Not Stored in Persistent Cookies]]
 

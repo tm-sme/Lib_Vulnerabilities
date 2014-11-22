@@ -65,7 +65,7 @@ This in-depth course examines the development of secure Web applications in ASP.
 
 =Additional Resources
 
-* For more information about HTTP response splitting, see http://en.wikipedia.org/wiki/HTTP_response_splitting
+* For more information about HTTP response splitting, see https://www.owasp.org/index.php/HTTP_Response_Splitting
 * For the CWE entry about HTTP response splitting, see http://cwe.mitre.org/data/definitions/113.html]]></Data>
   </Content>
 </TeamMentor_Article>

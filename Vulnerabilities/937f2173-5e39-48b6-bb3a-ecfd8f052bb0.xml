@@ -64,7 +64,7 @@ As part of the Web development team, you are aware of the importance of securing
 //Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.//
 
 =Additional Resources
-* For more information about Cross-Site Scripting, see http://en.wikipedia.org/wiki/Cross-site_scripting
+
 * For more information about Cross-Site Scripting, see https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)]]></Data>
   </Content>
 </TeamMentor_Article>

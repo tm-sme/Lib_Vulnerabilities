@@ -39,7 +39,7 @@ Store credentials securely:
 To check for adequate protection against this vulnerability, ensure that a secure administrative interface allows changing credentials and that credentials are stored securely.
 
 A secure administrative interface allows changing credentials:
-* [[00000000-0000-0000-0000-0000006dd207|A Secure Administrative Interface that Allows Changing Passwords Is Provided]]
+* [[00000000-0000-0000-0000-00000018ecb4|A Secure Administrative Interface that Allows Changing Passwords Is Provided]]
 
 Credentials are stored securely:
 

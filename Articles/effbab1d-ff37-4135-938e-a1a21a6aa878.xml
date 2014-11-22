@@ -35,7 +35,7 @@ HTTP request splitting is not a vulnerability in the application, so there are n
 
 To make sure that HTTP request splitting is prevented, verify that network hardware is updated.
 
-* [[e1816a2b-bf3b-4d9a-93a7-f9d37078ed04|Network Hardware Is Updated]]
+* [[418f1de0-9d5f-44ef-b0b0-4f8b4af11ab9|Network Hardware Is Updated]]
 
 ==Additional Resources==
 
